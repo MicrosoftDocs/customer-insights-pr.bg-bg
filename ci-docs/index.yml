@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Център за помощ за Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: Намерете подходящи статии, за да започнете с помощно съдържание.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: bg-BG
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405119"
+title: Документация на Dynamics 365 Customer Insights
+summary: Намерете полезни ресурси, за да започнете и да научите за функциите и възможностите на Customer Insights.
+landingContent:
+- title: Запознайте се с Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Общ преглед на Customer Insights
+      url: overview.md
+    - text: Планове за издаване
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Достъп до средата ви
+      url: https://home.ci.ai.dynamics.com/
+- title: Първи стъпки с Аналитични данни за аудитория
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Регистриране за пробен период
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: Какво е новото
+      url: audience-insights/whats-new-audience-insights.md
+    - text: Документация на Аналитични данни за аудитория
+      url: audience-insights/index.yml
+- title: Влезте в контакт
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Присъединете се към общността на Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Споделете идеите си
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Докладване на проблем
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: Уроци за Аналитични данни за аудитория
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Създаване на нова среда
+      url: audience-insights/home.md
+    - text: Създаване на унифициран потребителски профил
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Работа с приложението
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: Експортиране на данни за Аналитични данни за аудитория
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Задаване на местоназначения за експортиране
+      url: audience-insights/export-destinations.md
+    - text: Карти на клиент в приложението Dynamics 365
+      url: audience-insights/customer-card-add-in.md
+    - text: Конектор на Power BI
+      url: audience-insights/export-power-bi.md
+- title: Администриране на Аналитични данни за аудитория
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигуриране на системата
+      url: audience-insights/system.md
+    - text: Определяне на потребителските разрешения
+      url: audience-insights/permissions.md
+    - text: Управление на няколко среди
+      url: audience-insights/manage-environments.md
+- title: Относно Аналитични данни за ангажименти (преглед)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Преглед на възможностите
+      url: engagement-insights/overview.md
+    - text: Правила и условия
+      url: engagement-insights/glossary.md
+    - text: Начало
+      url: engagement-insights/get-started.md
+- title: Отчети за Аналитични данни за ангажираност (преглед)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Преглед на отчети
+      url: engagement-insights/view-reports.md
+    - text: Създаване на персонализирани отчети
+      url: engagement-insights/custom-reports.md
+    - text: Преглед на отчета за унифицирани профили
+      url: engagement-insights/profile-reports.md
+- title: Събития за Аналитични данни за ангажираност (преглед)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Създаване на изискани събития
+      url: engagement-insights/refined-events.md
+    - text: Експортиране на събития
+      url: engagement-insights/export-events.md
+    - text: Изтрийте и експортирайте лични данни
+      url: engagement-insights/delete-export-personal-data.md

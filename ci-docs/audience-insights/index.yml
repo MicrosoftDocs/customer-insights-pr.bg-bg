@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Способност Аналитични данни за аудитория в Dynamics 365 Customer Insights
+summary: Поемайте, уеднаквявайте и организирайте клиентски данни от множество източници. Създавайте и управлявайте потребителски профили и сегментиране в реално време. Интегрирайте клиентските данни с други системи, за да ги направите още по-реални.
+metadata:
+  title: Документация на Аналитични данни за аудитория
+  description: Помощен център с ключови връзки за Аналитични данни за аудитория.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: bg-BG
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405102"
+landingContent:
+- title: Относно Аналитични данни за аудитория
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Преглед на продукта
+      url: overview.md
+    - text: Нови и актуализирани функции
+      url: whats-new-audience-insights.md
+    - text: Сайт на общността
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: Приемане на източници на данни
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Добавяне на източници на данни
+      url: data-sources.md
+    - text: Постъпково опресняване
+      url: incremental-refresh-data-sources.md
+    - text: Разбиране на обектите
+      url: entities.md
+- title: Обединяване на данни
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Картова
+      url: map-entities.md
+    - text: Съвпадение
+      url: match-entities.md
+    - text: Обедини
+      url: merge-entities.md
+- title: Прецизиране на потребителски профили
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигуриране на релации
+      url: relationships.md
+    - text: Изброяване на дейности на клиент
+      url: activities.md
+    - text: Внесете собствените си модели за машинно обучение
+      url: custom-models.md
+- title: Експортиране на клиентски данни
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Задаване на местоназначения за експортиране
+      url: export-destinations.md
+    - text: Карти на клиент в приложението Dynamics 365
+      url: customer-card-add-in.md
+    - text: Конектор на Power BI
+      url: export-power-bi.md
+- title: Прилагане на приложението
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигуриране на системата
+      url: system.md
+    - text: Определяне на потребителските разрешения
+      url: permissions.md
+    - text: Управление на няколко среди
+      url: manage-environments.md
