@@ -4,17 +4,17 @@ description: Импортиране на данни от управлявано 
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643385"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267784"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>Свързване с данни в управлявано от Common Data Service хранилище за необработени данни
 
@@ -34,7 +34,10 @@ ms.locfileid: "4643385"
 
 3. Изберете **Свържете се с Common Data Service** и изберете **Напред**.
 
-4. Въведете **Име** за източника на данни и изберете **Напред**.
+4. Въведете **Име** за източника на данни и изберете **Напред**. Насоки за име: 
+   - Започнете с буква.
+   - Използвайте само букви и цифри. Не е разрешено въвеждането на специални знаци и интервали.
+   - Използвайте между 3 и 64 знака.
 
 5. Предоставете **Адрес на сървър** за организацията ви на Common Data Service и изберете **Вход**.
 
@@ -65,3 +68,6 @@ ms.locfileid: "4643385"
 3. Изберете опцията **Редактиране** от списъка.
 
 4. Изберете допълнителни обекти от наличния списък и изберете **Записване**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

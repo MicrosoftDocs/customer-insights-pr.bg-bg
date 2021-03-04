@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f276a73feca52023391ad92fbc84359921b85328
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: ed9aa09fba938606611c6ce86c2b250c5e19c606
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405097"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268673"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Правата на субекта на данни (DSR) съгласно GDPR
 
@@ -75,3 +75,6 @@ ms.locfileid: "4405097"
 1. Изпратете имейл до D365CI@microsoft.com, за да укажете имейл адреса на потребителя в заявката. Екипът на Customer Insights ще изпрати имейл на регистрирания имейл адрес на администратора на клиента, който изисква потвърждение за експортирането на данни.
 2. Приемане на потвърждението за експортиране на данните за заявения потребител.
 3. Получаване на експортираните данни чрез имейл адреса на администратора на клиента.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

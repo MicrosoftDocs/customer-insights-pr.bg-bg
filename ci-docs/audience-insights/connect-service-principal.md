@@ -1,20 +1,20 @@
 ---
 title: Свържете се с акаунт в Azure Data Lake Storage Gen2 с принципал на услугата
-description: използвайте принципа на услугата Azure за прозрения за аудиторията, за да се свържете със собственото си езеро с данни, когато го прикачите към прозрения за аудиторията.
-ms.date: 11/24/2020
+description: Използвайте принципа на услугата Azure за прозрения за аудиторията, за да се свържете със собственото си езеро с данни, когато го прикачите към прозрения за аудиторията.
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644075"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267709"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Свържете се с акаунт в Azure Data Lake Storage Gen2 с принципал на услуга Azure за аналитични данни за аудиторията
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644075"
 
 Можете да използвате принципала на услугата за сигурно [добавяне или редактиране на папката Common Data Model като източник на данни](connect-common-data-model.md) или [създайте нова или актуализирайте съществуваща среда](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-Нуждаете се от администраторски разрешения за вашия абонамент за Azure, за да създадете принципала на услугата.
+> [!IMPORTANT]
+> - Акаунтът за съхранение в Azure Data Lake Gen2, който възнамерява да използва принципала на услугата, трябва да има [активирано йерархично пространство от имена (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Нуждаете се от администраторски разрешения за вашия абонамент за Azure, за да създадете принципала на услугата.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Създайте принципа на услугата Azure за прозрения за аудиторията
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644075"
 
 Следвайте стъпките по-долу, за да предоставите необходимата информация за избрания подход.
 
-### <a name="resounce-based-storage-account-connection"></a>Връзка на акаунт на хранилище, базиран на ресурс
+### <a name="resource-based-storage-account-connection"></a>Връзка на акаунт на хранилище, базирана на ресурс
 
 1. Отидете на [Административен портал на Azure](https://portal.azure.com), влезте в абонамента си и отворете акаунта за съхранение.
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644075"
 1. Прегледайте **Абонамент**, **Ресурсна група** и **Име** на акаунта за съхранение, за да сте сигурни, че сте избрали правилните стойности в статистиката за аудиторията.
 
 1. В статистиката за аудиторията изберете стойностите или за съответните полета, когато прикачвате акаунта за съхранение.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Въведете информацията за идентификатора на ресурса на акаунта за съхранение.":::
    
 1. Продължете с останалите стъпки в статистика за аудиторията, за да прикачите акаунта за съхранение.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

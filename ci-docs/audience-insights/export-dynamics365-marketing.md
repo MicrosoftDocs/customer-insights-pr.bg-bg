@@ -1,20 +1,20 @@
 ---
 title: Експортирайте данните от Customer Insights в Dynamics 365 Marketing
 description: Научете как да конфигурирате връзката към Dynamics 365 Marketing.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 163387779b64bd78ef08e2d96a5f1c9615062f28
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643760"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269041"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>Конектор за Dynamics 365 Marketing (преглед)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643760"
 
 ## <a name="prerequisite"></a>Предварително изискване
 
-Записи за контакти [от Dynamics 365 Marketing, погълнати с помощта на Common Data Service](connect-power-query.md).
+- Записите за контакти трябва да присъстват в Dynamics 365 Marketing, преди да можете да експортирате сегмент от Customer Insights в Marketing. Прочетете повече за това как да поглъщате контакти в [Dynamics 365 Marketing с помощта на Common Data Services](connect-power-query.md).
+
+  > [!NOTE]
+  > Експортирането на сегменти от аналитични данни за аудитория в Marketing няма да създаде нови записи за контакти в маркетинговите екземпляри. Записите за контакти от Marketing трябва да се поглъщат с прозрения за аудиторията и да се използват като източник на данни. Те също трябва да бъдат включени в единния обект на клиента, за да се съпоставят идентификаторите на клиентите с идентификаторите за контакт, преди сегментите да могат да бъдат експортирани.
 
 ## <a name="configure-the-connector-for-marketing"></a>Конфигуриране на конектора за Marketing
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643760"
 ## <a name="export-the-data"></a>Експортиране на данните
 
 Можете да [експортирате данни при поискване](export-destinations.md). Експортирането също ще се изпълнява с всяко [планирано обновяване](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

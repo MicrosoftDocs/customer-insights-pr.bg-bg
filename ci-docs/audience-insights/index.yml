@@ -6,16 +6,16 @@ metadata:
   description: Помощен център с ключови връзки за Аналитични данни за аудитория.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: bg-BG
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4405102"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745708"
 landingContent:
 - title: Относно Аналитични данни за аудитория
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: Сайт на общността
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: Приемане на източници на данни
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Добавяне на източници на данни
-      url: data-sources.md
-    - text: Постъпково опресняване
-      url: incremental-refresh-data-sources.md
-    - text: Разбиране на обектите
-      url: entities.md
 - title: Обединяване на данни
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Картова
-      url: map-entities.md
-    - text: Съвпадение
-      url: match-entities.md
-    - text: Обедини
-      url: merge-entities.md
-- title: Прецизиране на потребителски профили
+    - text: Общ преглед на източниците на данни
+      url: data-sources.md
+    - text: Общ преглед на обединяването
+      url: data-unification.md
+    - text: Разбиране на обектите
+      url: entities.md
+- title: Обогатяване и прецизиране на данни
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Допълване на потребителски профили
+      url: enrichment-hub.md
     - text: Конфигуриране на релации
       url: relationships.md
     - text: Изброяване на дейности на клиент
       url: activities.md
-    - text: Внесете собствените си модели за машинно обучение
-      url: custom-models.md
+- title: Получаване на аналитични данни
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Създаване на сегменти
+      url: segments.md
+    - text: Създаване на мерки
+      url: measures.md
+    - text: Попълване на данни чрез прогнози
+      url: predictions.md
 - title: Експортиране на клиентски данни
   linkLists:
   - linkListType: how-to-guide

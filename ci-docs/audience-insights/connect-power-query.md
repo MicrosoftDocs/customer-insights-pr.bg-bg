@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405090"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267755"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Свързване към източник на данни на Power Query
 
@@ -28,7 +28,10 @@ Power Query предлага широк набор от конектори за 
 
 1. Изберете метода **Импортиране на данни** и изберете **Напред**.
 
-1. Посочете **Име** за източник на данни и изберете **Напред**, за да създадете източника на данни.
+1. Посочете **Име** за източник на данни и изберете **Напред**, за да създадете източника на данни. Насоки за име: 
+   - Започнете с буква.
+   - Използвайте само букви и цифри. Не е разрешено въвеждането на специални знаци и интервали.
+   - Използвайте между 3 и 64 знака.
 
 1. Изберете един от [наличните конектори](#available-power-query-data-sources). За този пример избираме конектора **Текст/CSV**.
 
@@ -77,3 +80,6 @@ Power Query предлага широк набор от конектори за 
 3. Приложете вашите промени и трансформации в диалоговия прозорец **Power Query – Редактиране на заявки**, както е описано в раздела [Създаване на нов източник на данни](#create-a-new-data-source).
 
 4. Изберете **Записване** в Power Query, след като завършите редакциите си, за да запазите промените.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

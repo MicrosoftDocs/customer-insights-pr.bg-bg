@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c25cfbf3808fc1534b54d2d834f1c63ff4c9fe0a
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: 6b73aa93ec1a98f2b8d20d02e88bc6304f887078
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667081"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269455"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -51,3 +51,6 @@ ms.locfileid: "4667081"
 - **Изтриване** на обогатяването.
 
 Можете да стартирате или дезактивирате няколко допълвания наведнъж, като ги изберете в списъка. Опциите за преглед и редактиране не са достъпни като групово действие и работят само за едно обогатяване наведнъж.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

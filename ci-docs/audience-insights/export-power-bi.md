@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405071"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477075"
 ---
 # <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4405071"
 
 1. Изберете **Вижте още** и търсете **Dynamics 365 Customer Insights**
 
-1. Изберете резултата и изберете **Свързване**.
+1. Изберете **Свързване**.
 
 1. **Влезте** със същия акаунт на организация, който използвате за Customer Insights, и изберете **Свързване**.
    > [!NOTE]
@@ -52,3 +52,22 @@ ms.locfileid: "4405071"
 ### <a name="work-with-a-subset-of-data"></a>Работа с подмножество данни
 
 Помислете за работа с подмножество от вашите данни. Например можете да създавате [сегменти](segments.md) вместо да експортирате всички клиентски записи в Power BI.
+
+## <a name="troubleshooting"></a>Отстраняване на неизправности
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Средата на Customer Insights не се показва в Power BI
+
+Среда, която има повече от една [релация](relationships.md) дефинирани между две идентични обекти в статистика за аудиторията няма да бъдат налични в конектор Power BI.
+
+Можете да идентифицирате и премахнете дублираните връзки.
+
+1. В статията за аудиторията отидете на **Данни** > **Релации** върху средата, която ви липсва в Power BI.
+2. Идентифицирайте дублирани релации:
+   - Проверете дали има дефинирани повече от една връзка между едни и същи две обекти.
+   - Проверете дали е създадена връзка между две обекти, които са включени в процеса на обединение. Има дефинирана имплицитна връзка между всички обекти, включени в процеса на обединение.
+3. Премахнете всички идентифицирани дублирани връзки.
+
+След премахване на дублираните връзки, опитайте да конфигурирате конектора на Power BI отново. Средата трябва да е налична сега.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -4,16 +4,16 @@ description: Работа с персонализирани модели от Az
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668890"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267221"
 ---
 # <a name="custom-machine-learning-models"></a>Персонализирани модели за машинно обучение
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668890"
 
 1. Изберете уеб услугата Machine Learning Studio (classic) или конвейера Azure Machine Learning в **Уеб услуга, която съдържа вашия модел** падащо меню. След това изберете **Напред**.
    - Научете повече за [публикуване на уеб услуга в Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Научете повече за [публикуване на конвейер в Azure Machine Learning с помощта на дизайнера](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > Вашият конвейер трябва да бъде публикуван под [крайна точка на конвейер](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Научете повече за [публикуване на конвейер в Azure Machine Learning с помощта на дизайнера](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Вашият конвейер трябва да бъде публикуван под [крайна точка на конвейер](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. За всички **Входни данни на уеб услуга** изберете съответния **Обект** от аналитични данни за аудитория и изберете **Напред**.
+   > [!NOTE]
+   > Персонализираният работен поток на модела ще приложи евристика за картографиране на полетата за въвеждане на уеб услугата към атрибутите на обекта въз основа на името и типа данни на полето. Ще видите грешка, ако полето на уеб услуга не може да бъде съпоставено с обект.
 
    > [!div class="mx-imgBorder"]
    > ![Конфигуриране на работен поток](media/intelligence-screen2-updated.png "Конфигуриране на работен поток")
-
+   
 1. В **Изходни параметри на модела** стъпка, задайте следните свойства:
    - Machine Learning Studio (classic)
       1. Въведете изхода **Име на обекта**, в който искате да изтичат резултатите от уеб услугата.
@@ -112,3 +112,6 @@ ms.locfileid: "4668890"
 1. Изберете **Изтриване** и потвърдете изтриването.
 
 Работният поток ще бъде изтрит. [Обектът](entities.md), създаден при създаването на работния поток, се запазва и може да бъде прегледан от страницата **Обекти**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

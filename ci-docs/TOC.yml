@@ -14,10 +14,10 @@
       href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: Нови и актуализирани функции
       href: audience-insights/whats-new-audience-insights.md
-    - name: Начало
+    - name: Създаване на нова среда
+      href: audience-insights/home.md
+    - name: Научете повече за модулите
       items:
-        - name: Създаване на нова среда
-          href: audience-insights/home.md
         - name: Поглъщайте данни
           href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
         - name: Създаване на унифициран потребителски профил
@@ -44,7 +44,7 @@
           href: audience-insights/entities.md
     - name: Обединяване на данни
       items:
-        - name: Общ преглед на обединяването
+        - name: Общ преглед на унифициране на данните
           href: audience-insights/data-unification.md
         - name: Обекти и атрибути на карта
           href: audience-insights/map-entities.md
@@ -80,6 +80,8 @@
           href: audience-insights/segments.md
         - name: Получаване на прозрения за сегменти
           href: audience-insights/segment-insights.md
+        - name: Вижте предложени сегменти
+          href: audience-insights/suggested-segments.md
         - name: Търсене на сходни клиенти
           href: audience-insights/find-similar-customer-segments.md
         - name: Определяне на мерки и KPI
@@ -96,6 +98,12 @@
           href: audience-insights/predict-transactional-churn.md
         - name: Примерно ръководство за прогноза за оттегляне на трансакции
           href: audience-insights/sample-guide-predict-transactional-churn.md
+        - name: Прогнозирайте стойност на жизнения цикъл на клиента (CLV)
+          href: audience-insights/predict-customer-lifetime-value.md
+        - name: Прогнозирайте препоръки за продукти
+          href: audience-insights/predict-product-recommendation.md
+        - name: Примерно ръководство за прогноза за препоръки за продукти
+          href: audience-insights/sample-guide-predict-product-recommendation.md
         - name: Внедряване на персонализирани модели за машинно обучение
           href: audience-insights/custom-models.md
         - name: Експерименти с Azure Machine Learning
@@ -104,10 +112,14 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: Опции за експортиране
       items:
-        - name: Откриване на местоназначения за експортиране
+        - name: Общ преглед на местоназначения на експортиране
           href: audience-insights/export-destinations.md
+        - name: Autopilot
+          href: audience-insights/export-autopilot.md
         - name: Хранилище за BLOB на Azure
           href: audience-insights/export-azure-blob-storage.md
+        - name: Azure Data Lake Storage Gen2
+          href: audience-insights/export-azure-data-lake-storage-gen2.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (добавка)
@@ -136,6 +148,8 @@
           href: audience-insights/export-power-apps.md
         - name: Power Automate
           href: audience-insights/export-power-automate.md
+        - name: SendGrid
+          href: audience-insights/export-sendgrid.md
         - name: SFTP
           href: audience-insights/export-sftp.md
     - name: Администриране
@@ -152,6 +166,8 @@
           href: audience-insights/supported-languages.md
     - name: Разширение
       items:
+        - name: Интегрирайте уеб данни от прозрения за ангажираността
+          href: audience-insights/integrate-engagement-insights.md
         - name: Преглед на схеми на обекти в Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Работа с API
@@ -170,10 +186,6 @@
       href: engagement-insights/overview.md
     - name: Безплатен пробен период
       href: 'https://pi.dynamics.com/'
-    - name: Бърз старт
-      items:
-        - name: Бърз старт за публичен преглед
-          href: engagement-insights/quickstart.md
     - name: Начало
       items:
         - name: Начало
@@ -223,4 +235,4 @@
     - name: Лимити за обслужване
       href: engagement-insights/quotas.md
 - name: Свързване с отдела за поддръжка
-  href: 'https://go.microsoft.com/fwlink/?linkid=2145734'
+  href: 'https://admin.powerplatform.microsoft.com/support'

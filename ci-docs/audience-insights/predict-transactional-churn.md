@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644390"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268305"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Прогнозиране на оттегляне на трансакции (преглед)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644390"
 1. По избор изберете **Добавете данни** за **Дейности на клиентите**. Изберете обекта, който предоставя информация за дейността на клиента, както е описано в предпоставките.
 
 1. Съпоставете семантичните полета с атрибути във вашия обект на дейност на клиент и изберете **Напред**. За описания на полетата разгледайте [предварителните изисквания](#prerequisites).
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Нанасяне на полета а клиенти за транзакционни данни.":::
 
 1. Изберете тип дейност, който съответства на типа дейност на клиента, който конфигурирате. Изберете **Създай нов** и изберете наличен тип дейност или създайте нов тип.
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644390"
 1. Изберете вертикалното многоточие до прогнозата, която искате да изтриете.
 
 1. Изберете **Изтриване**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

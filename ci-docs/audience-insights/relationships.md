@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405112"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269854"
 ---
 # <a name="relationships-between-entities"></a>Релации между обекти
 
@@ -28,8 +28,8 @@ ms.locfileid: "4405112"
 > ![Създаване на релация](media/relationships-entities-merge.png "Създаване на релация")
 
 - **Релацията *CustomerToContact*** е създадена между обекта на клиент и обекта на контакт. Обектът на клиент получава полето за ключ **Contact_contactId** за свързване с полето за ключ на контакт **contactId**.
-- **Релацията _CustomerToAccount_** е създадена между обекта на клиент и обекта на акаунт. Обектът на клиент получава полето за ключ **Account_accountId** за свързване с полето за ключ на акаунт **accountId**.
-- **Релацията _CustomerToWebAccount_** е създадена между обекта на клиент и обекта на WebAccount. Обектът на клиент получава полето за ключ **WebAccount_webaccountId** за свързване с полето за ключ на обект WebAccount **webaccountId**.
+- **Релацията *CustomerToAccount*** е създадена между обекта на клиент и обекта на акаунт. Обектът на клиент получава полето за ключ **Account_accountId** за свързване с полето за ключ на акаунт **accountId**.
+- **Релацията *CustomerToWebAccount*** е създадена между обекта на клиент и обекта на WebAccount. Обектът на клиент получава полето за ключ **WebAccount_webaccountId** за свързване с полето за ключ на обект WebAccount **webaccountId**.
 
 ## <a name="create-a-relationship"></a>Създаване на релация
 
@@ -69,3 +69,6 @@ ms.locfileid: "4405112"
 ## <a name="next-step"></a>Следваща стъпка
 
 Системните и персонализираните релации се използват за създаване на сегменти на базата на множество източници на данни, които вече не са в силози. За повече информация вижте [Сегменти](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
