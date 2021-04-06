@@ -2,23 +2,23 @@
 title: Поглъщане на данни чрез конектор на Power Query
 description: Конектори за източници на данни, базирани на Power Query.
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267755"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596900"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Свързване към източник на данни на Power Query
 
-Power Query предлага широк набор от конектори за поглъщане на данни. Повечето от тези конектори се поддържат от Dynamics 365 Customer Insights. Добавянето на източници на данни въз основа на конектори на Power Query обикновено следва стъпките, описани в следващия раздел. В зависимост от конектора, който използвате обаче, се изисква различна информация. За повече информация вижте документацията за отделните конектори в [справката за конекторите на Power Query](https://docs.microsoft.com/power-query/connectors/).
+Power Query предлага широк набор от конектори за поглъщане на данни. Повечето от тези конектори се поддържат от Dynamics 365 Customer Insights. Добавянето на източници на данни въз основа на конектори на Power Query обикновено следва стъпките, описани в следващия раздел. В зависимост от конектора, който използвате обаче, се изисква различна информация. За повече информация вижте документацията за отделните конектори в [справката за конекторите на Power Query](/power-query/connectors/).
 
 ## <a name="create-a-new-data-source"></a>Създаване на нов източник на данни
 
@@ -44,7 +44,7 @@ Power Query предлага широк набор от конектори за 
    > [!div class="mx-imgBorder"]
    > ![Диалогов прозорец „Редактиране на заявки“](media/data-manager-configure-edit-queries.png "Диалогов прозорец „Редактиране на заявки“")
 
-1. Можете също да преобразувате данните. Изберете обект, който да редактирате или преобразувате. Използвайте опциите в прозореца Power Query, за да приложите трансформации. Всяка трансформация се посочва под **Приложени стъпки**. Power Query предоставя многобройни предварително създадени опции за трансформация. За повече информация вижте [Трансформации на Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations).
+1. Можете също да преобразувате данните. Изберете обект, който да редактирате или преобразувате. Използвайте опциите в прозореца Power Query, за да приложите трансформации. Всяка трансформация се посочва под **Приложени стъпки**. Power Query предоставя многобройни предварително създадени опции за трансформация. За повече информация вижте [Трансформации на Power Query](/power-query/power-query-what-is-power-query#transformations).
 
 1. Можете да добавите допълнителни обекти към източника на данни, като изберете **Получаване на данни** в диалоговия прозорец **Редактиране на заявки**.
 
@@ -59,7 +59,7 @@ Power Query предлага широк набор от конектори за 
 
 ## <a name="available-power-query-data-sources"></a>Налични източници на данни на Power Query
 
-Вижте [справката за конектори на Power Query](https://docs.microsoft.com/power-query/connectors/) за актуален списък на конекторите, които можете да избирате за импортиране на данни в Customer Insights. 
+Вижте [справката за конектори на Power Query](/power-query/connectors/) за актуален списък на конекторите, които можете да избирате за импортиране на данни в Customer Insights. 
 
 Конекторите с отметка в колоната **Customer Insights (потоци от данни)** са достъпни за създаване на нови източници на данни въз основа на Power Query. Прегледайте документацията на конкретен конектор, за да научите повече за неговите изисквания, ограничения и други подробности.
 

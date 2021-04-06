@@ -1,31 +1,31 @@
 ---
 title: Поддържани езици за Аналитични данни за аудитория
 description: Разберете и конфигурирайте езиковата поддръжка.
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268167"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595459"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>Поддържани езици за способността Аналитични данни за аудитория
 
-Аналитични данни за аудитория на Dynamics 365 Customer Insights поддържа много езици. Тази тема изброява наличните езици и осигурява поддръжка за промяна на език, както и за общ преглед на това това какво съдържание се превежда.
+Аналитични данни за аудитория за Dynamics 365 Customer Insights е преведен на много езици. Следващият списък съдържа налични езици и информация за това какво е преведено. Можете също така да научите повече за това как да промените езиковите настройки. 
 
 ## <a name="languages"></a>Езици
 
 | Име на езика (английски)|  Име на езика (роден език) |
 | ------------- | ------------- |
 | Баски | euskara |
-| Български | Български |
+| Български | български |
 | Каталонски | català |
 | Китайски (опростен) | 中文(简体) |
 | Китайски (традиционен) | 中文(繁體) |
@@ -37,25 +37,25 @@ ms.locfileid: "5268167"
 | Естонски | eesti |
 | Фински | suomi |
 | Френски | français |
-| Галски | galego |
+| Галисийски | galego |
 | Немски | Deutsch |
 | Гръцки | Ελληνικά |
 | Хинди | हिंदी |
 | Унгарски | magyar |
-| Индонезийски | Bahasa Indonesia |
+| Индонезийски | Индонезия |
 | Италиански | italiano |
 | Японски | 日本語 |
-| Казахски | Қазақ |
+| Казахски | қазақ тілі |
 | Корейски | 한국어 |
 | Латвийски | latviešu |
 | Литовски | lietuvių |
-| Малайски | Bahasa Melayu |
-| Норвежки (Бокмал) | норвежки (бокмал) |
-| Полски | Polski |
+| Малайски | Melayu |
+| Норвежки (букмол) | norsk bokmål |
+| Полски | polski |
 | Португалски (Бразилия) | português |
 | Португалски (Португалия) | português |
 | Румънски | română |
-| Руски | Русский |
+| Руски | pусский |
 | Сръбски (кирилица) | српски |
 | Сръбски (латиница) | srpski |
 | Словашки | slovenčina |

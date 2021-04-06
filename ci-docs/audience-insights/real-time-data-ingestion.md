@@ -2,19 +2,19 @@
 title: Поглъщане на данни в реално време и ограничения
 description: Обща информация за възможностите в реално време в прозренията на аудиторията.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270267"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598556"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Приемане на данни в реално време (преглед)
 
@@ -54,7 +54,7 @@ API в реално време ви позволява да публикуват
 
 Има два начина за свързване с API в реално време:
 
-- [косвено](#connect-via-the-dynamics-365-customer-insights-connector) с помощта на [конектора на Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
+- [косвено](#connect-via-the-dynamics-365-customer-insights-connector) с помощта на [конектора на Dynamics 365 Customer Insights](/connectors/customerinsights/)
 - [пряко](#connect-directly-to-the-real-time-api), с код
 
 И двата начина споделят следните предварителни изисквания:
@@ -66,13 +66,13 @@ API в реално време ви позволява да публикуват
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Свързване чрез конектор на Dynamics 365 Customer Insights
 
-API в реално време може да приема данни от специализиран конектор на Power Platform, [конектора на Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), без да е необходимо да пишете и внедрявате код.    
-Конекторът може да извършва същите действия в реално време като API. Нуждаете се от валиден лиценз за премиалните конектори. За повече информация вижте [ЧЗВ за лицензите за Power Apps и Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+API в реално време може да приема данни от специализиран конектор на Power Platform, [конектора на Dynamics 365 Customer Insights](/connectors/customerinsights/), без да е необходимо да пишете и внедрявате код.    
+Конекторът може да извършва същите действия в реално време като API. Нуждаете се от валиден лиценз за премиалните конектори. За повече информация вижте [ЧЗВ за лицензите за Power Apps и Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps и/или Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps и/или Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-За подробности относно създаването на потоци вижте [документацията на Power Automate](https://docs.microsoft.com/power-automate/).
+За подробности относно създаването на потоци вижте [документацията на Power Automate](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Свързване директно с API в реално време
 

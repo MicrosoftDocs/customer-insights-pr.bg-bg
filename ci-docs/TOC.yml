@@ -19,13 +19,13 @@
     - name: Научете повече за модулите
       items:
         - name: Поглъщайте данни
-          href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
+          href: /learn/modules/ingest-data-customer-insights/
         - name: Създаване на унифициран потребителски профил
-          href: 'https://docs.microsoft.com/learn/modules/unified-customer-profile/'
+          href: /learn/modules/unified-customer-profile/
         - name: Работа с приложението
-          href: 'https://docs.microsoft.com/learn/modules/working-with-customer-insights/'
+          href: /learn/modules/working-with-customer-insights/
         - name: Обогатете данни и прогнози
-          href: 'https://docs.microsoft.com/learn/modules/enrich-data/'
+          href: /learn/modules/enrich-data/
     - name: Източници на данни
       items:
         - name: Общ преглед на източниците на данни
@@ -114,6 +114,12 @@
       items:
         - name: Общ преглед на местоназначения на експортиране
           href: audience-insights/export-destinations.md
+        - name: AdRoll
+          href: audience-insights/export-adroll.md
+        - name: Adobe Campaign Standard
+          href: audience-insights/export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: audience-insights/export-adobe-experience-platform.md
         - name: Autopilot
           href: audience-insights/export-autopilot.md
         - name: Хранилище за BLOB на Azure
@@ -128,9 +134,9 @@
           href: audience-insights/export-dynamics365-marketing.md
         - name: Продажби в Dynamics 365
           href: audience-insights/export-dynamics365-sales.md
-        - name: Център на Dynamics 365 Sales (добавка)
+        - name: Dynamics 365 Център за продажби (добавка)
           href: audience-insights/customer-card-add-in.md
-        - name: Facebook Ads Manager
+        - name: Facebook Мениджър за реклами
           href: audience-insights/export-facebook.md
         - name: Google Ads
           href: audience-insights/export-google-ads.md

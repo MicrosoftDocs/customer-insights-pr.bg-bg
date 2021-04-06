@@ -2,19 +2,19 @@
 title: Аналитични данни за аудитория за общ преглед на Dynamics 365 Customer Insights
 description: Общ преглед на аналитични данни за аудитория за Dynamics 365 Customer Insights.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476982"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598617"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Аналитични данни за аудитория за общ преглед на Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "5476982"
 - **Елиминиране на силозите от данни и обединяване на клиентските данни**
 
   - Свързвайте и обединявайте данните си лесно - въвеждайте данни за трансакции, наблюдения и поведение от популярни [източници на данни с помощта на предварително създадени конектори](data-sources.md).
-  - Преобразувайте интелигентно клиентските данни – изградете унифицирани клиентски профили, отговарящи на [Common Data Model](https://docs.microsoft.com/common-data-model/). Разрешавайте самоличности на клиенти с препоръки, управлявани от AI/ML.
+  - Преобразувайте интелигентно клиентските данни – изградете унифицирани клиентски профили, отговарящи на [Common Data Model](/common-data-model/). Разрешавайте самоличности на клиенти с препоръки, управлявани от AI/ML.
 
 - **Допълване с интелигентността на аудиторията, съдържаща се в Microsoft Graph**
 
@@ -42,7 +42,7 @@ ms.locfileid: "5476982"
 - **Анализатори на данни/администратори:**
 
   - Достъп до богата колекция от конектори за приемане на всички ваши клиентски данни.
-  - Възможност за унифициране на клиентските данни и преобразуването им във формат на [Common Data Model](https://docs.microsoft.com/common-data-model/).
+  - Възможност за унифициране на клиентските данни и преобразуването им във формат на [Common Data Model](/common-data-model/).
   - Обогатете информацията за клиентите с аналитични данни от интелигентността на аудиторията, съдържаща се в Microsoft Graph, като например афинитет към марка и интереси.
   - Конфигурация „Щраквания без код“ и отстраняване на грешки, които ви помагат лесно да конфигурирате Аналитични данни за аудитория и да идентифицирате потенциални проблеми.
   - Почистете и стандартизирайте клиентските данни в различни източници с препоръки, поддържани от AI.  

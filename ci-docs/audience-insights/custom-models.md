@@ -1,19 +1,20 @@
 ---
 title: Персонализирани модели за машинно обучение | Microsoft Docs
 description: Работа с персонализирани модели от Azure Machine Learning в Dynamics 365 Customer Insights.
-ms.date: 11/19/2020
-ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.date: 03/22/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
+ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267221"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "5700655"
 ---
 # <a name="custom-machine-learning-models"></a>Персонализирани модели за машинно обучение
 
@@ -21,13 +22,18 @@ ms.locfileid: "5267221"
 
 ## <a name="responsible-ai"></a>Отговорен AI
 
-Прогнозите предлагат възможности за създаване на по-добро преживяване на клиентите, подобряване на бизнес възможностите и потоци от приходи. Силно препоръчваме да балансирате стойността на вашия прогноза спрямо въздействието, което има и пристрастия, които могат да бъдат въведени по етичен начин. Научете повече за това как Microsoft се [справя с Отговорен AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). Можете също така да научите за [техники и процеси за отговорни машинно обучение](https://docs.microsoft.com/azure/machine-learning/concept-responsible-ml), специфични за Azure Machine Learning.
+Прогнозите предлагат възможности за създаване на по-добро преживяване на клиентите, подобряване на бизнес възможностите и потоци от приходи. Силно препоръчваме да балансирате стойността на вашия прогноза спрямо въздействието, което има и пристрастия, които могат да бъдат въведени по етичен начин. Научете повече за това как Microsoft се [справя с Отговорен AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). Можете също така да научите за [техники и процеси за отговорни машинно обучение](/azure/machine-learning/concept-responsible-ml), специфични за Azure Machine Learning.
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
-- Понастоящем тази функция поддържа уеб услуги, публикувани чрез [Machine Learning Studio (classic)](https://studio.azureml.net) и [пакетни конвейери на Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines).
+- Понастоящем тази функция поддържа уеб услуги, публикувани чрез [Machine Learning Studio (classic)](https://studio.azureml.net) и [пакетни конвейери на Azure Machine Learning](/azure/machine-learning/concept-ml-pipelines).
 
-- За да използвате тази функция, ви е необходим акаунт за съхранение в Azure Data Lake Gen2, свързан с вашия екземпляр на Azure Studio. За повече информация вижте [Създаване на акаунт за съхранение в Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- За да използвате тази функция, ви е необходим акаунт за съхранение в Azure Data Lake Gen2, свързан с вашия екземпляр на Azure Studio. За повече информация вижте [Създаване на акаунт за съхранение в Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+
+- За работните пространства на Azure Machine Learning с конвейери се нуждаете от разрешения за собственик или администратор на потребителски достъп до работното пространство на Azure Machine Learning.
+
+   > [!NOTE]
+   > Данните се прехвърлят между вашите екземпляри на Customer Insights и избраните уеб услуги или конвейери на Azure в работния поток. Когато прехвърляте данни към услуга на Azure, проверете дали тя е конфигурирана да обработва данни по начин и в място, нужни за спазване на законовите или регулаторни изисквания за тези данни за организацията ви.
 
 ## <a name="add-a-new-workflow"></a>Добавяне на нов работен поток
 
@@ -45,8 +51,8 @@ ms.locfileid: "5267221"
 1. Изберете **Работни пространства**, свързани с вашата уеб услуга. Изброени са два раздела, един за Azure Machine Learning v1 (Machine Learning Studio (classic)) i Azure Machine Learning v2 (Azure Machine Learning). Ако не сте сигурни кое работно пространство е подходящо за вашата уеб услуга Machine Learning Studio (classic), изберете **Всякакви**.
 
 1. Изберете уеб услугата Machine Learning Studio (classic) или конвейера Azure Machine Learning в **Уеб услуга, която съдържа вашия модел** падащо меню. След това изберете **Напред**.
-   - Научете повече за [публикуване на уеб услуга в Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Научете повече за [публикуване на конвейер в Azure Machine Learning с помощта на дизайнера](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Вашият конвейер трябва да бъде публикуван под [крайна точка на конвейер](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Научете повече за [публикуване на уеб услуга в Machine Learning Studio (classic)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
+   - Научете повече за [публикуване на конвейер в Azure Machine Learning с помощта на дизайнера](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Вашият конвейер трябва да бъде публикуван под [крайна точка на конвейер](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. За всички **Входни данни на уеб услуга** изберете съответния **Обект** от аналитични данни за аудитория и изберете **Напред**.
    > [!NOTE]
@@ -54,7 +60,7 @@ ms.locfileid: "5267221"
 
    > [!div class="mx-imgBorder"]
    > ![Конфигуриране на работен поток](media/intelligence-screen2-updated.png "Конфигуриране на работен поток")
-   
+
 1. В **Изходни параметри на модела** стъпка, задайте следните свойства:
    - Machine Learning Studio (classic)
       1. Въведете изхода **Име на обекта**, в който искате да изтичат резултатите от уеб услугата.
@@ -62,12 +68,12 @@ ms.locfileid: "5267221"
       1. Въведете **Име на обекта** на изхода, в който искате да изтичат резултатите от конвейера.
       1. Изберете **Изход хранилище на данни име на параметъра** на вашия пакетен конвейер от падащото меню.
       1. Изберете **Изход име на параметъра на път** на вашия пакетен конвейер от падащото меню.
-      
+
       > [!div class="mx-imgBorder"]
       > ![Екран на параметър на изход на модел](media/intelligence-screen3-outputparameters.png "Екран на параметър на изход на модел")
 
 1. Изберете съвпадащия атрибут от падащия списък **ИД на клиент в резултатите**, който идентифицира клиентите, и изберете **записване**.
-   
+
    > [!div class="mx-imgBorder"]
    > ![Свързване на резултатите с екран за данните на клиентите](media/intelligence-screen4-relatetocustomer.png "Свързване на резултатите с екран за данните на клиентите")
 
@@ -95,7 +101,7 @@ ms.locfileid: "5267221"
       1. Изберете **Име на параметъра на път на изход** за вашия тестов конвейер.
 
 1. Изберете съвпадащия атрибут от падащия списък **ИД на клиент в резултатите**, който идентифицира клиентите, и изберете **записване**.
-   Трябва да изберете атрибут от извода за извод със стойности, подобни на колоната на идентификатора на клиента на обекта на клиента. Ако нямате такава колона във вашия набор от данни, изберете атрибут, който идентифицира уникално реда.
+   Изберете атрибут от извода за извод със стойности, подобни на колоната на идентификатора на клиента на обекта на клиента. Ако нямате такава колона във вашия набор от данни, изберете атрибут, който идентифицира уникално реда.
 
 ## <a name="run-a-workflow"></a>Изпълняване на работен поток
 
@@ -113,5 +119,28 @@ ms.locfileid: "5267221"
 
 Работният поток ще бъде изтрит. [Обектът](entities.md), създаден при създаването на работния поток, се запазва и може да бъде прегледан от страницата **Обекти**.
 
+## <a name="results"></a>Резултати
+
+Резултатите от работния поток се съхраняват в обекта, конфигуриран по време на фазата на изходния параметър на модела. Можете да получите достъп до тези данни от [страница с обекти](entities.md) или с [достъп до API](apis.md).
+
+### <a name="api-access"></a>Достъп до API
+
+За конкретната заявка OData, за да получите данни от обект на персонализиран модел, използвайте следния формат:
+
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+
+1. Сменете `<your instance id>` с идентификатора на средата на Customer Insights, който намирате в адресната лента на браузъра си при достъп до Customer Insights.
+
+1. Сменете `<custom model output entity>` с името на обекта, което сте предоставили по време на стъпката Параметри на изходния модел на конфигурацията на персонализирания модел.
+
+1. Сменете `<guid value>` с идентификатора на клиента на клиента, за когото искате да получите достъп до записа. Обикновено можете да намерите този идентификатор в [страница с потребителски профили](customer-profiles.md) в полето CustomerID.
+
+## <a name="frequently-asked-questions"></a>Често задавани въпроси
+
+- Защо не мога да видя конвейера си, когато настройвам персонализиран работен процес на модел?    
+  Този проблем често се причинява от проблем с конфигурацията в конвейера. Уверете се, [входният параметър е конфигуриран](azure-machine-learning-experiments.md#dataset-configuration), и [изходни хранилища за данни и параметри на пътя](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) също са конфигурирани.
+
+- Какво означава грешката „Не можах да запазя работния процес на разузнаването“?    
+  Потребителите обикновено виждат това съобщение за грешка, ако нямат права на собственик или администратор на потребителски достъп в работното пространство. Потребителят се нуждае от по-високо ниво на разрешения, за да позволи на Customer Insights да обработва работния поток като услуга, вместо да използва потребителските идентификационни данни за следващи изпълнения на работния поток.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
