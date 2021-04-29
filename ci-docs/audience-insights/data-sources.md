@@ -1,7 +1,7 @@
 ---
 title: Използване на източници на данни за поглъщане на данни
 description: Научете как да импортирате данни от различни източници.
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595934"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887881"
 ---
 # <a name="data-sources-overview"></a>Общ преглед на източниците на данни
 
@@ -32,8 +32,15 @@ ms.locfileid: "5595934"
 - [От папка в Common Data Model](connect-common-data-model.md)
 - [От свое собствено хранилище в Common Data Service](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> Все още не можете да добавяте данни от локални източници на данни.
+## <a name="add-data-from-on-premises-data-sources"></a>Добавяне на данни от локални източници на данни
+
+Приемането на данни от локални източници на данни в аналитични данни за аудитории се поддържа въз основа на потоци от данни на Power Platform. Потоците от данни могат да се активират в Customer Insights чрез [въвеждане на URL адреса на средата на Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) при настройка на средата.
+
+Източници на данни, които се създават след свързване на среда на Dataverse с Customer Insights, ще използват [потоците от данни на Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по подразбиране. Потоците от данни поддържат локална свързаност чрез шлюзовете за данни. Премахнете и създайте повторно източници на данни, които са били налични преди свързването на среда на Dataverse за използване на локалните шлюзове за данни.
+
+Шлюзове за данни от съществуваща среда на Power BI или Power Apps ще са видими и можете да ги използвате повторно в Customer Insights. Страницата с източници на данни показва връзки към средата на Power Platform, където можете да преглеждате и конфигурирате локални шлюзове за данни.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Екранна снимка на страницата с източници на данни, която показва връзки, сочещи към средата на Power Platform.":::
 
 ## <a name="review-ingested-data"></a>Преглед на погълнатите данни
 
@@ -65,7 +72,7 @@ ms.locfileid: "5595934"
 
 2. Изберете вертикалната елипса до източник на данни, която искате да опресните и изберете **Обнови** от падащия списък.
 
-3. Източникът на данни вече се задейства за ръчно опресняване. Опресняването на източник на данни ще актуализира както схемата на обекта, така и данните за всички обекти, посочени в източник на данни.
+3. Източникът на данни вече се задейства за ръчно опресняване. Обновяването на източник на данни ще актуализира както схемата на обекта, така и данните за всички обекти, посочени в източника на данни.
 
 4. Изберете **Спиране на обновяването**, ако искате да отмените съществуващо опресняване и източник на данни ще се върне към последното си състояние на опресняване.
 

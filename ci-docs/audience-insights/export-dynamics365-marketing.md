@@ -1,7 +1,7 @@
 ---
 title: Експортирайте данните от Customer Insights в Dynamics 365 Marketing
-description: Научете как да конфигурирате връзката към Dynamics 365 Marketing.
-ms.date: 02/01/2021
+description: Научете как да конфигурирате връзката и да експортирате в Dynamics 365 Marketing.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,35 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 892aff643872f11307a2c43e5670edab657d7848
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a13f6f81f5e2570d3302d88c02755f1d86321a01
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597590"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759596"
 ---
-# <a name="connector-for-dynamics-365-marketing-preview"></a>Конектор за Dynamics 365 Marketing (преглед)
+# <a name="use-segments-in-dynamics-365-marketing-preview"></a>Използване на сегменти в Dynamics 365 Marketing (преглед)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Използвайте [сегментите](segments.md), за да генерирате кампании, и се свързвайте с конкретни групи клиенти с Dynamics 365 Marketing. За повече информация вижте [Използване на сегменти от Dynamics 365 Customer Insights с Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
-## <a name="prerequisite"></a>Предварително изискване
+## <a name="prerequisite-for-a-connection"></a>Предварително изискване за връзка
 
 - Записите за контакти трябва да присъстват в Dynamics 365 Marketing, преди да можете да експортирате сегмент от Customer Insights в Marketing. Прочетете повече за това как да поглъщате контакти в [Dynamics 365 Marketing с помощта на Common Data Services](connect-power-query.md).
 
   > [!NOTE]
   > Експортирането на сегменти от аналитични данни за аудитория в Marketing няма да създаде нови записи за контакти в маркетинговите екземпляри. Записите за контакти от Marketing трябва да се поглъщат с прозрения за аудиторията и да се използват като източник на данни. Те също трябва да бъдат включени в единния обект на клиента, за да се съпоставят идентификаторите на клиентите с идентификаторите за контакт, преди сегментите да могат да бъдат експортирани.
 
-## <a name="configure-the-connector-for-marketing"></a>Конфигуриране на конектора за Marketing
+## <a name="set-up-connection-to-marketing"></a>Настройване на връзка с Marketing
 
-1. В статията за аудиторията отидете на **Администратор** > **Експортиране на местоположения**.
+1. Отидете на **Администратор** > **Връзки**.
 
-1. Под **Dynamics 365 Marketing**, изберете **Настройка**.
+1. Изберете **Добавяне на връзка** и изберете **Dynamics 365 Marketing** за конфигуриране на връзката.
 
-1. Въведете разпознаваемо име за местоназначението за експортиране в полето **Показвано име**.
+1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
+
+1. Изберете кой може да използва тази връзка. Ако не предприемете нищо, по подразбиране ще е Администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Въведете URL адрес на Marketing за вашата организация в полето **Адрес на сървър**.
 
@@ -43,15 +45,24 @@ ms.locfileid: "5597590"
 
 1. Присвояване на поле за ИД на клиент към ИД за връзка на Dynamics 365.
 
-1. Изберете **Напред**.
+1. Изберете **Записване**, за да завършите връзката. 
+
+## <a name="configure-an-export"></a>Конфигуриране на експортиране
+
+Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За повече информация вижте [Разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
+
+1. Отидете на **Данни** > **Експортиране**.
+
+1. За да създадете ново експортиране, изберете **Добавяне на местоназначение**.
+
+1. В полето **Връзка за експортиране** изберете връзка от секцията Dynamics 365 Marketing. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
 
 1. Изберете един или повече сегменти.
 
 1. Изберете **Записване**.
 
-## <a name="export-the-data"></a>Експортиране на данните
+Запазването на експортиране не го изпълнява незабавно.
 
-Можете да [експортирате данни при поискване](export-destinations.md). Експортирането също ще се изпълнява с всяко [планирано обновяване](system.md#schedule-tab).
-
+Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand). 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

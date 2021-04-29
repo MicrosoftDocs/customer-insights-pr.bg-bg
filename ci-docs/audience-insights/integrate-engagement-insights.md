@@ -9,12 +9,12 @@ author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 14ebff30d3ec7fc52dca6f86136309a3f454fa27
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 9a4cb77bb4c6ef0d88b3f00802f66baab5520a07
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597452"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896406"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>Интегрирайте уеб данни от прозрения за ангажираността с прозрения за аудиторията
 
@@ -46,7 +46,7 @@ ms.locfileid: "5597452"
     - Signal.Action.Name - посочване на подробностите за дейността
     - Signal.User.Id - използва се за картографиране с идентификатора на клиента
     - Signal.View.Uri - използва се като уеб адрес като основа за сегменти или мерки
-    - Signal.Export.Id - да се използва като първичен ключ за събития <!-- system generated, do we need to list?-->
+    - Signal.Export.Id - да се използва като първичен ключ за събития
     - Signal.Timestamp - за определяне на датата и часа на дейността
 
 Изберете филтрите, за да се съсредоточите върху събитията и страниците, които имат значение за вашия случай на употреба. В този пример ще използваме името на действието „Промоция по имейл“.
