@@ -1,7 +1,7 @@
 ---
-title: Експортирайте данни от Customer Insights в хранилище за BLOB на Azure
-description: Научете как да конфигурирате връзката към хранилището за BLOB на Azure.
-ms.date: 09/18/2020
+title: Експортиране на данни от Customer Insights в хранилище за BLOB на Azure
+description: Научете как да конфигурирате връзката и да експортирате в хранилище за BLOB на Azure.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,45 +9,57 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 294feff2f77c3756fbadb36c90aab430454f5967
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596164"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760176"
 ---
-# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="50b9a-103">Съединител за хранилище за BLOB на Azure (преглед)</span><span class="sxs-lookup"><span data-stu-id="50b9a-103">Connector for Azure Blob storage (preview)</span></span>
+# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a><span data-ttu-id="a28eb-103">Експортиране на списък със сегменти и други данни в хранилище за BLOB на Azure (преглед)</span><span class="sxs-lookup"><span data-stu-id="a28eb-103">Export segment list and other data to Azure Blob Storage (preview)</span></span>
 
-<span data-ttu-id="50b9a-104">Съхранете данните си на Customer Insights в хранилище за BLOB на Azure или го използвайте, за да прехвърлите данните си в други приложения.</span><span class="sxs-lookup"><span data-stu-id="50b9a-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
+<span data-ttu-id="a28eb-104">Съхранявайте данните си от Customer Insights в хранилище за BLOB или го използвайте за прехвърляне на данните ви в други приложения.</span><span class="sxs-lookup"><span data-stu-id="a28eb-104">Store your Customer Insights data in a Blob storage or use it to transfer your data to other applications.</span></span>
 
-## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="50b9a-105">Конфигуриране на конектор за хранилище за BLOB на Azure</span><span class="sxs-lookup"><span data-stu-id="50b9a-105">Configure the connector for Azure Blob storage</span></span>
+## <a name="set-up-the-connection-to-blob-storage"></a><span data-ttu-id="a28eb-105">Настройване на връзката с хранилище за BLOB</span><span class="sxs-lookup"><span data-stu-id="a28eb-105">Set up the connection to Blob storage</span></span>
 
-1. <span data-ttu-id="50b9a-106">В статията за аудиторията отидете на **Администратор** > **Експортиране на местоположения**.</span><span class="sxs-lookup"><span data-stu-id="50b9a-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="a28eb-106">Отидете на **Администратор** > **Връзки**.</span><span class="sxs-lookup"><span data-stu-id="a28eb-106">Go to **Admin** > **Connections**.</span></span>
 
-1. <span data-ttu-id="50b9a-107">Под **Хранилище за BLOB на Azure** изберете **Настройка**.</span><span class="sxs-lookup"><span data-stu-id="50b9a-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
+1. <span data-ttu-id="a28eb-107">Изберете **Добавяне на връзка** и изберете **хранилище за BLOB на Azure** за конфигуриране на връзката.</span><span class="sxs-lookup"><span data-stu-id="a28eb-107">Select **Add connection** and choose **Azure Blob Storage** to configure the connection.</span></span>
 
-1. <span data-ttu-id="50b9a-108">Въведете **Име на акаунта**, **Ключ за акаунт** и **Контейнер** за вашия акаунт за хранилище за BLOB на Azure.</span><span class="sxs-lookup"><span data-stu-id="50b9a-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
-    - <span data-ttu-id="50b9a-109">За да научите повече за това как да намерите името и ключа за акаунта за хранилището за Blob на Azure, вижте [Управление на настройките на акаунта за съхранение в портала на Azure](/azure/storage/common/storage-account-manage).</span><span class="sxs-lookup"><span data-stu-id="50b9a-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).</span></span>
-    - <span data-ttu-id="50b9a-110">За да научите как да създадете контейнер, вижте [Създаване на контейнер](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span><span class="sxs-lookup"><span data-stu-id="50b9a-110">To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
+1. <span data-ttu-id="a28eb-108">Въведете разпознаваемо име за връзката в полето **Показвано име**.</span><span class="sxs-lookup"><span data-stu-id="a28eb-108">Give your connection a recognizable name in the **Display name** field.</span></span> <span data-ttu-id="a28eb-109">Показваното име и типът описват тази връзка.</span><span class="sxs-lookup"><span data-stu-id="a28eb-109">The name and the type of the connection describe this connection.</span></span> <span data-ttu-id="a28eb-110">Препоръчваме да изберете име, което обяснява целта на връзката.</span><span class="sxs-lookup"><span data-stu-id="a28eb-110">We recommend choosing a name that explains the purpose and target of the connection.</span></span>
 
-1. <span data-ttu-id="50b9a-111">Въведете разпознаваемо име за местоназначението в полето **Показвано име**.</span><span class="sxs-lookup"><span data-stu-id="50b9a-111">Give your destination a recognizable name in the **Display name** field.</span></span>
+1. <span data-ttu-id="a28eb-111">Изберете кой може да използва тази връзка.</span><span class="sxs-lookup"><span data-stu-id="a28eb-111">Choose who can use this connection.</span></span> <span data-ttu-id="a28eb-112">Ако не предприемете нищо, по подразбиране ще е Администратори.</span><span class="sxs-lookup"><span data-stu-id="a28eb-112">If you take no action, the default will be Administrators.</span></span> <span data-ttu-id="a28eb-113">За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).</span><span class="sxs-lookup"><span data-stu-id="a28eb-113">For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).</span></span>
 
-1. <span data-ttu-id="50b9a-112">Изберете **Напред**.</span><span class="sxs-lookup"><span data-stu-id="50b9a-112">Select **Next**.</span></span>
+1. <span data-ttu-id="a28eb-114">Въведете **Име на акаунт**, **Ключ за акаунт** и **Контейнер** за акаунта в хранилището за BLOB.</span><span class="sxs-lookup"><span data-stu-id="a28eb-114">Enter **Account name**, **Account key**, and **Container** for your Blob storage account.</span></span>
+    - <span data-ttu-id="a28eb-115">За да научите повече за това как да намерите името на акаунта и ключа за акаунта на хранилище за BLOB, вижте [Управление на настройки на акаунт за съхранение в портала на Azure](/azure/storage/common/storage-account-manage).</span><span class="sxs-lookup"><span data-stu-id="a28eb-115">To learn more about how to find the Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).</span></span>
+    - <span data-ttu-id="a28eb-116">За да научите как да създадете контейнер, вижте [Създаване на контейнер](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span><span class="sxs-lookup"><span data-stu-id="a28eb-116">To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
 
-1. <span data-ttu-id="50b9a-113">Изберете полето до всеки обект, който искате да експортирате до това местоназначение.</span><span class="sxs-lookup"><span data-stu-id="50b9a-113">Select the box next to each of the entities you want to export to this destination.</span></span>
+1. <span data-ttu-id="a28eb-117">Изберете **Записване**, за да завършите връзката.</span><span class="sxs-lookup"><span data-stu-id="a28eb-117">Select **Save** to complete the connection.</span></span> 
 
-1. <span data-ttu-id="50b9a-114">Изберете **Записване**.</span><span class="sxs-lookup"><span data-stu-id="50b9a-114">Select **Save**.</span></span>
+## <a name="configure-an-export"></a><span data-ttu-id="a28eb-118">Конфигуриране на експортиране</span><span class="sxs-lookup"><span data-stu-id="a28eb-118">Configure an export</span></span>
 
-<span data-ttu-id="50b9a-115">Експортираните данни се съхраняват в контейнера за хранилище за BLOB на Azure, който сте конфигурирали.</span><span class="sxs-lookup"><span data-stu-id="50b9a-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="50b9a-116">Следните пътища на папки се създават автоматично в контейнера:</span><span class="sxs-lookup"><span data-stu-id="50b9a-116">The following folder paths are automatically created in your container:</span></span>
+<span data-ttu-id="a28eb-119">Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип.</span><span class="sxs-lookup"><span data-stu-id="a28eb-119">You can configure this export if you have access to a connection of this type.</span></span> <span data-ttu-id="a28eb-120">За повече информация вижте [Разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).</span><span class="sxs-lookup"><span data-stu-id="a28eb-120">For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).</span></span>
 
-- <span data-ttu-id="50b9a-117">За обекти източници и обекти, генерирани от системата: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="50b9a-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
-  - <span data-ttu-id="50b9a-118">Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="50b9a-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
-- <span data-ttu-id="50b9a-119">Model.json за изнесените обекти ще се намира на нивото %ExportDestinationName%</span><span class="sxs-lookup"><span data-stu-id="50b9a-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
-  - <span data-ttu-id="50b9a-120">Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="50b9a-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
+1. <span data-ttu-id="a28eb-121">Отидете на **Данни** > **Експортиране**.</span><span class="sxs-lookup"><span data-stu-id="a28eb-121">Go to **Data** > **Exports**.</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="50b9a-121">Експортиране на данните</span><span class="sxs-lookup"><span data-stu-id="50b9a-121">Export the data</span></span>
+1. <span data-ttu-id="a28eb-122">За да създадете ново експортиране, изберете **Добавяне на местоназначение**.</span><span class="sxs-lookup"><span data-stu-id="a28eb-122">To create a new export, select **Add destination**.</span></span>
 
-<span data-ttu-id="50b9a-122">Можете да [експортирате данни при поискване](export-destinations.md#export-data-on-demand).</span><span class="sxs-lookup"><span data-stu-id="50b9a-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="50b9a-123">Експортирането също ще се изпълнява с всяко [планирано обновяване](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="50b9a-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+1. <span data-ttu-id="a28eb-123">В полето **Връзка за експортиране** изберете връзка от секцията на хранилището за BLOB на Azure.</span><span class="sxs-lookup"><span data-stu-id="a28eb-123">In the **Connection for export** field, choose a connection from the Azure Blob Storage section.</span></span> <span data-ttu-id="a28eb-124">Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.</span><span class="sxs-lookup"><span data-stu-id="a28eb-124">If you don't see this section name, there are no connections of this type available to you.</span></span>
 
+1. <span data-ttu-id="a28eb-125">Изберете полето до всеки обект, който искате да експортирате до това местоназначение.</span><span class="sxs-lookup"><span data-stu-id="a28eb-125">Select the box next to each of the entities you want to export to this destination.</span></span>
+
+1. <span data-ttu-id="a28eb-126">Изберете **Записване**.</span><span class="sxs-lookup"><span data-stu-id="a28eb-126">Select **Save**.</span></span>
+
+<span data-ttu-id="a28eb-127">Запазването на експортиране не го изпълнява незабавно.</span><span class="sxs-lookup"><span data-stu-id="a28eb-127">Saving an export doesn't run the export immediately.</span></span>
+
+<span data-ttu-id="a28eb-128">Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="a28eb-128">The export runs with every [scheduled refresh](system.md#schedule-tab).</span></span>     
+<span data-ttu-id="a28eb-129">Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand).</span><span class="sxs-lookup"><span data-stu-id="a28eb-129">You can also [export data on demand](export-destinations.md#run-exports-on-demand).</span></span> 
+
+<span data-ttu-id="a28eb-130">Експортираните данни се съхраняват в контейнера за хранилище за BLOB, който сте конфигурирали.</span><span class="sxs-lookup"><span data-stu-id="a28eb-130">Exported data is stored in the Blob storage container you configured.</span></span> <span data-ttu-id="a28eb-131">Следните пътища на папки се създават автоматично в контейнера:</span><span class="sxs-lookup"><span data-stu-id="a28eb-131">The following folder paths are automatically created in your container:</span></span>
+
+- <span data-ttu-id="a28eb-132">За обекти източници и обекти, генерирани от системата: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="a28eb-132">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
+  - <span data-ttu-id="a28eb-133">Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="a28eb-133">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
+- <span data-ttu-id="a28eb-134">Model.json за експортираните обекти ще е на ниво %ExportDestinationName%</span><span class="sxs-lookup"><span data-stu-id="a28eb-134">The model.json for the exported entities will be at the %ExportDestinationName% level</span></span>
+  - <span data-ttu-id="a28eb-135">Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="a28eb-135">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
