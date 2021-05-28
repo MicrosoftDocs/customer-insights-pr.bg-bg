@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759808"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059303"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Експортиране на сегменти в Marketo (преглед)
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759808"
 
 1. Изберете кой може да използва тази връзка. Ако не предприемете нищо, по подразбиране ще е Администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Въведете своя **[Идентификатор на клиент на Marketo, тайна на клиента и име на хост на крайна точка на REST](https://developers.marketo.com/rest-api/authentication/)**.
+1. Въведете своя **[Идентификатор на клиент на Marketo, тайна на клиента и име на хост на крайна точка на REST](https://developers.marketo.com/rest-api/authentication/)**. Името на хоста REST Endpoint е само името на хоста, без `https://`. Пример: `xyz-abc-123.mktorest.com`. 
 
 1. Изберете **Съгласен съм**, за да потвърдите **Поверителност и съответствие на данните** и изберете **Свържете** за инициализиране на връзката с Marketo.
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759808"
 
 1. В полето **Връзка за експортиране** изберете връзка от секцията Marketo. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
 
-1. Въведете своя **[ИД на списъка на Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. Въведете своя **[ИД на списъка на Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. ИД на списъка е чисто цифрова стойност. Например, ако идентификаторът ви в списъка Marketo е ST12345A7, премахнете символа преди и след цифрите и въведете `12345`. 
 
 1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759808"
 
 Запазването на експортиране не го изпълнява незабавно.
 
-Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand). В Marketo вече можете да намерите своите сегменти под [Списъци на Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand). В Marketo вече можете да намерите своите сегменти под [Списъци на Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните

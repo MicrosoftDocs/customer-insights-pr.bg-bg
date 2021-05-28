@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597912"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976075"
 ---
 # <a name="power-automate-connector-preview"></a>Конектор на Power Automate (преглед)
 
@@ -27,7 +27,7 @@ ms.locfileid: "5597912"
 - Задейства се при неуспешно обновяване на източник на данни. 
 - Задейства се при успешно обновяване на източник на данни.
 - Задейства се при преминаване на праг в сегмент. Активаторът е ограничен до преминаване над прага.
-- Задейства се при преминаване на праг в бизнес метрика. Активаторът е ограничен до преминаване над прага.
+- Задейства се при преминаване на праг в бизнес метрика. Поддържат се само бизнес мерки без измерение. Активаторът е ограничен до преминаване над прага.
 - Задействайте, когато завърши пълно опресняване на (източници на данни, сегменти, мерки, ...).
 - Задейства се, когато завърши опресняване на процеса на обединяване (карта, съвпадение, сливане).
 

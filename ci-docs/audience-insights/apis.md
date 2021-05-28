@@ -1,7 +1,7 @@
 ---
 title: Работа с API
 description: Използвайте API и разберете ограниченията.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
-ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
+ms.openlocfilehash: 4d41d7d328dfa6699b5f5e992d3a5bf3179490d8
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "5873649"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016579"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с приложни програмни интерфейси (API) на Customer Insights
 
@@ -90,19 +90,13 @@ HTTP отговорът скоро ще се появи по-долу.
 
 1. В регистрацията на вашето приложение в портала на Azure отидете на **Разрешения за API**.
 
-1. Изберете **Добавете разрешение** и изберете **Customer Insights** в страничния прозорец.
+1. Изберете **Добавяне на разрешение**. 
+
+1. Изберете **API, които моята организация използва** и изберете **AI на Dynamics 365 for Customer Insights** от списъка. 
 
 1. За **Тип разрешение**, изберете **Разрешения на приложение** и изберете разрешение **CustomerInsights.Api.All**.
 
 1. Изберете **Добавяне на разрешения**.
-
-1. За да дадете съгласието на администратора за това приложение, трябва да добавите Принципал на услугата.
-
-   1. Инсталирайте модула PowerShell на Azure Active Directory (AD): `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. Свързване към акаунта си в AD: `Connect-AzureAD -TenantId <your tenant id>`. Можете да намерите ИД на клиента си **Общ преглед** > **Azure Active Directory**.
-   1. Изпълнете следната команда, за да добавите Принципал на услугата на Azure AD:`New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"` Параметърът AppId се отнася до приложението API на Customer Insights.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Пример за принципал на услуга":::
 
 1. Върнете се на **Разрешения за API** за регистрацията на приложението ви.
 

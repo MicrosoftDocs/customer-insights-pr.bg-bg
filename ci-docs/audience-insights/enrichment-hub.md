@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895992"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954474"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -29,6 +29,7 @@ ms.locfileid: "5895992"
 
 - [Марки](enrichment-microsoft.md), предоставени от Microsoft
 - [Интереси](enrichment-microsoft.md), предоставени от Microsoft
+- [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft
 - [Фирмени данни](enrichment-leadspace.md), предоставени от Leadspace
 - [Демографски данни](enrichment-experian.md), предоставени от Experian
 - [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies
