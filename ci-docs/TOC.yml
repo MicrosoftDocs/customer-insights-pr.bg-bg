@@ -96,30 +96,40 @@
           href: audience-insights/measures.md
     - name: Прогнози
       items:
-        - name: Попълване на данни с помощта на прогнози за стойности
-          href: audience-insights/predictions.md
-        - name: Прогноза за отлив на абонати
-          href: audience-insights/predict-subscription-churn.md
-        - name: Примерно ръководство за прогноза за оттегляне на абонаменти
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: Прогнозиране на оттегляне на трансакции
-          href: audience-insights/predict-transactional-churn.md
-        - name: Примерно ръководство за прогноза за оттегляне на трансакции
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: Прогнозирайте стойност на жизнения цикъл на клиента (CLV)
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: Прогнозирайте препоръки за продукти
-          href: audience-insights/predict-product-recommendation.md
-        - name: Примерно ръководство за прогноза за препоръки за продукти
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Прогнозирайте данните с помощта на AI
+          items:
+            - name: Общ преглед на модели на прогнози
+              href: audience-insights/predictions-overview.md
+            - name: Прогнозирайте стойност на жизнения цикъл на клиента (CLV)
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: Прогнозирайте препоръки за продукти
+              href: audience-insights/predict-product-recommendation.md
+            - name: Прогноза за отлив на абонати
+              href: audience-insights/predict-subscription-churn.md
+            - name: Прогнозиране на оттегляне на трансакции
+              href: audience-insights/predict-transactional-churn.md
+            - name: Използвайте персонализирани модели от Azure Machine Learning
+              href: audience-insights/custom-models.md
+            - name: Попълнете частично липсващи данни
+              href: audience-insights/predictions.md
+        - name: Примерни ръководства
+          items:
+            - name: Примерно ръководство за CLV прогноза
+              href: audience-insights/sample-guide-predict-clv.md
+            - name: Примерно ръководство за прогноза за оттегляне на абонаменти
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: Примерно ръководство за прогноза за оттегляне на трансакции
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: Примерно ръководство за прогноза за препоръки за продукти
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: Експерименти с Azure Machine Learning
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: Експерименти със студио на Azure Machine Learning
+              href: audience-insights/machine-learning-studio-experiments.md
+        - name: Управление на прогнозите
+          href: audience-insights/manage-predictions.md
         - name: Създаване на сегменти въз основа на прогнози
           href: audience-insights/prediction-based-segment.md
-        - name: Внедряване на персонализирани модели за машинно обучение
-          href: audience-insights/custom-models.md
-        - name: Експерименти с Azure Machine Learning
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: Експерименти със студио на Azure Machine Learning
-          href: audience-insights/machine-learning-studio-experiments.md
     - name: Опции за експортиране
       items:
         - name: Експортирания
@@ -154,12 +164,18 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Реклами на Microsoft
+              href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
@@ -200,6 +216,8 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Преглед на схеми на обекти в Common Data Model
           href: audience-insights/entity-schemas.md
+        - name: Данни на Customer Insights в Dataverse
+          href: audience-insights/customer-insights-dataverse.md
         - name: Работа с API
           href: audience-insights/apis.md
         - name: API препратки
@@ -240,6 +258,12 @@
           href: engagement-insights/custom-reports.md
         - name: Създайте унифицирани отчети за профила
           href: engagement-insights/profile-reports.md
+        - name: Преглеждайте и създавайте размери
+          href: engagement-insights/dimensions.md
+        - name: Преглеждайте и създавайте метрики
+          href: engagement-insights/metrics.md
+        - name: Преглеждайте и създавайте сегменти
+          href: engagement-insights/segments.md
     - name: Анализ на пътища
       items:
         - name: Създаване и управление на отчети на фунии
