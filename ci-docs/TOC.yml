@@ -72,7 +72,7 @@
           href: audience-insights/enrichment-here.md
         - name: Допълване с Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Допълване с Experian
+        - name: Обогатете с Experian
           href: audience-insights/enrichment-experian.md
         - name: Обогатяване с SFTP персонализирано импортиране
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -136,6 +136,8 @@
           items:
             - name: Общ преглед на експортиранията
               href: audience-insights/export-destinations.md
+            - name: Активна кампания
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -240,15 +246,15 @@
           href: engagement-insights/get-started.md
         - name: Създаване на работна област
           href: engagement-insights/create-workspace.md
-        - name: Осигуряване на инструменти за вашия уеб сайт
-          href: engagement-insights/instrument-website.md
+        - name: Улавяйте събития от уебсайтове и мобилни приложения
+          href: engagement-insights/developer-resources.md
         - name: Понятия и терминология
           href: engagement-insights/glossary.md
     - name: Събития
       items:
         - name: Създавайте и модифицирайте събития
           href: engagement-insights/refined-events.md
-        - name: Експортни събития
+        - name: Експортиране на събития
           href: engagement-insights/export-events.md
     - name: Отчети
       items:
@@ -272,10 +278,18 @@
       items:
         - name: Общ преглед на ресурси за разработчици
           href: engagement-insights/developer-resources.md
-        - name: Урок за Web SDK
+        - name: Въвеждащ курс за уеб SDK
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Пример за Web SDK
           href: engagement-insights/websdk-sample.md
+        - name: Урок за Android SDK
+          href: engagement-insights/get-started-android.md
+        - name: Пример за Android SDK
+          href: engagement-insights/androidsdk-sample.md
+        - name: Въвеждащ курс за iOS SDK
+          href: engagement-insights/get-started-ios.md
+        - name: Пример за iOS SDK
+          href: engagement-insights/iossdk-sample.md
     - name: Администриране
       items:
         - name: Роли и разрешения
