@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596900"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305878"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Свързване към източник на данни на Power Query
 
@@ -72,7 +72,7 @@ Power Query предлага широк набор от конектори за 
 
 1. В статията за аудиторията отидете на **Данни** > **Източници на данни**.
 
-2. Изберете вертикалното многоточие до източника на данни, който искате да промените, и изберете **Редактиране** от падащото меню.
+2. Изберете вертикалната елипса до източник на данни, която искате да променете и изберете **Редактиране** от падащото меню.
 
    > [!div class="mx-imgBorder"]
    > ![Опция „Редактиране“](media/edit-option-data-sources.png "Опция „Редактиране“")

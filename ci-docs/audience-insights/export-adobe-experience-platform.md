@@ -1,6 +1,6 @@
 ---
 title: Експортирайте данните от Customer Insights в Adobe Experience Platform
-description: Научете как се използват сегменти с прозрения за аудиторията в Adobe Experience Platform.
+description: Научете как да използвате сегменти със статистика за аудиторията в Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760088"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305511"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Използване на сегментите Customer Insights в Adobe Experience Platform (преглед)
 
-Като потребител на прозрения за аудиторията за Dynamics 365 Customer Insights, може да сте създали сегменти, за да направите маркетинговите си кампании по-ефективни, като насочите към съответните аудитории. За да използвате сегмент от прозрения за аудиторията в Adobe Experience Platform и приложения като Adobe Campaign Standard, трябва да изпълните няколко стъпки, описани в тази статия.
+Като потребител на прозрения за аудиторията в Dynamics 365 Customer Insights, може да сте създали сегменти, за да направите маркетинговите си кампании по-ефективни, като насочите към съответните аудитории. За да използвате сегмент от прозрения за аудиторията в Adobe Experience Platform и приложения като Adobe Campaign Standard, трябва да изпълните няколко стъпки, описани в тази статия.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Схема на процеса на стъпките, описани в тази статия.":::
 
@@ -55,9 +55,9 @@ ms.locfileid: "5760088"
 
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавяне на връзка** и изберете **хранилище за BLOB на Azure** или изберете **Настройка** в плочката **Хранилище за BLOB на Azure**:
+1. Изберете **Добавете връзка** и изберете **Хранилище за BLOB на Azure** или изберете **Настройвам** в **Хранилище за BLOB на Azure** за конфигуриране на връзката.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Конфигурационна плочка за Azure Blob Storage."::: за конфигуриране на връзката.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Конфигурационна плочка за Azure Blob Storage."::: 
 
 1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
@@ -80,7 +80,7 @@ ms.locfileid: "5760088"
 
 1. За да създадете ново експортиране, изберете **Добавяне на експортиране**.
 
-1. В полето **Връзка за експортиране** изберете връзка от секцията на хранилището за BLOB на Azure. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
+1. В полето **Връзка за експортиране** изберете връзка от секцията на хранилището за BLOB на Azure. Ако не виждате името на този раздел, тогава няма налични връзки от този тип.
 
 1. Изберете сегмента, които искате да експортирате. В този пример е така **ChurnProneCustomers**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "5760088"
 > [!NOTE]
 > Уверете се, че броят на записите в експортирания сегмент е в рамките на разрешеното ограничение от вашия лиценз за Adobe Campaign Standard.
 
-Експортираните данни се съхраняват в контейнера за Azure Blob Storage, който сте конфигурирали по-горе. Следният път на папката се създава автоматично във вашия контейнер:
+Експортираните данни се съхраняват в контейнера за Хранилище за BLOB на Azure, който сте конфигурирали по-горе. Следният път на папката се създава автоматично във вашия контейнер:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -123,7 +123,8 @@ ms.locfileid: "5760088"
 
 За да изпратим имейла за тази кампания, ще използваме Adobe Campaign Standard. След като импортираме данните в Adobe Experience Platform, трябва да [създадете публика](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard, използвайки данните в Adobe Experience Platform.
 
-Научете как да [използвайте конструктор на сегменти](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) в Adobe Campaign Standard за определяне на аудитория въз основа на данните в Adobe Experience Platform.
+
+Научете как да [използвайте конструктор на сегменти](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) в Adobe Campaign Standard за определяне на аудитория въз основа на данните в Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Създайте и изпратете имейла с помощта на Adobe Campaign Standard
 

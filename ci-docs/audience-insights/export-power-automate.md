@@ -1,7 +1,7 @@
 ---
 title: Конектор на Power Automate | Microsoft Docs
 description: Създавайте потоци я Microsoft Power Automate от Dynamics 365 Customer Insights.
-ms.date: 01/20/2021
+ms.date: 06/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 57be0a204ef920b7a4bb31cf9a5b3a77f96eca0d
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976075"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305051"
 ---
 # <a name="power-automate-connector-preview"></a>Конектор на Power Automate (преглед)
 
@@ -31,9 +31,10 @@ ms.locfileid: "5976075"
 - Задействайте, когато завърши пълно опресняване на (източници на данни, сегменти, мерки, ...).
 - Задейства се, когато завърши опресняване на процеса на обединяване (карта, съвпадение, сливане).
 
-[Конфигурирайте вашите активатори в Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
+[Конфигурирайте вашите активатори в Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
 ## <a name="power-automate-actions"></a>Действия на Power Automate
+
 Конекторът на Power Automate осигурява други действия освен наличните активатори. За повече информация моля вижте [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## <a name="create-a-power-automate-flow"></a>Създаване на поток на Power Automate
