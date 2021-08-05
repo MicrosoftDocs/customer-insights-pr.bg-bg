@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596762"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554192"
 ---
 # <a name="similar-customers-preview"></a>Сходни клиенти (преглед)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596762"
 След като обработите сходния сегмент, ще намерите новия сегмент, посочен в страницата **Сегменти**.
 
 > [!div class="mx-imgBorder"]
-> ![Сходен клиентски сегмент](media/expanded-segment.png "Сходен клиентски сегмент")
+> ![Сходен клиентски сегмент.](media/expanded-segment.png "Сходен клиентски сегмент")
 
 Изберете **Преглед** в лентата за действия, за да отворите подробностите за сегмента. Този преглед съдържа информация за разпределението на резултатите във всички [оценки за сходство](#about-similarity-scores). Също така ще намерите стойностите на оценките за сходство в **Преглед на членове на сегмента**.
 

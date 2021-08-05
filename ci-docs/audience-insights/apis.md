@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304729"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554468"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с приложни програмни интерфейси (API) на Customer Insights
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights предоставя API за изграждан�
  
    Активирането на API създава първичен и вторичен абонаментен ключ за вашия екземпляр, който се използва в заявките за API. Можете да регенерирате клавишите, като изберете **Регенериране на първичен** или **Регенерирайте вторичен** на **Администратор** > **Разрешения** > **API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Активиране на API на Customer Insights":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Активиране на API на Customer Insights.":::
 
 1. Изберете **Разгледайте нашите API**, за да [изпробвате API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ HTTP отговорът скоро ще се появи по-долу.
  
    Като алтернатива изпълнете тази команда в **Конзола на Package Manager на NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Добавяне на пакет на NuGet към проект на Visual Studio":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Добавяне на пакет на NuGet към проект на Visual Studio.":::
 
 #### <a name="use-the-c-client-library"></a>Използвайте клиентската библиотека на C#
 
@@ -141,7 +141,7 @@ HTTP отговорът скоро ще се появи по-долу.
 
 1. Подайте този `HttpClient` в конструкцията на клиента на `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Пример за httpclient":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Пример за httpclient.":::
 
 1. Осъществявайте обаждания от клиента към „методите за разширение“, например `GetAllInstancesAsync`. Ако има достъп до основния `Microsoft.Rest.HttpOperationResponse` е за предпочитане, използвайте „методите на http съобщение“, например `GetAllInstancesWithHttpMessagesAsync`.
 

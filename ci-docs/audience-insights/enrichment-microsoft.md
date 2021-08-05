@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305143"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555478"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Допълване на клиентски профили с афинитети към марки и интереси (преглед)
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305143"
 За да конфигурирате допълването на афинитети към интереси, отидете в раздела **Откриване** и изберете **Допълване на моите данни** в плочката **Интереси**.
 
    > [!div class="mx-imgBorder"]
-   > ![Плочки за марки и интереси](media/BrandsInterest-tile-Hub.png "Плочки за марки и интереси")
+   > ![Плочки за марки и интереси.](media/BrandsInterest-tile-Hub.png "Плочки за марки и интереси")
 
 ## <a name="how-we-determine-affinities"></a>Как определяме афинитета
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305143"
 
 След като стартирате процеса за допълване, отидете в **Моите допълвания**, за да прегледате общия брой допълнени клиенти и разбивка на марки или интереси в допълнените клиентски профили.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Преглед на резултатите след изпълнение на процеса на допълване":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Преглед на резултатите след изпълнение на процеса на допълване.":::
 
 Прегледайте допълнените данни, като изберете **Преглед на допълнени данни** в диаграмата. Допълнените данни за марки отиват в обекта **BrandAffinityFromMicrosoft**. Данните за интереси са в обекта **InterestAffinityFromMicrosoft**. Ще намерите тези обекти, посочени и в групата **Допълване** в **Данни** > **Обекти**.
 
@@ -131,7 +131,7 @@ ms.locfileid: "6305143"
 
 Афинитетите към марки и интереси могат да се прегледат и в отделни карти на клиент. Отидете на **Клиенти** и изберете клиентски профил. В клиентската карта ще намерите диаграми за марките или интересите, към които хората в демографския профил на този клиент имат афинитет.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Карта на клиент с допълнени данни":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Карта на клиент с допълнени данни.":::
 
 ## <a name="next-steps"></a>Следващи стъпки
 

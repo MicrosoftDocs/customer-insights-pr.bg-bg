@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596486"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692100"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Свържете се с акаунт в Azure Data Lake Storage Gen2 с принципал на услуга Azure за аналитични данни за аудиторията
 
 Автоматизираните инструменти, които използват услугите на Azure, винаги трябва да имат ограничени разрешения. Вместо приложенията да влизат като напълно привилегирован потребител, Azure предлага принципали на услуги. Прочетете, за да научите как да свържете прозренията на аудиторията с акаунт в Azure Data Lake Storage Gen2, използващ принципал на услугата Azure вместо ключове на акаунта за съхранение. 
 
-Можете да използвате принципала на услугата за сигурно [добавяне или редактиране на папката Common Data Model като източник на данни](connect-common-data-model.md) или [създайте нова или актуализирайте съществуваща среда](manage-environments.md#create-an-environment-in-an-existing-organization).
+Можете да използвате принципала на услугата за сигурно [добавяне или редактиране на папката Common Data Model като източник на данни](connect-common-data-model.md) или [създайте нова или актуализирайте съществуваща среда](get-started-paid.md).
 
 > [!IMPORTANT]
 > - Акаунтът за съхранение в Azure Data Lake Gen2, който възнамерява да използва принципала на услугата, трябва да има [активирано йерархично пространство от имена (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ ms.locfileid: "5596486"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Въведете идентификационния номер на ресурса на Azure или подробностите за абонамента за Azure в прикачения акаунт за съхранение към Audience Insights.
 
-Прикачете акаунт за съхранение в Azure Data Lake в статистика за аудиторията, за да [съхраните изходни данни](manage-environments.md), или [го използвайте като източник на данни](connect-common-data-service-lake.md). Изборът на опцията Azure Data Lake ви позволява да избирате между базиран на ресурси или базиран на абонамент подход.
+Прикачете акаунт за съхранение в Azure Data Lake в статистика за аудиторията, за да [съхраните изходни данни](manage-environments.md), или [го използвайте като източник на данни](connect-dataverse-managed-lake.md). Изборът на опцията Azure Data Lake ви позволява да избирате между базиран на ресурси или базиран на абонамент подход.
 
 Следвайте стъпките по-долу, за да предоставите необходимата информация за избрания подход.
 

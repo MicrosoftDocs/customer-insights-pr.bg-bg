@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597498"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554290"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Правата на субекта на данни (DSR) съгласно GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "5597498"
    2. Проверете състоянието на източника на данни под **Състояние**. Отметката означава, че обновяването е успешно. Предупредителният триъгълник означава, че нещо се е объркало. Ако се покаже предупредителен триъгълник, свържете се с D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![Обработка на заявки за изтриване съгласно GDPR за клиентски данни](media/gdpr-data-sources.png "Обработка на заявки за изтриване съгласно GDPR за клиентски данни")
+> ![Обработка на заявки за изтриване съгласно GDPR за клиентски данни.](media/gdpr-data-sources.png "Обработка на заявки за изтриване съгласно GDPR за клиентски данни")
 
 #### <a name="manage-delete-requests-for-user-data"></a>Управление на заявки за изтриване на потребителски данни
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597498"
 4. Изберете **Премахване**.
 
 > [!div class="mx-imgBorder"]
-> ![Управление на заявки за изтриване на потребителски данни според GDPR](media/gdpr-permissions.png "Управление на заявки за изтриване за потребителски данни според GDPR")
+> ![Управление на заявки за изтриване на потребителски данни според GDPR.](media/gdpr-permissions.png "Управление на заявки за изтриване за потребителски данни според GDPR")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>Отговор на заявки за експортиране на субект на данни съгласно GDPR
 

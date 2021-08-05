@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597406"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554422"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Използвайте базирани на Azure Machine Learning модели
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597406"
      В дизайнера, отворете **Изберете Колони в набора от данни** и изберете **Задайте като параметър на конвейера**, където предоставяте име за параметъра.
 
      > [!div class="mx-imgBorder"]
-     > ![Задаване на параметри на набора от данни в дизайнера](media/intelligence-designer-dataset-parameters.png "Задаване на параметри на набора от данни в дизайнера")
+     > ![Задаване на параметри на набора от данни в дизайнера.](media/intelligence-designer-dataset-parameters.png "Задаване на параметри на набора от данни в дизайнера")
    
 * Параметър на набора от данни в SDK (Python)
    
@@ -78,7 +78,7 @@ ms.locfileid: "5597406"
 
 * Дизайнерът предоставя [Модул за експортиране на данни](/azure/machine-learning/algorithm-module-reference/export-data), който позволява изхода на конвейер да бъде експортиран в хранилището на Azure. Понастоящем модулът трябва да използва типа хранилище на данни **Хранилище за BLOB на Azure** и да параметъризираме **Хранилището за данни** и относителен **Път**. Customer Insights замества и двата параметъра по време на изпълнение на тръбопровода с хранилище за данни и път, който е достъпен за продукта.
    > [!div class="mx-imgBorder"]
-   > ![Експортиране на конфигурация на модул на данни](media/intelligence-designer-importdata.png "Експортиране на конфигурация на модул на данни")
+   > ![Експортиране на конфигурация на модул на данни.](media/intelligence-designer-importdata.png "Експортиране на конфигурация на модул на данни")
    
 * Когато пишете извода за извод с помощта на код, можете да качите изхода в пътя в рамките на *регистрирана база данни* в работното пространство. Ако пътят и хранилището за данни са параметризирани в конвейера, Customer Insights ще може да чете и импортира изхода за извод. В момента се поддържа единичен табличен изход във формат csv. Пътят трябва да включва директорията и името на файла.
 

@@ -1,7 +1,7 @@
 ---
 title: Конектор на Power BI
 description: Научете как да използвате конектора на Dynamics 365 Customer Insights в Power BI.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596026"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661089"
 ---
 # <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596026"
 
 1. В диалоговия прозорец на **Навигатор**. виждате списъка с всички среди, до които имате достъп. Разгънете среда и отворете някоя от папките (обекти, мерки, сегменти, обогатявания). Например отворете папката **Обекти**, за да видите всички обекти, които можете да импортирате.
 
-   ![Навигатор за конектор на Power BI](media/power-bi-navigator.png "Навигатор за конектор на Power BI")
+   ![Навигатор за конектор на Power BI.](media/power-bi-navigator.png "Навигатор за конектор на Power BI")
 
 1. Поставете отметки в квадратчетата до обектите, които да се включат и **заредят**. Можете да изберете няколко обекта от няколко среди.
 
@@ -68,5 +68,11 @@ ms.locfileid: "5596026"
 3. Премахнете всички идентифицирани дублирани връзки.
 
 След премахване на дублираните връзки, опитайте да конфигурирате конектора на Power BI отново. Средата трябва да е налична сега.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Грешки в полетата за дата при зареждане на обекти в Power BI Desktop
+
+Когато зареждате обекти, които съдържат полета с формат на дата като ММ/ДД/ГГГГ, може да възникнат грешки поради несъответстващи формати на езикова променлива. Това несъответствие се получава, когато файлът на Power BI Desktop е зададен на друг език, различен от английски (САЩ), тъй като полетата за дата в аналитичните данни за аудитория се записват във формат на САЩ.
+
+Файлът на Power BI Desktop има една настройка на езикова променлива, която се прилага при извличане на данни. За да се тълкуват правилно тези полета за дата, задайте езиковата променлива на .BPI файла на английски (Съединени щати). [Научете как да променяте езиковата променлива на файл на Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

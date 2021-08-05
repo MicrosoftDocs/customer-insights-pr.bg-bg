@@ -9,19 +9,19 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267939"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554335"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Бот на Teams за Dynamics 365 Customer Insights (преглед)
 
 Свържете се с Microsoft Teams, за да позволите на бот да търси унифицирани клиентски профили в каналите на Teams.
 
 > [!div class="mx-imgBorder"]
-> ![Бот на Teams, показващ клиентски запис](media/teams-bot.png "Бот на Teams, показващ клиентски запис")
+> ![Бот на Teams, показващ клиентски запис.](media/teams-bot.png "Бот на Teams, показващ клиентски запис")
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 

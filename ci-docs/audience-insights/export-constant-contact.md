@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: b54659f028a141fe8f351645d96e933d47568a39
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124260"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362405"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Експортиране на сегменти в Constant Contact (преглед)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6124260"
 
 1. Изберете **Свързване** за инициализиране на връзката с Constant Contact.
 
-1. Изберете **Удостоверяване с AdRoll** и предоставете администраторските си данни за Constant Contact. 
+1. Изберете **Удостоверяване с Constant Contact** и въведете идентификационните си данни на администратор за Constant Contact. 
 
 1. Изберете **Добавете себе си като потребител за експортиране** и предоставете вашите идентификационни данни на Customer Insights.
 

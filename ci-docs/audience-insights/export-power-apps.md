@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598142"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554100"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Конектор на Microsoft Power Apps (преглед)
 
@@ -56,12 +56,12 @@ Customer Insights е сред многото [налични източници 
 1. Добавете контрола **Галерия** към приложението, което създавате.
 
 > [!div class="mx-imgBorder"]
-> ![Добавяне на елемент от галерията](media/connector-powerapps9.png "Добавяне на елемент от галерията")
+> ![Добавяне на елемент от галерията.](media/connector-powerapps9.png "Добавяне на елемент от галерията")
 
 1. Изберете **Клиент** като източник на данни за елементите.
 
     > [!div class="mx-imgBorder"]
-    > ![Избор на източник на данни](media/choose-datasource-powerapps.png "Избор на източник на данни")
+    > ![Избор на източник на данни.](media/choose-datasource-powerapps.png "Избор на източник на данни")
 
 1. Можете да промените панела с данни вдясно, за да изберете полето за обекта на клиента, което ще бъде показано в галерията.
 

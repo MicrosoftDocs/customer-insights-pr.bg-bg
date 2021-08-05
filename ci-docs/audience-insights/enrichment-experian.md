@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309807"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555340"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогатете потребителските профили с демографски данни от Experian (преглед)
 
@@ -39,7 +39,7 @@ Experian е световен лидер в отчитането на потре�
 1. Изберете **Обогатете данните ми** на плочката Experian.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian плочк](media/experian-tile.png "Experian tile")
+   > ![Плочка на Experian.](media/experian-tile.png "Experian tile")
    > 
 
 1. Изберете [връзка](connections.md) от падащия списък. Свържете се с администратор, ако няма налична връзка. Ако сте администратор, можете да създадете връзка, като изберете **Добавете връзка** и изберете Experian от падащия списък. 

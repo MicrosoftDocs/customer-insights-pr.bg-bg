@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305878"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554670"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Свързване към източник на данни на Power Query
 
@@ -42,7 +42,7 @@ Power Query предлага широк набор от конектори за 
 1. Диалоговият прозорец **Power Query – Редактиране на заявки** ви позволява да прегледате и прецизирате данните. Обектите, идентифицирани от системите в избрания източник на данни, се показват в левия екран.
 
    > [!div class="mx-imgBorder"]
-   > ![Диалогов прозорец „Редактиране на заявки“](media/data-manager-configure-edit-queries.png "Диалогов прозорец „Редактиране на заявки“")
+   > ![Диалогов прозорец „Редактиране на заявки“.](media/data-manager-configure-edit-queries.png "Диалогов прозорец „Редактиране на заявки“")
 
 1. Можете също да преобразувате данните. Изберете обект, който да редактирате или преобразувате. Използвайте опциите в прозореца Power Query, за да приложите трансформации. Всяка трансформация се посочва под **Приложени стъпки**. Power Query предоставя многобройни предварително създадени опции за трансформация. За повече информация вижте [Трансформации на Power Query](/power-query/power-query-what-is-power-query#transformations).
 
@@ -75,7 +75,7 @@ Power Query предлага широк набор от конектори за 
 2. Изберете вертикалната елипса до източник на данни, която искате да променете и изберете **Редактиране** от падащото меню.
 
    > [!div class="mx-imgBorder"]
-   > ![Опция „Редактиране“](media/edit-option-data-sources.png "Опция „Редактиране“")
+   > ![Опция „Редактиране“.](media/edit-option-data-sources.png "Опция „Редактиране“")
 
 3. Приложете вашите промени и трансформации в диалоговия прозорец **Power Query – Редактиране на заявки**, както е описано в раздела [Създаване на нов източник на данни](#create-a-new-data-source).
 

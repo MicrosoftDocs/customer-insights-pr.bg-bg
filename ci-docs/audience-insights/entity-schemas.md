@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596348"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692292"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми на обекти в Common Data Model
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596348"
 
 Това е споделен модел на данни, който позволява на приложенията и интеграторите на данни да си сътрудничат по-лесно, като предоставя унифицирано определение на данните. Общият модел на данни включва богата система от метаданни със стандартни обекти, релации, йерархии, черти и други. Произхожда от приложенията на Dynamics 365 и е с отворен достъп до GitHub с над 260 стандартни обекта. Голяма система от вътрешни и външни партньори допринасят със специфични за индустрията концепции към Common Data Model.
 
-Множество системи и платформи прилагат Common Data Model днес, включително Power BI потоци от данни и услуги за данни на Azure. Вече се поддържа в Common Data Service, Dynamics 365, Power Apps, Power BI и предстоящите услуги за данни на Azure, които директно добавят стойност към [инициативата за отворени данни](https://www.microsoft.com/open-data-initiative).
+Множество системи и платформи прилагат Common Data Model днес, включително потоците от данни на Power BI и услугите за данни на Azure. Вече се поддържа в Microsoft Dataverse, Dynamics 365, Power Apps, Power BI и предстоящите услуги за данни на Azure, като пряко добавя стойност към [инициативата за отворени данни](https://www.microsoft.com/open-data-initiative).
 
 ## <a name="customer-insights-entity-schemas"></a>Схеми на обекти на Customer Insights
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596348"
 
 Можете да видите обекти в [Навигатор на обекти на Common Data Model](https://microsoft.github.io/CDM/). Изберете бутона **Зареждане от GitHub!** и навигирайте до **foundationCommon** > **crmCommon** > **решения** > **customerInsights**, където ще намерите списък с обектите на Customer Insights и техните дефиниции.
 > [!div class="mx-imgBorder"]
-> ![Навигатор на обект на CDM, който показва обекта CustomerActivity](media/CDM-entity-navigator.png "Навигатор на обект на CDM, който показва обекта CustomerActivity")
+> ![Навигатор на обект на CDM, който показва обекта CustomerActivity.](media/CDM-entity-navigator.png "Навигатор на обект на CDM, който показва обекта CustomerActivity")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

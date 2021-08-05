@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304591"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554605"
 ---
 # <a name="customer-profiles"></a>Профили на клиент
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304591"
 Клиентите могат да бъдат физически лица или организации (преглед). Всеки клиентски или организационен профил е представен с плочка. Изберете плочка, за да видите допълнителна информация за конкретния клиент или организация. Използвайте контролите за страниране в долната част на страницата, за да видите допълнителни записи.
 
 > [!div class="mx-imgBorder"] 
-> ![Профил на клиент B2C](media/profiles-customers.png "Профил на клиент B2C")
+> ![Профили на клиент B2C.](media/profiles-customers.png "Профил на клиент B2C")
 
 Организации (преглед)
 > [!div class="mx-imgBorder"] 
-> ![Профил на клиент B2B](media/profile-customers-b2b.png "Профил на клиент B2B")
+> ![Профили на клиент B2B.](media/profile-customers-b2b.png "Профил на клиент B2B")
 
 > [!NOTE]
 > Ако не можете да видите плочките, когато изберете **Клиенти** в навигацията, администраторът трябва да [дефинира поне един атрибут с възможност за търсене](search-filter-index.md) в **индекса за търсене и филтриране**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304591"
 2. Поставете отметки в квадратчетата до атрибутите, по които искате да филтрирате клиенти.
 
    > [!div class="mx-imgBorder"] 
-   > ![Профили на клиент](media/profiles-customers3.png "Профили на клиент")
+   > ![Профили на клиент.](media/profiles-customers3.png "Профили на клиент")
 
 3. Премахнете филтрите си, като изберете **Изчистване на филтрите** на страницата **Клиенти**.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259178"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650029"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работа с данни на Customer Insights в Microsoft Dataverse
 
@@ -24,11 +24,11 @@ Customer Insights предоставя опция за предоставяне 
 
 **Организации със съществуващи Dataverse среди**
 
-Организации, които вече използват Dataverse могат да [използват един от съществуващите им Dataverse среди](manage-environments.md#create-an-environment-in-an-existing-organization) когато администратор задава статистика за аудиторията. Като предоставите URL адреса на Dataverse среда, тя се привързва към тяхната нова аудитория прозрения среда. За да се осигури възможно най-доброто представяне, Customer Insights и Dataverse средите трябва да бъдат хоствани в същия регион.
+Организации, които вече използват Dataverse могат да [използват един от съществуващите им Dataverse среди](get-started-paid.md) когато администратор задава статистика за аудиторията. Като предоставите URL адреса на Dataverse среда, тя се привързва към тяхната нова аудитория прозрения среда. За да се осигури възможно най-доброто представяне, Customer Insights и Dataverse средите трябва да бъдат хоствани в същия регион.
 
 За да прикачите Dataverse среда, разширете **Разширени настройки** при създаване на среда за прозрения на публиката. Предоставете **Microsoft Dataverse URL адрес на средата** и поставете отметка в **Активирайте споделянето на данни**.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
 
 **Нова организация**
 

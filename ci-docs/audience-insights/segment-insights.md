@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306061"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554972"
 ---
 # <a name="segment-insights-preview"></a>Прозрения за сегменти (преглед)
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306061"
 След като завършите анализа, намерете подробности за това прозрение в **Сегменти** > **Прозрения (преглед)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Подробни прозрения за припокриване на сегментите":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="Подробности за аналитични данни за припокриване на сегмент.":::
 
 Изберете прозрение, за да видите резултатите от анализа:
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306061"
 След като завършите анализа, намерете подробности за това прозрение в **Сегменти** > **Прозрения (преглед)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Подробни прозрения за диференциаторите на сегментите":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="Подробности за аналитични данни за разграничител на сегмент.":::
 
 Изберете прозрение, за да видите резултатите от анализа. Анализът на диференциатори включва два раздела. Разделът **Атрибути** посочва атрибутите на профила, считани за диференциатори. Разделът **Мерки** посочва диференциаторите. Всеки раздел включва следните подробности:
 
