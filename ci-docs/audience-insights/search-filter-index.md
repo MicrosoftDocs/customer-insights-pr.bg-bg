@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: e53d87c4f633cba09fecbc1c219f0ac2ec6bb5598a7902cbcf7398d26d6d7c6b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554008"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7029386"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Клиентски профили: Индекс за търсене и филтриране
 
@@ -60,7 +60,7 @@ ms.locfileid: "6554008"
 
 ## <a name="next-steps"></a>Следващи стъпки
 
-Отидете на страницата **Клиенти** за търсене на клиентски профили или използвайте индексираните полета, за да видите подмножество от всички клиентски профили.
+Прегледайте [страницата с унифицирани профили](customer-profiles.md), за да търсите профили или използвайте индексираните полета, за да видите поднабор от всички унифицирани профили.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
