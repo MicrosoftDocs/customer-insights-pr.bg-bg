@@ -1,7 +1,7 @@
 ---
 title: Схема на обекти на Customer Insights в Common Data Model
 description: Работа с обекти в Common Data Model.
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
+ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692292"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380730"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми на обекти в Common Data Model
 
@@ -42,7 +42,7 @@ ms.locfileid: "6692292"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Преглед на обекти, които използват навигатора на обекти на Common Data Model
 
-Можете да видите обекти в [Навигатор на обекти на Common Data Model](https://microsoft.github.io/CDM/). Изберете бутона **Зареждане от GitHub!** и навигирайте до **foundationCommon** > **crmCommon** > **решения** > **customerInsights**, където ще намерите списък с обектите на Customer Insights и техните дефиниции.
+Можете да видите обекти в [Навигатор на обекти на Common Data Model](https://microsoft.github.io/CDM/). Изберете обект от секцията на приложението Insights, за да получите списъка с обекти на Customer Insights и техните определения.
 > [!div class="mx-imgBorder"]
 > ![Навигатор на обект на CDM, който показва обекта CustomerActivity.](media/CDM-entity-navigator.png "Навигатор на обект на CDM, който показва обекта CustomerActivity")
 

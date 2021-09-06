@@ -166,6 +166,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -310,5 +312,13 @@
       href: engagement-insights/regional-availability.md
     - name: Лимити за обслужване
       href: engagement-insights/quotas.md
-- name: Контакт с поддръжката
-  href: 'https://admin.powerplatform.microsoft.com/support'
+- name: Интегриране на аналитични данни за аудитория и ангажираност
+  items:
+    - name: Свързване на аналитични данни за ангажираност и аналитични данни за аудитория
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: Използвайте аналитичните данни за аудитория в отчети на аналитични данни за ангажимент
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: Използване на демографски измерения за разделяне на данни за поведение
+      href: engagement-insights/curate-dimensions.md
+- name: Получаване на поддръжка
+  href: 'https://dynamics.microsoft.com/en-us/support/'

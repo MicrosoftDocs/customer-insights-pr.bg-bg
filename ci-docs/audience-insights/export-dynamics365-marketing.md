@@ -1,7 +1,7 @@
 ---
 title: Експортирайте данните от Customer Insights в Dynamics 365 Marketing
 description: Научете как да конфигурирате връзката и да експортирате в Dynamics 365 Marketing.
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692468"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417192"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Използване на сегменти в Dynamics 365 Marketing (преглед)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Използвайте [сегментите](segments.md), за да генерирате кампании, и се свързвайте с конкретни групи клиенти с Dynamics 365 Marketing. За повече информация вижте [Използване на сегменти от Dynamics 365 Customer Insights с Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
+Използвайте [сегментите](segments.md), за да генерирате кампании, и се свързвайте с конкретни групи клиенти с Dynamics 365 Marketing. За повече информация вижте [Използване на сегменти от Dynamics 365 Customer Insights с Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
+
+Ако използвате новите възможности на Dynamics 365 Marketing за организиране на пътешествие на клиента в реално време в организация на Dataverse, не е нужно да създавате стандартно експортиране в Dynamics 365 Marketing. Контактите и сегментите от аналитичните данни за аудитория са достъпни директно в Dynamics 365 Marketing след свързване на Marketing и Customer Insights. Преди да изтриете съществуващите екпортирания, прегледайте документацията за това [как да свържете аналитичните данни за аудитория и организирането на пътешествие на клиента в Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## <a name="prerequisite-for-a-connection"></a>Предварително изискване за връзка
 
