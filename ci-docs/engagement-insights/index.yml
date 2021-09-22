@@ -1,0 +1,86 @@
+### YamlMime:Landing
+title: Способност за аналитични данни на ангажираността (преглед) в Dynamics 365 Customer Insights
+summary: Събирайте данни за вашите уебсайтове. Разберете взаимодействието и използването на клиентите във вашите сайтове, интерактивно. Използвайте дълбоката интеграция между аналитични данни за ангажираността и аналитични данни за аудитория, за да обогатите своя поведенчески анализ в реално време с отчети за потребителския профил. Обогатете потребителските профили с уеб дейности, за да получавате поведенчески данни в реално време заедно със съответните клиентски данни. Трансформирайте бизнеса си, за да извлечете незабавна стойност от вашите клиентски данни.
+metadata:
+  title: Документация на аналитичните данни за ангажираността (преглед)
+  description: Помощен център с ключови връзки за аналитични данни за ангажираността.
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.translationtype: HT
+  ms.contentlocale: bg-BG
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036225"
+landingContent:
+- title: Информация
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Преглед на възможностите
+      url: overview.md
+    - text: Правила и условия
+      url: glossary.md
+    - text: Откриване на аналитични данни за ангажираност
+      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+- title: Присъединяване
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Начало
+      url: get-started.md
+    - text: Създаване на работна област
+      url: create-workspace.md
+    - text: Осигуряване на инструменти за вашия уеб сайт
+      url: instrument-website.md
+- title: Отчети
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Преглед на отчети
+      url: view-reports.md
+    - text: Създаване на персонализирани отчети
+      url: custom-reports.md
+    - text: Преглед на отчета за унифицирани профили
+      url: profile-reports.md
+    - text: Създаване на отчети за фуния
+      url: funnel-reports.md
+- title: Събития
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Създаване на прецизирани събития
+      url: refined-events.md
+    - text: Експортиране на събития
+      url: export-events.md
+    - text: Изтрийте и експортирайте лични данни
+      url: delete-export-personal-data.md
+- title: Ресурси за разработчици
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Ресурси за разработчици
+      url: developer-resources.md
+    - text: Пример за WebSDK
+      url: websdk-sample.md
+    - text: Разширени сценарии за web SDK
+      url: advanced-SDK-implementation.md
+    - text: Пример за Android SDK
+      url: get-started-android.md
+    - text: Пример за iOS SDK
+      url: get-started-ios.md
+- title: Администриране
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Управление на среди и работни пространства
+      url: manage-environments-workspaces.md
+    - text: Свързване с аналитични данни за аудиторията
+      url: configure-connections.md
+    - text: Управлявайте бисквитките и съгласието на потребителите
+      url: user-consent-storage.md
