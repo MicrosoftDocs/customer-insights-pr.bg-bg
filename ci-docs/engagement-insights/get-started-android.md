@@ -4,17 +4,17 @@ description: Научете как да персонализирате и ста
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 77e63929bbcc7ecff34a3839af525b76ec3c7f21173ddc5f8f2d69f11c25c441
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036905"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494262"
 ---
 # <a name="get-started-with-the-android-sdk"></a>Първи стъпки с Android SDK
 
@@ -35,17 +35,38 @@ ms.locfileid: "7036905"
 
 - Ключ за поглъщане (вижте инструкциите по-долу за това как да получите)
 
-## <a name="step-1-integrate-the-sdk-into-your-application"></a>Стъпка 1. Интегрирайте SDK във вашето приложение
+## <a name="integrate-the-sdk-into-your-application"></a>Интегрирайте SDK във вашето приложение
 Започнете процеса, като изберете работно пространство, изберете мобилната платформа на Android и изтеглите Android SDK.
 
 - Използвайте превключвателя на работното пространство в левия навигационен прозорец, за да изберете работното си пространство.
 
 - Ако нямате съществуващо работно пространство, изберете **Ново работно пространство** и следвайте стъпките за създаване на [ново работно пространство](create-workspace.md).
 
-## <a name="step-2-configure-the-sdk"></a>Стъпка 2. Конфигуриране на SDK
+- След като създадете работно пространство, отидете на **Администратор** > **Работно пространство** и след това изберете **Ръководство за инсталиране**. 
 
-1. След като създадете работно пространство, отидете на **Администратор** > **Работно пространство** и след това изберете **Ръководство за инсталиране**. 
+## <a name="configure-the-sdk"></a>Конфигуриране на SDK
 
+След като изтеглите SDK, можете да работите с него в Android Studio, за да активирате и дефинирате събития. Има два начина да направите това:
+### <a name="option-1-using-jitpack-recommended"></a>Вариант 1: Използване на JitPack (препоръчително)
+1. Добавете хранилището JitPack към вашия коренов `build.gradle`:
+    ```gradle
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+    ```
+
+1. Добавете зависимостта:
+    ```gradle
+    dependencies {
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        api 'com.google.code.gson:gson:2.8.1'
+    }
+    ```
+
+### <a name="option-2-using-download-link"></a>Вариант 2: Използване на връзка за изтегляне
 1. Изтеглете [Аналитични данни за ангажираност на AndroidSDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и поставете `eiandroidsdk-debug.aar` файл в папката `libs`.
 
 1. Отворете файла `build.gradle` на ниво проект и добавете следните фрагменти:
@@ -62,7 +83,17 @@ ms.locfileid: "7036905"
     }
     ```
 
-1. Настройте конфигурацията на SDK за анализ на ангажираността чрез вашия `AndroidManifest.xml` файл, намиращ се под `manifests` папка. 
+1. Добавете разрешение за мрежа и интернет във вашия `AndroidManifest.xml` файл, разположен под `manifests` папка. 
+    ```xml
+    <manifest>
+        ...
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    ```
+    
+1. Настройте конфигурацията на SDK за анализ на ангажираността чрез вашия `AndroidManifest.xml` файл. 
+
+## <a name="enable-auto-instrumentation"></a>Активиране на автоматичното инструментиране
 1. Копирайте XML фрагмент от **Ръководство за инсталиране**. `Your-Ingestion-Key` трябва да се попълва автоматично.
 
    > [!NOTE]
@@ -85,7 +116,7 @@ ms.locfileid: "7036905"
    </application>
    ```
 
-1. Активирайте или дезактивирайте автоматичното улавяне на `View` събития на преглеждане, като зададете `true` или `false` за полето `autoCapture` по-горе.
+1. Активирайте или дезактивирайте автоматичното улавяне на `View` събития на преглеждане, като зададете `true` или `false` за полето `autoCapture` по-горе. Понастоящем `Action` събитията трябва да се добавят ръчно.
 
 1. (По избор) Други конфигурации включват настройка на URL адреса на събирача на крайни точки. Те могат да бъдат добавени под метаданните на ключа за поглъщане в `AndroidManifest.xml`:
     ```xml
@@ -94,9 +125,9 @@ ms.locfileid: "7036905"
             android:value="https://some-endpoint-url.com" />
     ```
 
-## <a name="step-3-initialize-the-sdk-from-mainactivity"></a>Стъпка 3. Инициализирайте SDK от MainActivity 
+## <a name="implement-custom-events"></a>Внедряване на персонализирани събития
 
-След като инициализирате SDK, можете да работите със събития и техните свойства в средата MainActivity.
+След като инициализирате SDK, можете да работите със събития и техните свойства в средата `MainActivity`.
 
     
 Java:
@@ -147,7 +178,7 @@ event.setProperty("ad_shown", true)
 analytics.trackEvent(event)
 ```
 
-### <a name="set-user-details-for-your-event-optional"></a>Задайте потребителски подробности за вашето събитие (опционално)
+## <a name="set-user-details-for-your-event-optional"></a>Задайте потребителски подробности за вашето събитие (опционално)
 
 SDK ви позволява да дефинирате потребителска информация, която може да бъде изпратена с всяко събитие. Можете да посочите потребителска информация, като се обадите на `setUser(user: User)` API на ниво `Analytics`.
 

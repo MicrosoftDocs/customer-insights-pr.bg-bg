@@ -1,7 +1,7 @@
 ---
 title: Нови и предстоящи функции
 description: Информация за нови функции, подобрения и корекции на грешки.
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 3412213bcf3a4174baf28c6b4d38f5febded18707c355d236d5082698c4c0db7
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
+ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035950"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465192"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Новите възможности за прозрения на аудитория на Dynamics 365 Customer Insights
 
@@ -26,6 +26,15 @@ ms.locfileid: "7035950"
 
 > [!TIP]
 > За да изпратите и да гласувате за заявки за функции и предложения за продукти, отидете в портала за идеи за приложението [Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2021-updates"></a>Актуализации от август 2021 г.
+
+Актуализациите през юли и август 2021 г. включват нова функция, подобрения на производителността и корекции на грешки.
+
+### <a name="extensibility"></a>Разширение
+
+- **Експортиране на сегменти в Klaviyo** Разширихме [местоназначенията на експортиране, така че да включват Klaviyo](export-klaviyo.md). Сега можете да експортирате сегменти, за да създавате кампании, да изпълнявате маркетинг по имейл и да използвате конкретни групи клиенти с Klaviyo. 
+
 
 ## <a name="june-2021-updates"></a>Актуализации от юни 2021
 

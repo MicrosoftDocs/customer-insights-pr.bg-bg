@@ -4,17 +4,17 @@ description: Научете как да персонализирате и ста
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036860"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494217"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>Първи стъпки с iOS SDK
 
@@ -45,11 +45,36 @@ ms.locfileid: "7036860"
 
 - Ако нямате съществуващо работно пространство, изберете **Ново работно пространство** и следвайте стъпките за създаване на [ново работно пространство](create-workspace.md).
 
+- След като създадете работно пространство, отидете на **Администратор** > **Работно пространство** и след това изберете **Ръководство за инсталиране**.
+
 ## <a name="configure-the-sdk"></a>Конфигуриране на SDK
 
-След като изтеглите SDK, можете да работите с него в Xcode, за да активирате и дефинирате събития.
+След като изтеглите SDK, можете да работите с него в Xcode, за да активирате и дефинирате събития. Има два начина да направите това
 
-1. След като създадете работно пространство, отидете на **Администратор** > **Работно пространство** и след това изберете **Ръководство за инсталиране**.
+### <a name="option-1-using-cocoapods-recommended"></a>Вариант 1: Използване на CocoaPods (препоръчително)
+CocoaPods е мениджър на зависимости за Swift и Objective-C Cocoa проекти. Използването му улеснява интегрирането на SDK за прозрения за ангажираност за iOS. CocoaPods също така ви позволява да надстроите до най -новата версия на SDK за анализи на ангажираността. Ето как да използвате CocoaPods за интегриране на SDK за прозрения за ангажираност във вашия Xcode проект. 
+
+1. Инсталирайте CocoaPods. 
+
+1. Създайте нов файл, наречен Podfile, в главната директория на вашия проект и добавете следните изявления към него. Заменете YOUR_TARGET_PROJECT_NAME с името на вашия Xcode проект. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+Конфигурацията на под по-горе съдържа както версиите за отстраняване на грешки, така и версията на SDK. Изберете това, което е най-добро за вашия проект.
+
+1. Инсталирайте под, като изпълните следната команда: `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>Вариант 2: Използване на връзка за изтегляне
 
 1. Изтеглете [Аналитични данни за ангажираност на iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip) и поставете `EIObjC.xcframework` файл в папката `Frameworks`.
 

@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Способност за аналитични данни на ангажираността (преглед) в Dynamics 365 Customer Insights
+title: Възможност за Аналитичните данни за ангажираността в Dynamics 365 Customer Insights (преглед)
 summary: Събирайте данни за вашите уебсайтове. Разберете взаимодействието и използването на клиентите във вашите сайтове, интерактивно. Използвайте дълбоката интеграция между аналитични данни за ангажираността и аналитични данни за аудитория, за да обогатите своя поведенчески анализ в реално време с отчети за потребителския профил. Обогатете потребителските профили с уеб дейности, за да получавате поведенчески данни в реално време заедно със съответните клиентски данни. Трансформирайте бизнеса си, за да извлечете незабавна стойност от вашите клиентски данни.
 metadata:
   title: Документация на аналитичните данни за ангажираността (преглед)
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: bg-BG
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036225"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494171"
 landingContent:
 - title: Информация
   linkLists:
   - linkListType: overview
     links:
-    - text: Преглед на възможностите
+    - text: Предимства на способностите
       url: overview.md
-    - text: Правила и условия
+    - text: Речник на термините
       url: glossary.md
-    - text: Откриване на аналитични данни за ангажираност
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: Нови и актуализирани функции
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: Присъединяване
   linkLists:
   - linkListType: how-to-guide
@@ -38,28 +38,30 @@ landingContent:
       url: create-workspace.md
     - text: Осигуряване на инструменти за вашия уеб сайт
       url: instrument-website.md
-- title: Отчети
+- title: Преглед и филтриране на отчети
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Преглед на отчети
       url: view-reports.md
-    - text: Създаване на персонализирани отчети
-      url: custom-reports.md
     - text: Преглед на отчета за унифицирани профили
       url: profile-reports.md
-    - text: Създаване на отчети за фуния
-      url: funnel-reports.md
-- title: Събития
+    - text: Използвайте сегменти на аудиторията, за да филтрирате отчетите
+      url: integrate-audience-insights-segments.md
+- title: Анализиране
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Създаване на отчети за фуния
+      url: funnel-reports.md
+    - text: Анализирайте поведенческите данни
+      url: curate-dimensions.md
+    - text: Създаване на персонализирани отчети
+      url: custom-reports.md
     - text: Създаване на прецизирани събития
       url: refined-events.md
     - text: Експортиране на събития
       url: export-events.md
-    - text: Изтрийте и експортирайте лични данни
-      url: delete-export-personal-data.md
 - title: Ресурси за разработчици
   linkLists:
   - linkListType: reference
@@ -81,6 +83,10 @@ landingContent:
     - text: Управление на среди и работни пространства
       url: manage-environments-workspaces.md
     - text: Свързване с аналитични данни за аудиторията
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: Управлявайте бисквитките и съгласието на потребителите
       url: user-consent-storage.md
+    - text: Изтрийте и експортирайте лични данни
+      url: delete-export-personal-data.md
+    - text: Лимити за обслужване
+      url: ../service-limits.md
