@@ -242,7 +242,7 @@
   items:
     - name: Център за помощ
       href: engagement-insights/index.yml
-    - name: Преглед на възможностите
+    - name: Относно аналитични данни за ангажираността
       href: engagement-insights/overview.md
     - name: Начало
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: Регионална наличност
       href: engagement-insights/regional-availability.md
-- name: Интегриране на аналитични данни за аудитория и ангажираност
+- name: Споделяйте данни между възможностите
   items:
     - name: Свързване на аналитични данни за ангажираност и аналитични данни за аудитория
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: DSR права и заявки
   href: dsr-rights-requests.md
-- name: Получаване на поддръжка
-  href: 'https://dynamics.microsoft.com/support/'
