@@ -1,7 +1,7 @@
 ---
 title: Експортирайте данните от Customer Insights в Mailchimp
 description: Научете как да конфигурирате връзката и да експортирате в Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033526"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618600"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Експортиране на сегменти в Mailchimp (преглед)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033526"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- До 1 милион профила на износ към Mailchimp.
+- До 1 милион потребителски профила на износ за Mailchimp.
 - Експортирането в Mailchimp е ограничено до сегменти.
-- Експортирането на сегменти с 1 милион профила може да отнеме до три часа. 
-- Броят на профилите, които можете да експортирате в Mailchimp, зависи и е ограничен от вашия договор с Mailchimp.
+- Експортирането на сегменти с 1 милион потребителски профила може да отнеме до три часа. 
+- Броят на потребителските профили, които можете да експортирате в Mailchimp, зависи и е ограничен от вашия договор с Mailchimp.
 
 ## <a name="set-up-connection-to-mailchimp"></a>Настройване на връзката с Mailchimp
 
@@ -66,7 +66,7 @@ ms.locfileid: "7033526"
 
 1. Въведете **[ИД на аудитория на Mailchimp](https://mailchimp.com/help/find-audience-id/)**
 
-3. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. 
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. 
 
 1. По желание можете да експортирате **Собствено име** и **Фамилно име** за създаване на по-персонализирани имейли. Изберете **Добавяне на атрибут** за нанасяне на тези полета.
 

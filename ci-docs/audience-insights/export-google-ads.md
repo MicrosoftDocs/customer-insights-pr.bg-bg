@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558942"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617905"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Експортиране на сегменти в Google Ads (преглед)
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558942"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- До 1 милион профила на износ към Google Ads.
+- До 1 милион потребителски профила на износ за Google Ads.
 - Експортирането в Google Ads е ограничено до сегменти.
-- Експортирането на сегменти с общо 1 милион профила може да отнеме до 5 минути поради ограничения от страна на доставчика. 
+- Експортирането на сегменти с общо 1 милион потребителски профила може да отнеме до 5 минути поради ограничения от страна на доставчика. 
 - Съответствието в Google Ads може да отнеме до 48 часа.
 
 ## <a name="set-up-connection-to-google-ads"></a>Настройване на връзка с Google Ads
@@ -74,7 +74,7 @@ ms.locfileid: "7558942"
 
 1. Въведете своя **[ИД на аудиторията на Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изберете **Свързване** за инициализиране на връзката с Google Ads.
 
-1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента.
 
 1. Изберете сегментите, които искате да експортирате. Можете да експортирате до 1 милион потребителски профила общо в Google Ads.
 

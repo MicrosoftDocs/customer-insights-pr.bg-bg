@@ -8,18 +8,18 @@ ms.date: 09/28/2021
 ms.service: customer-insights
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: d4ae7a085ba68c482372868e75376b6f769325d7
-ms.sourcegitcommit: ce2c011f06999dba2e886b8804d3439fbf67074d
+ms.openlocfilehash: 82591919b44eaac8a251d7fdb148253d5cac23c3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7564581"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645388"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>Регионална наличност за Dynamics 365 Customer Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Аналитичните данни за ангажираност, възможност на Dynamics 365 Customer Insights, постепенно представят повече региони, където клиентите могат да избират да съхраняват данните. Администраторите могат да изберат регион, когато [създават нова среда](manage-environments-workspaces.md#create-an-environment). 
+Аналитичните данни за ангажираност, възможност на Dynamics 365 Customer Insights, постепенно представят повече региони, където клиентите могат да избират да съхраняват данните. Администраторите могат да изберат регион, когато [създават нова среда](create-new-environment.md). 
 
 Когато инсталирате аналитични данни за ангажираност за първи път, можете да изберете региона, докато преминавате през [направляваната първоначална работа](quickstart.md). По-късно всяка нова среда ви позволява да изберете региона, в който ще се съхраняват данните.
 

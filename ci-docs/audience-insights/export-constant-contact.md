@@ -1,7 +1,7 @@
 ---
 title: Експортиране на данни на Customer Insights в Constant Contact
 description: Научете как да конфигурирате връзката и да експортирате в Constant Contact.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031828"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619106"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Експортиране на сегменти в Constant Contact (преглед)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031828"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 1 милион профила с всяко експортиране в Constant Contact.
+- Можете да експортирате до 1 милион потребителски профила на експорт в Constant Contact.
 - Експортирането в Constant Contact е ограничено до сегменти.
-- Експортирането на до 1 милион профила в Constant Contact може да отнеме до 1 час. 
-- Броят на профилите, които можете да експортирате в Constant Contact, зависи и е ограничен от вашия договор с Constant Contact.
+- Експортирането на до 1 милион потребителски профила в Constant Contact може да отнеме до 1 час. 
+- Броят на потребителските профили, които можете да експортирате в Constant Contact, зависи и е ограничен от вашия договор с Constant Contact.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Задаване на връзка с Constant Contact
 
@@ -65,7 +65,7 @@ ms.locfileid: "7031828"
 
 1. Въведете [**ИД на списък в Constant Contact**](https://app.constantcontact.com/pages/contacts/ui#lists). Отворете списък в Constant Contact, за да намерите ИД на списъка в URL адреса.
 
-1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Constant Contact.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Constant Contact.
 
 1. По желание можете да експортирате Собствено име и Фамилно име като допълнителни полета за създаване на по-персонализирани имейли. Изберете **Добавяне на атрибут** за нанасяне на тези полета.
 

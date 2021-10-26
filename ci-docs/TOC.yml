@@ -2,8 +2,14 @@
   href: index.yml
 - name: Преглед на продукта
   href: overview.md
-- name: Създаване на пробна версия
-  href: audience-insights/get-started-trial.md
+- name: Безплатен пробен период
+  items:
+    - name: Регистриране за безплатен пробен период
+      href: trial-signup.md
+    - name: ЧЗВ за пробната версия
+      href: trial-FAQ.md
+- name: Започнете с платен лиценз
+  href: paid-license.md
 - name: Достъп до средата ви
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Аналитични данни за аудиторията
@@ -19,9 +25,11 @@
         - name: Ръководство за бърз старт
           href: audience-insights/get-started.md
         - name: Създаване на нова среда
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: Разглеждане на аналитичните данни за аудиторията
           href: audience-insights/home.md
+    - name: Работа с бизнес акаунти
+      href: audience-insights/work-with-business-accounts.md
     - name: Научете повече за модулите
       items:
         - name: Поглъщайте данни
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: Изброяване на дейности на клиент
           href: audience-insights/activities.md
+        - name: Дефиниране на семантични съпоставяния
+          href: audience-insights/semantic-mappings.md
     - name: Допълване на данни
       items:
         - name: Допълване на потребителски профили
@@ -114,7 +124,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Прогноза за отлив на абонати
               href: audience-insights/predict-subscription-churn.md
-            - name: Прогнозиране на оттегляне на трансакции
+            - name: Предсказване на отлив в трансакциите
               href: audience-insights/predict-transactional-churn.md
             - name: Използвайте персонализирани модели от Azure Machine Learning
               href: audience-insights/custom-models.md
@@ -126,7 +136,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Примерно ръководство за прогноза за оттегляне на абонаменти
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Примерно ръководство за прогноза за оттегляне на трансакции
+            - name: Примерно ръководство за изтичане на транзакции прогноза
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Примерно ръководство за прогноза за препоръки за продукти
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: Управление на няколко среди
           href: audience-insights/manage-environments.md
-        - name: Свържете се с акаунт за съхранение на ADLS с помощта на принципал на услуга
-          href: audience-insights/connect-service-principal.md
         - name: Поддържани езици
           href: audience-insights/supported-languages.md
+        - name: Защита
+          items:
+            - name: Внесете собствено хранилище за ключове
+              href: audience-insights/use-azure-key-vault.md
+            - name: Свържете се с акаунт за съхранение на ADLS с помощта на принципал на услуга
+              href: audience-insights/connect-service-principal.md
     - name: Разширение
       items:
         - name: Интегрирайте уеб данни от прозрения за ангажираността
@@ -248,6 +262,8 @@
       items:
         - name: Ръководство за бърз старт
           href: engagement-insights/get-started.md
+        - name: Създаване на среда
+          href: engagement-insights/create-new-environment.md
         - name: Създаване на работна област
           href: engagement-insights/create-workspace.md
         - name: Улавяйте събития от уебсайтове и мобилни приложения

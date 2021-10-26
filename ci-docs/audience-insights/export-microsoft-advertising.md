@@ -1,7 +1,7 @@
 ---
 title: Експортиране на данни от Customer Insights в Microsoft Advertising
 description: Научете как да конфигурирате връзката и да експортирате в Microsoft Advertising.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8f8a4cbb9590f9c5311789154319283530e0a10343cccbe9c7aec99765b4fbf2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031441"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618048"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Експортиране на сегменти в Microsoft Advertising (преглед)
 
@@ -29,9 +29,9 @@ ms.locfileid: "7031441"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 500 хиляди профила с всяко експортиране в Microsoft Advertising.
+- Можете да експортирате до 500 000 потребителски профила на експорт в Microsoft Advertising.
 - Експортирането в Microsoft Advertising е ограничено до сегменти.
-- Експортирането на до 500 хиляди профила в Microsoft Advertising може да отнеме до 10 минути. 
+- Експортирането на до 500 000 потребителски профила в Microsoft Advertising може да отнеме до 10 минути. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Настройване на връзката с Microsoft Advertising
@@ -68,7 +68,7 @@ ms.locfileid: "7031441"
 
 1. Въведете своя **Идентификационен номер на клиент на Microsoft Advertising и идентификатор на акаунт**. Можете да намерите идентификатора на клиента (`cid`) и идентификационен номер на акаунт (`aid`) в параметрите на URL адреса, когато сте влезли в Microsoft Advertising.
 
-1. В секцията **Съвпадение на данни** в полето **електронна поща**, изберете полето във вашия унифициран потребителски профил с имейл адрес на клиента. Необходимо е да експортирате сегменти в Microsoft Advertising.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето с имейл адреса на клиента. Необходимо е да експортирате сегменти в Microsoft Advertising.
 
 1. Изберете **Записване**.
 

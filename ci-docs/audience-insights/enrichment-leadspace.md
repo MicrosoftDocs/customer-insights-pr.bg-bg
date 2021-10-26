@@ -1,32 +1,32 @@
 ---
 title: Обогатяване на фирмени профили с Leadspace за обогатяване от трети страни
 description: Обща информация за обогатяването чрез Leadspace на трети страни.
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 34b73b37670ed45e2c31ea164c0788b793bee433829ce21317c83903f3fca1fe
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031690"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617338"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Допълване на фирмени профили с Leadspace (преглед)
 
-Leadspace е фирма за анализ и обработка на данни, която предоставя B2B платформа за данни на клиенти. Тя дава възможност на фирмите да допълнят своите данни за клиенти с унифицирани потребителски профили. Допълването включва повече атрибути, като размер на фирмата, местоположение, индустрия и др.
+Leadspace е фирма за анализ и обработка на данни, която предоставя B2B платформа за данни на клиенти. Той позволява на среди с унифицирани потребителски профили въз основа на акаунти да обогатяват техните данни. Обогатете *Профили на клиенти* с атрибути като размер на компанията, местоположение или индустрия. Обогатете *Профили за контакти* с атрибути като заглавие, персона или проверка по имейл.
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
 За да конфигурирате Leadspace, трябва да бъдат изпълнени следните предварителни изисквания:
 
 - Имате активен лиценз за Leadspace.
-- Да имате [унифицирани потребителски профили](customer-profiles.md) за фирми.
-- Връзка на Leadspace вече е конфигурирана от администратор или вие имате разрешения на [администратор](permissions.md#administrator) и „постоянния ключ” (наричан **маркер на Leadspace**). Свържете се директно с [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) за подробности за продукта.
+- Имате [унифицирани потребителски профили](customer-profiles.md) въз основа на акаунти.
+- Връзка на Leadspace вече е конфигурирана от администратор или вие имате разрешения на [администратор](permissions.md#administrator) и „постоянния ключ” (наричан **маркер на Leadspace**). Свържете се директно с [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) за подробности за продукта.
 
 ## <a name="configure-the-enrichment"></a>Конфигуриране на допълването
 
@@ -50,6 +50,10 @@ Leadspace е фирма за анализ и обработка на данни,
 
 1. Изберете **Напред**, за да завършите съпоставянето на полета.
 
+1. Поставете отметка в квадратчето, ако имате *Профили за контакти* които бихте искали да обогатите. Анализът на аудиторията автоматично ще картографира задължителните полета.
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Обогатяване на записите за контакт в Leadspace.":::
+ 
 1. Посочете име за допълването и изберете **Записване на допълване**, след като прегледате избора си.
 
 
@@ -81,7 +85,8 @@ Leadspace е фирма за анализ и обработка на данни,
 
 ## <a name="next-steps"></a>Следващи стъпки
 
-Надградете допълнените клиентски данни. Създайте [сегменти](segments.md) и [мерки](measures.md) и дори [експортирайте данните](export-destinations.md) за да доставите персонализирано изживяване на клиентите си.
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните
 

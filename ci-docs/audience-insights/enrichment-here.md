@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: be0ac9fa29ce1569d06e4e539e95824c0a3ada4dcf49802c2b574e9d91730630
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 61fba6bbf9d33ee8d9c725133f0f7f304c1ca79e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032561"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618462"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Обогатяване на потребителски профили с HERE Technologies (преглед)
 
@@ -85,7 +85,7 @@ HERE Technologies е компания за платформи за местоп�
 
 ## <a name="next-steps"></a>Следващи стъпки
 
-Надградете допълнените клиентски данни. Създайте [сегменти](segments.md) и [мерки](measures.md) и дори [експортирайте данните](export-destinations.md) за да доставите персонализирано изживяване на клиентите си.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните
 

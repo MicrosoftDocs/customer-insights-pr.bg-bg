@@ -1,7 +1,7 @@
 ---
 title: Експортиране на данни от Customer Insights в хранилище за BLOB на Azure
 description: Научете как да конфигурирате връзката и да експортирате в хранилище за BLOB на Azure.
-ms.date: 06/30/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b159f87276581f68e07bb73ffd257080eb3cb56422997b09a613bd7afa4e3980
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d02c09a1869d0099db4861b65ac8ff006914873e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034715"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605825"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортиране на списък със сегменти и други данни в хранилище за BLOB на Azure (преглед)
 
 Съхранявайте данните си от Customer Insights в хранилище за BLOB или го използвайте за прехвърляне на данните ви в други приложения.
+
+## <a name="known-limitations"></a>Известни ограничения
+
+1. За Azure Blob Storage можете да избирате между [Стандартно и първокласно изпълнение](/azure/storage/blobs/storage-blob-performance-tiers). Ако изберете ниво на производителност Premium, изберете [първокласните блокови блобове като тип акаунт](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 
 ## <a name="set-up-the-connection-to-blob-storage"></a>Настройване на връзката с хранилище за BLOB
 

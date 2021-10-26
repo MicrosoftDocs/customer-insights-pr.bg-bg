@@ -1,7 +1,7 @@
 ---
 title: Експортиране на данни на Customer Insights в LinkedIn Ads
 description: Научете как да конфигурирате връзката и да експортирате в LinkedIn Ads.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034210"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618278"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Експортиране на сегменти в LinkedIn Ads (преглед)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034210"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 100 хиляди профила с всяко експортиране в LinkedIn Ads.
+- Можете да експортирате до 100 000 потребителски профила на експорт в LinkedIn Ads.
 - Експортирането в LinkedIn Ads е ограничено до сегменти.
-- Експортирането на до 100 хиляди профила в LinkedIn Ads може да отнеме до 10 минути. 
+- Експортирането на до 100 000 потребителски профила в LinkedIn Ads може да отнеме до 10 минути. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>Настройване на връзката с хранилище за LinkedIn Ads
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034210"
 
 1. Изберете дали искате да експортирате данни в [насочване на контакти](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) или [насочване на компанията](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) в LinkedIn. 
 
-1. В секцията **Съвпадение на данни** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в LinkedIn Ads.
+1. В **Съвпадение на данните** раздел, за насочване към контакти, изберете поне едно поле, което представлява имейл адреса на клиента, Apple Ad ID, Google Ad ID, Google User ID или първо и фамилно име. Ако изберете насочване към компания, изберете поне едно поле, което представлява име на фирма, имейл домейн, URL адрес на страницата в LinkedIn, символ на акции или уебсайт. Могат да бъдат избрани допълнителни полета, за да се дефинира допълнително експортирането ви. 
 
 1. Изберете сегментите, които искате да експортирате. Съвпадащите аудитории в LinkedIn Campaign Manager автоматично ще се създаде с името на сегментите, които сте избрали за експортиране. Всеки сегмент ще доведе до отделна съпоставена аудитория. 
 

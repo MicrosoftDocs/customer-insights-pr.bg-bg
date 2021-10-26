@@ -4,17 +4,17 @@ description: Научете как да персонализирате и ста
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 10/30/2020
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 97e50a51231bcf05f3e381397f0cf41e49afc10e3c3674d7c709c8f521979e12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 545f4a7e9660e339dee1070ad727d5d398eb6254
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036590"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606177"
 ---
 # <a name="run-the-web-sdk-sample-for-dynamics-365-customer-insights-engagement-insights-capability"></a>Стартирайте пробата за уеб SDK за способността аналитични данни на ангажираността на Dynamics 365 Customer Insights
 
@@ -26,7 +26,7 @@ Web SDK библиотеката с възможности за проследя
 
 - Инсталирайте [код на Visual Studio](https://code.visualstudio.com/).
 - [Инсталирайте разширението Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) в код на Visual Studio и се запознайте с това как да стартирате Live Server.
-- Трябва да имате [ключ за поглъщане](instrument-website.md).
+- Трябва да имате [работно пространство за ангажименти](create-workspace.md).
 
 ## <a name="run-sample"></a>Изпълнение на проба
 
@@ -36,7 +36,11 @@ Web SDK библиотеката с възможности за проследя
 
 1. Отворете разархивираната папка в Код на Visual Studio.
 
-1. Във файла `ei_websdk_sample.html`, заменете низа "INGESTION_KEY" с вашия ключ за поглъщане от портала за способности за проследяване на ангажираността, а низът "ИМЕ" с глобалното име, в което искате да се създаде инстанция на SDK. Уверете се, че замествате всички случаи.
+1. Отидете на портала за анализи на ангажираността за вашето работно пространство. Изберете **Администратор** > **Работно пространство** и след това **Ръководство за инсталиране**. Следвайте първата опция и изберете **Копирайте кода**, за да копирате JavaScript фрагмент от код.
+
+1. Във файла `ei_websdk_sample.html`, поставете фрагмент от код, който току-що сте копирали под този ред:
+
+   - <-- ПОСТАВЕТЕ ФРАГМЕНТА ОТ КОД НА JAVASCRIPT ОТ ПОРТАЛА НА АНАЛИТИЧНИ ДАННИ ЗА АНГАЖИРАНОСТ ТУК ПОД ТОЗИ РЕД -->
 
 1. Отворете `ei_websdk_sample.html` файл с помощта на Код на Visual Studio, като изберете **Отидете на живо** от лентата на състоянието.
 

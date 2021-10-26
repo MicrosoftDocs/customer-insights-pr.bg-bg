@@ -1,7 +1,7 @@
 ---
 title: Обогатяване на унифицирани клиентски профили
 description: Използвайте възможности за обогатяване на вашите клиентски данни.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469937"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617542"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7469937"
 
 За да създавате или редактирате допълвания, трябва да имате разрешения за сътрудник или администратор. За повече информация вижте [Разрешения](permissions.md).
 
-В раздела **Откриване** ще намерите следните допълвания:
+В раздела **Открийте**, ще намерите всички поддържани опции за обогатяване.
 
-- [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
+# <a name="individual-customers-b2c"></a>[Индивидуални потребители (B2C)](#tab/b2c)
+
 - [Марки](enrichment-microsoft.md), предоставени от Microsoft
 - [Интереси](enrichment-microsoft.md), предоставени от Microsoft
-- [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft
-- [Фирмени данни](enrichment-leadspace.md), предоставени от Leadspace
+- [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft 
 - [Демографски данни](enrichment-experian.md), предоставени от Experian
-- [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies
-- [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP)
+- [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
+- [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
+
+# <a name="business-accounts-b2b"></a>[Бизнес акаунти (B2B)](#tab/b2b)
+
+- [Фирмени данни](enrichment-leadspace.md), предоставени от Leadspace
+- [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft 
+- [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies 
+- [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
+- [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
+
+---
 
 В раздела **Моите допълвания** можете да видите конфигурираните от вас допълвания и да редактирате техните свойства.
 
@@ -58,7 +68,7 @@ ms.locfileid: "7469937"
 
 ## <a name="enrichments-and-connections"></a>Допълвания и връзки
 
-Допълванията на трети страни се конфигурират с помощта на [връзки](connections.md), които администраторът задава с идентификационни данни и предоставя съгласие за прехвърляне на данни. Връзката може да се използва от администратори и сътрудници за конфигуриране на допълвания.  
+Допълванията на трети страни се конфигурират с помощта на [връзки](connections.md), които администраторът задава с идентификационни данни и предоставя съгласие за прехвърляне на данни. Връзките могат да се използват от администратори и сътрудници за конфигуриране на обогатявания.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>Няколко допълвания от един и същи тип
 

@@ -1,7 +1,7 @@
 ---
 title: Експортиране на данни на Customer Insights в Snapchat
 description: Научете как да конфигурирате връзката и да експортирате в Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 421dcd5ba5421597cf9dea71a9f9f25c7972a4f26fb49d4b042f8667a317ab5d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b7a929d65a730b60e77ae111b458c68d3cce2020
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033388"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618647"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Експортиране на сегменти в Snapchat (преглед)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7033388"
 ## <a name="known-limitations"></a>Известни ограничения
 
 - Експортирането в Snapchat е ограничено до сегменти.
-- Експортирането на до 1 милион профила в Snapchat може да отнеме до 15 минути. 
+- Експортирането на до 1 милион потребителски профила в Snapchat може да отнеме до 15 минути. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Настройване на връзка към Snapchat
 
@@ -63,7 +63,7 @@ ms.locfileid: "7033388"
 
 1. Влезте в [**ИД на аудитория на Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Snapchat.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Snapchat.
 
 1. Изберете сегментите, които искате да експортирате. 
 

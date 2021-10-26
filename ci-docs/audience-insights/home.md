@@ -1,7 +1,7 @@
 ---
 title: Начална страница в Аналитични данни за аудитория
 description: Започнете да разглеждате приложението от началната страница.
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469936"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617681"
 ---
 # <a name="explore-audience-insights"></a>Разглеждане на аналитичните данни за аудиторията
 
@@ -23,7 +23,7 @@ ms.locfileid: "7469936"
 
 :::image type="content" source="media/home-page.png" alt-text="Екранна снимка на началния екран, показваща примерни аналитични данни.":::
 
-1 - Превключване между възможностите на Customer Insights 2 - Използвайте левия прозорец за навигация между различните области 3 - Разберете в коя среда работите и управлявайте среди като администратор 4 - Посочете лични настройки за Customer Insights
+1 - Превключване между възможностите на Customer Insights 2 - Използвайте левия прозорец, за да се придвижвате между различните области и да изберете основната целева аудитория 3 - Разберете в коя среда работите и управлявайте среди като администратор 4 - Посочете лични настройки за Customer Insights
 
 Под **Скорошни сегменти**, виждате групи клиенти въз основа на демографски, поведенчески или транзакционни атрибути, които сте дефинирали. [Създаване на сегменти](segments.md) ви помага да групирате клиентската си база и да насочите по-добре своите бизнес дейности.
 

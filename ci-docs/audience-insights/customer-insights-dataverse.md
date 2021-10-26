@@ -1,7 +1,7 @@
 ---
 title: Данни на Customer Insights в Microsoft Dataverse
 description: Използвайте обекти на Customer Insights като таблици в Microsoft Dataverse.
-ms.date: 06/15/2021
+ms.date: 10/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 45535a7368b89e19a91f08fcd825bda9d57a8709653104bf4043c29ffa14d0b8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032883"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645205"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работа с данни на Customer Insights в Microsoft Dataverse
 
@@ -24,11 +24,7 @@ Customer Insights предоставя опция за предоставяне 
 
 **Организации със съществуващи Dataverse среди**
 
-Организации, които вече използват Dataverse могат да [използват един от съществуващите им Dataverse среди](get-started-paid.md) когато администратор задава статистика за аудиторията. Като предоставите URL адреса на Dataverse среда, тя се привързва към тяхната нова аудитория прозрения среда. За да се осигури възможно най-доброто представяне, Customer Insights и Dataverse средите трябва да бъдат хоствани в същия регион.
-
-За да прикачите Dataverse среда, разширете **Разширени настройки** при създаване на среда за прозрения на публиката. Предоставете **Microsoft Dataverse URL адрес на средата** и поставете отметка в **Активирайте споделянето на данни**.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
+Организации, които вече използват Dataverse могат да [използват един от съществуващите им Dataverse среди](create-environment.md) когато администратор задава статистика за аудиторията. Като предоставите URL адреса на Dataverse среда, тя се привързва към тяхната нова аудитория прозрения среда. За да се осигури възможно най-доброто представяне, Customer Insights и Dataverse средите трябва да бъдат хоствани в същия регион.
 
 **Нова организация**
 

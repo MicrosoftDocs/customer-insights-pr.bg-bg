@@ -1,7 +1,7 @@
 ---
 title: Експортирайте данните от Customer Insights в Marketo
 description: Научете как да конфигурирате връзката и да експортирате в Marketo.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033480"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619152"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Експортиране на сегменти в Marketo (преглед)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033480"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- До 1 милион профила на износ към Marketo.
+- До 1 милион потребителски профила на износ за Marketo.
 - Експортирането в Marketo е ограничено до сегменти.
-- Експортирането на сегменти с общо 1 милион профила може да отнеме до 3 часа. 
-- Броят на профилите, които можете да експортирате в Marketo, зависи и е ограничен от вашия договор с Marketo.
+- Експортирането на сегменти с общо 1 милион потребителски профила може да отнеме до 3 часа. 
+- Броят на потребителските профили, които можете да експортирате в Marketo, зависи и е ограничен от вашия договор с Marketo.
 
 ## <a name="set-up-connection-to-marketo"></a>Настройване на връзка към Marketo
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033480"
 
 1. Въведете своя **[ИД на списъка на Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. ИД на списъка е чисто цифрова стойност. Например, ако идентификаторът ви в списъка Marketo е ST12345A7, премахнете символа преди и след цифрите и въведете `12345`. 
 
-1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. 
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. 
 
 1. По желание можете да експортирате **Собствено име**, **Фамилно име**, **Град**, **Щат** и **Държава/регион** за създаване на по-персонализирани имейли. Изберете **Добавяне на атрибут** за нанасяне на тези полета.
 
