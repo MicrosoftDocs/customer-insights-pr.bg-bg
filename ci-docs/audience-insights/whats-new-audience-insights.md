@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606035"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673802"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Новите възможности за прозрения на аудитория на Dynamics 365 Customer Insights
 
@@ -166,7 +166,7 @@ ms.locfileid: "7606035"
 - **Експортиране на сегменти в Constant Contact** Разширихме местоназначенията на експортиране, така че да включват Constant Contact. Вече можете да експортирате сегменти от Customer Insights в списъци на Constant Contact и да ги използвате като базова линия за маркетинговите кампании.   
    За повече информация вижте [Експортиране на данни в Constant Contact](export-constant-contact.md).
 
-- **Експортиране на сегменти в RollWorks** Разширихме местоназначенията на експортиране, така че да включват RollWorks. Вече можете да експортирате сегменти от Customer Insights в аудитории на RollWorks и да ги използвате като базова линия за реклама в B2B.    
+- **Експортиране на сегменти в RollWorks** Разширихме местоназначенията на експортиране, така че да включват RollWorks. Вече можете да експортирате сегменти от Customer Insights в аудитории на RollWorks и да ги използвате като базова линия за реклама B-to-B.    
    За повече информация вижте [Експортиране на данни в RollWorks](export-rollworks.md).
 
 - **Експортиране на сегменти в Snapchat** Разширихме местоназначенията на експортиране, така че да включват Snapchat. Вече можете да експортирате сегменти от Customer Insights в аудитории на Snapchat и да ги използвате като базова линия за рекламите си.     

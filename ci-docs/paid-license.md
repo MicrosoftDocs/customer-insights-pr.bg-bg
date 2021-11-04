@@ -1,19 +1,19 @@
 ---
 title: Започнете с платен лиценз на Dynamics 365 Customer Insights
 author: m-hartmann
-description: Запознайте се с първия опит в Dynamics 365 Customer Insights и проучете неговите възможности.
+description: Запознайте се с първото изпълнение в Dynamics 365 Customer Insights и проучете неговите възможности.
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: b4228a36069f4adb8098ea96cefec0eef81a6560
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 9f96a70d0cc316e8793921fedb0cc3fa4751c827
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645663"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673423"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Започнете, след като закупите Customer Insights
 
@@ -29,7 +29,7 @@ Customer Insights е лицензиран на клиент и включва м
 
 ## <a name="start-with-customer-insights"></a>Първи стъпки с Customer Insights
 
-Опитът при първото стартиране ви помага да изберете първоначалния фокус с Customer Insights и да проучите възможностите с примерни данни. Като следваща стъпка можете да създадете своя собствена среда и да работите със собствените си данни.
+Първото изпълнение ви помага да изберете първоначалния фокус с Customer Insights и да проучите възможностите с примерни данни. Като следваща стъпка можете да създадете своя собствена среда и да работите със собствените си данни.
 
 **За да влезете за първи път**:
 

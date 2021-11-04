@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617320"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673747"
 ---
 # <a name="segments-overview"></a>Общ преглед на сегментите
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617320"
 
 Има няколко начина за създаване на нов сегмент: 
 
-# <a name="individual-customers-b2c"></a>[Индивидуални потребители (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Индивидуални потребители (B-to-C)](#tab/b2c)
 
 - Сложен сегмент с конструктор на сегменти: [Създайте свой собствен](segment-builder.md#create-a-new-segment) 
 - Прости сегменти с един оператор: [Бърз сегмент](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617320"
 - Предложения с изкуствен интелект въз основа на мерки или атрибути: [Предложени сегменти за подобряване на мерките](suggested-segments.md) 
 - Предложения въз основа на дейности: [Предложени сегменти въз основа на активността на клиентите](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[Бизнес акаунти (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Бизнес акаунти (B-to-B)](#tab/b2b)
 
 - Сложен сегмент с конструктор на сегменти: [Създайте свой собствен](segment-builder.md#create-a-new-segment)
 

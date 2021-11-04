@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617542"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672986"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7617542"
 
 В раздела **Открийте**, ще намерите всички поддържани опции за обогатяване.
 
-# <a name="individual-customers-b2c"></a>[Индивидуални потребители (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Индивидуални потребители (B-to-C)](#tab/b2c)
 
 - [Марки](enrichment-microsoft.md), предоставени от Microsoft
 - [Интереси](enrichment-microsoft.md), предоставени от Microsoft
@@ -38,7 +38,7 @@ ms.locfileid: "7617542"
 - [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
 - [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
 
-# <a name="business-accounts-b2b"></a>[Бизнес акаунти (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Бизнес акаунти (B-to-B)](#tab/b2b)
 
 - [Фирмени данни](enrichment-leadspace.md), предоставени от Leadspace
 - [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft 

@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618830"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673949"
 ---
 # <a name="predictions-overview"></a>Общ преглед на прогнози
 
@@ -25,14 +25,14 @@ Dynamics 365 Customer Insights идва с разнообразни опции, 
 
 Най-лесният начин да започнете с прогнозиране на данни са предварително дефинираните модели, често наричани „готови модели“. Те изискват само определени данни и структура, за да генерират бързо прозрения. В момента се предлагат следните модели: 
 
-# <a name="individual-customers-b2c"></a>[Индивидуални потребители (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Индивидуални потребители (B-to-C)](#tab/b2c)
 
 - [Доживотна стойност на клиента](predict-customer-lifetime-value.md): Предсказва потенциалните приходи на клиент през цялото взаимодействие с бизнес.
 - [Препоръка за продукт](predict-product-recommendation.md): Предлага набори от предсказуеми препоръки за продукти, базирани на поведение при покупка и клиенти с подобни модели на покупка.
 - [Оттегляне на абонаменти](predict-subscription-churn.md): Предвижда дали даден клиент е в риск да не използва повече продуктите или услугите от абонамента на фирмата.
 - [Транзакционен отбив](predict-transactional-churn.md): Предскажете дали клиентът вече няма да закупи вашите продукти или услуги в определен период от време.
 
-# <a name="business-accounts-b2b"></a>[Бизнес акаунти (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Бизнес акаунти (B-to-B)](#tab/b2b)
 
 - [Транзакционен отбив](predict-transactional-churn.md): Предскажете дали клиентът вече няма да закупи вашите продукти или услуги в определен период от време.
 
