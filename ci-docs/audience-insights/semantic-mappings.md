@@ -1,7 +1,7 @@
 ---
 title: Семантични нанасяния (преглед)
 description: Преглед на семантичните нанасяния и как да ги използваме.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
-ms.translationtype: HT
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622922"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731930"
 ---
 # <a name="semantic-mappings"></a>Семантични нанасяния
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622922"
 
 1. За да стартирате семантично картографиране на по -късен етап, изберете семантичното картографиране и изберете **Опресняване**.
 
-> [!TIP]
-> Съществуват [шест вида статус](system.md#status-types) на задачите/процесите. Освен това повечето процеси [зависят от други процеси надолу по веригата](system.md#refresh-policies). Можете да изберете състоянието на процес, за да видите подробности за напредъка на цялата задача. След като изберете **Вижте подробности** за една от задачите на заданието, ще намерите допълнителна информация: време за обработка, дата на последната обработка и всички грешки и предупреждения, свързани със задачата.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>Управлявайте съществуващи семантични съпоставяния
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622922"
 - **Преименувайте**: Отваря диалогов прозорец, в който можете да въведете различно име за избраното семантично картографиране. Изберете **Записване**, за да приложите промените.
 
 - **Изтриване**: Отваря диалогов прозорец, за да потвърди изтриването на избраното семантично картографиране. Можете също така да изтриете повече от едно семантично картографиране наведнъж, като изберете семантичните съпоставяния и иконата за изтриване. За да потвърдите изтриването, изберете **Изтриване**.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

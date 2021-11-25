@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033572"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732251"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с приложни програмни интерфейси (API) на Customer Insights
 
-Dynamics 365 Customer Insights предоставя API за изграждане на ваши собствени приложения въз основа на вашите данни в Customer Insights.
+Dynamics 365 Customer Insights предоставя API, за да изградите свои собствени приложения въз основа на вашите данни в Customer Insights.
 
 > [!IMPORTANT]
 > Подробности за тези API са изброени в [Справка за API на Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Те включват допълнителна информация за операции, параметри и отговори.
@@ -117,25 +117,25 @@ HTTP отговорът скоро ще се появи по-долу.
 
 ### <a name="c-nuget"></a>C# NuGet
 
-Научете как да започнете да използвате клиентските библиотеки на C# от NuGet.org. За повече информация относно NuGet пакет, вижте [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Понастоящем този пакет е насочен към рамките netstandard2.0 и netcoreapp2.0.
+Научете как да започнете да използвате клиентските библиотеки C# от NuGet.org. За повече информация относно NuGet пакет вижте [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Понастоящем този пакет е насочен към рамките netstandard2.0 и netcoreapp2.0.
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Добавете клиентската библиотека на C# към проект на C#
 
-1. Във Visual Studio отворете **Мениджър на пакети на NuGet** за вашия проект.
+1. В Visual Studio отворете диспечера на **NuGet пакети** за вашия проект.
 
 1. Търсете **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Изберете **Инсталирай**, за да добавите пакета към проекта.
  
-   Като алтернатива изпълнете тази команда в **Конзола на Package Manager на NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+   Друга възможност е да изпълните тази команда в **конзолата NuGet диспечера на пакети** :`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Добавяне на пакет на NuGet към проект на Visual Studio.":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Добавете NuGet пакет към Visual Studio проект.":::
 
 #### <a name="use-the-c-client-library"></a>Използвайте клиентската библиотека на C#
 
 1. Използвайте [Библиотека за удостоверяване на Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), за да получите `AccessToken`, като използвате съществуващата си [Регистрация в приложението Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. След успешно удостоверяване и придобиване на маркер, конструирайте нов или използвайте съществуващ `HttpClient` с допълнителен **DefaultRequestHeaders "Authorization"** с настройка **<access token> на преносител** и **Ocp-Apim-Subscription-Key**, зададени на [**абонаментен ключ** от средата на Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. След успешно удостоверяване и придобиване на маркер, конструирайте нов или използвайте съществуващ с `HttpClient` допълнителните **DefaultRequestHeaders "Authorization",** настроени на **Bearer "маркер за достъп"** и **Ocp-Apim-Subscription-Key,** настроени на [**абонаментния ключ от вашата среда на** Customer Insights](#get-started-trying-the-customer-insights-apis).   
  
    Нулирайте заглавието **Разрешение**, когато е подходящо. Например, когато токенът изтече.
 

@@ -1,7 +1,7 @@
 ---
 title: Експортиране на данни от Customer Insights
 description: Управлявайте експортирането, за да споделяте данни.
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673310"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732122"
 ---
 # <a name="exports-preview-overview"></a>Общ преглед на експортирания (преглед)
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673310"
 
 Всеки експорт, който конфигурирате, има график за опресняване. По време на опресняване системата търси нови или актуализирани данни, които да включи в експортирането. По подразбиране експортирането се изпълнява като част от всяко [планирано обновяване на системата](system.md#schedule-tab). Можете да персонализирате графика за опресняване или да го изключите, за да стартирате ръчно експортиране.
 
-Графиците за износ зависят от състоянието на вашата среда. Ако има актуализации в процес на [зависимости](system.md#refresh-policies) когато трябва да започне планиран износ, системата първо ще завърши актуализациите и след това ще стартира експортирането. Можете да видите кога за последен път е бил опреснен износ в колона **Опресняване**.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+Графиците за износ зависят от състоянието на вашата среда. Ако има актуализации в процес на [зависимости](system.md#refresh-processes) когато трябва да започне планиран износ, системата първо ще завърши актуализациите и след това ще стартира експортирането. Можете да видите кога за последен път е бил опреснен износ в колона **Опресняване**.
 
 ### <a name="schedule-exports"></a>Планиране на експортирания
 

@@ -1,7 +1,7 @@
 ---
 title: Обогатяване на унифицирани клиентски профили
 description: Използвайте възможности за обогатяване на вашите клиентски данни.
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
+ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672986"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7770104"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -42,6 +42,7 @@ ms.locfileid: "7672986"
 
 - [Фирмени данни](enrichment-leadspace.md), предоставени от Leadspace
 - [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft 
+- [Подобрени фирмени](enrichment-enhanced-company-data.md) данни, предоставени от Microsoft
 - [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies 
 - [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
 - [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
@@ -76,7 +77,7 @@ ms.locfileid: "7672986"
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Вижте напредъка на процеса на обогатяване
 
-Можете да намерите подробности за обработката на обогатяване, включително състоянието му и потенциалните проблеми, докато се опреснява или след приключване на опресняването. Разберете кои процеси са включени за опресняване на обогатяване и колко време отнемането на процесите. Статусът на обогатяване се поддържа за Experian, Leadspace, HERE Technologies, SFTP Import и Карти на Azure.
+Можете да намерите подробности за обработката на обогатяване, включително състоянието му и потенциалните проблеми, докато се опреснява или след приключване на опресняването. Разберете кои процеси са включени за опресняване на обогатяване и колко време отнемането на процесите. Състоянието на обогатяване се поддържа за Experian, Leadspace, ТУК технологии, SFTP импортиране и Azure карти.
 
 За да видите състоянието на обогатяване
 

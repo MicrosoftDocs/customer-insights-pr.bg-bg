@@ -1,5 +1,5 @@
 ---
-title: Ограничения за обслужване в Dynamics 365 Customer Insights
+title: Ограничения на услугите в Dynamics 365 Customer Insights
 description: Разберете ограниченията и ограниченията.
 ms.date: 09/03/2021
 ms.service: customer-insights
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483643"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7815891"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Ограничения за услуги във възможностите на Customer Insights
 
@@ -22,12 +22,12 @@ ms.locfileid: "7483643"
 
 ## <a name="audience-insights"></a>Аналитични данни за аудиторията
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Ограничения на услугата в Аналитични данни за аудитория на Dynamics 365 Customer Insights
+### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Ограничения на услугата в Dynamics 365 Customer Insights възможност за прозрения на аудиторията
 
 | Област  | Ограничения  | Бележки |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Сегменти и мерки | 100 сегмента или мерки. | Общият брой на активните [сегменти](audience-insights/segments.md) и [мерки](audience-insights/measures.md) комбинирано не може да надвишава 100.  |
-| Релации | 20 нива на дълбочина на релации в пътищата на обекти. | При създаването на [сегменти](audience-insights/segments.md) или [мерки](audience-insights/measures.md) с помощта на интерфейса на конструктора пътищата на обектите могат да имат до 20 прехода на релации между началния обект и целевия обект.  |
+| Сегменти, мерки и прогнози | 300  | Общият брой на [сегментите](audience-insights/segments.md), [мерките и](audience-insights/measures.md)[прогнозите](audience-insights/predictions.md), комбинирани, не може да надвишава 300.  |
+| Взаимоотношения | 20 нива на дълбочина на релации в пътищата на обекти. | При създаването на [сегменти](audience-insights/segments.md) или [мерки](audience-insights/measures.md) с помощта на интерфейса на конструктора пътищата на обектите могат да имат до 20 прехода на релации между началния обект и целевия обект.  |
 
 
 ## <a name="engagement-insights"></a>Аналитични данни за ангажираност

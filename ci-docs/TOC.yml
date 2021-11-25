@@ -48,7 +48,7 @@
           href: audience-insights/connect-power-query.md
         - name: Добавяне на Common Data Model като източник на данни
           href: audience-insights/connect-common-data-model.md
-        - name: 'Добавяне на хранилище за необработени данни, управлявано от Dataverse'
+        - name: Добавяне на Dataverse управлявано езеро с данни
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Постъпково обновяване на източници на данни
           href: audience-insights/incremental-refresh-data-sources.md
@@ -84,13 +84,15 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Подобрени адреси
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Повишаване на фирмените данни
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Обогатете с Карти на Azure
           href: audience-insights/enrichment-azure-maps.md
         - name: Обогатяване с HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Допълване с Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Обогатете с Experian
+        - name: Допълване с Experian
           href: audience-insights/enrichment-experian.md
         - name: Обогатяване с SFTP персонализирано импортиране
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -164,7 +166,7 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
+            - name: Azure Synapse Анализ
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -178,9 +180,9 @@
               href: audience-insights/export-dotdigital.md
             - name: Dynamics 365 Marketing
               href: audience-insights/export-dynamics365-marketing.md
-            - name: Dynamics 365 Sales
+            - name: Продажби в Dynamics 365
               href: audience-insights/export-dynamics365-sales.md
-            - name: Facebook Мениджър за реклами
+            - name: Facebook Мениджър реклами
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
@@ -244,12 +246,46 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Преглед на схеми на обекти в Common Data Model
           href: audience-insights/entity-schemas.md
-        - name: Данни на Customer Insights в Dataverse
+        - name: Данни от "Аналитични данни за клиенти" в Dataverse
           href: audience-insights/customer-insights-dataverse.md
         - name: Работа с API
           href: audience-insights/apis.md
         - name: API препратки
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: Управление на съгласието (предварителен преглед)
+  items:
+    - name: Център за помощ
+      href: consent-management/index.yml
+    - name: Преглед на възможностите
+      href: consent-management/overview.md
+    - name: Начало
+      items:
+        - name: Начало
+          href: consent-management/get-started.md
+        - name: Понятия и терминология
+          href: consent-management/glossary.md
+    - name: Импортиране на данни за съгласие
+      items:
+        - name: Импортиране на данни за съгласие
+          href: consent-management/import-consent-data.md
+        - name: Задаване на данни за съгласие и прилагане на предпочитания за съгласие
+          href: consent-management/set-consent-rules.md
+    - name: Управление на данните за съгласие
+      items:
+        - name: Разрешаване на правила за съгласие в прозренията на аудиторията
+          href: audience-insights/activate-consent.md
+        - name: Управление на правилата за съгласие по подразбиране в сегментите на прозренията на аудиторията
+          href: audience-insights/change-default-consent-rules.md
+    - name: Управление на настройките и потребителите
+      items:
+        - name: Конфигуриране на системните настройки
+          href: consent-management/system-settings.md
+        - name: Управление на потребителите и разрешенията
+          href: consent-management/manage-users.md
+    - name: Използване на данни за съгласие
+      items:
+        - name: Създаване на прогнози с данни за съгласие
+          href: consent-management/predictions-consent-data.md
 - name: Аналитични данни за ангажираността (преглед)
   items:
     - name: Център за помощ
@@ -302,9 +338,9 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Пример за Web SDK
           href: engagement-insights/websdk-sample.md
-        - name: Урок за Android SDK
+        - name: Въвеждащ курс за SDK за Android
           href: engagement-insights/get-started-android.md
-        - name: Пример за Android SDK
+        - name: Android SDK проба
           href: engagement-insights/androidsdk-sample.md
         - name: Въвеждащ курс за iOS SDK
           href: engagement-insights/get-started-ios.md

@@ -4,23 +4,23 @@ description: Научете как да персонализирате и ста
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-ms.translationtype: HT
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494262"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655329"
 ---
 # <a name="get-started-with-the-android-sdk"></a>Първи стъпки с Android SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Този въвеждащ курс ви показва как да добавите към приложението си Android приложение с SDK за аналитични данни за ангажираността на Dynamics 365 Customer Insights. Ще започнете да виждате събития във вашия портал след пет минути или по-рано.
+Този урок ви води през процеса на инструментиране на вашето Android приложение с Dynamics 365 Customer Insights ангажиране прозрения SDK. Ще започнете да виждате събития във вашия портал след пет минути или по-рано.
 
 ## <a name="configuration-options"></a>Опции за конфигуриране
 Следните опции за конфигуриране могат да бъдат предадени на SDK:
@@ -31,23 +31,23 @@ ms.locfileid: "7494262"
 
 - Android Studio
 
-- Минимум Android API ниво: 16 (Jelly Bean)
+- Минимум Android Ниво на API: 16 (Желирани зърна)
 
 - Ключ за поглъщане (вижте инструкциите по-долу за това как да получите)
 
 ## <a name="integrate-the-sdk-into-your-application"></a>Интегрирайте SDK във вашето приложение
-Започнете процеса, като изберете работно пространство, изберете мобилната платформа на Android и изтеглите Android SDK.
+Започнете процеса, като изберете работна област, изберете Android мобилна платформа и изтеглите Android SDK.
 
 - Използвайте превключвателя на работното пространство в левия навигационен прозорец, за да изберете работното си пространство.
 
 - Ако нямате съществуващо работно пространство, изберете **Ново работно пространство** и следвайте стъпките за създаване на [ново работно пространство](create-workspace.md).
 
-- След като създадете работно пространство, отидете на **Администратор** > **Работно пространство** и след това изберете **Ръководство за инсталиране**. 
+- След като създадете работно пространство, отидете на **Администратор** > **Работно пространство** и след това изберете **Ръководство за инсталиране**.
 
 ## <a name="configure-the-sdk"></a>Конфигуриране на SDK
 
-След като изтеглите SDK, можете да работите с него в Android Studio, за да активирате и дефинирате събития. Има два начина да направите това:
-### <a name="option-1-using-jitpack-recommended"></a>Вариант 1: Използване на JitPack (препоръчително)
+След като изтеглите SDK, можете да работите с него в Android Studio, за да разрешите и дефинирате събития. Има два начина да направите това:
+### <a name="option-1-use-jitpack-recommended"></a>Опция 1: Използвайте JitPack (препоръчително)
 1. Добавете хранилището JitPack към вашия коренов `build.gradle`:
     ```gradle
     allprojects {
@@ -61,13 +61,13 @@ ms.locfileid: "7494262"
 1. Добавете зависимостта:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-using-download-link"></a>Вариант 2: Използване на връзка за изтегляне
-1. Изтеглете [Аналитични данни за ангажираност на AndroidSDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и поставете `eiandroidsdk-debug.aar` файл в папката `libs`.
+### <a name="option-2-use-download-link"></a>Опция 2: Използване на връзка за изтегляне
+1. Изтеглете [аналитичните данни за ангажиране Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и поставете файла в `eiandroidsdk-debug.aar``libs` папката.
 
 1. Отворете файла `build.gradle` на ниво проект и добавете следните фрагменти:
     ```gradle
@@ -83,22 +83,23 @@ ms.locfileid: "7494262"
     }
     ```
 
-1. Добавете разрешение за мрежа и интернет във вашия `AndroidManifest.xml` файл, разположен под `manifests` папка. 
+## <a name="enable-auto-instrumentation"></a>Активиране на автоматичното инструментиране
+
+1. Добавете разрешение за мрежа и интернет във вашия `AndroidManifest.xml` файл, разположен под `manifests` папка.
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. Настройте конфигурацията на SDK за анализ на ангажираността чрез вашия `AndroidManifest.xml` файл. 
 
-## <a name="enable-auto-instrumentation"></a>Активиране на автоматичното инструментиране
+1. Настройте конфигурацията на SDK за анализ на ангажираността чрез вашия `AndroidManifest.xml` файл.
+
 1. Копирайте XML фрагмент от **Ръководство за инсталиране**. `Your-Ingestion-Key` трябва да се попълва автоматично.
 
    > [!NOTE]
    > Не е необходимо да подменяте `${applicationId}` раздел. Попълва се автоматично.
-   
+
 
    ```xml
    <application>
@@ -116,20 +117,24 @@ ms.locfileid: "7494262"
    </application>
    ```
 
-1. Активирайте или дезактивирайте автоматичното улавяне на `View` събития на преглеждане, като зададете `true` или `false` за полето `autoCapture` по-горе. Понастоящем `Action` събитията трябва да се добавят ръчно.
+1. Активирайте или дезактивирайте автоматичното улавяне на `View` събития на преглеждане, като зададете `true` или `false` за полето `autoCapture` по-горе. 
 
-1. (По избор) Други конфигурации включват настройка на URL адреса на събирача на крайни точки. Те могат да бъдат добавени под метаданните на ключа за поглъщане в `AndroidManifest.xml`:
-    ```xml
+   >[!NOTE]
+   >`Action` събития трябва да се добавят ръчно.
+
+1. (По избор) Други конфигурации включват настройка на URL адреса на събирача на крайни точки. Те могат да се добавят под метаданните на ключа за поглъщане в `AndroidManifest.xml`.
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## <a name="implement-custom-events"></a>Внедряване на персонализирани събития
 
 След като инициализирате SDK, можете да работите със събития и техните свойства в средата `MainActivity`.
 
-    
+
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -141,7 +146,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>Задайте свойство за всички събития (по избор)
-    
+
 Java:
 ```java
 analytics.setProperty("year", 2021);

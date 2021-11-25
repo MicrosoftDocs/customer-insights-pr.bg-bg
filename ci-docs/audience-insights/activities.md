@@ -1,7 +1,7 @@
 ---
 title: Дейности на клиента
 description: Определете дейностите на клиентите и ги прегледайте във времева линия в профилите на клиентите.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673124"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732429"
 ---
 # <a name="customer-activities"></a>Дейности на клиента
 
-Комбинирайте дейностите на клиентите от [различни източници на данни](data-sources.md) в Dynamics 365 Customer Insights, за да създадете времева линия, която изброява дейностите в хронологичен ред. Включете вревата линия в приложенията на Dynamics 365 с решението [Добавка за карта на клиент](customer-card-add-in.md) или в таблото на Power BI.
+Комбинирайте клиентски дейности от [различни източници на данни в](data-sources.md) Dynamics 365 Customer Insights, за да създадете времева скала, която изброява дейностите хронологично. Включете времевата линия в приложенията на Dynamics 365 с решението за добавка "Карта на [клиента](customer-card-add-in.md)", или в табло за управление на Power BI.
 
 ## <a name="define-an-activity"></a>Определяне на дейност
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673124"
 
 1. На страницата **Дейности** изберете **Изпълнение** за обработка на дейността. 
 
-> [!TIP]
-> Съществуват [шест вида статус](system.md#status-types) на задачите/процесите. Освен това повечето процеси [зависят от други процеси надолу по веригата](system.md#refresh-policies). Можете да изберете състоянието на процес, за да видите подробности за напредъка на цялата задача. След като изберете **Вижте подробности** за една от задачите на заданието, ще намерите допълнителна информация: време за обработка, дата на последната обработка и всички грешки и предупреждения, свързани със задачата.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Управление на съществуващи дейности
 
