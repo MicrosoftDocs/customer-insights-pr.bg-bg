@@ -1,7 +1,7 @@
 ---
 title: Експерименти на Azure Machine Learning
 description: Използвайте базирани на Azure Machine Learning модели в Dynamics 365 Customer Insights.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033159"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881725"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Използвайте базирани на Azure Machine Learning модели
 
-Единните данни в Dynamics 365 Customer Insights са източник за изграждане на модели на машинно обучение, които могат да генерират допълнителни бизнес прозрения. Customer Insights се интегрира с Machine Learning Studio (classic) и Azure Machine Learning, за да използва вашите собствени персонализирани модели. Вижте [Експерименти в Machine Learning Studio (classic)](machine-learning-studio-experiments.md) за примери за експерименти, изградени върху Machine Learning Studio (classic). 
+Единните данни в Dynamics 365 Customer Insights са източник за изграждане на модели на машинно обучение, които могат да генерират допълнителни бизнес прозрения. Customer Insights се интегрират с Azure Machine Learning, за да използват вашите собствени персонализирани модели.
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
@@ -35,7 +35,7 @@ ms.locfileid: "7033159"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Работете с дизайнера на Azure Machine Learning
 
-Дизайнерът на Azure Machine Learning предоставя визуално платно, където можете да плъзгате и пускате набори от данни и модули, подобно на Machine Learning Studio (classic). Партиден конвейер, създаден от дизайнера, може да бъде интегриран в Customer Insights, ако те са конфигурирани по съответния начин. 
+Дизайнерът на Azure машинно обучение предоставя визуално платно, където можете да плъзгате и пускате набори от данни и модули. Партиден конвейер, създаден от дизайнера, може да бъде интегриран в Customer Insights, ако те са конфигурирани по съответния начин. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Работа с SDK Azure Machine Learning
 

@@ -1,7 +1,7 @@
 ---
 title: Създаване на среди в Customer Insights
 description: Стъпки за създаване на среди с лицензиран абонамент за Dynamics 365 Customer Insights.
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673378"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892325"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Създаване на среда в аналитични данни за аудиторията
 
@@ -77,6 +77,9 @@ ms.locfileid: "7673378"
 Стъпката **Microsoft Dataverse** ви позволява да свържете Customer Insights с вашата среда на Dataverse.
 
 За да използвате [подготвени модели на прогноза](predictions-overview.md#out-of-box-models), конфигурирайте споделянето на данни с Dataverse. Или можете да активирате поглъщането на данни от локален източници на данни, предоставяйки URL адрес на средата на Microsoft Dataverse, който администрира вашата организация. Изберете **Активиране на споделянето на данни** за споделяне на изходни данни на Customer Insights с управлявано от Dataverse хранилище за необработени данни.
+
+> [!IMPORTANT]
+> "Аналитични данни за клиенти" и Dataverse трябва да бъдат в същия регион, за да се даде възможност за споделяне на данни.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Опции за конфигуриране, за да се даде възможност за споделяне на данни с Microsoft Dataverse.":::
 

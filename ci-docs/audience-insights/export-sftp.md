@@ -1,5 +1,5 @@
 ---
-title: Експортирайте данните от Customer Insights в SFTP хостове
+title: Експортиране на данни за аналитични данни за клиенти в SFTP хостове (Видео)
 description: Научете как да конфигурирате връзката и да експортирате в SFTP местоположение.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 568e5826175417175bd09435d697031f0ab64223
+ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673903"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927544"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Експортиране на сегменти и други данни в SFTP (преглед)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7673903"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
+- SFTP дестинации зад защитни стени в момента не се поддържат. 
 - Времетраенето на експортиране зависи от производителността на вашата система. Препоръчваме две ядра на процесора и 1 Gb памет като минимална конфигурация на вашия сървър. 
 - Експортирането на обекти с до 100 милиона клиентски профила може да отнеме 90 минути при използване на препоръчителната минимална конфигурация на две ядра на процесора и 1 Gb памет. 
 

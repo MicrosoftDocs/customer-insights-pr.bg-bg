@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770104"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884203"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -46,6 +46,7 @@ ms.locfileid: "7770104"
 - [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies 
 - [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
 - [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
+- [Данни за ангажираността на](enrichment-office.md) профила, предоставени от Microsoft
 
 ---
 
@@ -77,7 +78,7 @@ ms.locfileid: "7770104"
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Вижте напредъка на процеса на обогатяване
 
-Можете да намерите подробности за обработката на обогатяване, включително състоянието му и потенциалните проблеми, докато се опреснява или след приключване на опресняването. Разберете кои процеси са включени за опресняване на обогатяване и колко време отнемането на процесите. Състоянието на обогатяване се поддържа за Experian, Leadspace, ТУК технологии, SFTP импортиране и Azure карти.
+Можете да намерите подробности за обработката на обогатяване, включително състоянието му и потенциалните проблеми, докато се опреснява или след приключване на опресняването. Разберете кои процеси са включени за опресняване на обогатяване и колко време отнемането на процесите. Статусът на обогатяване се поддържа за Experian, Leadspace, HERE Technologies, SFTP Import и Карти на Azure.
 
 За да видите състоянието на обогатяване
 

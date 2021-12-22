@@ -1,7 +1,7 @@
 ---
 title: Постепенно опресняване за източници на данни, базирани на Power Query
 description: Обновяване на нови и актуализирани данни за големи източници на данни въз основа на Power Query.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
-ms.translationtype: HT
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377821"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900242"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Постъпково обновяване за източници на данни, базирани на Power Query
+
+В тази статия се обсъжда как да конфигурирате постъпково обновяване за източници на данни въз основа на Power Query.
 
 Постъпковото обновяване за източници на данни предоставя следните предимства:
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377821"
 
 1. [Създаване на нов източник на данни въз основа на Power Query](connect-power-query.md).
 
-1. Въведете име за източника на данни.
+1. Предоставете **Име** за източник на данни.
 
-1. Изберете източник на данни, който поддържа постъпково обновяване, като например база данни на SQL в Azure.
+1. Изберете източник на данни, който поддържа постъпково обновяване, например база данни на [Azure SQL](/power-query/connectors/azuresqldatabase).
 
 1. Изберете обектите или таблиците за поглъщане.
 

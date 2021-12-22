@@ -1,7 +1,7 @@
 ---
 title: Активиране на правила за съгласие за сегменти
 description: Изпълнете следните стъпки, за да свържете данните за съгласие и да активирате проверките за съгласие в аналитичните данни за аудитории. Администраторът може също да забрани проверките за съгласие.
-ms.date: 11/03/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 45899738d39bd5caa433e123f9fe59020e831998
-ms.sourcegitcommit: 79b09498d1328e5551fb8684c44af1fb149f9881
+ms.openlocfilehash: 552cb0739c4d17266dd028638df067f3384b738a
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7815902"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884061"
 ---
 # <a name="activate-consent-rules"></a>Активиране на правила за съгласие
 
@@ -49,3 +49,6 @@ ms.locfileid: "7815902"
 1. Изберете **раздела Съгласие (визуализация).**
 
 1. В секцията Разрешаване на **проверки за съгласие задайте превключва на** **Изкл**.
+
+> [!TIP]
+> За да спрете да използвате възможността за управление на съгласието, вижте Системни настройки в Центъра за [съгласие (визуализация)](../consent-management/system-settings.md).

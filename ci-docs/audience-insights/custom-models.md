@@ -1,7 +1,7 @@
 ---
 title: Персонализирани модели за машинно обучение | Microsoft Docs
 description: Работа с персонализирани модели от Azure Machine Learning в Dynamics 365 Customer Insights.
-ms.date: 03/22/2021
+ms.date: 12/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,20 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 187995cdf4d92a0609f8abb4c792e698ad4342cdb1f578744136add1bfcf3a53
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032929"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881771"
 ---
 # <a name="custom-machine-learning-models"></a>Персонализирани модели за машинно обучение
+
+> [!NOTE]
+> Поддръжката за машинно обучение Studio (класически) ще приключи на 31 август 2024 г. Препоръчваме ви да преминавате към [Azure машинно обучение](/azure/machine-learning/overview-what-is-azure-machine-learning) до тази дата.
+>
+> В началото на 1 декември 2021 г. няма да можете да създавате нови машинно обучение Studio (класически) ресурси. До 31 август 2024 г. можете да продължите да използвате съществуващите машинно обучение Studio (класически) ресурси. За повече информация вижте [Мигриране в Azure машинно обучение](/azure/machine-learning/migrate-overview).
+
 
 **Разузнаване** > **Персонализирани модели** ви позволява да управлявате работни потоци въз основа на модели на Azure Machine Learning. Работните процеси ви помагат да изберете данните, от които искате да генерирате прозрения, и да съпоставите резултатите с вашите унифицирани клиентски данни. За повече информация относно изграждането на персонализирани модели ML, вижте [Използвайте модели, базирани на Azure Machine Learning](azure-machine-learning-experiments.md).
 
@@ -26,7 +32,7 @@ ms.locfileid: "7032929"
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
-- Понастоящем тази функция поддържа уеб услуги, публикувани чрез [Machine Learning Studio (classic)](https://studio.azureml.net) и [пакетни конвейери на Azure Machine Learning](/azure/machine-learning/concept-ml-pipelines).
+- Тази функция поддържа уеб услуги, публикувани чрез [Azure машинно обучение пакетни тръбопроводи](/azure/machine-learning/concept-ml-pipelines).
 
 - За да използвате тази функция, ви е необходим акаунт за съхранение в Azure Data Lake Gen2, свързан с вашия екземпляр на Azure Studio. За повече информация вижте [Създаване на акаунт за съхранение в Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
@@ -48,11 +54,10 @@ ms.locfileid: "7032929"
 
 1. Ако абонаментът ви за Azure Machine Learning е в клиент, който е различен от този на Customer Insights, изберете **Влизане** с вашите идентификационни данни за избраната организация.
 
-1. Изберете **Работни пространства**, свързани с вашата уеб услуга. Изброени са два раздела, един за Azure Machine Learning v1 (Machine Learning Studio (classic)) i Azure Machine Learning v2 (Azure Machine Learning). Ако не сте сигурни кое работно пространство е подходящо за вашата уеб услуга Machine Learning Studio (classic), изберете **Всякакви**.
+1. Изберете **Работни пространства**, свързани с вашата уеб услуга. 
 
-1. Изберете уеб услугата Machine Learning Studio (classic) или конвейера Azure Machine Learning в **Уеб услуга, която съдържа вашия модел** падащо меню. След това изберете **Напред**.
-   - Научете повече за [публикуване на уеб услуга в Machine Learning Studio (classic)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Научете повече за [публикуване на конвейер в Azure Machine Learning с помощта на дизайнера](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Вашият конвейер трябва да бъде публикуван под [крайна точка на конвейер](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+1. Изберете газопровода Azure машинно обучение в **уеб услугата, която съдържа вашия модел** отпадане. След това изберете **Напред**.    
+   Научете повече за [публикуване на конвейер в Azure Machine Learning с помощта на дизайнера](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Вашият конвейер трябва да бъде публикуван под [крайна точка на конвейер](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. За всички **Входни данни на уеб услуга** изберете съответния **Обект** от аналитични данни за аудитория и изберете **Напред**.
    > [!NOTE]
@@ -62,9 +67,6 @@ ms.locfileid: "7032929"
    > ![Конфигуриране на работен поток.](media/intelligence-screen2-updated.png "Конфигуриране на работен поток")
 
 1. В **Изходни параметри на модела** стъпка, задайте следните свойства:
-   - Machine Learning Studio (classic)
-      1. Въведете изхода **Име на обекта**, в който искате да изтичат резултатите от уеб услугата.
-   - Azure Machine Learning
       1. Въведете **Име на обекта** на изхода, в който искате да изтичат резултатите от конвейера.
       1. Изберете **Изход хранилище на данни име на параметъра** на вашия пакетен конвейер от падащото меню.
       1. Изберете **Изход име на параметъра на път** на вашия пакетен конвейер от падащото меню.
@@ -93,9 +95,6 @@ ms.locfileid: "7032929"
 1. За всички **Входни данни на уеб услуга** можете да актуализирате съответния **Обект** от аналитични данни за аудитория. След това изберете **Напред**.
 
 1. В **Изходни параметри на модела** стъпка, задайте следните свойства:
-   - Machine Learning Studio (classic)
-      1. Въведете изхода **Име на обекта**, в който искате да изтичат резултатите от уеб услугата.
-   - Azure Machine Learning
       1. Въведете **Име на обекта** на изхода, в който искате да изтичат резултатите от конвейера.
       1. Изберете **Изход хранилище на данни име на параметъра** за вашия тестов конвейер.
       1. Изберете **Име на параметъра на път на изход** за вашия тестов конвейер.

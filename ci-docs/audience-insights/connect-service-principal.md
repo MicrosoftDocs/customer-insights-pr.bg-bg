@@ -1,7 +1,7 @@
 ---
 title: Свързване с акаунт на Azure Data Lake Storage с помощта на субект на услуга
 description: Използвайте субект на услуга на Azure, за да се свържете с вашето data lake.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645159"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900230"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Свързване с акаунт на Azure Data Lake Storage с помощта на субект на услуга на Azure
 
-Автоматизираните инструменти, които използват услугите на Azure, винаги трябва да имат ограничени разрешения. Вместо приложенията да влизат като напълно привилегирован потребител, Azure предлага принципали на услуги. Прочетете, за да научите как да свържете Dynamics 365 Customer Insights с акаунт на Azure Data Lake Storage, като използвате субект на услуга на Azure вместо ключове за акаунт за съхранение. 
+В тази статия се обсъжда как да се свържете с акаунт с помощта на главница на услугата на Azure вместо ключове за акаунт за Dynamics 365 Customer Insights Azure Data Lake Storage съхранение. 
 
-Можете да използвате субекта на услугата за безопасно [добавяне или редактиране на папка на Common Data Model като източник на данни](connect-common-data-model.md) или за [създаване или актуализиране на среда](create-environment.md).
+Автоматизираните инструменти, които използват услугите на Azure, винаги трябва да имат ограничени разрешения. Вместо приложенията да влизат като напълно привилегирован потребител, Azure предлага принципали на услуги. Можете да използвате главници на услуги за сигурно добавяне или редактиране на [папка "Общ модел данни" като източник на данни](connect-common-data-model.md) или за създаване или актуализиране на [среда](create-environment.md).
 
 > [!IMPORTANT]
 > - Акаунтът за съхранение на Data Lake, който ще използва главницата на услугата, трябва да има [разрешено йерархично пространство за имена](/azure/storage/blobs/data-lake-storage-namespace).
-> - Нуждаете се от администраторски разрешения за вашия абонамент за Azure, за да създадете принципала на услугата.
+> - Имате нужда от администраторски разрешения за вашия абонамент за Azure, за да създадете принципал на услугата.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Създаване на субект на услуга на Azure за Customer Insights
 
-Преди да създадете нов субект на услуга за аналитични данни за аудитория или аналитични данни за ангажираност, проверете дали той вече не съществува в организацията.
+Преди да създадете нова главница на услугата за "Статистика за клиенти", проверете дали вече съществува във вашата организация.
 
 ### <a name="look-for-an-existing-service-principal"></a>Потърсете съществуващ принципал на услугата
 
