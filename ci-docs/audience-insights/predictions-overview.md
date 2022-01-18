@@ -1,21 +1,20 @@
 ---
 title: Преглед на поддържаните сценарии за прогноза
 description: Сценарии и опции за прогнози, обхванати от Dynamics 365 Customer Insights приложение.
-ms.date: 09/06/2021
+ms.date: 12/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: get-started
+ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673949"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7978000"
 ---
 # <a name="predictions-overview"></a>Общ преглед на прогнози
 
@@ -31,6 +30,7 @@ Dynamics 365 Customer Insights идва с разнообразни опции, 
 - [Препоръка за продукт](predict-product-recommendation.md): Предлага набори от предсказуеми препоръки за продукти, базирани на поведение при покупка и клиенти с подобни модели на покупка.
 - [Оттегляне на абонаменти](predict-subscription-churn.md): Предвижда дали даден клиент е в риск да не използва повече продуктите или услугите от абонамента на фирмата.
 - [Транзакционен отбив](predict-transactional-churn.md): Предскажете дали клиентът вече няма да закупи вашите продукти или услуги в определен период от време.
+- [Анализ на настроения](sentiment-analysis.md) : Анализирайте настроения на обратната връзка от клиентите и идентифицирайте бизнес аспекти, които често се споменават.
 
 # <a name="business-accounts-b-to-b"></a>[Бизнес акаунти (B-to-B)](#tab/b2b)
 
@@ -43,6 +43,6 @@ Dynamics 365 Customer Insights идва с разнообразни опции, 
 
 Ако дадена организация вече използва машинно обучение сценарии, базирани на Azure Machine Learning експерименти, функцията за персонализирани модели в Customer Insights помага за свързването на точките. Създайте работни потоци, които ви помагат да изберете данните, от които искате да генерирате прозрения, и да съпоставите резултатите с вашите унифицирани клиентски профили. За повече информация вижте [Персонализирани модели за машинно обучение](custom-models.md).
 
-## <a name="ai-builder-prediction"></a>Прогноза за AI Builder
+## <a name="ai-builder-prediction"></a>AI Builder прогноза
 
 Понякога наборите от данни са непълни и някои стойности липсват. Customer Insights може да помогне за прогнозиране на липсващи стойности за обекта и сегментите на клиента. За повече информация вижте [Попълнете частичните си данни с прогнози](predictions.md).

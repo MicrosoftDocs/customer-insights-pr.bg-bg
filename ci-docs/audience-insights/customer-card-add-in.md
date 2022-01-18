@@ -1,7 +1,7 @@
 ---
-title: Добавка за карта на клиент за приложения на Dynamics 365 (Видео)
+title: Добавка за карта на клиент за приложения на Dynamics 365 (съдържа видео)
 description: Показвайте данни от статистика за аудиторията в приложенията на Dynamics 365 с тази добавка.
-ms.date: 12/07/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: f3d613d7183fd0af2998cd081d08d4316c7a5628
-ms.sourcegitcommit: ae3b92926ea1adfcc50e4bfd000b06ea0ccfc0ee
-ms.translationtype: HT
+ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
+ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7921852"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945414"
 ---
 # <a name="customer-card-add-in-preview"></a>Добавка за карта на клиент (преглед)
 
@@ -27,7 +27,7 @@ ms.locfileid: "7921852"
 ## <a name="prerequisites"></a>Предварителни изисквания
 
 - Добавката работи само с приложения, задвижвани от Dynamics 365, като Sales или Customer Service, версия 9.0 и по-нови.
-- За да могат вашите данни на Dynamics 365 да се съпоставят с прозренията на аудиторията, клиентските профили, които трябва да бъдат [погълнати от приложението Dynamics 365 с помощта на Microsoft Dataverse конектор](connect-power-query.md).
+- За да могат данните ви в Dynamics 365 да се съпоставят с клиентските профили на прозренията на аудиторията, препоръчваме да се [погълне от приложението Dynamics 365 с помощта на Microsoft Dataverse конектора](connect-power-query.md). Ако използвате друг метод за поглъщане на контакти (или акаунти) на Dynamics 365, трябва да се уверите, че `contactid` полето (или `accountid`) е зададено като основен ключ за този [източник на данни в стъпката на картата на процеса на обединяване на данни](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - Всички потребители на добавката за карта на клиента на Dynamics 365 трябва да бъдат [добавени като потребители](permissions.md) в прозрения за аудиторията, за да видите данните.
 - [Конфигурирани възможности за търсене и филтриране](search-filter-index.md) в аудиторията са необходими прозрения за търсене на данни, за да работят.
 - Всяка контрола за добавка разчита на конкретни данни в статистика за аудиторията. Някои данни и контроли са достъпни само в среди от специфичен тип. Конфигурацията на добавката ще ви информира, ако контролът не е наличен поради избрания тип среда. Научете повече за [случаите на използване на среда](work-with-business-accounts.md).

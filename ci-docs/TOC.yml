@@ -44,7 +44,7 @@
       items:
         - name: Общ преглед на източниците на данни
           href: audience-insights/data-sources.md
-        - name: Добавяне на източници на данни чрез конектори на Power Query
+        - name: Добавяне на източници на данни чрез Power Query конектори
           href: audience-insights/connect-power-query.md
         - name: Добавяне на Common Data Model като източник на данни
           href: audience-insights/connect-common-data-model.md
@@ -80,7 +80,7 @@
       items:
         - name: Допълване на потребителски профили
           href: audience-insights/enrichment-hub.md
-        - name: Афинитети към марки и интереси
+        - name: Марки и интереси
           href: audience-insights/enrichment-microsoft.md
         - name: Подобрени адреси
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Предсказване на отлив в трансакциите
               href: audience-insights/predict-transactional-churn.md
+            - name: Анализиране на настроенята в обратната връзка с клиентите
+              href: audience-insights/sentiment-analysis.md
             - name: Използвайте персонализирани модели от Azure Machine Learning
               href: audience-insights/custom-models.md
             - name: Попълнете частично липсващи данни
