@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
-ms.translationtype: HT
-ms.contentlocale: bg-BG
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7380730"
 ---
+
 # <a name="entity-schemas-in-common-data-model"></a>Схеми на обекти в Common Data Model
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [Common Data Model](/common-data-model/) е декларативна спецификация и дефиниция на стандартни обекти, които представляват често използвани понятия и дейности в бизнеса и приложенията за производителност. Този модел се разширява и до данни за наблюдение и аналитични данни. Common Data Model предоставя добре дефинирани, модулни и разширяващи се бизнес обекти - като акаунт, бизнес единица, случай, контакт, потенциален клиент, възможност и продукт, както и взаимодействия с доставчици, работници и клиенти, като дейности и услуги споразумения на ниво. Всеки може да надгради и разшири дефинициите на Common Data Model, за да улови допълнителни идеи, специфични за бизнеса.
 

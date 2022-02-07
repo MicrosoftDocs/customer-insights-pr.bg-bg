@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: fecf3e33b5bc1eec17006fc196004be902c03b40
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
-ms.contentlocale: bg-BG
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900138"
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Свързване с данни в управлявано от Microsoft Dataverse хранилище за необработени данни
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Тази статия предоставя информация за това как Dataverse потребителите могат бързо да се свързват с аналитични обекти в Microsoft Dataverse управлявано езеро. 
 
@@ -27,7 +22,7 @@ ms.locfileid: "7900138"
 
 ## <a name="important-considerations"></a>Важни съображения
 
-Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights.Чрез импортирането или свързването с данни, съхранявани в онлайн услуги, Вие се съгласявате, че данните могат да бъдат прехвърляни на и съхранявани с Dynamics 365 Customer Insights .  [Научете повече в центъра за сигурност на Microsoft](https://www.microsoft.com/trust-center).
+Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights.Чрез импортирането или свързването с данни, съхранявани в онлайн услуги, Вие се съгласявате, че данните могат да бъдат прехвърляни на и съхранявани с Dynamics 365 Customer Insights. [Научете повече в центъра за сигурност на Microsoft](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Свържете се с управлявано от Dataverse хранилище
 

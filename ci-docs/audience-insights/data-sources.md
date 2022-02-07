@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: MT
-ms.contentlocale: bg-BG
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977816"
 ---
+
 # <a name="data-sources-overview"></a>Общ преглед на източниците на данни
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Възможността на Аналитични данни за аудитория в Dynamics 365 Customer Insights свързва се с данни от широк набор от източници. Свързването с източник на данни често се нарича процес на *поглъщане на данни*. След като погълнете данните, можете [да ги обедините](data-unification.md) и да предприемете действия с тях.
 
@@ -33,13 +28,13 @@ ms.locfileid: "7977816"
 - [Microsoft Dataverse езеро](connect-dataverse-managed-lake.md)
 
 > [!NOTE]
-> Ако използвате пробната версия, секцията за методи за импортиране включва опция за библиотека с данни на **Customer Insights.** Изберете тази опция, за да изберете примерен набор от данни, достъпен за различни индустрии. За повече информация вижте [Dynamics 365 Customer Insights пробната версия](../trial-signup.md).
+> Ако използвате пробната версия, секцията за методи за импортиране включва опция за библиотека **с** данни на Customer Insights. Изберете тази опция, за да изберете примерен набор от данни, достъпен за различни индустрии. За повече информация вижте [Dynamics 365 Customer Insights пробната версия](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Добавяне на данни от локални източници на данни
 
-Приемането на данни от локални източници на данни в аналитични данни за аудитории се поддържа въз основа на потоци от данни на Microsoft Power Platform. Можете да разрешите потоци от данни в "Аналитични данни за клиенти", [като предоставите URL адреса на Microsoft Dataverse средата при настройване на](create-environment.md) средата.
+Приемането на данни от локални източници на данни в аналитични данни за аудитории се поддържа въз основа на потоци от данни на Microsoft Power Platform. Можете да разрешите потоци от данни в "Аналитични данни [за клиенти", като предоставите URL адреса Microsoft Dataverse на](create-environment.md) средата при настройване на средата.
 
-Източниците на данни, които се създават след свързване на Dataverse среда с Customer Insights, използват [Power Platform потоци от данни по](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) подразбиране. Потоците от данни поддържат локална свързаност чрез шлюзовете за данни. Можете да премахнете и пресъздадете източници на данни, които са съществували преди дадена среда да Dataverse е била свързана с помощта на локален [шлюзове за данни](/data-integration/gateway/service-gateway-app).
+Източниците на данни, които се създават след свързване на Dataverse среда с Customer Insights, използват [Power Platform потоци от](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) данни по подразбиране. Потоците от данни поддържат локална свързаност чрез шлюзовете за данни. Можете да премахнете и пресъздадете източници на данни, съществували преди дадена Dataverse среда да е била свързана [с помощта на локален шлюзове](/data-integration/gateway/service-gateway-app) за данни.
 
 Шлюзове за данни от съществуваща среда на Power BI или Power Apps ще са видими и можете да ги използвате повторно в Customer Insights. Страницата с източници на данни показва връзки към Microsoft Power Platform среда, където можете да преглеждате и конфигурирате локален шлюзове за данни.
 
