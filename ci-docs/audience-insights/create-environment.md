@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: MT
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892325"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088089"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Създаване на среда в аналитични данни за аудиторията
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892325"
 
 ## <a name="create-a-new-environment"></a>Създаване на нова среда
 
-След закупуване на лиценз за абонамент за Customer Insights, глобалният администратор на клиента на Microsoft 365 получава имейл с покана за създаване на среда. Отидете на [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start), за да започнете. 
+След закупуване на абонаментен лиценз за Customer Insights, глобалният администратор на Microsoft 365 наемателя получава имейл, който ги приканва да създадат средата. Отидете на [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start), за да започнете. 
 
 Ръководеният опит ви помага през стъпките да съберете цялата необходима информация за нова среда. Имате нужда от [администраторски разрешения](permissions.md) в аналитични данни на аудиторията за създаване или управление на среди.
 
@@ -64,7 +64,7 @@ ms.locfileid: "7892325"
 > Понастоящем Customer Insights поддържа следното:
 > - Вградени обекти от Power BI потоци от данни, които се съхраняват в управляван от Microsoft Dataverse Data Lake.  
 > - Акаунти в Azure Data Lake Storage от същия регион на Azure, който сте избрали при създаването на средата.
-> - Акаунти в Azure Data Lake Storage, които имат активирано *йерархично пространство от имена*.
+> - Azure Data Lake Storage акаунти, които са Gen2 и имат *йерархично пространство* на имената разрешени. Акаунтите за съхранение на Azure Data Lake Gen1 не се поддържат.
 
 За опцията Azure Data Lake Storage, можете да избирате между базирана на ресурси опция и опция, базирана на абонамент за удостоверяване. За повече информация вижте [Свързване с акаунт на Azure Data Lake Storage с помощта на ръководител на услуга на Azure](connect-service-principal.md). Името на **Контейнер** ще бъде `customerinsights` и не може да се променя.
 

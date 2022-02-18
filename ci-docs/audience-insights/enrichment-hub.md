@@ -1,7 +1,7 @@
 ---
 title: Обогатяване на унифицирани клиентски профили
 description: Използвайте възможности за обогатяване на вашите клиентски данни.
-ms.date: 11/05/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
-ms.translationtype: MT
+ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
+ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884203"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "8098776"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Допълване за потребителски профили (преглед)
 
@@ -37,16 +37,17 @@ ms.locfileid: "7884203"
 - [Демографски данни](enrichment-experian.md), предоставени от Experian
 - [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
 - [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
+- [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies 
 
 # <a name="business-accounts-b-to-b"></a>[Бизнес акаунти (B-to-B)](#tab/b2b)
 
 - [Фирмени данни](enrichment-leadspace.md), предоставени от Leadspace
 - [Подобрени адреси](enrichment-enhanced-addresses.md) предоставено от Microsoft 
-- [Подобрени фирмени](enrichment-enhanced-company-data.md) данни, предоставени от Microsoft
+- [Подобрени фирмени данни](enrichment-enhanced-company-data.md), предоставени от Microsoft
 - [Данни за местоположението](enrichment-here.md), предоставени от HERE Technologies 
 - [Персонализирани данни](enrichment-SFTP-custom-import.md) чрез Защитен протокол за предаване на файлове (SFTP) 
 - [Карти на Azure](enrichment-azure-maps.md), предоставено от Microsoft
-- [Данни за ангажираността на](enrichment-office.md) профила, предоставени от Microsoft
+- [Данни](enrichment-office.md) за ангажираността на профила, предоставени от Microsoft
 
 ---
 

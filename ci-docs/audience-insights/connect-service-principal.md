@@ -9,21 +9,21 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900230"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088105"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Свързване с акаунт на Azure Data Lake Storage с помощта на субект на услуга на Azure
 
-В тази статия се обсъжда как да се свържете с акаунт с помощта на главница на услугата на Azure вместо ключове за акаунт за Dynamics 365 Customer Insights Azure Data Lake Storage съхранение. 
+В тази статия се обсъжда как да се свържете Dynamics 365 Customer Insights с акаунт Azure Data Lake Storage с помощта на главница на услугата на Azure вместо ключове за акаунт за съхранение. 
 
-Автоматизираните инструменти, които използват услугите на Azure, винаги трябва да имат ограничени разрешения. Вместо приложенията да влизат като напълно привилегирован потребител, Azure предлага принципали на услуги. Можете да използвате главници на услуги за сигурно добавяне или редактиране на [папка "Общ модел данни" като източник на данни](connect-common-data-model.md) или за създаване или актуализиране на [среда](create-environment.md).
+Автоматизираните инструменти, които използват услугите на Azure, винаги трябва да имат ограничени разрешения. Вместо приложенията да влизат като напълно привилегирован потребител, Azure предлага принципали на услуги. Можете да използвате главници на услуги за сигурно [добавяне или редактиране на папка "Общ модел на данни" като източник на данни](connect-common-data-model.md) или [за създаване или актуализиране на среда](create-environment.md).
 
 > [!IMPORTANT]
-> - Акаунтът за съхранение на Data Lake, който ще използва главницата на услугата, трябва да има [разрешено йерархично пространство за имена](/azure/storage/blobs/data-lake-storage-namespace).
+> - Акаунтът за съхранение на езерото данни, който ще използва главницата на услугата, трябва да бъде Gen2 и да има [йерархично пространство на имената разрешено](/azure/storage/blobs/data-lake-storage-namespace). Акаунтите за съхранение на Azure Data Lake Gen1 не се поддържат.
 > - Имате нужда от администраторски разрешения за вашия абонамент за Azure, за да създадете принципал на услугата.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Създаване на субект на услуга на Azure за Customer Insights

@@ -2,6 +2,22 @@
   href: index.yml
 - name: Преглед на продукта
   href: overview.md
+- name: Каталог за обучение
+  items:
+    - name: Начало
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Поглъщайте данни
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Създаване на унифициран потребителски профил
+      href: /learn/modules/unified-customer-profile/
+    - name: Работа със прозрения за аудиторията
+      href: /learn/modules/working-with-customer-insights/
+    - name: Обогатете данните и направете прогнози
+      href: /learn/modules/enrich-data/
+    - name: Управление на външни връзки
+      href: /learn/modules/configure-third-party-connections/
+    - name: Администриране на Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: Безплатен пробен период
   items:
     - name: Регистриране за безплатен пробен период
@@ -30,16 +46,6 @@
           href: audience-insights/home.md
     - name: Работа с бизнес акаунти
       href: audience-insights/work-with-business-accounts.md
-    - name: Научете повече за модулите
-      items:
-        - name: Поглъщайте данни
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Създаване на унифициран потребителски профил
-          href: /learn/modules/unified-customer-profile/
-        - name: Работа с приложението
-          href: /learn/modules/working-with-customer-insights/
-        - name: Обогатете данни и прогнози
-          href: /learn/modules/enrich-data/
     - name: Източници на данни
       items:
         - name: Общ преглед на източниците на данни
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: DSR права и заявки
   href: dsr-rights-requests.md
+- name: Получаване на поддръжка
+  href: /power-platform/admin/get-help-support
