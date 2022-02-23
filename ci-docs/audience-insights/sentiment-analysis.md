@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: bg-BG
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008752"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>Анализиране на настроенята в обратната връзка с клиентите (Предварителен преглед)
 
 Клиентите очакват висококачествени продукти, услуги и изживявания в наши дни. Особено клиенти, които споделят отзивите си. За организациите е много предизвикателно да анализират все по-голям обем данни, без да понижават точността и по-високите разходи за труд. Dynamics 365 Customer Insights предлага модел за анализ на настроения за обратна връзка от клиентите, който дава възможност на организациите да анализират данните си по-точно и на по-ниска цена.

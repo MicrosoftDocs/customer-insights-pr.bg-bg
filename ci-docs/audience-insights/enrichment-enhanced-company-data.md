@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: 693e2f410a77cbf2e87ff0132ce963aab7e8e3e4
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: bg-BG
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010876"
 ---
-
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Обогатяване на фирмените профили със засилени фирмени данни
 
 Използвайте моделите и компилираните фирмени данни на Microsoft, за да коригирате, допълвате и стандартизирате профилите на вашата фирма. Ще използваме формата Общ [модел](/common-data-model/schema/core/applicationcommon/account) данни за по-добра точност и прозрения.
