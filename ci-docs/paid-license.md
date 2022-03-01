@@ -1,25 +1,25 @@
 ---
 title: Започнете с платен лиценз на Dynamics 365 Customer Insights
 author: m-hartmann
-description: Запознайте се с първото изпълнение в Dynamics 365 Customer Insights и проучете неговите възможности.
+description: Запознайте се с първия опит в Dynamics 365 Customer Insights и проучете неговите възможности.
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
-ms.topic: conceptual
+ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: e17b66217415c0b554a449f0d992deec7e2d96e7
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: b4228a36069f4adb8098ea96cefec0eef81a6560
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977632"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645663"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Започнете, след като закупите Customer Insights
 
 Тази статия обяснява как да направите първите си стъпки в Dynamics 365 Customer Insights след като вашата организация е закупила абонамент. Ако искате да закупите Customer Insights, опции за връзка с нас са посочени в [уебсайта на Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-След закупуване на абонаментен лиценз за Customer Insights, глобалният администратор на Microsoft 365 наемателя получава имейл, който ги приканва да създадат средата. 
+След закупуване на лиценз за абонамент за Customer Insights, глобалният администратор на клиента на Microsoft 365 получава имейл с покана за създаване на среда. 
 
 Customer Insights е лицензиран на клиент и включва множество възможности. Можете да закупите повече капацитет и лицензи, за да увеличите квотата по подразбиране. 
 - [Общ преглед на ценообразуване](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -29,7 +29,7 @@ Customer Insights е лицензиран на клиент и включва м
 
 ## <a name="start-with-customer-insights"></a>Първи стъпки с Customer Insights
 
-Първото изпълнение ви помага да изберете първоначалния фокус с Customer Insights и да проучите възможностите с примерни данни. Като следваща стъпка можете да създадете своя собствена среда и да работите със собствените си данни.
+Опитът при първото стартиране ви помага да изберете първоначалния фокус с Customer Insights и да проучите възможностите с примерни данни. Като следваща стъпка можете да създадете своя собствена среда и да работите със собствените си данни.
 
 **За да влезете за първи път**:
 

@@ -1,20 +1,20 @@
 ---
 title: Конектор на Power BI
 description: Научете как да използвате конектора на Dynamics 365 Customer Insights в Power BI.
-ms.date: 07/23/2021
-ms.reviewer: mhart
+ms.date: 09/21/2020
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035494"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4405071"
 ---
 # <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
 
@@ -23,7 +23,7 @@ ms.locfileid: "7035494"
 ## <a name="prerequisites"></a>Предварителни изисквания
 
 - Имате унифицирани клиентски профили.
-- Най-новата версия на [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) е инсталирана на вашия компютър. [Научете повече за Power BI Desktop](/power-bi/desktop-what-is-desktop).
+- Последната версия на [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) е инсталирана на вашия компютър. [Научете повече за Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop).
 
 ## <a name="configure-the-connector-for-power-bi"></a>Конфигуриране на конектора за Power BI
 
@@ -31,7 +31,7 @@ ms.locfileid: "7035494"
 
 1. Изберете **Вижте още** и търсете **Dynamics 365 Customer Insights**
 
-1. Изберете **Свързване**.
+1. Изберете резултата и изберете **Свързване**.
 
 1. **Влезте** със същия акаунт на организация, който използвате за Customer Insights, и изберете **Свързване**.
    > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "7035494"
 
 1. В диалоговия прозорец на **Навигатор**. виждате списъка с всички среди, до които имате достъп. Разгънете среда и отворете някоя от папките (обекти, мерки, сегменти, обогатявания). Например отворете папката **Обекти**, за да видите всички обекти, които можете да импортирате.
 
-   ![Навигатор за конектор на Power BI.](media/power-bi-navigator.png "Навигатор за конектор на Power BI")
+   ![Навигатор за конектор на Power BI](media/power-bi-navigator.png "Навигатор за конектор на Power BI")
 
 1. Поставете отметки в квадратчетата до обектите, които да се включат и **заредят**. Можете да изберете няколко обекта от няколко среди.
 
@@ -47,32 +47,8 @@ ms.locfileid: "7035494"
 
 ## <a name="large-data-sets"></a>Големи набори от данни
 
-Конекторът на Customer Insights за Power BI е проектиран да работи за набори от данни, които съдържат до 1 милион клиентски профила. Импортирането на по-големи набори от данни може да работи, но отнема много време. Освен това процесът може да изтече по време на изчакване поради ограничения на Power BI. За повече информация вижте [Power BI: Препоръки за големи масиви от данни](/power-bi/admin/service-premium-what-is#large-datasets). 
+Конекторът на Customer Insights за Power BI е проектиран да работи за набори от данни, които съдържат до 1 милион клиентски профила. Импортирането на по-големи набори от данни може да работи, но отнема много време. Освен това процесът може да изтече по време на изчакване поради ограничения на Power BI. За повече информация вижте [Power BI: Препоръки за големи масиви от данни](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>Работа с подмножество данни
 
 Помислете за работа с подмножество от вашите данни. Например можете да създавате [сегменти](segments.md) вместо да експортирате всички клиентски записи в Power BI.
-
-## <a name="troubleshooting"></a>Отстраняване на неизправности
-
-### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Средата на Customer Insights не се показва в Power BI
-
-Среда, която има повече от една [релация](relationships.md) дефинирани между две идентични обекти в статистика за аудиторията няма да бъдат налични в конектор Power BI.
-
-Можете да идентифицирате и премахнете дублираните връзки.
-
-1. В статията за аудиторията отидете на **Данни** > **Релации** върху средата, която ви липсва в Power BI.
-2. Идентифицирайте дублирани релации:
-   - Проверете дали има дефинирани повече от една връзка между едни и същи две обекти.
-   - Проверете дали е създадена връзка между две обекти, които са включени в процеса на обединение. Има дефинирана имплицитна връзка между всички обекти, включени в процеса на обединение.
-3. Премахнете всички идентифицирани дублирани връзки.
-
-След премахване на дублираните връзки, опитайте да конфигурирате конектора на Power BI отново. Средата трябва да е налична сега.
-
-### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Грешки в полетата за дата при зареждане на обекти в Power BI Desktop
-
-Когато зареждате обекти, които съдържат полета с формат на дата като ММ/ДД/ГГГГ, може да възникнат грешки поради несъответстващи формати на езикова променлива. Това несъответствие се получава, когато файлът на Power BI Desktop е зададен на друг език, различен от английски (САЩ), тъй като полетата за дата в аналитичните данни за аудитория се записват във формат на САЩ.
-
-Файлът на Power BI Desktop има една настройка на езикова променлива, която се прилага при извличане на данни. За да се тълкуват правилно тези полета за дата, задайте езиковата променлива на .BPI файла на английски (Съединени щати). [Научете как да променяте езиковата променлива на файл на Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

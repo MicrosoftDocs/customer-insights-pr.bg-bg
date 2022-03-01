@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a3d7f9276330a6daacbe9428d84a371b81bbefe
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466335"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461090"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>Използване на демографски измерения за разделяне на данни за поведение
 
@@ -29,7 +29,7 @@ ms.locfileid: "7466335"
 - Среда на аналитичните данни за ангажираност, в която имате данни за клиентски профил, свързани със средата на аналитичните данни за аудитория, където се създават сегментите и потребителските профили. Повече информация: [Създаване на връзка между аналитични данни за аудитория и аналитични данни за ангажираност](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> След като създадете връзка между средите с аналитични данни за аудитория и аналитични данни за ангажираност, може да искате само данни, специфични за свойствата на потребителския профил, които могат да бъдат полезни като измерения в аналитичните данни за ангажираност. За повече информация отидете на [Активиране на атрибути и сегменти на унифицирани профили на аналитични данни за аудитория](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
+> След като създадете връзка между средите с аналитични данни за аудитория и аналитични данни за ангажираност, може да искате само данни, специфични за свойствата на потребителския профил, които могат да бъдат полезни като измерения в аналитичните данни за ангажираност. За повече информация отидете на [Активиране на атрибути и сегменти на унифицирани профили на аналитични данни за аудитория](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
 
 ## <a name="create-a-new-custom-report"></a>Създаване на нов персонализиран отчет
 

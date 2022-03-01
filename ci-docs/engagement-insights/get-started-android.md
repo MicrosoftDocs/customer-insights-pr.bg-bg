@@ -3,25 +3,24 @@ title: Първи стъпки с Android SDK
 description: Научете как да персонализирате и стартирате Android SDK
 author: britl
 ms.reviewer: mhart
-ms.custom: intro-internal
 ms.author: britl
 ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 71ec4841303bd17d3f605547be8d6032c58a7b21
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977500"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655329"
 ---
 # <a name="get-started-with-the-android-sdk"></a>Първи стъпки с Android SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Този въвеждащ курс ви показва как да добавите към приложението си Android приложение с SDK за аналитични данни за ангажираността на Dynamics 365 Customer Insights. Ще започнете да виждате събития във вашия портал след пет минути или по-рано.
+Този урок ви води през процеса на инструментиране на вашето Android приложение с Dynamics 365 Customer Insights ангажиране прозрения SDK. Ще започнете да виждате събития във вашия портал след пет минути или по-рано.
 
 ## <a name="configuration-options"></a>Опции за конфигуриране
 Следните опции за конфигуриране могат да бъдат предадени на SDK:
@@ -32,12 +31,12 @@ ms.locfileid: "7977500"
 
 - Android Studio
 
-- Минимум Android API ниво: 16 (Jelly Bean)
+- Минимум Android Ниво на API: 16 (Желирани зърна)
 
 - Ключ за поглъщане (вижте инструкциите по-долу за това как да получите)
 
 ## <a name="integrate-the-sdk-into-your-application"></a>Интегрирайте SDK във вашето приложение
-Започнете процеса, като изберете работно пространство, изберете мобилната платформа на Android и изтеглите Android SDK.
+Започнете процеса, като изберете работна област, изберете Android мобилна платформа и изтеглите Android SDK.
 
 - Използвайте превключвателя на работното пространство в левия навигационен прозорец, за да изберете работното си пространство.
 
@@ -47,7 +46,7 @@ ms.locfileid: "7977500"
 
 ## <a name="configure-the-sdk"></a>Конфигуриране на SDK
 
-След като изтеглите SDK, можете да работите с него в Android Studio, за да активирате и дефинирате събития. Има два начина да направите това:
+След като изтеглите SDK, можете да работите с него в Android Studio, за да разрешите и дефинирате събития. Има два начина да направите това:
 ### <a name="option-1-use-jitpack-recommended"></a>Опция 1: Използвайте JitPack (препоръчително)
 1. Добавете хранилището JitPack към вашия коренов `build.gradle`:
     ```gradle
@@ -68,7 +67,7 @@ ms.locfileid: "7977500"
     ```
 
 ### <a name="option-2-use-download-link"></a>Опция 2: Използване на връзка за изтегляне
-1. Изтеглете [Аналитични данни за ангажираност на AndroidSDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и поставете `eiandroidsdk-debug.aar` файл в папката `libs`.
+1. Изтеглете [аналитичните данни за ангажиране Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и поставете файла в `eiandroidsdk-debug.aar``libs` папката.
 
 1. Отворете файла `build.gradle` на ниво проект и добавете следните фрагменти:
     ```gradle

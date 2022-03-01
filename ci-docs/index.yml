@@ -4,15 +4,15 @@ metadata:
   author: m-hartmann
   description: Намерете подходящи статии, за да започнете с помощно съдържание.
   ms.author: mhart
-  ms.date: 03/02/2022
+  ms.date: 10/29/2020
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e154b37f57bb2765f48a9f6b38f86dffcb05f403
-  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
+  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
+  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
   ms.translationtype: HT
   ms.contentlocale: bg-BG
-  ms.lasthandoff: 02/10/2022
-  ms.locfileid: "8107186"
+  ms.lasthandoff: 03/15/2021
+  ms.locfileid: "5598442"
 title: Документация на Dynamics 365 Customer Insights
 summary: Намерете полезни ресурси, за да започнете и да научите за функциите и възможностите на Customer Insights.
 landingContent:
@@ -23,41 +23,19 @@ landingContent:
     - text: Общ преглед на Customer Insights
       url: overview.md
     - text: Планове за издаване
-      url: /dynamics365/release-plans/
-    - text: Открийте CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
-  - linkListType: learn
-    links:
-    - text: Пътека за обучение "Аналитични данни за клиенти"
-      url: /learn/paths/build-customer-insights/
-- title: Първи стъпки с Customer Insights
+      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Достъп до средата ви
+      url: https://home.ci.ai.dynamics.com/
+- title: Първи стъпки с Аналитични данни за аудитория
   linkLists:
   - linkListType: get-started
     links:
     - text: Регистриране за пробен период
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Какво е новото в Аналитични данни за аудитория
+    - text: Какво е новото
       url: audience-insights/whats-new-audience-insights.md
-    - text: Ръководство за бърз старт
-      url: audience-insights/get-started.md
-  - linkListType: learn
-    links:
-    - text: Начало
-      url: /learn/modules/get-started-customer-data-platform/
-- title: Администриране на Аналитични данни за аудитория
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Конфигуриране на системата
-      url: audience-insights/system.md
-    - text: Определяне на потребителските разрешения
-      url: audience-insights/permissions.md
-    - text: Управление на няколко среди
-      url: audience-insights/manage-environments.md
-  - linkListType: learn
-    links:
-    - text: Администриране на Customer Insights
-      url: /learn/modules/administer-customer-data-platform/
+    - text: Документация на Аналитични данни за аудитория
+      url: audience-insights/index.yml
 - title: Влезте в контакт
   linkLists:
   - linkListType: overview
@@ -66,18 +44,18 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2073991
     - text: Споделете идеите си
       url: https://go.microsoft.com/fwlink/?linkid=2074172
-    - text: Докладване за проблем
+    - text: Докладване на проблем
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Споделяйте данни между възможностите
+- title: Уроци за Аналитични данни за аудитория
   linkLists:
-  - linkListType: how-to-guide
+  - linkListType: tutorial
     links:
-    - text: Създайте връзка между възможностите
-      url: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - text: Създаване на сегменти за използване в отчети
-      url: engagement-insights/integrate-audience-insights-segments.md
-    - text: Използвайте свойствата на профила за интерактивен анализ
-      url: engagement-insights/curate-dimensions.md
+    - text: Създаване на нова среда
+      url: audience-insights/home.md
+    - text: Създаване на унифициран потребителски профил
+      url: /learn/modules/unified-customer-profile/
+    - text: Работа с приложението
+      url: /learn/modules/working-with-customer-insights/
 - title: Експортиране на данни за Аналитични данни за аудитория
   linkLists:
   - linkListType: how-to-guide
@@ -88,6 +66,16 @@ landingContent:
       url: audience-insights/customer-card-add-in.md
     - text: Конектор на Power BI
       url: audience-insights/export-power-bi.md
+- title: Администриране на Аналитични данни за аудитория
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигуриране на системата
+      url: audience-insights/system.md
+    - text: Определяне на потребителските разрешения
+      url: audience-insights/permissions.md
+    - text: Управление на няколко среди
+      url: audience-insights/manage-environments.md
 - title: Относно Аналитични данни за ангажименти (преглед)
   linkLists:
   - linkListType: overview

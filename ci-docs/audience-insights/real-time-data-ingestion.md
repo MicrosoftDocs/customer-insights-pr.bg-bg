@@ -2,19 +2,19 @@
 title: Поглъщане на данни в реално време и ограничения
 description: Обща информация за възможностите в реално време в прозренията на аудиторията.
 ms.date: 10/27/2020
-ms.reviewer: mhart
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 897c876306a39cd9d5842487b96cb2f0a8df7e656de0fb7f10fe8c7f53e2db6b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035264"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689162"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Приемане на данни в реално време (преглед)
 
@@ -54,7 +54,7 @@ API в реално време ви позволява да публикуват
 
 Има два начина за свързване с API в реално време:
 
-- [косвено](#connect-via-the-dynamics-365-customer-insights-connector) с помощта на [конектора на Dynamics 365 Customer Insights](/connectors/customerinsights/)
+- [косвено](#connect-via-the-dynamics-365-customer-insights-connector) с помощта на [конектора на Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
 - [пряко](#connect-directly-to-the-real-time-api), с код
 
 И двата начина споделят следните предварителни изисквания:
@@ -66,13 +66,13 @@ API в реално време ви позволява да публикуват
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Свързване чрез конектор на Dynamics 365 Customer Insights
 
-API в реално време може да приема данни от специализиран конектор на Power Platform, [конектора на Dynamics 365 Customer Insights](/connectors/customerinsights/), без да е необходимо да пишете и внедрявате код.    
-Конекторът може да извършва същите действия в реално време като API. Нуждаете се от валиден лиценз за премиалните конектори. За повече информация вижте [ЧЗВ за лицензите за Power Apps и Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
+API в реално време може да приема данни от специализиран конектор на Power Platform, [конектора на Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), без да е необходимо да пишете и внедрявате код.    
+Конекторът може да извършва същите действия в реално време като API. Нуждаете се от валиден лиценз за премиалните конектори. За повече информация вижте [ЧЗВ за лицензите за Power Apps и Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps и/или Power Automate](/connectors/)
-- Azure [Logic Apps](/azure/connectors/apis-list)
+- Power Platform [Power Apps и/или Power Automate](https://docs.microsoft.com/connectors/)
+- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
 
-За подробности относно създаването на потоци вижте [документацията на Power Automate](/power-automate/).
+За подробности относно създаването на потоци вижте [документацията на Power Automate](https://docs.microsoft.com/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Свързване директно с API в реално време
 
@@ -83,7 +83,6 @@ API в реално време може да приема данни от спе
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>Разберете вашето използване в реално време с телеметрия
 
-Получете общ преглед на обема на заявките към API в реално време и информация за проблеми, които системата може да срещне. Можете да осъществите [достъп до телеметрията в реално време](system.md#api-usage-tab). 
+Получете общ преглед на обема на заявките към API в реално време и информация за проблеми, които системата може да срещне. Можете [да стигнете до телеметрията в реално време](system.md#api-usage-tab), като отидете в **Администриране** > **Система** > **Използване на API**. В таблицата **Операции**, редовете за API операции, които използват методите в реално време, съдържат бутон за преглед на използването на API в реално време. Бутонът се визуализира с бинокулярен символ. Изберете бутона, за да отворите страничен прозорец, съдържащ подробности за използването на API в реално време за използване в текущата среда.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Използвайте селектора **Групиране по**, за да изберете как да представите най-добре вашите взаимодействия в реално време във времева линия в диапазон от последните 24 часа до последните 30 дни. Можете да групирате данните по API метод, квалифицирано име на обект (приет обект), създадено от (източник на събитието), резултат (успех или неуспех) или кодове за грешки. Данните са налични като хронологична диаграма и като таблица.

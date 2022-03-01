@@ -1,7 +1,7 @@
 ---
 title: Експортирайте данните от Customer Insights в Google Ads
 description: Научете как да конфигурирате връзката и да експортирате в Google Ads.
-ms.date: 09/27/2021
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,19 +9,16 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
+ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617905"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6604264"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Експортиране на сегменти в Google Ads (преглед)
 
 Експортирайте сегменти от унифицирани клиентски профили в списък с аудитории на Google Ads и ги използвайте за реклама в Google Търсене, Gmail, YouTube и Google Display Network. 
-
-> [!IMPORTANT]
-> Понастоящем можете да създадете нова връзка и да експортирате данни в Google Ads само ако вече имате одобрен маркер за програмисти на Google Ads. Поради промени в правилата, скоро ще актуализираме експортирането от Google Ads и ще предоставим опция за експортиране, която няма да изисква маркера на програмист, за да гарантира непрекъснатостта на работата ви и да опрости експортирането в Google Ads. Препоръчваме да не настройвате повече връзки с Google Ads, за да улесните по-лесното преминаване към новата опция за експортиране.
 
 ## <a name="prerequisites-for-connection"></a>Предварителни изисквания за връзка
 
@@ -35,9 +32,9 @@ ms.locfileid: "7617905"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- До 1 милион потребителски профила на износ за Google Ads.
+- До 1 милион профила на износ към Google Ads.
 - Експортирането в Google Ads е ограничено до сегменти.
-- Експортирането на сегменти с общо 1 милион потребителски профила може да отнеме до 5 минути поради ограничения от страна на доставчика. 
+- Експортирането на сегменти с общо 1 милион профила може да отнеме до 5 минути поради ограничения от страна на доставчика. 
 - Съответствието в Google Ads може да отнеме до 48 часа.
 
 ## <a name="set-up-connection-to-google-ads"></a>Настройване на връзка с Google Ads
@@ -74,7 +71,7 @@ ms.locfileid: "7617905"
 
 1. Въведете своя **[ИД на аудиторията на Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изберете **Свързване** за инициализиране на връзката с Google Ads.
 
-1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента.
+1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента.
 
 1. Изберете сегментите, които искате да експортирате. Можете да експортирате до 1 милион потребителски профила общо в Google Ads.
 

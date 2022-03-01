@@ -1,7 +1,7 @@
 ---
 title: Експортирайте данните от Customer Insights в Salesforce Marketing Cloud
 description: Научете как да конфигурирате връзката и да експортирате в Salesforce Marketing Cloud.
-ms.date: 07/23/2021
+ms.date: 06/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b50539d6478a8fe196048f0fb421e5856f713a3ddc6577a637e593f90857ae8b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
+ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035540"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314576"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>Експортиране на сегменти и други данни в Salesforce Marketing Cloud (преглед)
 
@@ -23,6 +23,11 @@ ms.locfileid: "7035540"
 ## <a name="prerequisites-for-connection"></a>Предварителни изисквания за връзка
 
 - Наличност на SFTP хост и съответни администраторски идентификационни данни. [Как да настроите SFTP местоположения за Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
+
+## <a name="known-limitations"></a>Известни ограничения
+
+- Времетраенето на експортиране зависи от производителността на вашата система. Препоръчваме две ядра на процесора и 1 Gb памет като минимална конфигурация на вашия сървър. 
+- Експортирането на обекти с до 100 милиона потребителски профила може да отнеме 90 минути при използване на препоръчителната минимална конфигурация. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>Настройте връзката с Salesforce Marketing Cloud
 

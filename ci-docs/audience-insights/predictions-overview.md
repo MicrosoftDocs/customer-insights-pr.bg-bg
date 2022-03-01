@@ -1,20 +1,21 @@
 ---
 title: Преглед на поддържаните сценарии за прогноза
 description: Сценарии и опции за прогнози, обхванати от Dynamics 365 Customer Insights приложение.
-ms.date: 12/21/2021
+ms.date: 05/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: get-started
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.custom: intro-internal
+ms.openlocfilehash: 57c61895d636273fc90a0ac5a942fd0c9abf583c687ae20621949554e581cdf8
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978000"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035996"
 ---
 # <a name="predictions-overview"></a>Общ преглед на прогнози
 
@@ -23,26 +24,15 @@ Dynamics 365 Customer Insights идва с разнообразни опции, 
 ## <a name="out-of-box-models"></a>Предварително подготвени модели
 
 Най-лесният начин да започнете с прогнозиране на данни са предварително дефинираните модели, често наричани „готови модели“. Те изискват само определени данни и структура, за да генерират бързо прозрения. В момента се предлагат следните модели: 
-
-# <a name="individual-consumers-b-to-c"></a>[Индивидуални потребители (B-to-C)](#tab/b2c)
-
-- [Доживотна стойност на клиента](predict-customer-lifetime-value.md): Предсказва потенциалните приходи на клиент през цялото взаимодействие с бизнес.
+- [Доживотна стойност на клиента](predict-customer-lifetime-value.md): Предсказва потенциалните приходи на клиент през цялото взаимодействие с бизнес. 
 - [Препоръка за продукт](predict-product-recommendation.md): Предлага набори от предсказуеми препоръки за продукти, базирани на поведение при покупка и клиенти с подобни модели на покупка.
 - [Оттегляне на абонаменти](predict-subscription-churn.md): Предвижда дали даден клиент е в риск да не използва повече продуктите или услугите от абонамента на фирмата.
 - [Транзакционен отбив](predict-transactional-churn.md): Предскажете дали клиентът вече няма да закупи вашите продукти или услуги в определен период от време.
-- [Анализ на настроения](sentiment-analysis.md) : Анализирайте настроения на обратната връзка от клиентите и идентифицирайте бизнес аспекти, които често се споменават.
-
-# <a name="business-accounts-b-to-b"></a>[Бизнес акаунти (B-to-B)](#tab/b2b)
-
-- [Транзакционен отбив](predict-transactional-churn.md): Предскажете дали клиентът вече няма да закупи вашите продукти или услуги в определен период от време.
-
----
-
 
 ## <a name="azure-machine-learning-integration"></a>Интеграция на Azure Machine Learning
 
 Ако дадена организация вече използва машинно обучение сценарии, базирани на Azure Machine Learning експерименти, функцията за персонализирани модели в Customer Insights помага за свързването на точките. Създайте работни потоци, които ви помагат да изберете данните, от които искате да генерирате прозрения, и да съпоставите резултатите с вашите унифицирани клиентски профили. За повече информация вижте [Персонализирани модели за машинно обучение](custom-models.md).
 
-## <a name="ai-builder-prediction"></a>AI Builder прогноза
+## <a name="ai-builder-prediction"></a>Прогноза за AI Builder
 
 Понякога наборите от данни са непълни и някои стойности липсват. Customer Insights може да помогне за прогнозиране на липсващи стойности за обекта и сегментите на клиента. За повече информация вижте [Попълнете частичните си данни с прогнози](predictions.md).

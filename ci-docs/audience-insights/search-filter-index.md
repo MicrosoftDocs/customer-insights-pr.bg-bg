@@ -1,7 +1,7 @@
 ---
 title: Търсене и филтриране на потребителски профили
 description: Бързо откривайте информация за унифицирани клиентски профили и филтрирайте за конкретни атрибути.
-ms.date: 11/01/2021
+ms.date: 01/19/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,20 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732021"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7469938"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Клиентски профили: Индекс за търсене и филтриране
 
 Резултатът от обединяването на клиентските данни е обект на клиентски профил, който предоставя единен изглед на общата клиентска база. За бързо [намиране на информация за конкретен клиент или група клиенти](customer-profiles.md) можете да конфигурирате възможностите **Търсене** и **Филтър** на страницата **Клиенти**. Прочетете нататък, за да научите как администраторите могат да редактират атрибутите на страницата **Показалец за търсене и филтриране**, които са достъпни за потребителите за търсене и филтриране.
 
-   :::image type="content" source="media/search-filter.png" alt-text="Филтър за търсене":::
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!div class="mx-imgBorder"]
+> ![Филтър за търсене.](media/search-filter.png "Филтър за търсене")
 
 ## <a name="add-fields-and-specify-attributes"></a>Добавяне на полета и задаване на атрибути
 
