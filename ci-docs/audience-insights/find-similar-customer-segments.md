@@ -1,24 +1,29 @@
 ---
-title: Търсене на сходни клиенти с помощта на AI
+title: Намерете подобни клиенти с AI (съдържа видео)
 description: Намиране на сходни клиентски сегменти с изкуствен интелект.
 ms.date: 06/25/2020
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+searchScope:
+- ci-segment-builder
+- ci-segment-insights
+- customerInsights
+ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034513"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355232"
 ---
 # <a name="similar-customers-preview"></a>Сходни клиенти (преглед)
 
 Тази функция ви позволява да намирате сходни клиенти в клиентската си база с помощта на изкуствен интелект. Трябва да имате създаден поне един сегмент, за да използвате тази функция. Разширяването на критериите на съществуващ сегмент помага да се намерят клиенти, които са сходни на този сегмент.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > *Намиране на сходни клиенти* използва автоматизирани средства за оценка на данни и прави прогнози въз основа на тези данни, поради това има възможността да се използва като метод за профилиране, както този термин е определен от Общия регламент относно защитата на данните („GDPR“). Използването на тази функция от клиента за обработка на данни може да бъде предмет на GDPR или други закони или разпоредби. Вие носите отговорност за това, че използвате Dynamics 365 Customer Insights, включително прогнози, е в съответствие с всички приложими закони и разпоредби, включително закони, свързани с неприкосновеността на личния живот, личните данни, биометричните данни, защитата на данните и поверителността на комуникациите.

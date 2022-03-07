@@ -3,26 +3,29 @@ title: Примерно ръководство на прогноза за пре
 description: Използвайте това примерно ръководство, за да изпробвате модела за прогноза за препоръка на продукти.
 ms.date: 02/10/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: b219935dfbd9f7acc1104d83e2ca281801a1a4251ae4c19fc03d4b1ce46f4613
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 8ba54cfd466049c8df99c15f34626ab1914234f1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035172"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354634"
 ---
-# <a name="product-recommendation-prediction-preview-sample-guide"></a>Примерно ръководство на прогноза (преглед) за препоръки за продукти
+# <a name="product-recommendation-prediction-sample-guide"></a>Примерно ръководство на прогноза за препоръки за продукти
 
 Ще ви преведем от край до край през прогноза за препоръка на продукти, използвайки примерните данни, предоставени по-долу.
 
 ## <a name="scenario"></a>Сценарий
 
-Contosoе компания, която произвежда висококачествени кафе и кафе машини, които продават чрез своя уеб сайт Contoso Coffee. Целта им е да разберат кои продукти трябва да препоръчат на своите повтарящи се клиенти. Като знаете за кои клиенти има по-голяма **вероятност да закупят**, може да им помогне да спестят маркетингови усилия, като се фокусират върху конкретни елементи.
+Contoso е компания, която произвежда висококачествено кафе и кафе машини, които продават чрез уебсайта си Contoso Coffee. Целта им е да разберат кои продукти трябва да препоръчат на своите повтарящи се клиенти. Като знаете за кои клиенти има по-голяма **вероятност да закупят**, може да им помогне да спестят маркетингови усилия, като се фокусират върху конкретни елементи.
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
@@ -31,7 +34,7 @@ Contosoе компания, която произвежда висококаче
 
 ## <a name="task-1---ingest-data"></a>Задача 1 - Поглъщане на данни
 
-Прегледайте статиите [за поглъщане на данни](data-sources.md) и [импортиране на източници на данни с помощта на конектори на Power Query](connect-power-query.md) конкретно. Следващата информация предполага, че сте се запознали с поглъщането на данни като цяло.
+Прегледайте статиите [за поглъщането](data-sources.md) на данни и [импортирането на източници на данни с помощта на Power Query конектори](connect-power-query.md) специално. Следващата информация предполага, че сте се запознали с поглъщането на данни като цяло.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Поглъщайте клиентски данни от платформата за електронна търговия
 

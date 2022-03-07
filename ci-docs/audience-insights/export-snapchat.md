@@ -1,22 +1,21 @@
 ---
 title: Експортиране на данни на Customer Insights в Snapchat
 description: Научете как да конфигурирате връзката и да експортирате в Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d3dae7f0fef1fc3792c90c8ac0d3b037f5c0923d
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
-ms.translationtype: HT
+ms.openlocfilehash: 7eac3307b3f82b6c5ebc3d66d6563ae50696ed65
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760470"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227235"
 ---
-# <a name="export-segment-lists-to-snapchat-preview"></a>Експортиране на списъци със сегменти в Snapchat (преглед)
+# <a name="export-segments-to-snapchat-preview"></a>Експортиране на сегменти в Snapchat (преглед)
 
 Експортирайте сегменти от унифицирани клиентски профили в Snapchat и ги използвайте за реклама. 
 
@@ -29,7 +28,7 @@ ms.locfileid: "5760470"
 ## <a name="known-limitations"></a>Известни ограничения
 
 - Експортирането в Snapchat е ограничено до сегменти.
-- Експортирането на до 1 милион профила в Snapchat може да отнеме до 15 минути. 
+- Експортирането на до 1 милион потребителски профила в Snapchat може да отнеме до 15 минути. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Настройване на връзка към Snapchat
 
@@ -63,7 +62,7 @@ ms.locfileid: "5760470"
 
 1. Влезте в [**ИД на аудитория на Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Snapchat.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Snapchat.
 
 1. Изберете сегментите, които искате да експортирате. 
 

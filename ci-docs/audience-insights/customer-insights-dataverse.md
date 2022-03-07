@@ -1,43 +1,45 @@
 ---
-title: Данни от "Аналитични данни за клиенти" в Microsoft Dataverse
-description: Използвайте обектите "Аналитични данни за клиенти" като таблици в Microsoft Dataverse.
+title: Данни на Customer Insights в Microsoft Dataverse
+description: Използвайте обекти на Customer Insights като таблици в Microsoft Dataverse.
 ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6f74559b34a95ed976a4e353c2dbabe59e1a8839
-ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
-ms.translationtype: HT
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866921"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355416"
 ---
-# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работа с данни от "Аналитични данни за клиенти" в Microsoft Dataverse
+# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работа с данни на Customer Insights в Microsoft Dataverse
 
-"Аналитични данни за клиенти" предоставя възможност за предоставяне на изходни обекти в [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). Тази интеграция позволява лесно споделяне на данни и разработка по поръчка чрез подход с нисък код / без код. Изходните обекти ще бъдат достъпни като таблици в Dataverse. Тези таблици дават възможност за сценарии като [автоматизирани работни потоци чрез Power Automate](/power-automate/getting-started), [приложения, задвижвани от модел](/powerapps/maker/model-driven-apps/), и [приложения за платно](/powerapps/maker/canvas-apps/) чрез Power Apps. Можете да използвате данните за всяко друго приложение, което се основава на Dataverse таблици. Текущата реализация поддържа главно справки, при които данните от наличните обекти с прозрения за аудиторията могат да бъдат извлечени за даден идентификатор на клиента.
+Customer Insights предоставя опция за предоставяне на изходни обекти в [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). Тази интеграция позволява лесно споделяне на данни и разработка по поръчка чрез подход с нисък код / без код. Изходните обекти ще бъдат достъпни като таблици в Dataverse. Тези таблици позволяват сценарии като [автоматизирани работни потоци чрез Power Automate](/power-automate/getting-started), [приложения, управлявани от модел](/powerapps/maker/model-driven-apps/) и [приложения за платно](/powerapps/maker/canvas-apps/) чрез Power Apps. Можете да използвате данните за всяко друго приложение, базирано на Dataverse таблици. Текущата реализация поддържа главно справки, при които данните от наличните обекти с прозрения за аудиторията могат да бъдат извлечени за даден идентификатор на клиента.
 
-## <a name="attach-a-dataverse-environment-to-customer-insights"></a>Прикачване на Dataverse среда към "Аналитични данни за клиенти"
+## <a name="attach-a-dataverse-environment-to-customer-insights"></a>Прикачете Dataverse среда към Customer Insights
 
 **Организации със съществуващи Dataverse среди**
 
-Организациите, които вече използват Dataverse, могат да [използват една от съществуващите си Dataverse среди, когато администратор настрои аналитични данни за](create-environment.md) аудиторията. Предоставяйки URL адреса на Dataverse среда, той се прикрепя към новата им среда за прозрения на аудиторията. За да се гарантира възможно най-добра производителност, В един и същи регион трябва да се хостват Клиентски аналитични данни и Dataverse среди.
+Организации, които вече използват Dataverse могат да [използват един от съществуващите им Dataverse среди](create-environment.md) когато администратор задава статистика за аудиторията. Като предоставите URL адреса на Dataverse среда, тя се привързва към тяхната нова аудитория прозрения среда. За да се осигури възможно най-доброто представяне, Customer Insights и Dataverse средите трябва да бъдат хоствани в същия регион.
 
 **Нова организация**
 
-Ако създадете нова организация при настройването на "Аналитични данни за клиенти", автоматично ще получите нова среда за Dataverse.
+Ако създадете нова организация, когато настройвате Customer Insights, автоматично ще получите нова Dataverse среда.
 
 > [!NOTE]
-> Ако вашите организации вече използват Dataverse в своя наемател, важно е да запомните, че [създаването на Dataverse среда се контролира от администратор](/power-platform/admin/control-environment-creation.md) . Например, ако настройвате нова среда за прозрения на аудиторията с организационния си профил и администраторът е забранил създаването на Dataverse пробни среди за всички, с изключение на администраторите, не можете да създадете нова пробна среда.
+> Ако вашите организации вече използват Dataverse в техния наемател е важно да се помни това [Dataverse създаването на среда се контролира от администратор](/power-platform/admin/control-environment-creation.md). Например, ако създавате нова среда за прозрения за аудиторията с вашия организационен акаунт и администраторът е деактивирал създаването на Dataverse среда за всички, с изключение на администраторите, не можете да създадете нова пробна среда.
 > 
-> Средите на Dataverse пробни версии, създадени в Customer Insights, имат 3 ГБ място за съхранение, което няма да се брои за общия капацитет, който има право на наемателя. Платените абонаменти получават Dataverse право на 15 GB за база данни и 20 GB за съхранение на файлове.
+> Пробните среди на Dataverse, създадени в Customer Insights, имат 3 GB място за съхранение, което няма да се брои за общия капацитет, който има право на наемателя. Платените абонаменти получават правомощие на Dataverse за 15 GB за база данни и 20 GB за съхранение на файлове.
 
 ## <a name="output-entities"></a>Изходни обекти
 
-Някои изходни обекти от аналитични данни за аудитории се предлагат като таблици в Dataverse. Разделите по-долу описват очакваната схема на тези таблици.
+Някои изходни обекти от статистика за аудиторията са достъпни като таблици в Dataverse. Разделите по-долу описват очакваната схема на тези таблици.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -61,7 +63,7 @@ ms.locfileid: "7866921"
 |DataSourceName    |String         | Име на източник на данни. Например: `datasource5`        |
 |EntityName        | String        | Име на обекта в статистика за аудиторията. Например: `contact1`        |
 |AlternateValue    |String         |Алтернативен идентификатор, който се съпоставя с идентификатора на клиента. Пример: `cntid_1078`         |
-|KeyRing           | Многоредов текст        | Стойност на JSON  </br> Извадка: [{"данниИзточникИме":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"ключове":[" cntid_1078"]}]       |
+|KeyRing           | Многоредов текст        | Стойност на JSON  </br> Пример: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | Идентификационен номер на унифицирания потребителски профил.         |
 |AlternateKeyId     | GUID         |  Детерминиран GUID на AlternateKey, базиран на msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Пример: `testdatasource|contact1|cntid_1078`    |

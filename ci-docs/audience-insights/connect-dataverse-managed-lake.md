@@ -1,30 +1,35 @@
 ---
 title: Свързване към таблици в Microsoft Dataverse
 description: Импортиране на данни от управлявано хранилище Data Lake в Microsoft Dataverse.
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
-ms.translationtype: HT
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692561"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354128"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Свързване с данни в управлявано от Microsoft Dataverse хранилище за необработени данни
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Тази статия предоставя информация как потребителите на Dataverse могат бързо да се свържат със своите аналитични обекти в управляван хранилище в Dataverse. Трябва да сте администратор на организация в Dataverse, за да продължите и да видите списъка с обекти, налични в управляваното хранилище.
+
+Тази статия предоставя информация за това как Dataverse потребителите могат бързо да се свързват с аналитични обекти в Microsoft Dataverse управлявано езеро. 
+
+> [!NOTE]
+> Трябва да сте администратор в Dataverse организацията, за да продължите и да прегледате списъка на обектите, налични в управляваното езеро.
 
 ## <a name="important-considerations"></a>Важни съображения
 
-Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights. Чрез импортиране или свързване към данни, съхранявани в онлайн услуги, вие се съгласявате, че данните могат да се прехвърлят и съхраняват в Dynamics 365 Customer Insights. [Научете повече в центъра за сигурност на Microsoft.](https://www.microsoft.com/trust-center)
+Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights.Чрез импортирането или свързването с данни, съхранявани в онлайн услуги, Вие се съгласявате, че данните могат да бъдат прехвърляни на и съхранявани с Dynamics 365 Customer Insights. [Научете повече в центъра за сигурност на Microsoft](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Свържете се с управлявано от Dataverse хранилище
 
@@ -32,12 +37,9 @@ ms.locfileid: "6692561"
 
 2. Изберете **Добавяне на източник на данни**.
 
-3. Изберете **Свързване с управлявано хранилище в Microsoft Dataverse** и изберете **Напред**.
+3. Изберете **Microsoft Dataverse** и изберете **Напред**.
 
-4. Въведете **Име** за източника на данни и изберете **Напред**. Насоки за име: 
-   - Започнете с буква.
-   - Използвайте само букви и цифри. Не е разрешено въвеждането на специални знаци и интервали.
-   - Използвайте между 3 и 64 знака.
+4. Въведете **Име** за източника на данни и изберете **Напред**. 
 
 5. Въведете **адреса на сървъра** за организацията на Dataverse и изберете **Влизане**.
 

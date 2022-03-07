@@ -3,18 +3,20 @@ title: Връзки с други услуги от Customer Insights.
 description: Споделяйте данни с други услуги.
 ms.date: 04/09/2021
 ms.reviewer: nikeller
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
-ms.translationtype: HT
+searchScope:
+- ci-connections
+- customerInsights
+ms.openlocfilehash: ccad090d3bf6eab96eff37f7a96289ca2882d369
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304959"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354370"
 ---
 # <a name="connections-preview-overview"></a>Общ преглед на връзките (преглед)
 
@@ -47,6 +49,7 @@ ms.locfileid: "6304959"
 1. В прозореца **Настройване на връзка** предоставете необходимите подробности. 
    1. **Показваното име** и типът описват връзката. Препоръчваме да изберете име, което обяснява целта на тази връзка.
    1. Точните полета зависят от това към коя услуга се свързвате. Можете да научите за подробности за конкретен тип връзка в статията за целевата услуга.
+   1. Ако [използвате свой собствен сейф за ключове](use-azure-key-vault.md), за да съхранявате тайни, активирайте **Използвайте хранилище за ключове** и изберете тайната от списъка.
 
 1. За да създадете връзка, изберете **Записване**.
 
@@ -93,3 +96,6 @@ ms.locfileid: "6304959"
 
 1. За да потвърдите изтриването, изберете **Премахване**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Настройте връзки с тайни, управлявани от собственото ви хранилище за ключове
+
+Някои връзки се нуждаят от тайни като API ключове или пароли. Някои връзки поддържат тайни, съхранявани във вашия собствен сейф за ключове. Научете повече за поддържаните връзки и как да ги настроите [свое собствено хранилище за ключове за представа за аудиторията](use-azure-key-vault.md).

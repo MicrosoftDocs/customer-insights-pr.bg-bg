@@ -1,20 +1,19 @@
 ---
 title: Експортирайте данни за Customer Insights в Klaviyo
 description: Научете как да конфигурирате връзката и да експортирате в Klaviyo.
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
-ms.translationtype: HT
+ms.openlocfilehash: 027aee70d9fdab0a92d7fd99209a6ac2ca3cc361
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7385775"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225434"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>Експортиране на списъци със сегменти в Klaviyo (преглед)
 
@@ -28,10 +27,10 @@ ms.locfileid: "7385775"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 100 000 профила на експортиране в Klaviyo.
+- Можете да експортирате до 100 000 потребителски профила на експорт в Klaviyo.
 - Експортирането в Klaviyo е ограничено до сегменти.
-- Експортирането на до 1 милион профила в Klaviyo може да отнеме до 20 минути. 
-- Броят на профилите, които можете да експортирате в Klaviyo, зависи и е ограничен от вашия договор със Klaviyo.
+- Експортирането на до 1 милион потребителски профила в Klaviyo може да отнеме до 20 минути. 
+- Броят на потребителските профили, които можете да експортирате в Klaviyo, зависи и е ограничен от вашия договор с Klaviyo.
 
 ## <a name="set-up-connection-to-klaviyo"></a>Настройване на връзка с Klaviyo
 
@@ -67,7 +66,7 @@ ms.locfileid: "7385775"
 
 1. Въведете [**ИД на списък на Klaviyo**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Изисква се да експортирате сегменти в Klaviyo.
+3. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Изисква се да експортирате сегменти в Klaviyo.
 
 1. Изберете **Записване**.
 

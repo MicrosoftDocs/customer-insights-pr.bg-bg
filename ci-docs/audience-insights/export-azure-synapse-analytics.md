@@ -1,22 +1,21 @@
 ---
-title: Експортиране на данни на Customer Insights в Azure Synapse Analytics
-description: Научете как да конфигурирате връзката и да експортирате в Azure Synapse Analytics.
-ms.date: 04/12/2021
+title: Експортирайте данни за Customer Insights в Azure Synapse Analytics
+description: Научете как да конфигурирате връзката към Azure Synapse Analytics.
+ms.date: 01/05/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
-ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
-ms.translationtype: HT
+ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6327351"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231299"
 ---
-# <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране в Azure Synapse Analytics (преглед)
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (Визуализация)
 
 Azure Synapse е аналитична услуга, която ускорява времето за вникване в складовете за данни и системите за големи данни. Можете да поглъщате и използвате данните си от Customer Insights в [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
@@ -49,9 +48,11 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 ### <a name="configure-a-connection"></a>Конфигуриране на връзка
 
+За да създадете връзка, главницата на услугата и потребителският акаунт в Customer Insights се нуждаят от **разрешения на Reader** в *групата* ресурси, където се намира работната област на Синапс Анализ. Освен това главницата на услугата и потребителят в работната област на Synapse Analytics се нуждаят от **разрешения на Администратора** на синапса. 
+
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавяне на връзка** и изберете **Azure Synapse Analytics** или изберете **Настройка** на плочката **Azure Synapse Analytics**, за да конфигурирате връзката.
+1. Изберете **Добавяне на връзка** и изберете **Azure Synapse Analytics** или изберете **настройката** на плочката **Azure Synapse Analytics**, за да конфигурирате връзката.
 
 1. Въведете разпознаваемо име за връзката в полето Показвано име. Показваното име и типът на връзка описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
@@ -63,7 +64,7 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 ### <a name="configure-an-export"></a>Конфигуриране на експортиране
 
-Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За повече информация вижте [разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
+Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За да конфигурирате експортирането със споделена връзка, ви трябват поне **разрешения за сътрудник** в "Аналитични данни за клиенти". За повече информация вижте [разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
 
 1. Отидете на **Данни** > **Експортиране**.
 
@@ -73,7 +74,7 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 1. Осигурете разпознаваем **Показвано име** за вашето експортиране и **Име на базата данни**.
 
-1. Изберете към кои обекти искате да експортирате в Azure Synapse Analytics.
+1. Изберете в кои обекти искате да експортирате Azure Synapse Analytics.
    > [!NOTE]
    > Източници на данни, базирани на [папка на Common Data Model](connect-common-data-model.md), не се поддържат.
 
@@ -82,6 +83,8 @@ Azure Synapse е аналитична услуга, която ускорява 
 Запазването на експортиране не го изпълнява незабавно.
 
 Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand).
+
+За да направите заявка за данни, които са експортирани в Synapse Analytics, имате нужда от **Съхранение Blob Data Reader** достъп до мястото за съхранение на местоназначение в работната област на износа. 
 
 ### <a name="update-an-export"></a>Актуализирайте експортиране
 

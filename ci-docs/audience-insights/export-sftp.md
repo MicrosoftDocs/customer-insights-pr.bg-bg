@@ -1,24 +1,25 @@
 ---
-title: Експортирайте данните от Customer Insights в SFTP хостове
+title: Експортиране на данни за аналитични данни за клиенти в SFTP хостове (съдържа видео)
 description: Научете как да конфигурирате връзката и да експортирате в SFTP местоположение.
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 7b09da093d6332c5081da1beadc1df59f63c31d2
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035448"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231141"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Експортиране на сегменти и други данни в SFTP (преглед)
 
 Използвайте клиентските данни в приложения на трети страни, като ги експортирате в местоположение на защитения протокол за предаване на файлове (SFTP).
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>Предварителни изисквания за връзка
 
@@ -26,6 +27,7 @@ ms.locfileid: "7035448"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
+- SFTP дестинации зад защитни стени в момента не се поддържат. 
 - Времетраенето на експортиране зависи от производителността на вашата система. Препоръчваме две ядра на процесора и 1 Gb памет като минимална конфигурация на вашия сървър. 
 - Експортирането на обекти с до 100 милиона клиентски профила може да отнеме 90 минути при използване на препоръчителната минимална конфигурация на две ядра на процесора и 1 Gb памет. 
 

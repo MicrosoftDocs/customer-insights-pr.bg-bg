@@ -1,20 +1,19 @@
 ---
 title: Експортирайте данни за Customer Insights в ActiveCampaign
 description: Научете как да конфигурирате връзката и да експортирате в ActiveCampaign.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
-ms.translationtype: HT
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314578"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227796"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Експортиране на сегменти в ActiveCampaign (преглед)
 
@@ -28,9 +27,9 @@ ms.locfileid: "6314578"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 1 милион профила на износ в ActiveCampaign и това може да отнеме до 90 минути, за да завършите.
+- Можете да експортирате до 1 милион потребителски профила на експорт в ActiveCampaign и завършването му може да отнеме до 90 минути.
 - Експортирането в ActiveCampaign е ограничено до сегменти.
-- Броят на профилите, които можете да експортирате в ActiveCampaign, зависи от вашия договор с ActiveCampaign.
+- Броят на потребителските профили, които можете да експортирате в ActiveCampaign, зависи и е ограничен от вашия договор с ActiveCampaign.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Настройване на връзка с ActiveCampaign
 
@@ -64,7 +63,7 @@ ms.locfileid: "6314578"
 
 1. Въведете своя [**ИД на списък на ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-3. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Изисква се да експортирате сегменти в ActiveCampaign. По желание можете да експортирате собствено име, фамилно име и Телефон за създаване на по-персонализирани имейли. Изберете Добавяне на атрибут за нанасяне на тези полета.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Изисква се да експортирате сегменти в ActiveCampaign. По желание можете да експортирате собствено име, фамилно име и Телефон за създаване на по-персонализирани имейли. Изберете Добавяне на атрибут за нанасяне на тези полета.
 
 1. Изберете **Записване**.
 
