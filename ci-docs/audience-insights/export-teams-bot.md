@@ -3,17 +3,18 @@ title: Бот за Microsoft Teams
 description: Потърсете единни клиентски профили в Microsoft Teams с помощта на бот.
 ms.date: 10/08/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: cff696834e3dad00ce5b0f1b5bcb13d86354a4e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232089"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617588"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Бот на Teams за Dynamics 365 Customer Insights (преглед)
 
@@ -32,8 +33,6 @@ ms.locfileid: "8232089"
 - Customer Insights и Teams са в една и съща организация.
 - Вашата среда има основна целева аудитория, настроена за отделни клиенти. Бизнес акаунтите не се поддържат.
 
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>Конфигуриране на бот
 
 1. В статията за аудиторията отидете на **Администратор** > **Експортиране на местоположения**.

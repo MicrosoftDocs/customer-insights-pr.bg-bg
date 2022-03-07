@@ -1,33 +1,31 @@
 ---
-title: Региони на наличност на Dynamics 365 Customer Insights
+title: Региони на достъпност на аналитични данни за ангажираност
 description: Научете повече за регионите и географските местоположения, в които е внедрена услугата.
 author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 09/28/2021
+ms.date: 07/15/2021
+ms.service: customer-insights
+ms.subservice: engagement-insights
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: 08435e651c3706257b8c0548e6e9bbf98f39dce9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: ca7a921e1ea2f612949c1243a3dc5ee0f4f3c3974305af344c77b870db3e00a9
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228093"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036180"
 ---
-# <a name="regional-availability-for-dynamics-365-customer-insights"></a>Регионална наличност за Dynamics 365 Customer Insights
+# <a name="regional-availability-for-engagement-insights"></a>Регионална достъпност на аналитични данни за ангажираност
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Аналитичните данни за ангажираност, възможност на Dynamics 365 Customer Insights, постепенно представят повече региони, където клиентите могат да избират да съхраняват данните. Администраторите могат да изберат регион, когато [създават нова среда](create-new-environment.md). 
+Аналитичните данни за ангажираност, възможност на Dynamics 365 Customer Insights, постепенно представят повече региони, където клиентите могат да избират да съхраняват данните. Администраторите могат да изберат регион, когато [създават нова среда](manage-environments-workspaces.md#create-an-environment). Ако дадена организация зададе аналитични данни за ангажираност за първи път, избира региона, докато преминава през [направляваната първоначална работа](quickstart.md). По-късно всяка нова среда позволява избор на региона, в който ще се съхраняват данните.
 
-Когато инсталирате аналитични данни за ангажираност за първи път, можете да изберете региона, докато преминавате през [направляваната първоначална работа](quickstart.md). По-късно всяка нова среда ви позволява да изберете региона, в който ще се съхраняват данните.
-
-В момента ние подкрепяме географиите на САЩ и Европа. Потребителите могат да избират между тези региони: Западна САЩ, Източна САЩ, Северна Европа и Западна Европа.
+По време на публичния преглед има две географски области: САЩ и Европа. Потребителите могат да избират между САЩ – западен регион и Европа – северен регион.
 
 Една организация може да поддържа среди в различни региони. Например среда A съхранява данни в САЩ – западен регион, а среда Б – в Европа – северен регион.
 
-> [!NOTE]
+> [!TIP]
 > След като изберете регион по време на създаването на среда, няма да можете да промените тази настройка. За да промени региона, администраторът на средата трябва [да изтрие средата](manage-environments-workspaces.md#delete-an-environment) и да създаде нова среда с актуализираната настройка на регион.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

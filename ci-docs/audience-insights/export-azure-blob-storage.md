@@ -1,27 +1,24 @@
 ---
 title: Експортиране на данни от Customer Insights в хранилище за BLOB на Azure
 description: Научете как да конфигурирате връзката и да експортирате в хранилище за BLOB на Azure.
-ms.date: 10/06/2021
+ms.date: 03/03/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5ea8e58822e1bb901552ff1de960d5340d340003
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: 3c19dc6d4956a33a5bd3cea706f8a154198d487f
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231238"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976121"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортиране на списък със сегменти и други данни в хранилище за BLOB на Azure (преглед)
 
 Съхранявайте данните си от Customer Insights в хранилище за BLOB или го използвайте за прехвърляне на данните ви в други приложения.
-
-## <a name="known-limitations"></a>Известни ограничения
-
-1. За Azure Blob Storage можете да избирате между [Стандартно и първокласно изпълнение](/azure/storage/blobs/storage-blob-performance-tiers). Ако изберете ниво на производителност Premium, изберете [първокласните блокови блобове като тип акаунт](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 
 ## <a name="set-up-the-connection-to-blob-storage"></a>Настройване на връзката с хранилище за BLOB
 
@@ -43,14 +40,11 @@ ms.locfileid: "8231238"
 
 Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За повече информация вижте [Разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
 
-> [!IMPORTANT]
-> Ако сте включили настройката за временно изтриване за акаунта за хранилище за BLOB на Azure, експортирането ще е неуспешно. Изключете временното изтриване, за да експортирате данни в BLOB. За повече информация вижте [Активиране на временно изтриване на BLOB](/azure/storage/blobs/soft-delete-blob-enable.md)
-
 1. Отидете на **Данни** > **Експортиране**.
 
 1. За да създадете ново експортиране, изберете **Добавяне на местоназначение**.
 
-1. В полето **Връзка за експортиране** изберете връзка от секцията на хранилището за BLOB на Azure. Ако не виждате името на този раздел, тогава няма налични връзки от този тип.
+1. В полето **Връзка за експортиране** изберете връзка от секцията на хранилището за BLOB на Azure. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
 
 1. Изберете полето до всеки обект, който искате да експортирате до това местоназначение.
 
@@ -59,16 +53,13 @@ ms.locfileid: "8231238"
 Запазването на експортиране не го изпълнява незабавно.
 
 Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab).     
-
 Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand). 
 
 Експортираните данни се съхраняват в контейнера за хранилище за BLOB, който сте конфигурирали. Следните пътища на папки се създават автоматично в контейнера:
 
-- За обекти източници и обекти, генерирани от системата:   
-  `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
+- За обекти източници и обекти, генерирани от системата: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
-- Model.json за експортираните обекти ще е на ниво %ExportDestinationName%.  
+- Model.json за експортираните обекти ще е на ниво %ExportDestinationName%
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
