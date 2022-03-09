@@ -3,28 +3,35 @@ title: Експортирайте данните от Customer Insights в Dynam
 description: Научете как да конфигурирате връзката и да експортирате в Dynamics 365 Sales.
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: fc1a05ba4d21d96aa1a9724d158687bbb86949b6
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
-ms.translationtype: HT
+searchScope:
+- ci-export
+- customerInsights
+ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759578"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355003"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Използване на сегменти в Dynamics 365 Sales (преглед)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Използвайте клиентските данни, за да създавате маркетингови списъци, работни потоци за последващи действия и за да изпращате съобщения за промоции с Dynamics 365 Sales.
 
+## <a name="known-limitations"></a>Известни ограничения
+
+- Експортирането в Dynamics 365 Sales е ограничено до 100'000 членове на сегмент.
+- Сегмент експортиране в Dynamics 365 продажби може да отнеме до 3 часа, за да завърши. 
+
 ## <a name="prerequisite-for-connection"></a>Предварително изискване за връзка
 
-1. Записите за контакти трябва да присъстват в Dynamics 365 Sales, преди да можете да експортирате сегмент от Customer Insights в Sales. Прочетете повече за това как да поглъщате контакти в [Dynamics 365 Sales с помощта на Common Data Services](connect-power-query.md).
+1. Записите за контакти трябва да присъстват в Dynamics 365 Sales, преди да можете да експортирате сегмент от Customer Insights в Sales. Прочетете повече за това как да поглъщате контакти в [Dynamics 365 Sales с помощта на Microsoft Dataverse](connect-power-query.md).
 
    > [!NOTE]
    > Експортирането на сегменти от аналитични данни за аудитория в Sales няма да създаде нови записи за контакти в екземпляри на Sales. Записите за контакти от Sales трябва да се поглъщат с прозрения за аудиторията и да се използват като източник на данни. Те също трябва да бъдат включени в единния обект на клиента, за да се съпоставят идентификаторите на клиентите с идентификаторите за контакт, преди сегментите да могат да бъдат експортирани.

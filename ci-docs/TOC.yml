@@ -56,6 +56,10 @@
           href: audience-insights/connect-common-data-model.md
         - name: 'Добавяне на хранилище за необработени данни, управлявано от Dataverse'
           href: audience-insights/connect-dataverse-managed-lake.md
+        - name: Добавяне на Azure Synapse Analytics
+          href: audience-insights/connect-synapse.md
+        - name: Обогатяване за източници на данни
+          href: audience-insights/data-sources-enrichment.md
         - name: Постъпково обновяване на източници на данни
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Приемане на данни в реално време
@@ -98,6 +102,8 @@
           href: audience-insights/enrichment-here.md
         - name: Допълване с Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: Обогатете с LiveRamp
+          href: audience-insights/enrichment-liveramp.md
         - name: Обогатете с Experian
           href: audience-insights/enrichment-experian.md
         - name: Обогатяване с Office 365 данни
@@ -120,8 +126,12 @@
           href: audience-insights/find-similar-customer-segments.md
     - name: Мерки
       items:
-        - name: Определяне на мерки и KPI
+        - name: Преглед на мерките
           href: audience-insights/measures.md
+        - name: Създаване на нова мярка
+          href: audience-insights/measure-builder.md
+        - name: Използване на шаблон за мярка
+          href: audience-insights/measure-templates.md
     - name: Прогнози
       items:
         - name: Прогнозирайте данните с помощта на AI
@@ -252,8 +262,6 @@
               href: audience-insights/diagnostics.md
     - name: Разширение
       items:
-        - name: Интегрирайте уеб данни от прозрения за ангажираността
-          href: audience-insights/integrate-engagement-insights.md
         - name: Преглед на схеми на обекти в Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Данни на Customer Insights в Dataverse
@@ -297,83 +305,7 @@
         - name: Създаване на прогнози с данни за съгласие
           href: consent-management/predictions-consent-data.md
 - name: Аналитични данни за ангажираността (преглед)
-  items:
-    - name: Център за помощ
-      href: engagement-insights/index.yml
-    - name: Относно аналитични данни за ангажираността
-      href: engagement-insights/overview.md
-    - name: Начало
-      items:
-        - name: Ръководство за бърз старт
-          href: engagement-insights/get-started.md
-        - name: Създаване на среда
-          href: engagement-insights/create-new-environment.md
-        - name: Създаване на работна област
-          href: engagement-insights/create-workspace.md
-        - name: Улавяйте събития от уебсайтове и мобилни приложения
-          href: engagement-insights/developer-resources.md
-        - name: Понятия и терминология
-          href: engagement-insights/glossary.md
-    - name: Събития
-      items:
-        - name: Създавайте и модифицирайте събития
-          href: engagement-insights/refined-events.md
-        - name: Разпознаване на уеб събития от предварително удостоверени посетители
-          href: engagement-insights/unknown-to-known.md
-        - name: Експортиране на събития
-          href: engagement-insights/export-events.md
-    - name: Отчети
-      items:
-        - name: Преглед на отчети
-          href: engagement-insights/view-reports.md
-        - name: Създаване на персонализирани отчети
-          href: engagement-insights/custom-reports.md
-        - name: Създайте унифицирани отчети за профила
-          href: engagement-insights/profile-reports.md
-        - name: Преглеждайте и създавайте размери
-          href: engagement-insights/dimensions.md
-        - name: Преглеждайте и създавайте метрики
-          href: engagement-insights/metrics.md
-        - name: Преглеждайте и създавайте сегменти
-          href: engagement-insights/segments.md
-    - name: Анализ на пътища
-      items:
-        - name: Създаване и управление на отчети на фунии
-          href: engagement-insights/funnel-reports.md
-    - name: Ресурси за разработчици
-      items:
-        - name: Общ преглед на ресурси за разработчици
-          href: engagement-insights/developer-resources.md
-        - name: Въвеждащ курс за уеб SDK
-          href: engagement-insights/advanced-SDK-implementation.md
-        - name: Пример за Web SDK
-          href: engagement-insights/websdk-sample.md
-        - name: Урок за Android SDK
-          href: engagement-insights/get-started-android.md
-        - name: Пример за Android SDK
-          href: engagement-insights/androidsdk-sample.md
-        - name: Въвеждащ курс за iOS SDK
-          href: engagement-insights/get-started-ios.md
-        - name: Пример за iOS SDK
-          href: engagement-insights/iossdk-sample.md
-    - name: Администриране
-      items:
-        - name: Роли и разрешения
-          href: engagement-insights/user-roles.md
-        - name: Управление на среди и работни пространства
-          href: engagement-insights/manage-environments-workspaces.md
-        - name: Управлявайте бисквитките и съгласието на потребителите
-          href: engagement-insights/user-consent-storage.md
-    - name: Регионална наличност
-      href: engagement-insights/regional-availability.md
-- name: Споделяйте данни между възможностите
-  items:
-    - name: Свързване на аналитични данни за ангажираност и аналитични данни за аудитория
-      href: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - name: Използвайте аналитичните данни за аудитория в отчети на аналитични данни за ангажимент
-      href: engagement-insights/integrate-audience-insights-segments.md
-    - name: Използване на демографски измерения за разделяне на данни за поведение
-      href: engagement-insights/curate-dimensions.md
+  href: engagement-insights/overview.md
 - name: Лимити за обслужване
   href: service-limits.md
 - name: DSR права и заявки

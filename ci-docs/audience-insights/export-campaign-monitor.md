@@ -1,20 +1,19 @@
 ---
 title: Експортиране на данни на Customer Insights в Campaign Monitor
 description: Научете как да конфигурирате връзката и да експортирате в Campaign Monitor.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 091a3197dc0c19ff78f0419fb4e88868e0f78359
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
-ms.translationtype: HT
+ms.openlocfilehash: be9c92a087ab4664077d18fe8585bf96715c1535
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124168"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228139"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Експортиране на сегменти в Campaign Monitor (преглед)
 
@@ -28,10 +27,10 @@ ms.locfileid: "6124168"
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 1 милион профила с всяко експортиране в Campaign Monitor.
+- Можете да експортирате до 1 милион потребителски профила на експорт в Campaign Monitor.
 - Експортирането в Campaign Monitor е ограничено до сегменти.
-- Експортирането на до 1 милион профила в Campaign Monitor може да отнеме до 20 минути. 
-- Броят на профилите, които можете да експортирате в Campaign Monitor, зависи и е ограничен от вашия договор с Campaign Monitor.
+- Експортирането на до 1 милион потребителски профила в Campaign Monitor може да отнеме до 20 минути. 
+- Броят на потребителските профили, които можете да експортирате в Campaign Monitor, зависи и е ограничен от вашия договор с Campaign Monitor.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>Задаване на връзка с Campaign Monitor
 
@@ -66,7 +65,7 @@ ms.locfileid: "6124168"
 1. Въведете [**ИД на списък в Campaign Monitor**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
    Първо [Генерирайте API ключа](https://www.campaignmonitor.com/api/getting-started/) от **Настройки на акаунт** в Campaign Monitor, за да видите ИД на API списъка.  
 
-3. В секцията **Съвпадение на данни** в полето **Имейл** изберете полето във вашия унифициран потребителски профил, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Campaign Monitor.
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Необходимо е да експортирате сегменти в Campaign Monitor.
 
 1. Изберете **Записване**.
 

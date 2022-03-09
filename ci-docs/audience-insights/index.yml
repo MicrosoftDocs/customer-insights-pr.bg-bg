@@ -4,18 +4,17 @@ summary: Поемайте, уеднаквявайте и организирай�
 metadata:
   title: Документация на Аналитични данни за аудитория
   description: Помощен център с ключови връзки за Аналитични данни за аудитория.
-  ms.service: customer-insights
   ms.subservice: audience-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 03/02/2022
-  ms.openlocfilehash: d24ed34b794e77a52ceec1a4411440a88430a369
-  ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
-  ms.translationtype: HT
+  ms.openlocfilehash: 44fac5d82313c491cf838404d9641e2d14261366
+  ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+  ms.translationtype: MT
   ms.contentlocale: bg-BG
-  ms.lasthandoff: 02/03/2022
-  ms.locfileid: "8088226"
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "8231824"
 landingContent:
 - title: Относно Аналитични данни за аудитория
   linkLists:

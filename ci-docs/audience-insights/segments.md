@@ -2,25 +2,30 @@
 title: Сегменти в Аналитични данни за аудиторията
 description: Преглед на сегментите и как да ги създавате и управлявате.
 ms.date: 11/01/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 740d293b21f43b50201f23fcba109318823ef3af
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: HT
+searchScope:
+- ci-customers-page
+- ci-enrichment-details
+- ci-segments
+- ci-segment-details
+- customerInsights
+ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978046"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355970"
 ---
 # <a name="segments-overview"></a>Общ преглед на сегментите
 
 Сегментите ви позволяват да групирате клиентите си въз основа на демографски, транзакционни или поведенчески атрибути. Можете да използвате сегменти за насочване на промоционални кампании, търговски дейности и действия за поддръжка на клиенти за постигане на вашите бизнес цели.
 
-Клиентските профили, които съответстват на филтрите на дефиниция на сегмент, се наричат *членове* на сегмент. Някои [лимити за обслужване](service-limits.md) се прилагат.
+Клиентските профили, които съответстват на филтрите на дефиниция на сегмент, се наричат *членове* на сегмент. Някои [лимити за обслужване](/dynamics365/customer-insights/service-limits) се прилагат.
 
 ## <a name="create-a-new-segment"></a>Създаване на нов сегмент
 
@@ -106,4 +111,4 @@ ms.locfileid: "7978046"
 >Списъкът е преглед на съпоставените членове на сегмента и показва първите 100 записа на сегмента, за да можете бързо да го оцените и да прегледате дефинициите му, ако е необходимо. За да видите всички съвпадащи записи, трябва да [експортирате сегмента](export-destinations.md).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,26 @@
 ---
 title: Създаване и управление на среди
 description: Научете как да се регистрирате за услугата и как да управлявате среди.
-ms.date: 11/12/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+searchScope:
+- ci-system-about
+- customerInsights
+ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7815898"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354266"
 ---
 # <a name="manage-environments"></a>Управление на среди
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 ## <a name="switch-environments"></a>Превключване на среди
 
@@ -42,16 +44,19 @@ ms.locfileid: "7815898"
 
 ## <a name="connect-to-microsoft-dataverse"></a>Свързване с Microsoft Dataverse
    
-**Стъпката Microsoft Dataverse** ви позволява да свържете "Аналитични данни за клиенти" с вашата Dataverse среда.
+Стъпката **Microsoft Dataverse** ви позволява да свържете Customer Insights с вашата среда на Dataverse.
 
-За да използвате [прогноза модели извън кутията,](predictions-overview.md#out-of-box-models) конфигурирайте споделянето на данни с Dataverse. Или можете да разрешите поглъщането на данни от локален източници на данни, предоставяйки url адреса на Microsoft Dataverse среда, който вашата организация администрира. Изберете **Разрешаване на споделянето на** данни, за да споделяте изходни данни на Customer Insights с езеро за данни, управлявано от Dataverse.
+За да използвате [подготвени модели на прогноза](predictions-overview.md#out-of-box-models), конфигурирайте споделянето на данни с Dataverse. Или можете да активирате поглъщането на данни от локален източници на данни, предоставяйки URL адрес на средата на Microsoft Dataverse, който администрира вашата организация.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Опции за конфигуриране, за да разрешите споделянето на данни с Microsoft Dataverse.":::
+> [!IMPORTANT]
+> "Аналитични данни за клиенти" и Dataverse трябва да бъдат в същия регион, за да се даде възможност за споделяне на данни.
+
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="Опции за конфигуриране, за да се даде възможност за споделяне на данни с Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights не поддържа следните сценарии за споделяне на данни:
-> - Ако запишете всички данни на собствените си Azure Data Lake Storage, няма да можете да разрешите споделянето на данни с управлявано от Dataverse езеро с данни.
-> - Ако разрешите споделянето на данни с Dataverse, няма да можете да [създавате прогнозирани или липсващи стойности в даден обект](predictions.md).
+> - Ако запишете всички данни в собствено Azure Data Lake Storage, няма да можете да активирате споделянето на данни с управлявано от Dataverse хранилище за необработени данни.
+> - Ако активирате споделянето на данни с Dataverse, няма да можете да [създавате предвидени или липсващи стойности в обект](predictions.md).
 
 ## <a name="copy-the-environment-configuration"></a>Копиране на конфигурацията на средата
 
@@ -81,7 +86,7 @@ ms.locfileid: "7815898"
 - Профили на клиенти.
 - Идентификационни данни на източник на данни. Ще трябва да предоставите идентификационните данни за всеки източник на данни и да обновите източниците на данни ръчно.
 
-- Източници на данни от папката "Общ модел данни" и "Езеро на данни, управлявани от Dataverse". Ще трябва да създадете тези източници на данни ръчно със същото име като в средата източник.
+- Източници на данни от папката на Common Data Model и управлявано от Dataverse хранилище за необработени данни. Ще трябва да създадете тези източници на данни ръчно със същото име като в средата източник.
 
 Когато копирате среда, ще видите съобщение за потвърждение, че новата среда е създадена. Изберете **Към източници на данни**, за да видите списъка с източници на данни.
 

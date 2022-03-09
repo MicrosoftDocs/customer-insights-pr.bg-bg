@@ -5,17 +5,19 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
-ms.translationtype: HT
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: 2776b2292560f9ea61a06d2b1b7bc7811d35c860
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466564"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353700"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Започнете с възможностите за анализи на аудиторията в Dynamics 365 Customer Insights
 
@@ -23,7 +25,7 @@ ms.locfileid: "7466564"
 
 ## <a name="step-1-create-an-environment"></a>Стъпка 1: Създаване на нова среда
 
-За да започнете, първо трябва да създадете среда, в която да работите. Ако вашата организация вече е закупила лиценз, вижте [Започнете с платен абонамент](get-started-paid.md). За да започнете пробен период за прозрения на аудиторията, вижте [Настройте пробна среда](get-started-trial.md). 
+За да започнете, първо трябва да създадете среда, в която да работите. Ако вашата организация вече е закупила лиценз, вижте [Създайте среда](create-environment.md). За да започнете пробен период за прозрения на аудиторията, вижте [Настройте пробна среда](../trial-signup.md). 
 
 ## <a name="step-2-explore-audience-insights"></a>Стъпка 2: Разглеждане на аналитичните данни за аудиторията
 
@@ -37,7 +39,7 @@ ms.locfileid: "7466564"
 
 Унифицираните профили са основата за получаване на информация и предприемане на действия по отношение на данните. Въведете данни от различни източници и стартирайте процеса на обединяване на данни, за да комбинирате унифицирани профили. Задайте взаимоотношения между погълнатите обекти, използвайте функции за обогатяване, за да добавите информация към профилите. 
 
-1. Поглъщайте данни, като създавате източници на данни от множество опции. Изберете между [Power Query конектори](connect-power-query.md), [Папка Common Data Model](connect-common-data-model.md) или [Microsoft Dataverse](connect-common-data-service-lake.md). 
+1. Поглъщайте данни, като създавате източници на данни от множество опции. Изберете между [Power Query конектори](connect-power-query.md), [папка](connect-common-data-model.md) "Общ модел данни" или [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). 
 
 1. Стартирайте [процес на унифициране на данни](data-unification.md) като преминете през [нанасяне](map-entities.md), [съпоставяне](match-entities.md) и [сливане](merge-entities.md) фази.
 
