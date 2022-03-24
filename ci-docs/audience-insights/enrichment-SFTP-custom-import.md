@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229614"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376541"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Обогатете потребителските профили с персонализирани данни (преглед)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8229614"
 
 - Имате името на файла и местоположението (пътя) на файла, които ще бъдат импортирани на SFTP хоста.
 - Има файл *model.json*, който указва [схемата на Common Data Model](/common-data-model/) за импортиране на данните. Този файл трябва да е в същата директория като файла за импортиране.
-- SFTP връзката вече е конфигурирана от администратор *или* вие имате разрешения на [администратор](permissions.md#administrator). Ще ви трябват потребителски идентификационни данни, URL адрес и номер на порт за SFTP местоположението, от което искате да импортирате данни.
+- SFTP връзката вече е конфигурирана от администратор *или* вие имате разрешения на [администратор](permissions.md#admin). Ще ви трябват потребителски идентификационни данни, URL адрес и номер на порт за SFTP местоположението, от което искате да импортирате данни.
 
 
 ## <a name="configure-the-import"></a>Конфигуриране на импортиране

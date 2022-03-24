@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: d3254bf13b843fe8e1b6e6db49dd6ee1dc22290c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 0bd2bfa7402ed19cb92ff1f35208b150cfec48c3
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353898"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455801"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Използване на сегменти в Dynamics 365 Marketing (преглед)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8353898"
 
 ## <a name="prerequisite-for-a-connection"></a>Предварително изискване за връзка
 
-- Записите за контакти трябва да присъстват в Dynamics 365 Marketing, преди да можете да експортирате сегмент от Customer Insights в Marketing. Прочетете повече за това как да поглъщате контакти в [Dynamics 365 Marketing с помощта на Microsoft Dataverse](connect-power-query.md).
+- Записите за контакти трябва да присъстват в Dynamics 365 Marketing, преди да можете да експортирате сегмент от Customer Insights в Marketing. Прочетете повече за това как да поглъщате контакти в [Dynamics 365 Marketing с помощта на Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
   > [!NOTE]
   > Експортирането на сегменти от аналитични данни за аудитория в Marketing няма да създаде нови записи за контакти в маркетинговите екземпляри. Записите за контакти от Marketing трябва да се поглъщат с прозрения за аудиторията и да се използват като източник на данни. Те също трябва да бъдат включени в единния обект на клиента, за да се съпоставят идентификаторите на клиентите с идентификаторите за контакт, преди сегментите да могат да бъдат експортирани.

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ae2a3b7c05e9ed860da31853c47af2aec8634e7a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 18cc32a169e79794d2d3203d462620ab41efaafe
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229018"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455925"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Конектор на Microsoft Power Apps (преглед)
 
@@ -38,6 +38,8 @@ Customer Insights е сред многото [налични източници 
 ### <a name="retrievable-entities"></a>Възможни за извличане обекти
 
 Можете само да изтеглите **Клиент**, **UnifiedActivity**, **Сегменти** и **ContactProfile** обекти чрез Power Apps конектор. ContactProfile е достъпен само за екземпляр на аналитични данни за аудиторията за бизнес клиенти. Показани са други обекти, защото основният конектор ги поддържа чрез задействания в Power Automate.
+
+Можете да направите максимум 100 обаждания на 60 секунди. Можете да се обадите на API крайна точка няколко пъти с помощта на параметъра $skip. [Научете повече за параметъра $skip](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>Делегиране
 

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355878"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376495"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Донесете свой собствен ключ за хранилище на Azure (предварителен преглед)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355878"
 
 - Трябва да имате активен абонамент за Azure.
 
-- Имате роля на [Администратор](permissions.md#administrator) в аналитични данни за аудитория. Научете повече за [потребителски разрешения в статистиката за аудиторията](permissions.md#assign-roles-and-permissions).
+- Имате роля на [Администратор](permissions.md#admin) в аналитични данни за аудитория. Научете повече за [потребителски разрешения в статистиката за аудиторията](permissions.md#assign-roles-and-permissions).
 
 - Вие имате роли [Сътрудник](/azure/role-based-access-control/built-in-roles#contributor) и [Администратор за потребителски достъп](/azure/role-based-access-control/built-in-roles#user-access-administrator) в хранилището с ключове или групата ресурси, към която принадлежи хранилището с ключове. За повече информация отидете на [Добавяне или премахване на присвояване на роли на Azure чрез портала на Azure](/azure/role-based-access-control/role-assignments-portal). Ако нямате ролята на администратор на достъп за потребители в хранилището с ключове, трябва да настроите ролевите разрешения за контрол на достъпа за главен за услугата Azure за Dynamics 365 Customer Insights отделно. Следвайте стъпките, за да [използвате главен служител на Azure](connect-service-principal.md) за хранилището с ключове, което трябва да бъде свързано.
 

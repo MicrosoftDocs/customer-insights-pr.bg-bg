@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 47239bd7f0c89742cf9c673bb2ebe4c41d853233
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228461"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376817"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Обогатяване на клиентските профили с данни за ангажираността (визуализация)
 
@@ -27,8 +27,8 @@ ms.locfileid: "8228461"
 
 - Имате лиценз за активен Office 365 облак.
 - Имате [единни профили](customer-profiles.md) на клиенти въз основа на [бизнес акаунти](work-with-business-accounts.md).
-- Вашата среда "Аналитични данни за клиенти" трябва да има [Microsoft Dataverse прикрепена](create-environment.md#step-3-connect-to-microsoft-dataverse) организация.
-- Имате [администраторски](permissions.md#administrator) разрешения.
+- Вашата среда "Аналитични данни за клиенти" трябва да има [Microsoft Dataverse прикрепена организация](create-environment.md#step-3-connect-to-microsoft-dataverse).
+- Имате [администраторски](permissions.md#admin) разрешения.
 - Имате или можете да получите съгласие от вашия Office 365 администратор на наемател да използва Office 365 данни за предоставяне **на Аналитични данни за организацията** в рамките на приложения на Dynamics 365.
 
 ## <a name="configure-the-enrichment"></a>Конфигуриране на допълването

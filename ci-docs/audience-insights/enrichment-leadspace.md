@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230621"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376771"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Допълване на фирмени профили с Leadspace (преглед)
 
@@ -25,7 +25,7 @@ Leadspace е фирма за наука за данни, която предос
 
 - Имате активен лиценз за Leadspace.
 - Имате [унифицирани потребителски профили](customer-profiles.md) въз основа на акаунти.
-- Връзка на Leadspace вече е конфигурирана от администратор или вие имате разрешения на [администратор](permissions.md#administrator) и „постоянния ключ” (наричан **маркер на Leadspace**). Свържете се директно с [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) за подробности за продукта.
+- Връзка на Leadspace вече е конфигурирана от администратор или вие имате разрешения на [администратор](permissions.md#admin) и „постоянния ключ” (наричан **маркер на Leadspace**). Свържете се директно с [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) за подробности за продукта.
 
 ## <a name="configure-the-enrichment"></a>Конфигуриране на допълването
 

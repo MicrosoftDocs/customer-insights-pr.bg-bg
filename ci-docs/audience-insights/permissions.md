@@ -1,7 +1,7 @@
 ---
 title: Управление на потребителски разрешения
 description: Научете повече за разрешенията и потребителските роли.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355924"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376725"
 ---
 # <a name="user-permissions"></a>Потребителски разрешения
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355924"
 - Управление на конфигурация и допълване на потребителски профили от страницата **Допълване** (само за допълване на първа страна).
 - Управлявайте и създавайте експортирания въз основа на връзки, споделени със сътрудници. [Научете повече за това как администраторите позволяват на сътрудниците да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>Администратор
+## <a name="admin"></a>Администрация
 
 - Всички разрешения, достъпни за сътрудника.
 - Промяна на настройките на страницата **Система**, включително работния език, и обновяване на графиците за системните процеси.
@@ -60,6 +60,12 @@ ms.locfileid: "8355924"
 - Инсталиране и използване на **добавката за карта на клиент**.
 - Добавете и използвайте **Конектор на Power Apps**.
 - Активиране на използването на [API на Customer Insights](apis.md).
+- [Присвояване на собствеността](manage-environments.md#change-the-owner-of-an-environment) върху средата на друг администратор.
+
+## <a name="admin-owner"></a>Администратор (собственик)
+
+- Всички разрешения, достъпни за Администратора.
+- [Нулиране и изтриване](manage-environments.md#reset-an-existing-environment) на средата.
 
 ## <a name="assign-roles-and-permissions"></a>Присвояване на роли и разрешения
 

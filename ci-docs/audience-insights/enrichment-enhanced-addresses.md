@@ -14,16 +14,18 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 2ab550e83a4969c1f547e66bcbf6ddb96d7789df
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353623"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376284"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Обогатяване на потребителски профили с подобрени адреси
 
 Адресите във вашите данни могат да бъдат неструктурирани, непълни или неправилни. Използвайте моделите на Microsoft, за да нормализирате и обогатите адресите си във [формата на Common Data Model](/common-data-model/schema/core/applicationcommon/address) за по-добра точност и прозрения.
+
+Можете също така [да обогатите адресите на източниците](data-sources-enrichment.md) на данни, за да подобрите точността на съвпадението в процеса на обединяване на данни. 
 
 ## <a name="how-we-enhance-addresses"></a>Как подобряваме адресите
 

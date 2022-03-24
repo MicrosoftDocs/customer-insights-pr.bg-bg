@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229951"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376679"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогатете потребителските профили с демографски данни от Experian (преглед)
 
@@ -25,7 +25,7 @@ Experian е световен лидер в отчитането на потре�
 
 - Трябва да имате активен абонамент за Experian. За да получите абонамент, [свържете се с Experian](https://www.experian.com/marketing-services/contact) директно. [Научете повече за допълване на данни на Experian](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- Experian връзката вече е конфигурирана от администратор *или* вие имате разрешения на [администратор](permissions.md#administrator). Също така се нуждаете от User ID, Party ID и Номер на модела за вашия акаунт за защитен транспорт (ST) с активиран SSH Experian създаден за вас.
+- Experian връзката вече е конфигурирана от администратор *или* вие имате разрешения на [администратор](permissions.md#admin). Също така се нуждаете от User ID, Party ID и Номер на модела за вашия акаунт за защитен транспорт (ST) с активиран SSH Experian създаден за вас.
 
 ## <a name="supported-countriesregions"></a>Поддържани държави / региони
 
