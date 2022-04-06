@@ -1,23 +1,23 @@
 ---
 title: Създаване на среди в Customer Insights
 description: Стъпки за създаване на среди с лицензиран абонамент за Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: a538237322615f69f0a5cb43d394275bf79af00b
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354082"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491900"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Създаване на среда в аналитични данни за аудиторията
 
@@ -83,14 +83,16 @@ ms.locfileid: "8354082"
 Свързването с вашата Dataverse среда също ви дава възможност да [поглъщате данни от локален източници на данни с помощта на Power Platform потоци от данни и шлюзове](data-sources.md#add-data-from-on-premises-data-sources). Можете също да използвате [извънбоксови прогноза модели](predictions-overview.md?tabs=b2c#out-of-box-models), като се Dataverse свържете към среда.
 
 > [!IMPORTANT]
-> "Аналитични данни за клиенти" и Dataverse трябва да бъдат в същия регион, за да се даде възможност за споделяне на данни.
+> 1. "Аналитични данни за клиенти" и Dataverse трябва да бъдат в същия регион, за да се даде възможност за споделяне на данни.
+> 1. Трябва да имате роля на глобален администратор в Dataverse средата. Проверете дали тази [Dataverse среда е свързана с](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) определени групи за защита и се уверете, че сте добавени към тези групи за защита.
+> 1. Нито една съществуваща среда на Customer Insights вече не е свързана с тази Dataverse среда. Научете как да [премахнете съществуваща връзка към Dataverse среда](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="споделяне на данни с Microsoft Dataverse автоматично разрешено за нетни нови екземпляри.":::
 
-> [!NOTE]
-> Customer Insights не поддържа следните сценарии за споделяне на данни:
-> - Ако запишете всички данни в собствено Azure Data Lake Storage, няма да можете да активирате споделянето на данни с управлявано от Dataverse хранилище за необработени данни.
-> - Ако активирате споделянето на данни с Dataverse, няма да можете да [създавате предвидени или липсващи стойности в обект](predictions.md).
+За повече информация относно разрешаването на споделянето на данни с Microsoft Dataverse от вашите собствени Azure Data Lake Storage вижте [Свързване към Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
+
+Customer Insights не поддържа следните сценарии за споделяне на данни:
+- Ако активирате споделянето на данни с Dataverse, няма да можете да [създавате предвидени или липсващи стойности в обект](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>Стъпка 4: Завършване на настройките
 

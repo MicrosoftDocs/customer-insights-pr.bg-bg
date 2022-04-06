@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376403"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523655"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Влизане в препращане Dynamics 365 Customer Insights с Azure монитор (визуализация)
 
@@ -230,7 +230,7 @@ API събитията и събитията на работния поток и
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Да      | Да  | Винаги `WorkflowEvent`, маркиране на събитието като събитие на работен поток.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Да      | Да  | Идентификатор на изпълнението на работния поток. Всички събития на работния поток и задачите в рамките на изпълнението на работния поток имат еднакви `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Да      | Да  | Идентификатор на операцията вижте [Типове операции].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | Да      | Да  | Идентификатор на операцията вижте [Типове операции](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Да      | No   | Само работен поток. Брой задачи задейства работния поток.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Да      | No   | По избор. Само за събития от работния поток. Azure Active Directory [ObjectId на потребителя](/azure/marketplace/find-tenant-object-id#find-user-object-id), който е задействал работния поток, вижте също `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Да      | No   | `full` или `incremental` опресняване.                                                                                                                                                                                                                            |

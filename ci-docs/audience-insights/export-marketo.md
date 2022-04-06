@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231948"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487486"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Експортиране на сегменти в Marketo (преглед)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8231948"
 
 1. Въведете своя **[ИД на списъка на Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. ИД на списъка е чисто цифрова стойност. Например, ако идентификаторът ви в списъка Marketo е ST12345A7, премахнете символа преди и след цифрите и въведете `12345`. 
 
-1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. 
+1. В секцията Съвпадение на **данни** изберете поне едно поле, което представлява имейл адреса на клиента или ИД на Marketo на клиента. 
 
 1. По желание можете да експортирате **Собствено име**, **Фамилно име**, **Град**, **Щат** и **Държава/регион** за създаване на по-персонализирани имейли. Изберете **Добавяне на атрибут** за нанасяне на тези полета.
 

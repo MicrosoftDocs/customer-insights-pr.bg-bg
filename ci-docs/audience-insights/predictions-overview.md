@@ -1,19 +1,19 @@
 ---
 title: Преглед на поддържаните сценарии за прогноза
 description: Сценарии и опции за прогнози, обхванати от Dynamics 365 Customer Insights приложение.
-ms.date: 12/21/2021
+ms.date: 03/24/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: c692785c7d81ab660ba2e07411e986c67c1a5d0a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 11b0efeecf8bea893272e67d29b1c6622771110c
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228172"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487481"
 ---
 # <a name="predictions-overview"></a>Общ преглед на прогнози
 
@@ -36,6 +36,11 @@ Dynamics 365 Customer Insights идва с разнообразни опции, 
 - [Транзакционен отбив](predict-transactional-churn.md): Предскажете дали клиентът вече няма да закупи вашите продукти или услуги в определен период от време.
 
 ---
+
+> [!TIP]
+> Препоръчваме ви редовно да опреснявате моделите извън кутията с актуализирани данни, за да се гарантира, че те точно информират вашия случай на бизнес употреба. Данните се обновяват ad-hoc, когато системата използва нови или актуализирани източници на данни. Моделите обаче ще отбележат само в този случай и ще продължат да използват съществуващите данни за обучението.
+> 
+> Можете да конфигурирате график **за** актуализиране, като зададете графика за преквалификация на модела в конфигурационния опит. Моделът ще се преквалифицира и ще отбележи отново по този график, който можете да промените по всяко време.
 
 
 ## <a name="azure-machine-learning-integration"></a>Интеграция на Azure Machine Learning

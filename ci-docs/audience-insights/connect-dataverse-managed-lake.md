@@ -1,7 +1,7 @@
 ---
 title: Свързване към таблици в Microsoft Dataverse
 description: Импортиране на данни от управлявано хранилище Data Lake в Microsoft Dataverse.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,16 +11,14 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354128"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464053"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Свързване с данни в управлявано от Microsoft Dataverse хранилище за необработени данни
-
-
 
 Тази статия предоставя информация за това как Dataverse потребителите могат бързо да се свързват с аналитични обекти в Microsoft Dataverse управлявано езеро. 
 
@@ -29,7 +27,8 @@ ms.locfileid: "8354128"
 
 ## <a name="important-considerations"></a>Важни съображения
 
-Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights.Чрез импортирането или свързването с данни, съхранявани в онлайн услуги, Вие се съгласявате, че данните могат да бъдат прехвърляни на и съхранявани с Dynamics 365 Customer Insights. [Научете повече в центъра за сигурност на Microsoft](https://www.microsoft.com/trust-center).
+1. Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights.Чрез импортирането или свързването с данни, съхранявани в онлайн услуги, Вие се съгласявате, че данните могат да бъдат прехвърляни на и съхранявани с Dynamics 365 Customer Insights. [Научете повече в центъра за сигурност на Microsoft](https://www.microsoft.com/trust-center).
+2. Виждат се само Dataverse обекти с [разрешено проследяване на](/power-platform/admin/enable-change-tracking-control-data-synchronization) промените. Тези обекти могат да бъдат експортирани в -управляваното Dataverse езеро с данни и да се използват в Customer Insights. Таблиците "Извън кутията Dataverse " имат разрешено проследяване на промените по подразбиране. Трябва да включите проследяването на промените за персонализирани таблици. За да проверите дали дадена Dataverse таблица е разрешена за проследяване на промените, отидете в [Power Apps](https://make.powerapps.com) > **DataTables** > **·**. Намерете таблицата с интереса си и я изберете. Отидете **на НастройкиДопълнителни** > **опции** и прегледайте настройката Проследяване на **промените**.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Свържете се с управлявано от Dataverse хранилище
 
