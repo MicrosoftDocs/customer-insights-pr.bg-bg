@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225502"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552043"
 ---
 # <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
 
@@ -72,6 +72,6 @@ ms.locfileid: "8225502"
 
 Когато зареждате обекти, които съдържат полета с формат на дата като ММ/ДД/ГГГГ, може да възникнат грешки поради несъответстващи формати на езикова променлива. Това несъответствие се получава, когато файлът на Power BI Desktop е зададен на друг език, различен от английски (САЩ), тъй като полетата за дата в аналитичните данни за аудитория се записват във формат на САЩ.
 
-Файлът на Power BI Desktop има една настройка на езикова променлива, която се прилага при извличане на данни. За да се тълкуват правилно тези полета за дата, задайте езиковата променлива на .BPI файла на английски (Съединени щати). [Научете как да променяте езиковата променлива на файл на Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Файлът на Power BI Desktop има една настройка на езикова променлива, която се прилага при извличане на данни. За да се тълкуват правилно тези полета за дата, задайте езиковата променлива на .BPI файла на английски (Съединени щати). [Научете как да променяте езиковата променлива на файл на Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

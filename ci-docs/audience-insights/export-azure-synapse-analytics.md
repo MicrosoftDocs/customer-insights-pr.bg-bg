@@ -1,19 +1,19 @@
 ---
 title: Експортирайте данни за Customer Insights в Azure Synapse Analytics
 description: Научете как да конфигурирате връзката към Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231299"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560374"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (Визуализация)
 
@@ -28,21 +28,21 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 ## <a name="prerequisites-in-customer-insights"></a>Предварителни условия в Customer Insights
 
-* Имате роля на **Администратор** в аналитични данни за аудитория. Научете повече за [задаване на потребителски разрешения в статистика за аудиторията](permissions.md#assign-roles-and-permissions)
+* Вашият Azure Active Directory (AD) потребителски акаунт има **роля на Администратор** в "Аналитични данни за клиенти". Научете повече за [задаване на потребителски разрешения в статистика за аудиторията](permissions.md#assign-roles-and-permissions)
 
 В Azure: 
 
 - Активен абонамент за Azure.
 
-- Ако използвате нов акаунт в Azure Data Lake Storage Gen2, *принципалът на услугата за аналитични данни за аудиторията* има нужда от разрешения **Създател на данни за BLOB за съхранение**. Научете повече за [свързване към Azure Data Lake Storage Gen2 с принципал на услугата Azure за аналитични данни за аудиторията](connect-service-principal.md). Data Lake Storage Gen2 **трябва да има** [ йерархично пространство от имена](/azure/storage/blobs/data-lake-storage-namespace) активирано.
+- Ако използвате нов Azure Data Lake Storage gen2 акаунт, главницата на *услугата за Customer Insights* се нуждае от **разрешения за съхранение Blob Data Contributor**. Научете повече за [свързване към Azure Data Lake Storage Gen2 с принципал на услугата Azure за аналитични данни за аудиторията](connect-service-principal.md). Data Lake Storage Gen2 **трябва да има** [ йерархично пространство от имена](/azure/storage/blobs/data-lake-storage-namespace) активирано.
 
-- В групата ресурси Azure Synapse се намира работното пространство, *принципал на услугата* и *потребител за аналитични данни за аудиторията* трябва да има присвоени поне разрешения **Читател**. За повече информация вижте [Присвояване на роли на Azure с помощта на портала на Azure](/azure/role-based-access-control/role-assignments-portal).
+- В групата ресурси, където Azure Synapse се намира работната област, главницата *на* услугата и *Azure AD потребителят с администраторски разрешения в Customer Insights* трябва да бъдат присвоени най-малко **reader** разрешения. За повече информация вижте [Присвояване на роли на Azure с помощта на портала на Azure](/azure/role-based-access-control/role-assignments-portal).
 
-- *Потребителят* има нужда от разрешения **Сътрудник на данни за BLOB за съхранение** за акаунт в Azure Data Lake Storage Gen2, където данните се намират и са свързани с Azure Synapse работно пространство. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- *Azure AD Потребителят с администраторски разрешения в Customer Insights* се нуждае от **съхранение Blob Data Contributor** разрешения на Azure Data Lake Storage Gen2 акаунт, където данните се намират и свързани с Azure Synapse работната област. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - *[Самоличността, управлявана от работно пространство на Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)*, има нужда от разрешения **Сътрудник на данни за BLOB за съхранение** за акаунт в Azure Data Lake Storage Gen2, където данните се намират и са свързани с Azure Synapse работно пространство. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- В работно пространство Azure Synapse, *принципал на услугата за аналитични данни за аудиторията* има нужда от присвоена роля **Администратор на Synapse**. За повече информация вижте [Как да настроите контрол на достъпа за вашето работно пространство на Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- В Azure Synapse работната област главницата на *услугата за "Аналитични данни* за клиенти" се нуждае от **присвоена роля на Администратор** на синапса. За повече информация вижте [Как да настроите контрол на достъпа за вашето работно пространство на Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>Настройване на връзката и експортирането в Azure Synapse
 

@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: Разглеждане на аналитичните данни за аудиторията
           href: audience-insights/home.md
+        - name: Работа с маркери и колони
+          href: audience-insights/work-with-tags-columns.md
         - name: Работа с бизнес акаунти
           href: audience-insights/work-with-business-accounts.md
     - name: Източници на данни
