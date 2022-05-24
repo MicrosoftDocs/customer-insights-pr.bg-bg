@@ -1,23 +1,22 @@
 ---
 title: Активиране на правила за съгласие за сегменти
 description: Изпълнете следните стъпки, за да свържете данните за съгласие и да активирате проверките за съгласие в Dynamics 365 Customer Insights. Администраторът може също да забрани проверките за съгласие.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642077"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755157"
 ---
 # <a name="activate-consent-rules"></a>Активиране на правила за съгласие
 
-Центърът [за съгласие (визуализация)](consent-management/overview.md) ви помага да хармонизирате данните за съгласие от различни източници. Използвайте единния *обект Съгласие*, за да приложите проверки за съгласие по подразбиране. След импортиране на данни за съгласие в Центъра за съгласие и конфигуриране на правилата за данните, обектът *Съгласие* автоматично се синхронизира с Dynamics 365 Customer Insights.
+Центърът [за съгласие (визуализация)](consent-management/overview.md) ви помага да хармонизирате данните за съгласие от различни източници. Използвайте единния *обект Съгласие*, за да приложите проверки за съгласие по подразбиране. След импортиране на данни за съгласие и конфигуриране на правила на картата, обектът *Съгласие* автоматично се синхронизира с Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>Активиране на проверки за съгласие
 

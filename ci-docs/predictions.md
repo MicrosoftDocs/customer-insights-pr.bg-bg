@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642357"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740706"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>Попълнете частичните си данни с прогнози (амортизирано)
 
@@ -37,13 +37,13 @@ ms.locfileid: "8642357"
 
 1. Организацията има екземпляр, [настроен в Microsoft Dataverse](/ai-builder/build-model#prerequisites) и е в същата организация като Customer Insights.
 
-2. Средата за аналитични данни за аудитория е свързана с екземпляра на Dataverse.
+2. Средата на Customer Insights е прикрепена към екземпляра на Dataverse.
 
 За повече информация вижте [Създаване на нова среда](create-environment.md).
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>Създаване на прогноза в обекта на клиента
 
-1. Отидете в **Обекти с** > **данни**.
+1. Отидете на **Обекти с данни** > **·**.
 
 2. Изберете обекта **Клиент**.
 
@@ -91,7 +91,7 @@ ms.locfileid: "8642357"
 
 ## <a name="view-a-prediction"></a>Преглед на прогноза
 
-1. Отидете на **IntelligencePredictionsМоите** > **·** > **прогнози**.
+1. Отидете на **Разузнавателни** > **прогнози** > **Моите прогнози**.
 
 2. Изберете прогнозата, която искате да прегледате.
 
@@ -108,7 +108,7 @@ ms.locfileid: "8642357"
 
 ## <a name="update-a-prediction"></a>Актуализиране на прогноза
 
-1. Отидете на **IntelligencePredictionsМоите** > **·** > **прогнози**.
+1. Отидете на **Разузнавателни** > **прогнози** > **Моите прогнози**.
 
 2. Изберете прогнозата, която искате да актуализирате, и изберете иконата **Актуализиране**.
 
@@ -118,7 +118,7 @@ ms.locfileid: "8642357"
 
 След като създадете прогноза, можете да персонализирате AI Builder модела в, за да увеличите ефективността на модела си.  
 
-1. Отидете на **IntelligencePredictionsМоите** > **·** > **прогнози**.
+1. Отидете на **Разузнавателни** > **прогнози** > **Моите прогнози**.
 
 2. Изберете прогнозата, която искате да редактирате.
 
@@ -135,7 +135,7 @@ ms.locfileid: "8642357"
 
 ## <a name="remove-a-prediction"></a>Премахване на прогноза
 
-1. Отидете на **IntelligencePredictionsМоите** > **·** > **прогнози**.
+1. Отидете на **Разузнавателни** > **прогнози** > **Моите прогнози**.
 
 2. Изберете прогнозата, който искате да изтриете.
 

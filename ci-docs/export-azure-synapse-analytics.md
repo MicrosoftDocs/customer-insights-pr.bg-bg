@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642084"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741490"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (Визуализация)
 
@@ -34,7 +34,7 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 - Активен абонамент за Azure.
 
-- Ако използвате нов Azure Data Lake Storage gen2 акаунт, главницата на *услугата за Customer Insights* се нуждае от **разрешения за съхранение Blob Data Contributor**. Научете повече за [свързване към Azure Data Lake Storage Gen2 с принципал на услугата Azure за аналитични данни за аудиторията](connect-service-principal.md). Data Lake Storage Gen2 **трябва да има** [ йерархично пространство от имена](/azure/storage/blobs/data-lake-storage-namespace) активирано.
+- Ако използвате нов Azure Data Lake Storage gen2 акаунт, главницата на *услугата за Customer Insights* се нуждае от **разрешения за съхранение Blob Data Contributor**. Научете повече за [свързването Azure Data Lake Storage с gen2 акаунт с принципал на услугата на Azure за "Аналитични данни](connect-service-principal.md) за клиенти". Data Lake Storage Gen2 **трябва да има** [ йерархично пространство от имена](/azure/storage/blobs/data-lake-storage-namespace) активирано.
 
 - В групата ресурси, където Azure Synapse се намира работната област, главницата *на* услугата и *Azure AD потребителят с администраторски разрешения в Customer Insights* трябва да бъдат присвоени най-малко **reader** разрешения. За повече информация вижте [Присвояване на роли на Azure с помощта на портала на Azure](/azure/role-based-access-control/role-assignments-portal).
 

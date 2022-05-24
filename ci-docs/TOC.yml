@@ -66,12 +66,18 @@
   items:
     - name: Общ преглед на унифициране на данните
       href: data-unification.md
-    - name: Обекти и атрибути на карта
+    - name: Избор на полета източник
       href: map-entities.md
-    - name: Съпоставяне на обекти
+    - name: Премахване на дублирани записи
+      href: remove-duplicates.md
+    - name: Съвпадение на условията
       href: match-entities.md
-    - name: Сливане на обекти
+    - name: Обединение на полетата за клиенти
       href: merge-entities.md
+    - name: Преглед на обединяването на данни
+      href: review-unification.md
+    - name: Актуализиране на настройките за обединение
+      href: data-unification-update.md
 - name: Допълване на данни
   items:
     - name: Допълване на потребителски профили
@@ -282,6 +288,8 @@
       href: apis.md
     - name: API препратки
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: Примерни заявки за OData
+      href: odata-examples.md
 - name: Управление на съгласието (Предварителен преглед)
   items:
     - name: Център за помощ
