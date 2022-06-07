@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 50258365c3134c588aa79ec72c66d0de329e0ff1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4db97ec02eb96662d30a8536ea42372f81f318d2
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642279"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800131"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Свързване с Power Query източник на данни
 
@@ -76,7 +76,7 @@ Power Query предлага широк набор от конектори за 
 
 1. Отидете на **Данни** > **Източници на данни**.
 
-2. Изберете вертикалната елипса до източник на данни, която искате да променете и изберете **Редактиране** от падащото меню.
+2. Изберете вертикалното елипса (&vellip;) до източник на данни, което искате да промените, и изберете **Редактиране** от падащото меню.
 
    > [!div class="mx-imgBorder"]
    > ![Опция „Редактиране“.](media/edit-option-data-sources.png "Опция „Редактиране“")

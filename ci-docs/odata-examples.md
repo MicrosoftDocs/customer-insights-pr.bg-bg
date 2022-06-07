@@ -1,19 +1,19 @@
 ---
 title: OData примери за Dynamics 365 Customer Insights API
 description: Често използвани примери за Протокола за отворени данни (OData) за заявка на API за аналитични данни на клиента за преглед на данни.
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 007278e1330e1a8e64d524ded8496acaf83b874c
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740061"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808448"
 ---
 # <a name="odata-query-examples"></a>Примери за заявки за OData
 
@@ -33,16 +33,15 @@ ms.locfileid: "8740061"
 
 Следната таблица съдържа набор от примерни заявки за *обекта Клиент*.
 
-
 |Тип заявка |Пример  | Бележка  |
 |---------|---------|---------|
 |Идентификационен номер на един клиент     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|алтернативен ключ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  Алтернативните ключове се запазват в унифицирания обект клиент       |
+|алтернативен ключ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Алтернативните ключове се запазват в унифицирания обект клиент       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |След    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
 |алтернативен ключ + В   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Търсете  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Връща топ 10 резултати за низ за търсене      |
-|Членство в сегмент  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | Връща предварително зададен брой редове от обекта за сегментиране.      |
+|Членство в сегмент  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Връща предварително зададен брой редове от обекта за сегментиране.      |
 
 ## <a name="unified-activity"></a>Единна дейност
 
@@ -53,7 +52,7 @@ ms.locfileid: "8740061"
 |Дейност на CID     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | Изброява дейности на конкретен профил на клиент |
 |Времева рамка за активност    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  Дейности на клиентски профил във времева рамка       |
 |Тип дейност    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|Дейност по показвано име     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|Дейност по показвано име     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |Сортиране на дейности    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Сортиране на дейности възходящи или низходящи       |
 |Активността е разширена от членството в сегмент  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
@@ -67,3 +66,13 @@ ms.locfileid: "8740061"
 |Обогатени марки на CID    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
 |Обогатени интереси на CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |In-клауза + Разгъване     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+
+## <a name="not-supported-odata-queries"></a>Не се поддържа OData заявки
+
+Следните заявки не се поддържат от "Аналитични данни за клиенти":
+
+- `$filter` относно субектите от най-много източници. Можете да изпълнявате само $filter заявки на системни обекти, които Customer Insights създава.
+- `$expand` от `$search` заявка. Пример: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+- `$expand` от `$select` ако е избрано само подмножество от атрибути. Пример: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- `$expand` обогатена марка или интерес афинитети за даден клиент. Пример: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+- Заявка прогноза обекти за изход на модел чрез алтернативен ключ. Пример: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`

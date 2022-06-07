@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642076"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800150"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Свързване с данни в управлявано от Microsoft Dataverse хранилище за необработени данни
 
@@ -28,7 +28,7 @@ ms.locfileid: "8642076"
 ## <a name="important-considerations"></a>Важни съображения
 
 1. Данните, съхранявани в онлайн услуги като Azure Data Lake Storage може да се съхраняват на различно място от това, на което се обработват или съхраняват данни в Dynamics 365 Customer Insights.Чрез импортирането или свързването с данни, съхранявани в онлайн услуги, Вие се съгласявате, че данните могат да бъдат прехвърляни на и съхранявани с Dynamics 365 Customer Insights. [Научете повече в центъра за сигурност на Microsoft](https://www.microsoft.com/trust-center).
-2. Виждат се само Dataverse обекти с [разрешено проследяване на](/power-platform/admin/enable-change-tracking-control-data-synchronization) промените. Тези обекти могат да бъдат експортирани в -управляваното Dataverse езеро с данни и да се използват в Customer Insights. Таблиците "Извън кутията Dataverse " имат разрешено проследяване на промените по подразбиране. Трябва да включите проследяването на промените за персонализирани таблици. За да проверите дали дадена Dataverse таблица е разрешена за проследяване на промените, отидете в [Power Apps](https://make.powerapps.com) > **DataTables** > **·**. Намерете таблицата с интереса си и я изберете. Отидете **на НастройкиДопълнителни** > **опции** и прегледайте настройката Проследяване на **промените**.
+2. Виждат се само Dataverse обекти с [разрешено проследяване на](/power-platform/admin/enable-change-tracking-control-data-synchronization) промените. Тези обекти могат да бъдат експортирани в -управляваното Dataverse езеро с данни и да се използват в Customer Insights. Таблиците "Извън кутията Dataverse " имат разрешено проследяване на промените по подразбиране. Трябва да включите проследяването на промените за персонализирани таблици. За да проверите дали дадена Dataverse таблица е разрешена за проследяване на промените, отидете [Power Apps](https://make.powerapps.com) > **в Таблици с** > **данни**. Намерете таблицата с интереса си и я изберете. Отидете на **Настройки Разширени опции** > **и прегледайте настройката Проследяване на** промените **·**.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Свържете се с управлявано от Dataverse хранилище
 
@@ -62,7 +62,7 @@ ms.locfileid: "8642076"
 
 1. Отидете на **Данни** > **Източници на данни**.
 
-2. До източника на данни, който искате да актуализирате, изберете многоточието.
+2. До източник на данни искате да актуализирате, изберете вертикалното елипсис (&vellip;).
 
 3. Изберете опцията **Редактиране** от списъка.
 

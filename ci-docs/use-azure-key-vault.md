@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 9eb06a1190fe4e8012ecd3d6742b8b3f5f4d6349
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
+ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653464"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763566"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Донесете свой собствен ключ за хранилище на Azure (предварителен преглед)
 
@@ -31,17 +31,17 @@ ms.locfileid: "8653464"
 
 - Трябва да имате активен абонамент за Azure.
 
-- Имате [роля на администратор](permissions.md#admin) в "Аналитични данни за клиенти". Научете повече за [потребителските разрешения в "Аналитични данни за](permissions.md#assign-roles-and-permissions) клиенти".
+- Имате [роля на администратор](permissions.md#admin) в "Аналитични данни за клиенти". Научете повече за [потребителските разрешения в "Аналитични данни за клиенти"](permissions.md#assign-roles-and-permissions).
 
 - Вие имате роли [Сътрудник](/azure/role-based-access-control/built-in-roles#contributor) и [Администратор за потребителски достъп](/azure/role-based-access-control/built-in-roles#user-access-administrator) в хранилището с ключове или групата ресурси, към която принадлежи хранилището с ключове. За повече информация отидете на [Добавяне или премахване на присвояване на роли на Azure чрез портала на Azure](/azure/role-based-access-control/role-assignments-portal). Ако нямате ролята на администратор на достъп за потребители в хранилището с ключове, трябва да настроите ролевите разрешения за контрол на достъпа за главен за услугата Azure за Dynamics 365 Customer Insights отделно. Следвайте стъпките, за да [използвате главен служител на Azure](connect-service-principal.md) за хранилището с ключове, което трябва да бъде свързано.
 
 - Трезорът с ключове трябва да има **забранена** защитна стена на хранилището за ключове.
 
-- Ключовият трезор е в същото [местоположение](https://azure.microsoft.com/global-infrastructure/geographies/#overview) на Azure като средата на "Аналитични данни за клиенти". Регионът на околната среда в Клиентските аналитични данни е посочен в **AdminSystemAboutRegion** > **·** > **·** > **·**.
+- Ключовият трезор е в същото [местоположение](https://azure.microsoft.com/global-infrastructure/geographies/#overview) на Azure като средата на "Аналитични данни за клиенти". Регионът на средата в Customer Insights е посочен в **Администраторска** > **система** > **за** > **региона**.
 
 ### <a name="link-a-key-vault-to-the-environment"></a>Свържете ключов трезор със средата
 
-1. Отидете **на AdminSecurity** > **и** след това изберете раздела **Ключ хранилище**.
+1. Отидете на **Защита на администратора** > **и** след това изберете раздела **Ключ хранилище**.
 1. На плочката **Хранилище за ключове** изберете **Настройка**.
 1. Изберете **Абонамент**.
 1. Изберете хранилище за ключове от **Хранилището за ключове** падащ списък. Ако се показват твърде много ключови трезори, изберете група ресурси, за да ограничите резултатите от търсенето.
@@ -89,9 +89,9 @@ ms.locfileid: "8653464"
 
 | Тип        | Разрешения          |
 | ----------- | -------------------- |
-| Клавиш         | [Вземете ключове](/rest/api/keyvault/get-keys), [Вземете ключ](/rest/api/keyvault/get-key)                                 |
-| Секрет      | [Вземете тайни](/rest/api/keyvault/get-secrets), [Вземете тайна](/rest/api/keyvault/get-secret)                     |
-| Сертификат | [Вземете сертификати](/rest/api/keyvault/get-certificates), [Вземете сертификат](/rest/api/keyvault/get-certificate) |
+| Клавиш         | [Вземете ключове](/rest/api/keyvault/keys/get-keys/get-keys), [Вземете ключ](/rest/api/keyvault/keys/get-key/get-key)                                 |
+| Секрет      | [Вземете тайни](/rest/api/keyvault/secrets/get-secrets/get-secrets), [Вземете тайна](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
+| Сертификат | [Вземете сертификати](/rest/api/keyvault/certificates/get-certificates/get-certificates), [Вземете сертификат](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
 Предходните стойности са минималните за изброяване и четене по време на изпълнение.
 

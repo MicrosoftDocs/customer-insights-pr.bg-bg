@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755296"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800359"
 ---
 # <a name="connections-preview-overview"></a>Общ преглед на връзките (преглед)
 
@@ -69,7 +69,7 @@ ms.locfileid: "8755296"
 
 1. Отидете в раздела **Връзки**.
 
-1. Изберете вертикалното многоточие за връзката, която искате да редактирате.
+1. Изберете вертикалното елипсис (&vellip;) за връзката, която искате да редактирате.
 
 1. Изберете **Редактиране**.
 
@@ -85,7 +85,7 @@ ms.locfileid: "8755296"
 
 1. Отидете в раздела **Връзки**.
 
-1. Изберете вертикалното многоточие за връзката, която искате да премахнете.
+1. Изберете вертикалното елипсис (&vellip;) за връзката, която искате да премахнете.
 
 1. Изберете **Премахване** от падащото меню. Показва се диалогов прозорец за потвърждение.
 

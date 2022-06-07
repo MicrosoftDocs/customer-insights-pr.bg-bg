@@ -1,7 +1,7 @@
 ---
 title: Свързване с акаунт на Azure Data Lake Storage с помощта на субект на услуга
 description: Използвайте субект на услуга на Azure, за да се свържете с вашето data lake.
-ms.date: 04/26/2022
+ms.date: 05/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,22 +11,23 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739149"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833364"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Свързване с акаунт на Azure Data Lake Storage с помощта на субект на услуга на Azure
 
-В тази статия се обсъжда как да се свържете Dynamics 365 Customer Insights с акаунт Azure Data Lake Storage с помощта на главница на услугата на Azure вместо ключове за акаунт за съхранение. 
+В тази статия се обсъжда как да се свържете Dynamics 365 Customer Insights с акаунт Azure Data Lake Storage с помощта на главница на услугата на Azure вместо ключове за акаунт за съхранение.
 
 Автоматизираните инструменти, които използват услугите на Azure, винаги трябва да имат ограничени разрешения. Вместо приложенията да влизат като напълно привилегирован потребител, Azure предлага принципали на услуги. Можете да използвате главници на услуги за сигурно [добавяне или редактиране на папка на Common Data Model като източник на данни](connect-common-data-model.md) или [създаване или актуализиране на среда](create-environment.md).
 
 > [!IMPORTANT]
+>
 > - Акаунтът за съхранение на езерото данни, който ще използва главницата на услугата, трябва да бъде Gen2 и да има [йерархично пространство на имената разрешено](/azure/storage/blobs/data-lake-storage-namespace). Акаунтите за съхранение на Azure Data Lake Gen1 не се поддържат.
-> - Имате нужда от администраторски разрешения за вашия абонамент за Azure, за да създадете принципал на услугата.
+> - Имате нужда от администраторски разрешения за вашия Клиент на Azure за създаване на принципал на услугата.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Създаване на субект на услуга на Azure за Customer Insights
 
@@ -38,29 +39,15 @@ ms.locfileid: "8739149"
 
 2. От **Услуги на Azure** изберете **Azure Active Directory**.
 
-3. Под **Управление** изберете **Корпоративни приложения**.
+3. Под **Управление** изберете **Приложение на** Microsoft.
 
 4. Добавете филтър за **ИД на приложение започнете с**`0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` или потърсете името `Dynamics 365 AI for Customer Insights`.
 
-5. Ако намерите съвпадащ запис, това означава, че субектът на услугата вече съществува. 
-   
+5. Ако намерите съвпадащ запис, това означава, че субектът на услугата вече съществува.
+
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Екранна снимка, показваща съществуващ субект на услуга.":::
-   
-6. Ако не се върнат резултати, създайте нов принципал на услугата.
 
-### <a name="create-a-new-service-principal"></a>Създаване на нова принципал на услуга
-
-1. Инсталирайте най-новата версия на Azure Active Directory PowerShell for Graph. За повече информация отидете на [Инсталиране на Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-
-   1. На компютъра изберете клавиша Windows на клавиатурата, потърсете **Windows PowerShell** и изберете **Изпълняване като администратор**.
-   
-   1. В прозореца PowerShell, който се отваря, въведете `Install-Module AzureAD`.
-
-2. Създайте субекта на услугата за Customer Insights с модула на Azure AD PowerShell.
-
-   1. В прозореца PowerShell въведете `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Заменете *[вашия ИД на директорията]* с действителния ИД на директорията на вашия абонамент за Azure, където искате да създадете главницата на услугата. Параметърът на име на среда `AzureEnvironmentName` е по избор.
-  
-   1. Въведете `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Тази команда създава главницата на услугата за "Аналитични данни за клиенти" в избрания абонамент за Azure. 
+6. Ако не се върнат резултати, можете да [създадете нов главница](#create-a-new-service-principal) на услугата. В повечето случаи тя вече съществува и трябва само да предоставите разрешения за главницата на услугата за достъп до акаунта за съхранение.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Предоставете разрешения на принципала на услугата за достъп до акаунта за съхранение
 
@@ -77,9 +64,9 @@ ms.locfileid: "8739149"
 1. В прозореца **Добавяне на присвояване на роля** задайте следните свойства:
    - Роля: **Сътрудник за данни за BLOB за съхранение**
    - Присвояване на достъп до: **Принцип на потребител, група или услуга**
-   - Изберете членове: **Dynamics 365 AI за аналитични данни** за клиенти (главницата [на](#create-a-new-service-principal) услугата, която създадохте по-рано в тази процедура)
+   - Изберете членове: **Dynamics 365 AI for Customer Insights** (главницата [на](#create-a-new-service-principal) услугата, която сте потърсили по-рано в тази процедура)
 
-1.  Изберете **Преглед + присвояване**.
+1. Изберете **Преглед + присвояване**.
 
 Разпространението на промените може да отнеме до 15 минути.
 
@@ -91,7 +78,7 @@ ms.locfileid: "8739149"
 
 1. Отидете на [Административен портал на Azure](https://portal.azure.com), влезте в абонамента си и отворете акаунта за съхранение.
 
-1. В левия прозорец отидете на **Настройки** > **Свойства**.
+1. В левия екран отидете **на Настройки** > **Крайни точки**.
 
 1. Копирайте стойността на идентификатора на ресурса на акаунта за съхранение.
 
@@ -115,5 +102,18 @@ ms.locfileid: "8739149"
 
 1. Продължете с останалите стъпки в "Аналитични данни за клиенти", за да прикачите акаунта за съхранение.
 
+### <a name="create-a-new-service-principal"></a>Създаване на нова принципал на услуга
+
+1. Инсталирайте най-новата версия на Azure Active Directory PowerShell for Graph. За повече информация отидете на [Инсталиране на Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+
+   1. На вашия компютър натиснете клавиша Windows на клавиатурата и потърсете **Windows PowerShell** и изберете **Изпълни като администратор**.
+
+   1. В прозореца PowerShell, който се отваря, въведете `Install-Module AzureAD`.
+
+2. Създайте субекта на услугата за Customer Insights с модула на Azure AD PowerShell.
+
+   1. В прозореца PowerShell въведете `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Заменете *[вашия ИД на директорията]* с действителния ИД на директорията на вашия абонамент за Azure, където искате да създадете главницата на услугата. Параметърът на име на среда `AzureEnvironmentName` е по избор.
+  
+   1. Въведете `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Тази команда създава главницата на услугата за "Аналитични данни за клиенти" в избрания абонамент за Azure.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
