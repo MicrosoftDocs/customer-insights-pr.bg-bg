@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833663"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011507"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работа с данни на Customer Insights в Microsoft Dataverse
 
 Customer Insights предоставя опцията обектите за изход да се предоставят като [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Тази интеграция дава възможност за лесно споделяне на данни и персонализирано развитие чрез подход с нисък код/без код. Изходните [обекти](#output-entities) са налични като таблици в Dataverse среда. Можете да използвате данните за всяко друго приложение въз основа на Dataverse таблици. Тези таблици дават възможност за сценарии като автоматизирани работни потоци през Power Automate или изграждане на приложения с Power Apps.
 
-Свързването с вашата Dataverse среда също ви дава възможност да [поглъщате данни от локален източници на данни с помощта на Power Platform потоци от данни и шлюзове](data-sources.md#add-data-from-on-premises-data-sources).
+Свързването с вашата Dataverse среда също ви дава възможност да [поглъщате данни от локален източници на данни с помощта на Power Platform потоци от данни и шлюзове](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
@@ -57,7 +57,7 @@ Customer Insights предоставя опцията обектите за из
 Има две ограничения при използване Dataverse със собствен Azure Data Lake Storage профил:
 
 - Има съпоставяне "едно към едно" между Dataverse организация и Azure Data Lake Storage профил. След като Dataverse дадена организация е свързана към акаунт за съхранение, тя не може да се свърже с друг акаунт за съхранение. Това ограничение предотвратява, че даден Dataverse не попълва няколко акаунта за съхранение.
-- Споделянето на данни няма да работи, ако е необходима настройка на Azure private Link за достъп до вашия акаунт за съхранение на Azure Data Lake, защото е зад защитна стена. Dataverse в момента не поддържа връзката с частни крайни точки чрез Private Link.
+- Споделянето на данни няма да работи, ако е необходима настройка на Azure private Link за достъп до профила Ви Azure Data Lake Storage, защото е зад защитна стена. Dataverse в момента не поддържа връзката с частни крайни точки чрез Private Link.
 
 ### <a name="set-up-powershell"></a>Настройване на PowerShell
 

@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833755"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011874"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>ЧЗВ за пробна версия на Dynamics 365 Customer Insights
 
@@ -66,9 +66,9 @@ ms.locfileid: "8833755"
 
 След като влезете в платения екземпляр на Customer Insights за първи път, ще бъдете помолени да създадете нова среда. В този процес можете да изберете да копирате конфигурацията от съществуваща среда и да мигрирате повечето от настройките. Ако имате разрешенията, споменати по-горе, пробната среда ще се покаже в този списък. За повече информация вижте [Копиране на конфигурацията на средата](create-environment.md#copy-the-environment-configuration).
 
-### <a name="what-are-the-trial-limits-and-quotas"></a>Какви са границите и квотите за пробния период?
+### <a name="what-are-the-trial-limits-and-quotas"></a>Какви са ограниченията и квотите за пробната версия?
 
-- Не можете да използвате собствен акаунт за съхранение на Azure Data Lake, за да съхранявате изходни данни по време на пробна версия на "Аналитични данни за клиенти". Можете обаче да приемате данни от акаунт в Data Lake Storage.
+- Не можете да използвате собствения Azure Data Lake Storage си профил, за да съхранявате изходни данни по време на пробна версия на "Аналитични данни за клиенти". Можете обаче да почнете данни от акаунт в Data Lake Storage.
 - Можете да съхранявате до 3 GB данни в среда на Dataverse, която се осигурява автоматично, когато стартирате пробен период на Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>Въпроси, специфични за Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833755"
 
 Следните функции не са **налични**:
 
-- Не можете да създавате нови среди, които използват вашия собствен акаунт на Azure Data Lake Storage.
+- Не можете да създавате нови среди, които използват собствения Azure Data Lake Storage ви профил.
 - Не можете да изтриете пробната среда.
 
 ### <a name="how-long-does-the-trial-last"></a>Колко продължава пробната версия?

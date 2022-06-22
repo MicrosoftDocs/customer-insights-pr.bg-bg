@@ -1,30 +1,33 @@
 ---
-title: Настройки за защита в Dynamics 365 Customer Insights
+title: Настройки за защита в "Аналитични данни за клиенти"
 description: Научете за настройките за защита в Dynamics 365 Customer Insights.
-ms.date: 04/28/2022
+ms.date: 06/08/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5d73bacccadc9193d76d8dfafd0365dabc911e00
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 163deb9bed4f82d742c46cace27dd128f0aca18b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653777"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947402"
 ---
-# <a name="security-overview-page"></a>Страница за общ преглед на защитата
+# <a name="security-settings-in-customer-insights"></a>Настройки за защита в "Аналитични данни за клиенти"
 
-Страницата **за защита** изброява опции за конфигуриране на потребителски разрешения и функции, които помагат за по-защитени Dynamics 365 Customer Insights. Само администраторите могат да получат достъп до тази страница. 
+Страницата **за защита** изброява опции за конфигуриране на потребителски разрешения и функции, които помагат за по-защитени Dynamics 365 Customer Insights. Само администраторите могат да получат достъп до тази страница.
 
-Отидете **на AdminSecurity** > **·**, за да конфигурирате настройките.
+Отидете на **Защита на администратора** > **·**, за да конфигурирате настройките.
 
 **Страницата защита** включва следните раздели:
+
 - [Потребители](#users-tab)
 - [API](#apis-tab)
+- [Частни връзки](#private-links-tab)
 - [Хранилище за ключове](#key-vault-tab)
+- [Защитен достъп до клиентски данни с Клиент Lockbox (Предварителен преглед)](#securely-access-customer-data-with-customer-lockbox-preview)
 
 ## <a name="users-tab"></a>Раздел "Потребители"
 
@@ -38,6 +41,22 @@ ms.locfileid: "8653777"
 
 За да блокирате API достъпа до средата, изберете **Забрани**. Ако API са деактивирани, можете да изберете **Разрешаване** за предоставяне на достъп отново.
 
+## <a name="private-links-tab"></a>Раздел "Частни връзки"
+
+[Azure Private Link](/azure/private-link/private-link-overview) нека клиентските аналитични данни се свържат с профила ви Azure Data Lake Storage по частна крайна точка във вашата виртуална мрежа. За данни в акаунт за съхранение, който не е изложен на публичния интернет, Private Link позволява връзката с тази ограничена мрежа.
+
+> [!IMPORTANT]
+> Изискване за минимална роля за настройване на връзка с частна връзка:
+>
+> - Аналитични данни за клиенти: администратор
+> - Вградена роля на Azure: [Сътрудник на акаунт за съхранение](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - Разрешения за персонализирана роля в Azure: [Microsoft.Storage/съхранениеБроя/четене и Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsОдобрение/действие](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+
+Настройването на частна връзка в "Аналитични данни за клиенти" е двуетапен процес. Първо, вие инициирате създаването на Частна връзка от **Администратор** > **сигурност** > **частни връзки** в Клиентски прозрения. Прозорецът "Добавяне на **частна връзка"** изброява акаунти за съхранение от вашия наемател, които имате разрешения да виждате. Изберете акаунта за съхранение и осигурете съгласие за създаване на Частната връзка.
+
+След това трябва да одобрите Частната връзка от страната на акаунта data Lake Storage. Отворете връзката, представена на екрана, за да одобрите новата Частна връзка.
+
 ## <a name="key-vault-tab"></a>Раздел "Трезор за ключове"
 
 Разделът **Key Vault** ви позволява да свържете и управлявате собствения [си хранилище](/azure/key-vault/general/basic-concepts) за ключове на Azure към околната среда.
@@ -45,5 +64,13 @@ ms.locfileid: "8653777"
 
 За повече информация вижте [Внасяне на собствено хранилище за ключове на Azure](use-azure-key-vault.md).
 
+## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>Защитен достъп до клиентски данни с Клиент Lockbox (Предварителен преглед)
+
+"Аналитични данни за клиенти" използва възможността за блокиране на Power Platform клиенти. Customer Lockbox предоставя интерфейс за преглед и одобряване (или отхвърляне) на заявки за достъп до данни. Тези заявки възникват, когато е необходим достъп на данни до клиентски данни за разрешаване на случай на поддръжка. За да използвате тази функция, Customer Insights трябва да има съществуваща връзка към Microsoft Dataverse среда във вашия наемател.
+
+За повече информация относно Lockbox на клиента вижте обобщението [на](/power-platform/admin/about-lockbox#summary) Lockbox на Power Platform клиента. Статията описва [също работния поток](/power-platform/admin/about-lockbox#workflow) и необходимата [настройка](/power-platform/admin/about-lockbox#enable-the-lockbox-policy), за да разрешите Lockbox на клиента.
+
+> [!IMPORTANT]
+> Глобалните администратори за Power Platform или Power Platform администраторите могат да одобрят заявките на Customer Lockbox, издадени за "Аналитични данни за клиенти".
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

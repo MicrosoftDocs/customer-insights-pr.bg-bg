@@ -48,14 +48,14 @@
   items:
     - name: Общ преглед на източниците на данни
       href: data-sources.md
+    - name: Свързване към данни в Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: Свързване с Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: Свързване с данни в управлявано от Microsoft Dataverse хранилище за необработени данни
+      href: connect-dataverse-managed-lake.md
     - name: Добавяне на източници на данни чрез Power Query конектори
       href: connect-power-query.md
-    - name: Добавяне на Common Data Model като източник на данни
-      href: connect-common-data-model.md
-    - name: 'Добавяне на хранилище за необработени данни, управлявано от Dataverse'
-      href: connect-dataverse-managed-lake.md
-    - name: Добавяне на Azure Synapse Analytics
-      href: connect-synapse.md
     - name: Обогатяване за източници на данни
       href: data-sources-enrichment.md
     - name: Постъпково обновяване на източници на данни
@@ -82,27 +82,27 @@
   items:
     - name: Допълване на потребителски профили
       href: enrichment-hub.md
+    - name: Профили от Office 365 данни
+      href: enrichment-office.md
     - name: Марки и интереси
       href: enrichment-microsoft.md
+    - name: Фирмени данни от Дън & Брадстрийт
+      href: enrichment-dnb.md
+    - name: Фирмени данни от Leadspace
+      href: enrichment-leadspace.md
+    - name: Население с Experian
+      href: enrichment-experian.md
     - name: Подобрени адреси
       href: enrichment-enhanced-addresses.md
     - name: Подобрени фирмени данни
       href: enrichment-enhanced-company-data.md
-    - name: Обогатете с Карти на Azure
-      href: enrichment-azure-maps.md
-    - name: Обогатяване с Дън & Брадстрийт
-      href: enrichment-dnb.md
-    - name: Обогатяване с HERE Technologies
-      href: enrichment-here.md
-    - name: Допълване с Leadspace
-      href: enrichment-leadspace.md
-    - name: Обогатете с LiveRamp
+    - name: Идентичност с LiveRamp
       href: enrichment-liveramp.md
-    - name: Обогатете с Experian
-      href: enrichment-experian.md
-    - name: Обогатяване с Office 365 данни
-      href: enrichment-office.md
-    - name: Обогатяване с SFTP персонализирано импортиране
+    - name: Местоположение от Карти на Azure
+      href: enrichment-azure-maps.md
+    - name: Местоположение от HERE Technologies
+      href: enrichment-here.md
+    - name: SFTP персонализирано импортиране
       href: enrichment-SFTP-custom-import.md
 - name: Унифицирани профили
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: Дефиниране на клиентски дейности
       href: activities.md
+    - name: Управление на съгласието за "Аналитични данни за клиенти"
+      href: consent-management.md
 - name: Сегменти
   items:
     - name: Общ преглед на сегментите
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: Примерни заявки за OData
       href: odata-examples.md
-- name: Управление на съгласието (Предварителен преглед)
-  items:
-    - name: Център за помощ
-      href: consent-management/index.yml
-    - name: Преглед на възможностите
-      href: consent-management/overview.md
-    - name: Начало
-      items:
-        - name: Начало
-          href: consent-management/get-started.md
-        - name: Понятия и терминология
-          href: consent-management/glossary.md
-    - name: Импортиране на данни за съгласие
-      items:
-        - name: Импортиране на данни за съгласие
-          href: consent-management/import-consent-data.md
-        - name: Задаване на данни за съгласие и прилагане на предпочитания за съгласие
-          href: consent-management/set-consent-rules.md
-    - name: Управление на данните за съгласие
-      items:
-        - name: Разрешаване на правила за съгласие в "Аналитични данни за клиенти"
-          href: activate-consent.md
-        - name: Управление на правилата за съгласие по подразбиране в сегментите "Аналитични данни за клиенти"
-          href: change-default-consent-rules.md
-    - name: Управление на настройките и потребителите
-      items:
-        - name: Конфигуриране на системните настройки
-          href: consent-management/system-settings.md
-        - name: Управление на потребителите и разрешенията
-          href: consent-management/manage-users.md
-    - name: Използване на данни за съгласие
-      items:
-        - name: Създаване на прогнози с данни за съгласие
-          href: consent-management/predictions-consent-data.md
 - name: Лимити за обслужване
   href: service-limits.md
 - name: DSR права и заявки

@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800268"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011460"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Обогатяване за източници на данни (предварителен преглед)
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800268"
 
 1. Изберете вертикалното елипсис (&vellip;) до източник на данни искате да обогатите и изберете **Обогатяване**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Страница за обогатяване на източници на данни.":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="Страница с източници на данни с маркирана Обогатяване":::
 
    Разделът **Откриване** показва поддържаните [опции](#supported-data-source-enrichments) за обогатяване на източник на данни.
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Страница за обогатяване на източници на данни.":::
 
 1. Изберете **Обогатяване на данните ми**, за да конфигурирате източник на данни обогатяване. Името на изходния обект се попълва автоматично.
 
