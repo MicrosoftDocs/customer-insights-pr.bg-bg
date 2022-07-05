@@ -1,5 +1,5 @@
 ---
-title: Експортиране на данни за аналитични данни за клиенти в SFTP хостове (съдържа видео)
+title: Експортиране на данни в SFTP хостове (визуализация) (съдържа видео)
 description: Научете как да конфигурирате връзката и да експортирате в SFTP местоположение.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 67789a87cf0ff1b0d9933f2c0adde37762c83476
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082758"
 ---
-# <a name="export-segments-and-other-data-to-sftp-preview"></a>Експортиране на сегменти и други данни в SFTP (преглед)
+# <a name="export-data-to-sftp-preview"></a>Експортиране на данни в SFTP (визуализация)
 
 Използвайте клиентските данни в приложения на трети страни, като ги експортирате в местоположение на защитения протокол за предаване на файлове (SFTP).
 

@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642079"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051670"
 ---
-# <a name="use-a-template-to-build-a-measure"></a>Използване на шаблон за създаване на мярка
+# <a name="create-measures-from-templates"></a>Създаване на мерки от шаблони
 
 Можете да използвате предварително дефинирани шаблони на често използвани [мерки, за](measures.md) да ги създадете. Подробните описания на шаблоните и насоките ви помагат за ефективно създаване на мярка. Шаблоните се основават на съпоставени данни от обекта *Обединена дейност*. Затова се уверете, че сте конфигурирали [клиентски дейности](activities.md), преди да създадете мярка от шаблон.
 

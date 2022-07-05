@@ -1,5 +1,5 @@
 ---
-title: Конектор на Power BI
+title: Конектор на Power BI (преглед)
 description: Научете как да използвате конектора на Dynamics 365 Customer Insights в Power BI.
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e901114703a43b4b4e751e0a93eb4876d7636c00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72daf6d4ef3b6afb8049c622b57e7ec44762fb21
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642366"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051256"
 ---
-# <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
+# <a name="power-bi-connector-preview"></a>Конектор на Power BI (преглед)
 
-Създайте визуализации за вашите данни с Power BI Desktop. Генерирайте допълнителна информация и създавайте отчети с обединените клиентски данни.
+Създаване на визуализации за вашите данни с Microsoft Power BI Работния плот. Генерирайте допълнителна информация и създавайте отчети с обединените клиентски данни.
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
@@ -60,7 +60,7 @@ ms.locfileid: "8642366"
 
 Можете да идентифицирате и премахнете дублираните връзки.
 
-1. Отидете **на DataRelationships** > **на** средата, в която липсвате Power BI.
+1. Отидете **на Връзки с** > **данни** в средата, в която липсвате Power BI.
 2. Идентифицирайте дублирани релации:
    - Проверете дали има дефинирани повече от една връзка между едни и същи две обекти.
    - Проверете дали е създадена връзка между две обекти, които са включени в процеса на обединение. Има дефинирана имплицитна връзка между всички обекти, включени в процеса на обединение.

@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642409"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082569"
 ---
-# <a name="relationships-between-entities"></a>Релации между обекти
+# <a name="relationships-between-entities-and-entity-paths"></a>Релации между обекти и пътища на обект
 
 Връзките свързват обекти и дефинират графика на вашите данни, когато обектите споделят общ идентификатор, външен ключ. Този външен ключ може да се препраща от един обект към друг. Свързаните обекти ви позволяват дефинирането на сегменти и мерки въз основа на няколко източника на данни.
 

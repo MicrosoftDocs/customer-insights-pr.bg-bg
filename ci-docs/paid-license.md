@@ -7,14 +7,14 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 9c83dc6716abd5f81eb7851d462d7d61791f542b
-ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
+ms.openlocfilehash: d92c327a58f4597c9620920d029d47254f52c92a
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8768409"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051808"
 ---
-# <a name="purchase-customer-insights"></a>Аналитични данни за клиенти за покупка
+# <a name="purchase-a-license-of-dynamics-365-customer-insights"></a>Закупуване на лиценз на Dynamics 365 Customer Insights
 
 За да закупите Dynamics 365 Customer Insights, вижте нашите опции за контакт на [Dynamics 365 Customer Insights уебсайта](https://dynamics.microsoft.com/ai/customer-insights/).
 

@@ -1,5 +1,5 @@
 ---
-title: Експортирайте данни за Customer Insights в Adobe Campaign Standard
+title: Експортиране на сегменти "Аналитични данни за клиенти" в Adobe "Стандарт за кампания" (визуализация)
 description: Научете как да използвате сегментите "Аналитични данни за клиенти" в "Стандарт на Adobe кампанията".
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,24 +8,24 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642309"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082338"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Използване на сегменти на Customer Insights в Adobe Campaign Standard (преглед)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Експортиране на сегменти "Аналитични данни за клиенти" в Adobe "Стандарт за кампания" (визуализация)
 
-Като потребител Dynamics 365 Customer Insights може да сте създали сегменти, за да направите маркетинговите си кампании по-ефективни, като насочвате към съответните аудитории. За да използвате сегмент от Customer Insights в Adobe Experience Platform и приложения като Adobe Campaign Standard, трябва да следвате няколко стъпки, очертани в тази статия.
+Като потребител на Dynamics 365 Customer Insights, може да сте създали сегменти, за да направите маркетинговите си кампании по-ефективни, като насочвате към съответните аудитории. За да използвате сегмент от Customer Insights в Adobe Experience Platform и приложения като Adobe Campaign Standard, трябва да следвате няколко стъпки, очертани в тази статия.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Схема на процеса на стъпките, описани в тази статия.":::
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
--   Лиценз за Dynamics 365 Customer Insights
--   Лиценз за Adobe Campaign Standard
--   Акаунт в Azure Blob Storage
+- Лиценз за Dynamics 365 Customer Insights
+- Лиценз за Adobe Campaign Standard
+- Акаунт в Azure Blob Storage
 
 ## <a name="campaign-overview"></a>Общ преглед на кампания
 
@@ -51,7 +51,7 @@ ms.locfileid: "8642309"
 
 С установената ни целева аудитория можем да конфигурираме експортирането в акаунт в Хранилище за блоб в Azure.
 
-1. В "Аналитични данни за клиенти" отидете **на AdminConnections** > **·**.
+1. В "Аналитични данни за клиенти" отидете **на Администраторски** > **връзки**.
 
 1. Изберете **Добавяне на връзка** и след това **Adobe Campaign**, за да конфигурирате връзката, или изберете **Настройка** в плочката **Adobe Campaign**.
 

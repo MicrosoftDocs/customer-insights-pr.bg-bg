@@ -1,6 +1,6 @@
 ---
-title: Донесете свой собствен хранилище за ключове на Azure, за да управлявате тайни
-description: Научете как да конфигурирате Customer Insights да използва вашия собствен хранилище за ключове на Azure.
+title: Донесете свой собствен ключ за хранилище на Azure (предварителен преглед)
+description: Научете как да конфигурирате "Аналитични данни за клиенти" да използва собствения си трезор за ключове на Azure за управление на тайни.
 ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
-ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
+ms.openlocfilehash: 8fdb131de35c7d936d2921265f03faa5682db6f6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763566"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082632"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Донесете свой собствен ключ за хранилище на Azure (предварителен преглед)
 

@@ -1,5 +1,5 @@
 ---
-title: Експортиране на данни от Customer Insights в хранилище за BLOB на Azure
+title: Експортиране на данни в хранилище за блоб на Azure (визуализация)
 description: Научете как да конфигурирате връзката и да експортирате в хранилище за BLOB на Azure.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 059c8364ca0f3740bc0e4ffeeeba94246c9e5696
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947125"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055477"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортиране на списък със сегменти и други данни в хранилище за BLOB на Azure (преглед)
+# <a name="export-data-to-an-azure-blob-storage-preview"></a>Експортиране на данни в хранилище за блоб на Azure (визуализация)
 
 Съхранявайте данните си от Customer Insights в хранилище за BLOB или го използвайте за прехвърляне на данните ви в други приложения.
 

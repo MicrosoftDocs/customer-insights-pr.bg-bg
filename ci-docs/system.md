@@ -1,5 +1,5 @@
 ---
-title: Конфигурация на системата в "Аналитични данни за клиенти"
+title: Конфигурация на системата
 description: Научете повече за системните настройки в Dynamics 365 Customer Insights.
 ms.date: 04/21/2022
 ms.subservice: audience-insights
@@ -15,16 +15,16 @@ searchScope:
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 3aa4c6529d705698e612adad86587e3c3a4db35b
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 0ef84d8e286d8135eb8938e72f1319925e948bed
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653603"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9050658"
 ---
 # <a name="system-configuration"></a>Конфигурация на системата
 
-За достъп до системни конфигурации отидете **на AdminSystem** > **·**, за да видите списък със системни задачи и процеси.
+За достъп до системни конфигурации отидете **на Admin** > **System**, за да видите списък със системни задачи и процеси.
 
 Страницата **Система** включва следните раздели:
 - [Статус](#status-tab)
@@ -95,7 +95,7 @@ ms.locfileid: "8653603"
 > Източниците на данни, управлявани от вас, обновяват собствените си графици. За да планирате обновяване на управлявани от вас източници на данни, конфигурирайте настройките за обновяване на този конкретен източник на данни от страницата източници на **данни**.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Настройки за обновяване на потока от данни.":::
 
-1. Отидете **на AdminSystem** > **и** изберете раздела **График**.
+1. Отидете в **Admin** > **System** и изберете раздела **График**.
 
 2. Състоянието по подразбиране за планираното обновяване е **Изключено**. За да активирате планираните обновявания, променете превключвателя в горната част на екрана на **Вкл**.
 

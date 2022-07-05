@@ -1,5 +1,5 @@
 ---
-title: Обогатяване на клиентски профили с данни от Microsoft Office 365
+title: Обогатяване на клиентски профили с данни от Microsoft Office 365 (визуализация)
 description: Използвайте патентовани данни от, за Microsoft Office да обогатите профилите си на клиенти с данни за ангажиране.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954120"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055661"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Обогатяване на клиентските профили с данни за ангажираността (визуализация)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>Обогатяване на клиентски профили с данни от Microsoft Office 365 (визуализация)
 
 Използвайте данни от, за Microsoft Office 365 да обогатявате профилите на клиентския си профил с аналитични данни за ангажиментите чрез Office 365 приложения. Данните за ангажираността се състоят от имейл и дейност по срещи, която се сумира на ниво профил. Например броят на имейлите от бизнес акаунт или броя на срещите с профила. Не се предоставят данни за отделни потребители.
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954120"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>Резултати от допълването
+## <a name="view-enrichment-results"></a>Преглед на резултатите от обогатяването
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] Това е обектът на *Office*. Office_UserEntity *съдържа* Идентификаторите на Active Directory за имейл адресите, които са избрани по време на конфигурирането на обогатяването.
 

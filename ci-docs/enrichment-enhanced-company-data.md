@@ -1,5 +1,5 @@
 ---
-title: Подобрение на фирмените данни
+title: Обогатяване на фирмените профили със засилени фирмени данни
 description: Обогатяване и нормализиране на фирмените данни с моделите на Microsoft.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 131ef3d1e123628779609ddec368cfef8f4d607e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953936"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054235"
 ---
-# <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Обогатяване на фирмените профили със засилени фирмени данни
+# <a name="enrich-company-profiles-with-enhanced-company-data"></a>Обогатяване на фирмените профили със засилени фирмени данни
 
 Използвайте моделите и компилираните фирмени данни на Microsoft, за да коригирате, допълвате и стандартизирате профилите на вашата фирма. Ще използваме формата Общ [модел](/common-data-model/schema/core/applicationcommon/account) данни за по-добра точност и прозрения.
 
@@ -84,7 +84,7 @@ Microsft
 
 1. Изберете **Изпълнение**, за да стартирате процеса на обогатяване или близо, за да се върнете към **страницата "Обогатявания** ".
 
-## <a name="enrichment-results"></a>Резултати от допълването
+## <a name="view-enrichment-results"></a>Преглед на резултатите от обогатяването
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

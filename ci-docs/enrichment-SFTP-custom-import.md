@@ -1,5 +1,5 @@
 ---
-title: Обогатяване с SFTP персонализирано импортиране
+title: Обогатяване на клиентски профили с SFTP персонализирано импортиране (визуализация)
 description: Обща информация за обогатяването на SFTP персонализирано импортиране.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953706"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082317"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>Обогатете потребителските профили с персонализирани данни (преглед)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Обогатяване на клиентски профили с SFTP персонализирано импортиране (визуализация)
 
 Потребителското импортиране Secure File Transfer Protocol(SFTP) ви позволява да импортирате обогатяващи данни, които не трябва да преминават през процеса на обединяване на данните. Това е гъвкав, сигурен и лесен начин за въвеждане на вашите данни. SFTP потребителски импорт може да се използва в комбинация с [SFTP експортиране](export-sftp.md), което ви позволява да експортирате данни за потребителския профил, необходими за обогатяване. След това данните могат да бъдат обработвани и обогатени и SFTP персонализирано импортиране може да се използва за връщане на обогатените данни обратно в Dynamics 365 Customer Insights.
 
@@ -120,7 +120,7 @@ ms.locfileid: "8953706"
 
 1. Изберете **Изпълнение**, за да стартирате процеса на обогатяване или близо, за да се върнете към **страницата "Обогатявания** ".
 
-## <a name="enrichment-results"></a>Резултати от допълването
+## <a name="view-enrichment-results"></a>Преглед на резултатите от обогатяването
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

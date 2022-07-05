@@ -1,5 +1,5 @@
 ---
-title: Обогатяване на фирмени профили с Leadspace за обогатяване от трети страни
+title: Обогатяване на фирмените профили с Leadspace (предварителен преглед)
 description: Обща информация за обогатяването чрез Leadspace на трети страни.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954166"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082359"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Допълване на фирмени профили с Leadspace (преглед)
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>Обогатяване на фирмените профили с Leadspace (предварителен преглед)
 
 Leadspace е фирма за наука за данни, която предоставя платформа B-to-B за клиентски данни. Той позволява на среди с унифицирани потребителски профили въз основа на акаунти да обогатяват техните данни. Обогатете *Профили на клиенти* с атрибути като размер на компанията, местоположение или индустрия. Обогатете *Профили за контакти* с атрибути като заглавие, персона или проверка по имейл.
 
@@ -82,7 +82,7 @@ Leadspace е фирма за наука за данни, която предос
 
 1. Изберете **Изпълнение**, за да стартирате процеса на обогатяване или близо, за да се върнете към **страницата "Обогатявания** ".
 
-## <a name="enrichment-results"></a>Резултати от допълването
+## <a name="view-enrichment-results"></a>Преглед на резултатите от обогатяването
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

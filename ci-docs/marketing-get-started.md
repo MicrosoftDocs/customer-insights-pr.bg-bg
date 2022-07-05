@@ -6,14 +6,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 99ec463299a24ea81cfe26bb785e36bdefdcd080
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833295"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054419"
 ---
-# <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Работа с единни профили на клиенти в Dynamics 365 Marketing
+# <a name="use-unified-customer-profiles-in-dynamics-365-marketing"></a>Използване на единни профили на клиенти в Dynamics 365 Marketing
 
 [Dynamics 365 Marketing](/dynamics365/marketing/overview) издига клиентските изживявания, което ви позволява да оркестрирате персонализирани пътувания във всички допирни точки, за да укрепите взаимоотношенията и да спечелите лоялност. Приложението Dynamics 365 Marketing работи безпроблемно с Dynamics 365 Sales, Dynamics 365 Customer Insights, Microsoft Teams, и други продукти и ви позволява да вземате по-бързи и по-добри решения, използвайки силата на данните и ИИ.
 

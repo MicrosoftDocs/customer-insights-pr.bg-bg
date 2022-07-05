@@ -1,21 +1,21 @@
 ---
-title: Експортирайте данни за Customer Insights в Azure Synapse Analytics
+title: Експортиране на данни в Azure Synapse Analytics (визуализация)
 description: Научете как да конфигурирате връзката към Azure Synapse Analytics.
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741490"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082863"
 ---
-# <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (Визуализация)
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (визуализация)
 
 Azure Synapse е аналитична услуга, която ускорява времето за вникване в складовете за данни и системите за големи данни. Можете да поглъщате и използвате данните си от Customer Insights в [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
@@ -72,13 +72,13 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 1. В полето **Връзка за експортиране** изберете връзка от секцията **Azure Synapse Analytics**. Ако не виждате името на тази секция, няма достъпни за вас [връзки](connections.md) от този тип.
 
-1. Осигурете разпознаваем **Показвано име** за вашето експортиране и **Име на базата данни**.
+1. Осигурете разпознаваем **Показвано име** за вашето експортиране и **Име на базата данни**. Експортирането ще създаде нова [Azure Synapse база](/azure/synapse-analytics/database-designer/concepts-lake-database) данни на езерото в работната област, дефинирана във връзката.
 
 1. Изберете в кои обекти искате да експортирате Azure Synapse Analytics.
    > [!NOTE]
    > Източници на данни, базирани на [папка на Common Data Model](connect-common-data-model.md), не се поддържат.
 
-2. Изберете **Записване**.
+1. Изберете **Записване**.
 
 Запазването на експортиране не го изпълнява незабавно.
 

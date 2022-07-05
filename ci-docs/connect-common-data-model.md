@@ -1,5 +1,5 @@
 ---
-title: Свързване на данните от Common Data Model към акаунт в Azure Data Lake
+title: Свържете с папка на Common Data Model с помощта на акаунт в Azure Data Lake
 description: Работа с данни от Common Data Model с помощта на Azure Data Lake Storage.
 ms.date: 05/30/2022
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: 2ab7ec77252be33f1203959c2a596ddec20425f2
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011544"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082254"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Свързване към данни в Azure Data Lake Storage
 

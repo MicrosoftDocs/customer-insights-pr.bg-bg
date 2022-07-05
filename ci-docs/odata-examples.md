@@ -1,5 +1,5 @@
 ---
-title: OData примери за Dynamics 365 Customer Insights API
+title: OData примери за заявки за API за аналитични данни за клиенти
 description: Често използвани примери за Протокола за отворени данни (OData) за заявка на API за аналитични данни на клиента за преглед на данни.
 ms.date: 05/25/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808448"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9083157"
 ---
-# <a name="odata-query-examples"></a>Примери за заявки за OData
+# <a name="odata-query-examples-for-customer-insights-apis"></a>OData примери за заявки за API за аналитични данни за клиенти
 
 Протоколът за отворени данни (OData) е протокол за достъп до данни, изграден върху основни протоколи като HTTP. Той използва общоприети методологии като REST за мрежата. Има различни видове библиотеки и инструменти, които могат да се използват за консумиране на OData услуги.
 

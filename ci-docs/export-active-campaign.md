@@ -1,5 +1,5 @@
 ---
-title: Експортирайте данни за Customer Insights в ActiveCampaign
+title: Експортиране на сегменти в ActiveCampaign
 description: Научете как да конфигурирате връзката и да експортирате в ActiveCampaign.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642297"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054695"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Експортиране на сегменти в ActiveCampaign (преглед)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8642297"
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
--   Имате [Акаунт в ActiveCampaign](https://www.activecampaign.com/) и съответните идентификационни данни на администратора.
--   Конфигурирали [сте сегменти](segments.md) в "Аналитични данни за клиенти".
--   Единните потребителски профили в експортираните сегменти съдържат поле с имейл адрес.
+- Имате [Акаунт в ActiveCampaign](https://www.activecampaign.com/) и съответните идентификационни данни на администратора.
+- Конфигурирали [сте сегменти](segments.md) в "Аналитични данни за клиенти".
+- Единните потребителски профили в експортираните сегменти съдържат поле с имейл адрес.
 
 ## <a name="known-limitations"></a>Известни ограничения
 

@@ -1,5 +1,5 @@
 ---
-title: Схема на обекти на Customer Insights в Common Data Model
+title: Схеми на обекти в Common Data Model
 description: Работа с обекти в Common Data Model.
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -8,16 +8,14 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757419"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054741"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми на обекти в Common Data Model
-
-
 
 [Common Data Model](/common-data-model/) е декларативна спецификация и дефиниция на стандартни обекти, които представляват често използвани понятия и дейности в бизнеса и приложенията за производителност. Този модел се разширява и до данни за наблюдение и аналитични данни. Common Data Model предоставя добре дефинирани, модулни и разширяващи се бизнес обекти - като акаунт, бизнес единица, случай, контакт, потенциален клиент, възможност и продукт, както и взаимодействия с доставчици, работници и клиенти, като дейности и услуги споразумения на ниво. Всеки може да надгради и разшири дефинициите на Common Data Model, за да улови допълнителни идеи, специфични за бизнеса.
 

@@ -1,7 +1,7 @@
 ---
-title: Използване на източници на данни за поглъщане на данни
-description: Научете как да импортирате данни от различни източници.
-ms.date: 05/31/2022
+title: Общ преглед на източниците на данни
+description: Научете как да импортирате или да почнете данни от различни източници.
+ms.date: 05/18/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: e22977107565a0b28b74f41576a1c7ccc74f6dc1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: fbe44f655bdbc20ef7f0956022395e2dcb570adf
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011736"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051440"
 ---
 # <a name="data-sources-overview"></a>Общ преглед на източниците на данни
 
@@ -36,7 +36,7 @@ Dynamics 365 Customer Insights предоставя връзки за приве
 
 **Импортиране и трансформиране**
 
-Ако използвате локални източници на данни, данни от Microsoft или данни от трети лица, можете да импортирате и преобразувате данните с помощта на Power Query конектори.
+Ако използвате налични източници на данни, Microsoft или данни на трети страни, импортирайте и трансформирайте данните с помощта на Power Query конектори.
 - [Power Query Съединители](connect-power-query.md)
 
 ## <a name="review-data-sources"></a>Преглед на източниците на данни
