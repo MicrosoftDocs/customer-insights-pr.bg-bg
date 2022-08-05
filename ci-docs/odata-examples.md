@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9083157"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121549"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>OData примери за заявки за API за аналитични данни за клиенти
 
@@ -23,7 +23,7 @@ ms.locfileid: "9083157"
 
 Трябва да модифицирате образците на заявките, за да ги накарате да работят върху целевите среди: 
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` къде {instanceId} е GUID на средата "Аналитични данни за клиенти", която искате да направите заявка. [Операцията](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) ListAllInstances ви позволява да намерите {InstanceId} достъп до вас.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` къде {instanceId} е GUID на средата "Аналитични данни за клиенти", която искате да направите заявка. [Операцията](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) ListAllInstances ви позволява да намерите {InstanceId} достъп до вас.
 - {CID}: GUID на унифициран клиентски запис. Пример: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: Идентификатор на основния ключ на запис на клиент в източник на данни. Пример: `CNTID_1002`
 - {DSname}: Низ с името на обекта на източник на данни, който се погръща в "Аналитични данни за клиенти". Пример: `Website_contacts`.
@@ -39,9 +39,10 @@ ms.locfileid: "9083157"
 |алтернативен ключ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Алтернативните ключове се запазват в унифицирания обект клиент       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |След    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|алтернативен ключ + В   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|алтернативен ключ + В   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Търсете  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Връща топ 10 резултати за низ за търсене      |
 |Членство в сегмент  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Връща предварително зададен брой редове от обекта за сегментиране.      |
+|Членство в сегмент за клиент | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Връща потребителския профил на клиента, ако е член на дадения сегмент     |
 
 ## <a name="unified-activity"></a>Единна дейност
 

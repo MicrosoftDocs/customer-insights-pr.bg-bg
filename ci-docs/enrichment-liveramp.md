@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082191"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196335"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>Обогатяване на клиентски профили с данни за самоличност от LiveRamp (предварителен преглед)
 
@@ -59,7 +59,7 @@ LiveRamp предоставя детерминистично офлайн раз
 
 1. Прегледайте обзора и след това изберете **Напред**.
 
-1. Изберете връзката. Обърнете се към администратор, ако такъв не е наличен.
+1. Изберете връзката. Свържете се с администратор, ако няма налична връзка.
 
 1. Изберете **Напред**.
 

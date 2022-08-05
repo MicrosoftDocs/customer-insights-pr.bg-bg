@@ -1,19 +1,19 @@
 ---
 title: Експортиране на данни в Azure Synapse Analytics (визуализация)
 description: Научете как да конфигурирате връзката към Azure Synapse Analytics.
-ms.date: 06/29/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082863"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196381"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (визуализация)
 
@@ -21,56 +21,52 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
-Следните предпоставки трябва да бъдат изпълнени, за да конфигурирате връзката от Customer Insights към Azure Synapse.
-
 > [!NOTE]
-> Уверете се, че сте задали всички **възлагания на роли** както е описано.  
+> Уверете се, че сте задали всички **възлагания на роли** както е описано.
 
-## <a name="prerequisites-in-customer-insights"></a>Предварителни условия в Customer Insights
+- В "Аналитични данни за клиенти" вашият Azure Active Directory (AD) потребителски акаунт трябва да има [роля на Администратор](permissions.md#assign-roles-and-permissions).
 
-* Вашият Azure Active Directory (AD) потребителски акаунт има **роля на Администратор** в "Аналитични данни за клиенти". Научете повече за [задаването на потребителски разрешения](permissions.md#assign-roles-and-permissions).
-
-В Azure: 
+В Azure:
 
 - Активен абонамент за Azure.
 
-- Ако използвате нов Azure Data Lake Storage gen2 акаунт, главницата на *услугата за Customer Insights* се нуждае от **разрешения за съхранение Blob Data Contributor**. Научете повече за [свързването Azure Data Lake Storage с gen2 акаунт с принципал на услугата на Azure за "Аналитични данни](connect-service-principal.md) за клиенти". Data Lake Storage Gen2 **трябва да има** [ йерархично пространство от имена](/azure/storage/blobs/data-lake-storage-namespace) активирано.
+- Ако използвате нов Azure Data Lake Storage акаунт gen2, главницата на [услугата за Клиентски аналитични данни](connect-service-principal.md) има **разрешения за съхранение Blob Data Contributor**. Data Lake Storage Gen2 **трябва да има** [ йерархично пространство от имена](/azure/storage/blobs/data-lake-storage-namespace) активирано.
 
-- В групата ресурси, където Azure Synapse се намира работната област, главницата *на* услугата и *Azure AD потребителят с администраторски разрешения в Customer Insights* трябва да бъдат присвоени най-малко **reader** разрешения. За повече информация вижте [Присвояване на роли на Azure с помощта на портала на Azure](/azure/role-based-access-control/role-assignments-portal).
+- В групата ресурси, където Azure Synapse се намира работната област, на главницата *на* услугата и *Azure AD на потребителя с администраторски разрешения в "Аналитични данни* за клиенти" трябва да бъдат присвоени **поне** разрешения на [Читателя](/azure/role-based-access-control/role-assignments-portal).
 
-- *Azure AD Потребителят с администраторски разрешения в Customer Insights* се нуждае от **съхранение Blob Data Contributor** разрешения на Azure Data Lake Storage Gen2 акаунт, където данните се намират и свързани с Azure Synapse работната област. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- *Azure AD Потребителят с администраторски разрешения в Customer Insights* има **разрешения за съхранение Blob Data Contributor** на Azure Data Lake Storage gen2 акаунт, където данните се намират и свързани с Azure Synapse работната област. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- *[Самоличността, управлявана от работно пространство на Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)*, има нужда от разрешения **Сътрудник на данни за BLOB за съхранение** за акаунт в Azure Data Lake Storage Gen2, където данните се намират и са свързани с Azure Synapse работно пространство. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- Управляваната *[Azure Synapse самоличност](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* на работната област има **разрешения за Съхранение на Blob Data Contributor** в Azure Data Lake Storage профила Gen2, където данните се намират и са свързани с Azure Synapse работната област. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- В Azure Synapse работната област главницата на *услугата за "Аналитични данни* за клиенти" се нуждае от **присвоена роля на Администратор** на синапса. За повече информация вижте [Как да настроите контрол на достъпа за вашето работно пространство на Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- В Azure Synapse работната област главницата на *услугата за "Аналитични данни* за клиенти" има **присвоена** роля на Администратор [на](/azure/synapse-analytics/security/how-to-set-up-access-control) синапса.
 
-## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>Настройване на връзката и експортирането в Azure Synapse
+## <a name="set-up-connection-to-azure-synapse"></a>Настройване на връзка към Azure Synapse
 
-### <a name="configure-a-connection"></a>Конфигуриране на връзка
-
-За да създадете връзка, главницата на услугата и потребителският акаунт в Customer Insights се нуждаят от **разрешения на Reader** в *групата* ресурси, където се намира работната област на Синапс Анализ. Освен това главницата на услугата и потребителят в работната област на Synapse Analytics се нуждаят от **разрешения на Администратора** на синапса. 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавяне на връзка** и изберете **Azure Synapse Analytics** или изберете **настройката** на плочката **Azure Synapse Analytics**, за да конфигурирате връзката.
+1. Изберете **Добавяне на връзка** и изберете **Azure Synapse Analytics**.
 
-1. Въведете разпознаваемо име за връзката в полето Показвано име. Показваното име и типът на връзка описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
+1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът на връзка описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
-1. Изберете кой може да използва тази връзка. Ако не предприемете нищо, по подразбиране ще е Администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Изберете кой може да използва тази връзка. По подразбиране това са само администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Изберете или потърсете абонамента, в който искате да използвате данните на Customer Insights. Веднага след като бъде избран абонамент, можете също да изберете **Работно пространство**, **Акаунт за съхранение** и **Контейнер**.
 
-1. Изберете **Записване**, за да запишете връзката.
+1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
 
-### <a name="configure-an-export"></a>Конфигуриране на експортиране
+1. Изберете **Записване**, за да завършите връзката.
 
-Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За да конфигурирате експортирането със споделена връзка, ви трябват поне **разрешения за сътрудник** в "Аналитични данни за клиенти". За повече информация вижте [разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
+## <a name="configure-an-export"></a>Конфигуриране на експортиране
+
+[!INCLUDE [export-permission-include](includes/export-permission.md)] За да конфигурирате експортирането със споделена връзка, ви трябват поне **разрешения за сътрудник** в "Аналитични данни за клиенти".
 
 1. Отидете на **Данни** > **Експортиране**.
 
-1. За да създадете ново експортиране, изберете **Добавяне на експортиране**.
+1. Изберете **Добавяне на експортиране**.
 
-1. В полето **Връзка за експортиране** изберете връзка от секцията **Azure Synapse Analytics**. Ако не виждате името на тази секция, няма достъпни за вас [връзки](connections.md) от този тип.
+1. В полето **Връзка за експортиране** изберете връзка от секцията Azure Synapse Analytics. Свържете се с администратор, ако няма налична връзка.
 
 1. Осигурете разпознаваем **Показвано име** за вашето експортиране и **Име на базата данни**. Експортирането ще създаде нова [Azure Synapse база](/azure/synapse-analytics/database-designer/concepts-lake-database) данни на езерото в работната област, дефинирана във връзката.
 
@@ -80,13 +76,11 @@ Azure Synapse е аналитична услуга, която ускорява 
 
 1. Изберете **Записване**.
 
-Запазването на експортиране не го изпълнява незабавно.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand).
+За да направите заявка за данни, които са експортирани в Synapse Analytics, имате нужда от **Съхранение Blob Data Reader** достъп до мястото за съхранение на местоназначение в работната област на износа.
 
-За да направите заявка за данни, които са експортирани в Synapse Analytics, имате нужда от **Съхранение Blob Data Reader** достъп до мястото за съхранение на местоназначение в работната област на износа. 
-
-### <a name="update-an-export"></a>Актуализирайте експортиране
+## <a name="update-an-export"></a>Актуализирайте експортиране
 
 1. Отидете на **Данни** > **Експортиране**.
 
@@ -95,3 +89,5 @@ Azure Synapse е аналитична услуга, която ускорява 
    - **Добавяне** или **Премахване** на обекти от селекцията. Ако обектите бъдат премахнати от селекцията, те не се изтриват от базата данни Synapse Analytics. Въпреки това бъдещите опреснявания на данни няма да актуализират премахнатите обекти в тази база данни.
 
    - **Промяна на името на базата данни** създава нова база данни на Synapse Analytics. Базата данни с името, което е конфигурирано преди, няма да получава никакви актуализации при бъдещи обновявания.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

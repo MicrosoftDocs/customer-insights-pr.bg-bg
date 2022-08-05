@@ -1,19 +1,19 @@
 ---
 title: Експортиране на сегменти в ActiveCampaign
 description: Научете как да конфигурирате връзката и да експортирате в ActiveCampaign.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054695"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195553"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Експортиране на сегменти в ActiveCampaign (преглед)
 
@@ -21,31 +21,34 @@ ms.locfileid: "9054695"
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
-- Имате [Акаунт в ActiveCampaign](https://www.activecampaign.com/) и съответните идентификационни данни на администратора.
-- Конфигурирали [сте сегменти](segments.md) в "Аналитични данни за клиенти".
-- Единните потребителски профили в експортираните сегменти съдържат поле с имейл адрес.
+- [ActiveCampaign акаунт](https://www.activecampaign.com/) и съответните администраторски идентификационни данни.
+- [ИД на списък на ActiveCampaign](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).
+- [ActiveCampaign API ключ](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) и REST крайна точка hostname.
+- [Конфигурирани сегменти](segments.md) в "Аналитични данни за клиенти".
+- Единните клиентски профили в експортираните сегменти съдържат поле, представляващо имейл адрес.
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- Можете да експортирате до 1 милион потребителски профила на експорт в ActiveCampaign и завършването му може да отнеме до 90 минути.
-- Експортирането в ActiveCampaign е ограничено до сегменти.
-- Броят на потребителските профили, които можете да експортирате в ActiveCampaign, зависи и е ограничен от вашия договор с ActiveCampaign.
+- До 1 милион клиентски профила за износ в ActiveCampaign, което може да отнеме до 90 минути, за да завършите. Броят на потребителските профили, които можете да експортирате в ActiveCampaign, зависи и е ограничен от вашия договор с ActiveCampaign.
+- Само сегменти.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Настройване на връзка с ActiveCampaign
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавете връзка** и изберете **ActiveCampaign** за конфигуриране на връзката.
+1. Изберете **Добавяне на връзка** и изберете **ActiveCampaign**.
 
 1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
 1. Изберете кой може да използва тази връзка. По подразбиране това са само администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Въведете своя [API ключ ActiveCampaign и име на хост REST Endpoint](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key). Името на хоста REST Endpoint е само името на хоста, без https://. 
+1. Въведете своя API ключ ActiveCampaign и име на хост REST Endpoint. Името на хоста REST Endpoint е само името на хоста, без https://.
 
-1. Изберете **Приемам**, за да потвърдите **Поверителност на данните и съответствие**.
+1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
 
-1. Изберете **Свързване**, за да инициализирате връзка с ActiveCampaign.
+1. Изберете **Свързване**, за да инициализирате връзката.
 
 1. Изберете **Добавете себе си като потребител за експортиране** и предоставете вашите идентификационни данни на Customer Insights.
 
@@ -53,27 +56,26 @@ ms.locfileid: "9054695"
 
 ## <a name="configure-an-export"></a>Конфигуриране на експортиране
 
-Можете да конфигурирате експортиране, ако имате достъп до връзка от този тип. За повече информация вижте [Разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Отидете на **Данни** > **Експортиране**.
 
-1. За да създадете ново експортиране, изберете **Добавяне на местоназначение**.
+1. Изберете **Добавяне на експортиране**.
 
-1. В **Връзка за експортиране** поле, изберете връзка от раздела ActiveCampaign. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
+1. В **Връзка за експортиране** поле, изберете връзка от раздела ActiveCampaign. Свържете се с администратор, ако няма налична връзка.
 
-1. Въведете своя [**ИД на списък на ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
+1. Въведете име за експортирането.
 
-1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента. Изисква се да експортирате сегменти в ActiveCampaign. По желание можете да експортирате собствено име, фамилно име и Телефон за създаване на по-персонализирани имейли. Изберете Добавяне на атрибут за нанасяне на тези полета.
+1. Въведете вашия **ActiveCampaign List ID**.
+
+1. В **Съвпадение на данните** раздел, в **Имейл** поле, изберете полето, което представлява имейл адреса на клиента.
+
+1. По желание експортирайте **собствено име**, **фамилно име** и **Телефон**, за да създадете по-персонализирани имейли. Изберете **Добавяне на атрибут** за нанасяне на тези полета.
+
+1. Изберете сегментите, които искате да експортирате.
 
 1. Изберете **Записване**.
 
-Запазването на експортиране не го изпълнява незабавно.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand). 
-
-
-## <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните
-
-Когато активирате Dynamics 365 Customer Insights за предаване на данни на ActiveCampaign, разрешавате прехвърляне на данни извън границата за съответствие за Dynamics 365 Customer Insights, включително потенциално чувствителни данни като Лични данни. Microsoft ще прехвърли такива данни по ваше указание, но вие сте отговорни за това ActiveCampaign отговаря на всички задължения за поверителност или сигурност, които може да имате. За информация посетете [Декларация за поверителност Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-Вашият администратор на Dynamics 365 Customer Insights да премахнете това местоназначение за експортиране по всяко време, за да прекратите използването на тази функционалност.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

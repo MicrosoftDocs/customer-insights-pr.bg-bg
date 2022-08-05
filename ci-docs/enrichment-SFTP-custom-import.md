@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082317"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195783"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Обогатяване на клиентски профили с SFTP персонализирано импортиране (визуализация)
 
@@ -104,7 +104,7 @@ ms.locfileid: "9082317"
 
 1. Прегледайте обзора и след това изберете **Напред**.
 
-1. Изберете връзката. Обърнете се към администратор, ако такъв не е наличен.
+1. Изберете връзката. Свържете се с администратор, ако няма налична връзка.
 
 1. Изберете набора **от данни на** Клиента и изберете профила или сегмента, който искате да обогатите. Обектът *"Клиент* " обогатява всичките Ви профили на клиенти, докато даден сегмент обогатява само профилите на клиентите, съдържащи се в този сегмент.
 

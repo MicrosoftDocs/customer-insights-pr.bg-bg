@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: cc65314f1b083694b60ac0a2625bea906be7272b
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054741"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183480"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми на обекти в Common Data Model
 
@@ -39,9 +39,8 @@ ms.locfileid: "9054741"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Преглед на обекти, които използват навигатора на обекти на Common Data Model
 
-Можете да видите обекти в [Навигатор на обекти на Common Data Model](https://microsoft.github.io/CDM/). Изберете обект от секцията на приложението Insights, за да получите списъка с обекти на Customer Insights и техните определения.
-> [!div class="mx-imgBorder"]
-> ![Навигатор на обект на CDM, който показва обекта CustomerActivity.](media/CDM-entity-navigator.png "Навигатор на обект на CDM, който показва обекта CustomerActivity")
+Преглед на обектите в навигатора на [обекта "Общ модел данни"](https://microsoft.github.io/CDM/). Изберете обект от секцията на приложението Insights, за да получите списъка с обекти на Customer Insights и техните определения.
 
+:::image type="content" source="media/CDM-entity-navigator.png" alt-text="Навигатор на обект на CDM, който показва обекта CustomerActivity.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

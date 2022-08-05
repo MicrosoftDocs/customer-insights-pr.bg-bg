@@ -1,84 +1,81 @@
 ---
 title: Експортиране на данни в Marketing Cloud на Salesforce (предварителен преглед)
 description: Научете как да конфигурирате връзката и да експортирате в Salesforce Marketing Cloud.
-ms.date: 07/23/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c3a6a40d9b9f08c8ebca8cb4a9196a1a79f03afa
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 58e76e51c18c25177f9b4551b70b25b41248b142
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082611"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9197025"
 ---
 # <a name="export-data-to-salesforce-marketing-cloud-preview"></a>Експортиране на данни в Marketing Cloud на Salesforce (предварителен преглед)
 
 Използвайте данните на клиентите си в Salesforce Marketing Cloud, като ги експортирате чрез местоположението на Secure File Transfer Protocol (SFTP).
 
-## <a name="prerequisites-for-connection"></a>Предварителни изисквания за връзка
+## <a name="prerequisites"></a>Предварителни изисквания
 
-- Наличност на SFTP хост и съответни администраторски идентификационни данни. [Как да настроите SFTP местоположения за Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
+- [SFTP хост за Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) и съответните администраторски идентификационни данни.
 
-## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>Настройте връзката с Salesforce Marketing Cloud
+## <a name="set-up-connection-to-salesforce-marketing-cloud"></a>Настройване на връзка с Маркетинг облак на Salesforce
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавете връзка** и изберете **Salesforce Marketing Cloud** за конфигуриране на връзката.
+1. Изберете **Добавяне на връзка** и изберете **Маркетинг облак на Salesforce**.
 
 1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
-1. Изберете кой може да използва тази връзка. Ако не предприемете нищо, по подразбиране ще е Администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Изберете кой може да използва тази връзка. По подразбиране това са само администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Предоставете **Потребителско име**, **Парола** и **Име на хост** и **папка за експортиране** за вашия SFTP акаунт.
 
 1. Изберете **Проверка**, за да тествате връзката.
 
-1. Изберете **Приемам**, за да потвърдите **Поверителност на данните и съответствие**.
+1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
 
 1. Изберете **Записване**, за да завършите връзката.
 
 ## <a name="configure-an-export"></a>Конфигуриране на експортиране
 
-Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За повече информация вижте [Разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Отидете на **Данни** > **Експортиране**.
 
-1. За да създадете ново експортиране, изберете **Добавяне на местоназначение**.
+1. Изберете **Добавяне на експортиране**.
 
-1. В полето **Връзка за експортиране** изберете връзка от секцията SFTP. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
+1. В полето **Връзка за експортиране** изберете връзка от секцията SFTP. Свържете се с администратор, ако няма налична връзка.
+
+1. Въведете име за експортирането.
 
 1. Изберете дали искате да експортирате данните **архивирани** или **разархивирани** и **разделителя на поле** за експортираните файлове.
 
 1. Изберете обектите, например сегменти, които искате да експортирате.
 
    > [!NOTE]
-   > Всеки избран обект ще се раздели на до пет изходни файла при експортиране. 
+   > Всеки избран обект ще бъде разделен на максимум пет изходни файла, когато се експортира.
 
 1. Изберете **Записване**.
 
-Запазването на експортиране не го изпълнява незабавно.
-
-Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab). Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand). 
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 ## <a name="import-customer-insights-data-from-sftp-location-to-salesforce-marketing-cloud"></a>Импортиране на данните от Customer Insights от SFTP местоположение в Salesforce Marketing Cloud
 
 1. Създайте [разширения за данни в Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_create_data_extension.htm&type=5) за да импортирате файла с данни на Customer Insights от SFTP местоположението.
 
-2. [Импортирайте данните от SFTP местоположението](https://help.salesforce.com/articleView?id=sf.mc_es_import_data_extension_classic.htm&type=5) в разширението за данни на Salesforce Marketing Cloud. 
+2. [Импортирайте данните от SFTP местоположението](https://help.salesforce.com/articleView?id=sf.mc_es_import_data_extension_classic.htm&type=5) в разширението за данни на Salesforce Marketing Cloud.
 
 3. Настройте автоматизацията за импортиране на данните в разширенията за данни. Научете повече за [автоматизиране на падането на файлове и автоматизирани програми](https://help.salesforce.com/articleView?id=sf.mc_as_triggered_automations.htm&type=5).
 
-   Определете [автоматизация на падането на файлове](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_triggered_automation.htm&type=5) или [планирана автоматизация](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_scheduled_automation.htm&type=5). 
+   Определете [автоматизация на падането на файлове](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_triggered_automation.htm&type=5) или [планирана автоматизация](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_scheduled_automation.htm&type=5).
 
 Ето пример за [автоматизация със SFTP](https://help.salesforce.com/articleView?id=sf.mc_as_ftp_and_triggered_automation_scenario.htm&type=5).
-
-## <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните
-
-Когато активирате Dynamics 365 Customer Insights, за да предавате данни чрез SFTP, разрешавате прехвърляне на данни извън границата за съответствие за Dynamics 365 Customer Insights, включително потенциално чувствителни данни като Лични данни. Microsoft ще прехвърли такива данни по ваше указание, но вие носите отговорност да гарантирате, че местоположението за експортиране отговаря на всички задължения за поверителност или сигурност, които може да имате. За информация посетете [Декларация за поверителност Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Вашият администратор на Dynamics 365 Customer Insights да премахнете това местоназначение за експортиране по всяко време, за да прекратите използването на тази функционалност.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

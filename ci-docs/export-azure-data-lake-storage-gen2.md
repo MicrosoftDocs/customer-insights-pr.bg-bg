@@ -1,62 +1,70 @@
 ---
 title: Експортиране на данни в Azure Data Lake Storage Gen2 (визуализация)
 description: Научете как да конфигурирате връзката с Azure Data Lake Storage Gen2.
-ms.date: 10/06/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 55a61e4d9166df7809a64aeb1168a730402aaed6
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082653"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196427"
 ---
 # <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Експортиране на данни в Azure Data Lake Storage Gen2 (визуализация)
 
 Съхранявайте данните от Customer Insights в акаунт в Data Lake Storage Gen2 или използвайте хранилището за прехвърляне на данните си в други приложения.
 
+## <a name="prerequisites"></a>Предварителни изисквания
+
+- Акаунт за [съхранение, който да се използва с Azure Data Lake Gen2](/azure/storage/blobs/create-data-lake-storage-account). За да намерите името и ключа на акаунта за съхранение, вижте [Управление на настройките на акаунта за съхранение в портала на Azure](/azure/storage/common/storage-account-manage).
+- Контейнер [за](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) съхранение на блоб в Azure.
+
 ## <a name="known-limitations"></a>Известни ограничения
 
-1. За Azure Data Lake Storage Gen2, между които можете да избирате [Стандартно и първокласно изпълнение](/azure/storage/blobs/create-data-lake-storage-account), когато създавате акаунт за съхранение на вашето езеро с данни. Ако изберете ниво на производителност Premium, изберете първокласните блокови блобове като тип акаунт.
+- За Azure Data Lake Storage Gen2 изберете между [Стандартна производителност и Premium производителност tier](/azure/storage/blobs/create-data-lake-storage-account). Ако изберете ниво на производителност Premium, изберете [първокласните блокови блобове като тип акаунт](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Настройване на връзка на Azure Data Lake Storage Gen2
+## <a name="set-up-connection-to-azure-data-lake-storage-gen2"></a>Настройване на връзка с Azure Data Lake Storage Gen2
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавяне на връзка** и изберете **Azure Data Lake Gen 2** за конфигуриране на връзката.
+1. Изберете **Добавяне на връзка** и изберете **Azure данни езеро Gen 2**.
 
 1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
-1. Изберете кой може да използва тази връзка. Ако не предприемете нищо, по подразбиране ще е Администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Изберете кой може да използва тази връзка. По подразбиране това са само администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Въведете **Име на акаунта**, **Ключ на акаунта** и **Контейнер** за вашия Azure Data Lake Storage Gen2.
-    - За да научите как да създадете акаунт за съхранение, с който да използвате Azure Data Lake Storage Gen2, вижте [Създайте акаунт за съхранение](/azure/storage/blobs/create-data-lake-storage-account). 
-    - За да научите повече за името на акаунта и ключа за акаунта за съхранение на Azure Data Lake Gen 2, вижте [Управление на настройки на акаунт за съхранение в портала на Azure](/azure/storage/common/storage-account-manage).
+
+1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
 
 1. Изберете **Записване**, за да завършите връзката.
 
 ## <a name="configure-an-export"></a>Конфигуриране на експортиране
 
-Можете да конфигурирате това експортиране, ако имате достъп до връзка от този тип. За повече информация вижте [Разрешения, необходими за конфигуриране на експортиране](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Отидете на **Данни** > **Експортиране**.
 
-1. За да създадете ново експортиране, изберете **Добавяне на експортиране**.
+1. Изберете **Добавяне на експортиране**.
 
-1. В полето **Връзка за експортиране** изберете връзка от секцията **Azure Data Lake**. Ако не виждате името на тази секция, няма достъпни за вас връзки от този тип.
+1. В полето **Връзка за експортиране** изберете връзка от azure data lake раздел. Свържете се с администратор, ако няма налична връзка.
+
+1. Въведете име за експортирането.
+
+1. Въведете името на папката за място за Azure Data Lake Storage съхранение Gen2.
 
 1. Изберете полето до всеки обект, който искате да експортирате до това местоназначение.
 
 1. Изберете **Записване**.
 
-Запазването на експортиране не го изпълнява незабавно.
-
-Експортирането се изпълнява с всяко [планирано обновяване](system.md#schedule-tab).
-Може също [да експортирате данни при поискване](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 Експортираните данни се съхраняват в контейнера за съхранение на Azure Data Lake Gen 2, който сте конфигурирали.
 

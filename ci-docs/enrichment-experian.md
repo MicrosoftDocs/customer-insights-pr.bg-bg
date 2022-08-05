@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: a30e98b06ed07590ab95cae1d8db8023e49ff7f9
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053008"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195923"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогатете потребителските профили с демографски данни от Experian (преглед)
 
@@ -59,7 +59,7 @@ Experian е световен лидер в отчитането на потре�
 
 1. Прегледайте обзора и след това изберете **Напред**.
 
-1. Изберете връзката. Обърнете се към администратор, ако такъв не е наличен.
+1. Изберете връзката. Свържете се с администратор, ако няма налична връзка.
 
 1. Изберете **Напред**.
 

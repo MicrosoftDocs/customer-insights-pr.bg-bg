@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082359"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196197"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Обогатяване на фирмените профили с Leadspace (предварителен преглед)
 
@@ -54,7 +54,7 @@ Leadspace е фирма за наука за данни, която предос
 
 1. Прегледайте обзора и след това изберете **Напред**.
 
-1. Изберете връзката. Обърнете се към администратор, ако такъв не е наличен.
+1. Изберете връзката. Свържете се с администратор, ако няма налична връзка.
 
 1. Изберете **Напред**.
 
