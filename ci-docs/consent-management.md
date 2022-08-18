@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 99fe24cb47a8c20f629182d9a1c6adfd36a1eaf7
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+ms.openlocfilehash: 6c951219410b55adc34691f677158b574cea1e01
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188034"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245682"
 ---
 # <a name="use-customer-consent"></a>Използване на съгласието на клиента
 
@@ -70,6 +70,6 @@ Dynamics 365 Customer Insights ви помага да почитате иска�
 
 С други думи, уверете се, че изходните данни, които се импортират в Customer Insights, винаги имат най-новата информация.
 
-За повече информация вижте [Обновете сегментите ръчно](segments.md#refresh-segments) или [конфигурирайте планирано обновяване](system.md#schedule-tab).
+За повече информация вижте [Обновете сегментите ръчно](segments.md#refresh-segments) или [конфигурирайте планирано обновяване](schedule-refresh.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

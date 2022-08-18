@@ -1,19 +1,19 @@
 ---
 title: Какво е новото в Dynamics 365 Customer Insights
 description: Информация за нови функции, подобрения и корекции на грешки.
-ms.date: 06/30/2022
+ms.date: 08/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
-ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
-ms.translationtype: HT
+ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114233"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245998"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Какво е новото в Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9114233"
 
 > [!TIP]
 > За да изпратите и да гласувате за заявки за функции и предложения за продукти, отидете в портала за идеи за приложението [Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="july-2022-updates"></a>Актуализации от юли 2022
+
+Актуализациите през юли 2022 г. включват нови функции, надстройки на производителността и корекции на грешки.
+
+### <a name="export-to-moengage"></a>Експортиране в MoEngage
+
+Експортирайте сегменти от единни профили на клиенти в MoEngage и ги използвайте за имейл маркетинг в MoEngage.
+
+За повече информация вижте [Експортиране на сегменти в MoEngage](export-moengage.md).
+
+### <a name="ssh-support-for-sftp-based-exports"></a>SSH поддръжка за sFTP базиран износ
+
+Изберете дали искате да удостоверите чрез SSH или потребителско име/парола за връзки към SFTP експортни дестинации.
+
+За повече информация вижте [Експортиране на данни в SFTP хостове](export-sftp.md).
+
+### <a name="personalize-experiences-with-data-about-known-and-unknown-users"></a>Персонализиране на изживявания с данни за известни и неизвестни потребители
+
+Управлението на данните за клиентите не е ново предизвикателство, но все повече става все по-трудно, тъй като потребителите се ориентират в различните цифрови канали, които предлагат марките. Потребител, който е известен (удостоверен) в един канал, става неизвестен (неудостоверен) в друг, ако не е влязъл в системата. Проблемът често е, че неудостоверените (неизвестни) потребители нямат общ ИД. Той би могъл да се използва за свързване на значими профили атрибути и генериране на единни профили на клиенти. Customer Insights помага за решаването на този проблем чрез извличане на данни от методи за проследяване на изходните Ви системи.
+
+За повече информация вижте [Персонализиране на вашите изживявания с данни за известни и неизвестни потребители](unknown-to-known.md).
 
 ## <a name="june-2022-updates"></a>Актуализации от юни 2022
 
@@ -50,7 +72,7 @@ Customer Lockbox предоставя интерфейс за преглед и 
 
 Azure Private Link нека клиентските аналитични данни се свържат с профила ви Azure Data Lake Storage по частна крайна точка във вашата виртуална мрежа. За данни в акаунт за съхранение, който не е изложен на публичния интернет, Private Link позволява връзката с тази ограничена мрежа.
 
-За повече информация вижте [Използване на частна връзка в аналитични данни за](security-overview.md#private-links-tab) клиенти.
+За повече информация вижте [Използване на частна връзка в аналитични данни за](security-overview.md#set-up-an-azure-private-link) клиенти.
 
 ## <a name="may-2022-updates"></a>Актуализации от май 2022
 

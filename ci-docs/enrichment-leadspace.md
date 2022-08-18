@@ -1,19 +1,19 @@
 ---
 title: Обогатяване на фирмените профили с Leadspace (предварителен преглед)
 description: Обща информация за обогатяването чрез Leadspace на трети страни.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: f45fabc036775e11fc439f69513678d0607729d0
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196197"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237937"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Обогатяване на фирмените профили с Leadspace (предварителен преглед)
 
@@ -35,14 +35,9 @@ Leadspace е фирма за наука за данни, която предос
 
 1. Въведете име за връзката и валиден маркер на Leadspace.
 
-1. Прегледайте и дайте съгласието си за [Поверителност и съответствие на данните](#data-privacy-and-compliance) като изберете **съгласен съм**.
+1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
 
 1. Изберете **Проверка** за проверка на конфигурацията и след това изберете **Запиши**.
-
-### <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните
-
-Когато активирате Dynamics 365 Customer Insights, за да предавате данни на Leadspace, разрешавате прехвърляне на данни извън границата за съответствие за Dynamics 365 Customer Insights, включително потенциално чувствителни данни като Лични данни. Microsoft ще прехвърли такива данни по ваше указание, но вие носите отговорност да гарантирате, че Leadspace отговаря на всички задължения за поверителност или сигурност, които може да имате. За информация посетете [Декларация за поверителност Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Вашият администратор на Dynamics 365 Customer Insights да премахнете това обогатяване по всяко време, за да прекратите използването на тази функционалност.
 
 ## <a name="configure-the-enrichment"></a>Конфигуриране на допълването
 

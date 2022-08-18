@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 591353bf1ba2f9ca05ddd137e1cf29dc0b0fba97
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207078"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245636"
 ---
 # <a name="data-sources-overview"></a>Общ преглед на източниците на данни
 
@@ -67,7 +67,7 @@ Dynamics 365 Customer Insights предоставя връзки за приве
 
 Източниците на данни могат да се опресняват по автоматичен график или да се опресняват ръчно при поискване. [Източниците на данни](connect-power-query.md#add-data-from-on-premises-data-sources) на място опресняват върху собствените си графици, които са настроени по време на поглъщането на данни. За приложени източници на данни поглъщането на данни консумира най-новите данни, налични от тази източник на данни.
 
-Отидете на **Администраторски** > **системен** > [**график**](system.md#schedule-tab), за да конфигурирате планирани от системата опреснения на вашите estested източници на данни.
+Отидете на **Администраторски** > **системен** > [**график**](schedule-refresh.md), за да конфигурирате планирани от системата опреснения на вашите estested източници на данни.
 
 За да обновите източник на данни при поискване:
 

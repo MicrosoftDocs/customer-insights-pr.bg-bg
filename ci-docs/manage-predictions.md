@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 42abfb305efaccaeef48e32f2cc69f3d36fbe73d
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082842"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245452"
 ---
 # <a name="manage-predictions"></a>Управление на прогнозите
 
@@ -58,7 +58,7 @@ ms.locfileid: "9082842"
 
 ## <a name="refresh-a-prediction"></a>Обновяване на прогноза
 
-Прогнозите автоматично ще се обновяват по същия [график, по който се обновяват данните ви](system.md#schedule-tab), както е конфигурирано в настройките. Можете да ги опресните и ръчно.
+Прогнозите автоматично ще се обновяват по същия [график, по който се обновяват данните ви](schedule-refresh.md), както е конфигурирано в настройките. Можете да ги опресните и ръчно.
 
 1. Отидете на **Разузнаване** > **Прогнози** и изберете раздела **Моите прогнози**.
 

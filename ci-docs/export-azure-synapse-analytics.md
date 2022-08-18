@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196381"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259831"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортиране на данни в Azure Synapse Analytics (визуализация)
 
@@ -24,7 +24,7 @@ Azure Synapse е аналитична услуга, която ускорява 
 > [!NOTE]
 > Уверете се, че сте задали всички **възлагания на роли** както е описано.
 
-- В "Аналитични данни за клиенти" вашият Azure Active Directory (AD) потребителски акаунт трябва да има [роля на Администратор](permissions.md#assign-roles-and-permissions).
+- В "Аналитични данни за клиенти" вашият Azure Active Directory (AD) потребителски акаунт трябва да има [роля на Администратор](permissions.md#add-users).
 
 В Azure:
 
@@ -39,6 +39,8 @@ Azure Synapse е аналитична услуга, която ускорява 
 - Управляваната *[Azure Synapse самоличност](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* на работната област има **разрешения за Съхранение на Blob Data Contributor** в Azure Data Lake Storage профила Gen2, където данните се намират и са свързани с Azure Synapse работната област. Научете повече за [използване на портала на Azure за присвояване на роля на Azure за достъп до данни за BLOB и опашки](/azure/storage/common/storage-auth-aad-rbac-portal) и [Разрешения за съхранение на сътрудник на данни на Blob](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - В Azure Synapse работната област главницата на *услугата за "Аналитични данни* за клиенти" има **присвоена** роля на Администратор [на](/azure/synapse-analytics/security/how-to-set-up-access-control) синапса.
+
+- Ако вашата среда на Customer Insights съхранява данните сами по себе [си Azure Data Lake Storage](own-data-lake-storage.md)– потребителят, който настройва връзката, за да се Azure Synapse Analytics нуждае поне от вградената **роля на Reader** в акаунта за съхранение на езерото за данни. За повече информация вижте [Присвояване на роли на Azure с помощта на портала на Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>Настройване на връзка към Azure Synapse
 

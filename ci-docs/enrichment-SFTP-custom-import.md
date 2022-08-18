@@ -1,19 +1,19 @@
 ---
 title: Обогатяване на клиентски профили с SFTP персонализирано импортиране (визуализация)
 description: Обща информация за обогатяването на SFTP персонализирано импортиране.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 831d1d3d3045379bbc5bcdcd4b05b8a147221f31
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195783"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237753"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Обогатяване на клиентски профили с SFTP персонализирано импортиране (визуализация)
 
@@ -85,14 +85,9 @@ ms.locfileid: "9195783"
 
 1. Въведете валидно потребителско име, парола и URL адрес на хоста за SFTP сървъра, на който се намират данните за импортиране.
 
-1. Прегледайте и дайте съгласието си за [Поверителност и съответствие на данните](#data-privacy-and-compliance) като изберете **съгласен съм**.
+1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
 
 1. Изберете **Проверка** за проверка на конфигурацията и след това изберете **Запиши**.
-
-### <a name="data-privacy-and-compliance"></a>Поверителност и съответствие на данните
-
-Когато разрешите Dynamics 365 Customer Insights да предавате данни с помощта на Персонализирано импортиране, вие разрешавате предаване на данни извън границата на съответствие за Dynamics 365 Customer Insights, включително потенциално чувствителни данни като Лични данни. Microsoft ще прехвърли такива данни по Ваше указание, но вие носите отговорност да гарантирате, че данните отговарят на всички задължения за поверителност или защита, които може да имате. За информация посетете [Декларация за поверителност Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Вашият администратор на Dynamics 365 Customer Insights да премахнете това обогатяване по всяко време, за да прекратите използването на тази функционалност.
 
 ## <a name="configure-the-import"></a>Конфигуриране на импортиране
 

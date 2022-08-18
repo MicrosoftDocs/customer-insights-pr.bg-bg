@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: Администриране
   items:
-    - name: Задаване на системната конфигурация
-      href: system.md
-    - name: Конфигуриране на настройките за защита
-      href: security-overview.md
     - name: Присвояване на потребителски разрешения
       href: permissions.md
     - name: Внесете собствено хранилище за ключове
       href: use-azure-key-vault.md
+    - name: Конфигуриране на настройките за защита
+      href: security-overview.md
     - name: Експортиране на регистрационни файлове за диагностика
       href: diagnostics.md
-    - name: Преглед на връзки
+    - name: Управление на връзките
       href: connections.md
+    - name: Планиране на обновяване на системата
+      href: schedule-refresh.md
+    - name: Преглед на конфигурацията на системата
+      href: system.md
 - name: API
   items:
     - name: Работа с API
