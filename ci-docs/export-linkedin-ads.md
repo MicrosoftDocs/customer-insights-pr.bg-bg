@@ -1,19 +1,19 @@
 ---
 title: Експортиране на сегменти в LinkedIn Ads (преглед)
 description: Научете как да конфигурирате връзката и да експортирате в LinkedIn Ads.
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196795"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304690"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Експортиране на сегменти в LinkedIn Ads (преглед)
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196795"
 - Акаунт [LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) и съответните администраторски идентификационни данни.
 - Идентификационен [LinkedIn Campaign Manager номер на акаунт](https://www.linkedin.com/help/lms/answer/a424270).
 - [Конфигурирани сегменти](segments.md) в "Аналитични данни за клиенти".
-- Единните клиентски профили в експортираните сегменти съдържат поле, представляващо имейл адрес.
+- Експортираните сегменти се нуждаят от поне едно конкретно поле в зависимост от това дали избирате [насочване към](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) контакт или [насочване към](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) компанията в LinkedIn. Възможните полета са изброени в стъпката **Данни съвпадение** при [конфигуриране на експортирането](#configure-an-export).
 
 ## <a name="known-limitations"></a>Известни ограничения
 

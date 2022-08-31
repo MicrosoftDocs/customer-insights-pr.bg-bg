@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 0c2a900190b4ab6e93098d05a2fd66bcd2b847fd
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
-ms.translationtype: HT
+ms.openlocfilehash: fb747f7adc7d87f30f66c5d0ed20bbe238558fde
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245866"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304506"
 ---
 # <a name="data-enrichment-preview-overview"></a>Преглед на обогатяването на данните (визуализацията)
 
@@ -95,7 +95,7 @@ ms.locfileid: "9245866"
 
 ### <a name="see-the-progress-of-the-enrichment-process"></a>Вижте напредъка на процеса на обогатяване
 
-Можете да намерите подробности за обработката на обогатяване, включително състоянието му и потенциалните проблеми, докато се опреснява или след приключване на опресняването. Разберете кои процеси са включени за опресняване на обогатяване и колко време отнемането на процесите. Статусът на обогатяване се поддържа за Experian, Leadspace, HERE Technologies, SFTP Import и Карти на Azure.
+Можете да намерите подробности за обработката на обогатяване, включително състоянието и потенциалните му проблеми, докато е освежаващо или след завършено обновяване. Разберете кои процеси са включени за опресняване на обогатяване и колко време отнемането на процесите. Статусът на обогатяване се поддържа за Experian, Leadspace, HERE Technologies, SFTP Import и Карти на Azure.
 
 1. Отидете в **Данни** > **Допълване**.
 1. В раздела **Моите обогатявания** изберете състоянието на обогатяването, за да отворите страничен екран.
