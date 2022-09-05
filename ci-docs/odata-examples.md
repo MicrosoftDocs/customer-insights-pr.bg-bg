@@ -1,27 +1,27 @@
 ---
 title: OData примери за заявки за API за аналитични данни за клиенти
 description: Често използвани примери за Протокола за отворени данни (OData) за заявка на API за аналитични данни на клиента за преглед на данни.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121549"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387189"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>OData примери за заявки за API за аналитични данни за клиенти
 
 Протоколът за отворени данни (OData) е протокол за достъп до данни, изграден върху основни протоколи като HTTP. Той използва общоприети методологии като REST за мрежата. Има различни видове библиотеки и инструменти, които могат да се използват за консумиране на OData услуги.
 
-В тази статия са изброени някои често искани примерни заявки, които да ви помогнат с изграждането на собствени внедрявания въз основа на API-тата [на Customer Insights](apis.md).
+За да ви помогне да изградите свои собствени внедрявания въз основа на API [на](apis.md) Customer Insights, прегледайте някои често искани примерни заявки.
 
-Трябва да модифицирате образците на заявките, за да ги накарате да работят върху целевите среди: 
+Модифицирайте образците на заявките, за да ги накарате да работят върху целевите среди:
 
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` къде {instanceId} е GUID на средата "Аналитични данни за клиенти", която искате да направите заявка. [Операцията](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) ListAllInstances ви позволява да намерите {InstanceId} достъп до вас.
 - {CID}: GUID на унифициран клиентски запис. Пример: `ce759201f786d590bf2134bff576c369`.
@@ -31,7 +31,7 @@ ms.locfileid: "9121549"
 
 ## <a name="customer"></a>Клиент
 
-Следната таблица съдържа набор от примерни заявки за *обекта Клиент*.
+Примерни заявки за *обекта Клиент* .
 
 |Тип заявка |Пример  | Бележка  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ ms.locfileid: "9121549"
 
 ## <a name="unified-activity"></a>Единна дейност
 
-Следната таблица съдържа набор от примерни заявки за *обекта UnifiedActivity*.
+Примерни заявки за *обекта Унифициранаактивност* .
 
 |Тип заявка |Пример  | Бележка  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ ms.locfileid: "9121549"
 
 ## <a name="other-examples"></a>Други примери
 
-Следната таблица съдържа набор от примерни заявки за други обекти.
+Примерни заявки за други обекти.
 
 |Тип заявка |Пример  | Бележка  |
 |---------|---------|---------|

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245912"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352788"
 ---
 # <a name="export-diagnostic-logs-preview"></a>Експортиране на диагностични регистрационни файлове (визуализация)
 
@@ -36,13 +36,13 @@ ms.locfileid: "9245912"
 
 - [Активен абонамент за](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) Azure.
 - [Разрешения за администратор](permissions.md#admin) в "Аналитични данни за клиенти".
+- Валиден ресурс в Azure, който следва [изискванията](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) за местоназначение за хранилище в Azure, център за събития в Azure или Анализ на azure log.
 - [Сътрудник и потребител достъп администратор роля](/azure/role-based-access-control/role-assignments-portal) на местоназначение ресурс на Azure. Ресурсът може да бъде Azure Data Lake Storage акаунт, център за събития в Azure или работна област на Azure Log Analytics. Това разрешение е необходимо, докато конфигурирате настройките за диагностика в Customer Insights, но то може да бъде променено след успешна настройка.
-- [Изискванията за](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) местоназначение за хранилище в Azure, център за събития в Azure или Анализ на azure регистрационен файл са изпълнени.
 - Поне ролята на **Reader** в групата ресурси, към която принадлежи ресурсът.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Настройване на диагностиката с Azure монитор
 
-1. В "Аналитични данни за клиенти" отидете **в Admin** > **System** и изберете раздела **Диагностика**.
+1. В "Аналитични данни за клиенти" отидете **в Admin** > **System** и изберете раздела **Диагностика** .
 
 1. Изберете **Добавяне на** местоназначение.
 
@@ -228,17 +228,17 @@ API събитията и събитията на работния поток и
 | `properties.submittedBy`                     | Да      | No   | По избор. Само за събития от работния поток. Azure Active Directory [ObjectId на потребителя](/azure/marketplace/find-tenant-object-id#find-user-object-id), който е задействал работния поток, вижте също `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Да      | No   | `full` или `incremental` опресняване.                                                                                                                                                                                                                            |
 | `properties.workflowSubmissionKind`          | Да      | No   | `OnDemand` или `Scheduled`.                                                                                                                                                                                                                                  |
-| `properties.workflowStatus`                  | Да      | No   | `Running` или `Successful`.                                                                                                                                                                                                                                 |
-| `properties.startTimestamp`                  | Да      | Да  | UTC Клеймо`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.endTimestamp`                    | Да      | Да  | UTC Клеймо`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.submittedTimestamp`              | Да      | Да  | UTC Клеймо`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | Да      | Да  | Аналитични данни за клиенти`instanceId`                                                                                                                                                                                                                              |  
+| `properties.workflowStatus`                  | Да      | No   | `Running` или  `Successful`.                                                                                                                                                                                                                                 |
+| `properties.startTimestamp`                  | Да      | Да  | UTC Клеймо `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.endTimestamp`                    | Да      | Да  | UTC Клеймо `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.submittedTimestamp`              | Да      | Да  | UTC Клеймо `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.instanceId`                      | Да      | Да  | Аналитични данни за клиенти `instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | No       | Да  | - За OperationType = `Export`, идентификаторът е ръководството на конфигурацията за експортиране. <br> - За OperationType = `Enrichment`, това е ръководството на обогатяването <br> - За OperationType `Measures` и `Segmentation`, идентификаторът е името на обекта. |
 | `properties.friendlyName`                    | No       | Да  | Потребителско име на експортирането или обекта, който се обработва.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Да  | По избор. Съобщение за грешка с повече подробности.                                                                                                                                                                                                                  |
-| `properties.additionalInfo.Kind`             | No       | Да  | По избор. Само за ОперацияТип `Export`. Идентифицира вида на експортирането. За повече информация вижте [общ преглед на дестинациите за](export-destinations.md) експортиране.                                                                                          |
-| `properties.additionalInfo.AffectedEntities` | No       | Да  | По избор. Само за ОперацияТип `Export`. Съдържа списък с конфигурирани обекти в експортирането.                                                                                                                                                            |
-| `properties.additionalInfo.MessageCode`      | No       | Да  | По избор. Само за ОперацияТип `Export`. Подробно съобщение за експортирането.                                                                                                                                                                                 |
-| `properties.additionalInfo.entityCount`      | No       | Да  | По избор. Само за ОперацияТип `Segmentation`. Показва общите номера на членовете, които сегментът има.                                                                                                                                                    |
+| `properties.additionalInfo.Kind`             | No       | Да  | По избор. Само за ОперацияТип `Export` . Идентифицира вида на експортирането. За повече информация вижте [общ преглед на дестинациите за](export-destinations.md) експортиране.                                                                                          |
+| `properties.additionalInfo.AffectedEntities` | No       | Да  | По избор. Само за ОперацияТип `Export` . Съдържа списък с конфигурирани обекти в експортирането.                                                                                                                                                            |
+| `properties.additionalInfo.MessageCode`      | No       | Да  | По избор. Само за ОперацияТип `Export` . Подробно съобщение за експортирането.                                                                                                                                                                                 |
+| `properties.additionalInfo.entityCount`      | No       | Да  | По избор. Само за ОперацияТип `Segmentation` . Показва общите номера на членовете, които сегментът има.                                                                                                                                                    |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

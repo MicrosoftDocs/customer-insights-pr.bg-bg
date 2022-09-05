@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d20d57e9b7724e9921f9341eeaa39141b4555ff1
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246049"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387236"
 ---
 # <a name="configure-security-settings"></a>Конфигуриране на настройките за защита
 
@@ -23,7 +23,7 @@ ms.locfileid: "9246049"
 
 Преглеждайте и управлявайте ключовете, за да използвате API [на](apis.md) Customer Insights с данните във вашата среда.
 
-1. Отидете на **Системна** > **защита** и изберете раздела **API**.
+1. Отидете на **Защита на администратора** > **и** изберете раздела **API**.
 
 1. Ако API достъпът до средата не е настроен, изберете **Разрешаване**. Или, за да блокирате API достъпа до околната среда, изберете **Забрани** и потвърдете.
 
