@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246095"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396048"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Приемане на данни в реално време (преглед)
 
@@ -82,10 +82,5 @@ API в реално време може да приема данни от спе
 Можете да публикувате дейност във формата на изходната система или във формата UnifiedActivity. Получете формата, като направите обаждане на API към /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
 Подробности за този API, включително параметри и отговори, можете да намерите в раздела **EntityData** на [Справка за API на Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). За повече информация вижте [Работа с приложни програмни интерфейси (API) на Customer Insights](apis.md).
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>Разберете вашето използване в реално време с телеметрия
-
-Получете общ преглед на обема на заявките към API в реално време и информация за проблеми, които системата може да срещне. Можете да осъществите [достъп до телеметрията в реално време](system.md#view-api-usage). 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
