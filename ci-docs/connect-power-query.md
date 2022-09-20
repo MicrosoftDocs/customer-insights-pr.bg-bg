@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207032"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463252"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Свързване с Power Query източник на данни
 
@@ -63,7 +63,9 @@ Power Query предлага широк набор от конектори за 
 Зареждането на данни може да отнеме време. След успешно обновяване, най-търсените данни могат да бъдат прегледани от [**страницата Обекти**](entities.md).
 
 > [!CAUTION]
-> Източник на данни въз основа на Power Query създава поток от [данни в Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Не променяйте името на поток от данни в Power Platform центъра за администриране, който се използва в "Аналитични данни за клиенти". Преименуването на поток от данни причинява проблеми с препратките между източник на данни "Аналитични данни за клиенти" и потока Dataverse от данни.
+>
+> - Източник на данни въз основа на Power Query създава поток от [данни в Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Не променяйте името на поток от данни в Power Platform центъра за администриране, който се използва в "Аналитични данни за клиенти". Преименуването на поток от данни причинява проблеми с препратките между източник на данни "Аналитични данни за клиенти" и потока Dataverse от данни.
+> - Едновременните оценки за Power Query източници на данни в Customer Insights имат същите [ограничения за обновяване като Dataflows в PowerBI.com](/power-query/power-query-online-limits#refresh-limits). Ако обновяването на данни е неуспешно, защото е достигнало ограничението за оценка, препоръчваме да коригирате графика за обновяване за всеки поток от данни, за да гарантирате, че източниците на данни не се обработват едновременно.
 
 ### <a name="available-power-query-data-sources"></a>Налични Power Query източници на данни
 
@@ -75,14 +77,14 @@ Power Query предлага широк набор от конектори за 
 
 Поглъщането на данни от локален източници на данни се поддържа въз основа на Microsoft Power Platform потоци от данни (PPDF). Можете да разрешите потоци от данни в "Аналитични данни [за клиенти", като предоставите URL адреса Microsoft Dataverse на](create-environment.md) средата при настройка на средата.
 
-Източниците на данни, които се създават след свързване на Dataverse среда с Customer Insights, използват [Power Platform потоци от](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) данни по подразбиране. Потоците от данни поддържат локална свързаност чрез шлюзовете за данни. Можете да премахнете и пресъздадете източници на данни, съществували преди дадена Dataverse среда да е била свързана [с помощта на локален шлюзове](/data-integration/gateway/service-gateway-app) за данни.
+Източниците на данни, които се създават след свързване на Dataverse среда с Customer Insights, използват [Power Platform потоци от](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) данни по подразбиране. Потоците от данни поддържат локална свързаност чрез шлюзовете за данни. Можете да премахнете и пресъздадете източници на данни, съществували преди дадена Dataverse среда да е била свързана [с помощта на локален шлюзове за данни](/data-integration/gateway/service-gateway-app).
 
-Шлюзовете за данни от съществуваща Power BI или Power Apps среда ще бъдат видими и можете да ги използвате повторно в Customer Insights. Страницата с източници на данни показва връзки към Microsoft Power Platform среда, където можете да преглеждате и конфигурирате локален шлюзове за данни.
+Шлюзовете за данни от съществуваща Power BI или Power Apps среда ще бъдат видими и можете да ги използвате повторно в "Аналитични данни за клиенти", ако шлюзът за данни и средата "Аналитични данни за клиенти" са в един и същ регион на Azure. Страницата с източници на данни показва връзки към Microsoft Power Platform среда, където можете да преглеждате и конфигурирате локален шлюзове за данни.
 
 > [!IMPORTANT]
 > Уверете се, че шлюзовете ви са актуализирани до най-новата версия. Можете да инсталирате актуализация и да преконфигурирате шлюз от подкана, показана на екрана на шлюза директно или [да изтеглите най-новата версия](https://powerapps.microsoft.com/downloads/). Ако не използвате най-новата версия на шлюз, обновяването на потока от данни е неуспешно със съобщения за грешки като **Ключовата дума не се поддържа: свойства на конфигурацията. Име на параметъра: ключова дума**.
 >
-> Грешките с локален шлюзове за данни в Customer Insights често се причиняват от проблеми с конфигурацията. За повече информация относно отстраняването на шлюзове за данни вижте [Отстраняване на локален шлюз за данни](/data-integration/gateway/service-gateway-tshoot).
+> Грешките с локален шлюзове за данни в Customer Insights често се причиняват от проблеми с конфигурацията. За повече информация относно отстраняването на шлюзове за данни вижте [Отстраняване на локален шлюз](/data-integration/gateway/service-gateway-tshoot) за данни.
 
 ## <a name="edit-power-query-data-sources"></a>Редактиране на Power Query източници на данни
 

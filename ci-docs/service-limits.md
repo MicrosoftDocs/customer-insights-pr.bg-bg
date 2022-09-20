@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
-ms.translationtype: HT
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
+ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411727"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463206"
 ---
 # <a name="service-limits-in-customer-insights"></a>Ограничения на услугата в "Аналитични данни за клиенти"
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411727"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Сегменти, мерки и прогнози | 300  | Общият брой на [комбинираните сегменти](segments.md)[,](measures.md) мерки и [прогнози](predictions-overview.md) не може да надвишава 300.  |
 | Взаимоотношения | 20 нива на дълбочина на релации в пътищата на обекти. | При създаването на [сегменти](segments.md) или [мерки](measures.md) с помощта на интерфейса на конструктора пътищата на обектите могат да имат до 20 прехода на релации между началния обект и целевия обект.  |
+|Приемане на данни| Едновременните оценки за Power Query източниците на данни са ограничени. | "Аналитични данни за клиенти" има същите [ограничения за обновяване като Dataflows в PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
 ## <a name="fair-scheduling-of-jobs"></a>Справедливо планиране на работните места
 
