@@ -6,12 +6,12 @@ metadata:
   ms.author: mhart
   ms.date: 05/18/2022
   ms.topic: landing-page
-  ms.openlocfilehash: 209d635f8b548559ba035a5803c360d26dea8bab
-  ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+  ms.openlocfilehash: c3781830dbb1ab1bf5d6395e1398c2c3b297abfd
+  ms.sourcegitcommit: e02a0bf51b5440fcf3284d410f24ea652fe90723
   ms.translationtype: MT
   ms.contentlocale: bg-BG
-  ms.lasthandoff: 09/07/2022
-  ms.locfileid: "9411765"
+  ms.lasthandoff: 09/20/2022
+  ms.locfileid: "9544342"
 title: Документация на Dynamics 365 Customer Insights
 summary: Намерете полезни ресурси, за да започнете и да научите за функциите и възможностите на Customer Insights.
 landingContent:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-customer-insights.md
   - linkListType: learn
     links:
-    - text: Пътека за обучение "Аналитични данни за клиенти"
-      url: /learn/paths/build-customer-insights/
+    - text: Клиентски прозрения учебен път
+      url: /training/paths/build-customer-insights/
 - title: Първи стъпки с Customer Insights
   linkLists:
   - linkListType: get-started
     links:
     - text: Регистриране за пробен период
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Започнете с пробната версия
+    - text: Започнете със съдебния процес
       url: trial-signup.md
     - text: Първи стъпки с Customer Insights
       url: get-started.md
   - linkListType: learn
     links:
     - text: Начало
-      url: /learn/modules/get-started-customer-data-platform/
+      url: /training/modules/get-started-customer-data-platform/
 - title: Поглъщайте данни
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Общ преглед на източниците на данни
       url: data-sources.md
-    - text: Свързване чрез Power Query
+    - text: Свържете се с помощта на Power Query
       url: connect-power-query.md
     - text: Свързване с Microsoft Dataverse
       url: connect-dataverse-managed-lake.md
   - linkListType: learn
     links:
-    - text: Въвеждане на данни в "Аналитични данни за клиенти"
-      url: /learn/modules/ingest-data-customer-insights/
+    - text: Поглъщане на данни в прозренията на клиентите
+      url: /training/modules/ingest-data-customer-insights/
 - title: Обединяване на данни
   linkLists:
   - linkListType: how-to-guide
@@ -65,12 +65,12 @@ landingContent:
       url: data-unification.md
     - text: Разбиране на обектите
       url: entities.md
-    - text: Преглед на единни профили
+    - text: Преглед на унифицирани профили
       url: customer-profiles.md
   - linkListType: learn
     links:
-    - text: Създаване на унифициран профил
-      url: /learn/modules/unified-customer-profile/
+    - text: Създаване на единен профил
+      url: /training/modules/unified-customer-profile/
 - title: Получаване на аналитични данни
   linkLists:
   - linkListType: how-to-guide
@@ -83,9 +83,9 @@ landingContent:
       url: predictions-overview.md
   - linkListType: learn
     links:
-    - text: Обогатяване и прогнозиране на данните
-      url: /learn/modules/enrich-data/
-- title: Надграждане на вашите данни
+    - text: Обогатяване и прогнозиране на данни
+      url: /training/modules/enrich-data/
+- title: Надграждане на Вашите данни
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -93,12 +93,12 @@ landingContent:
       url: segments.md
     - text: Създаване на мерки
       url: measures.md
-    - text: Дефиниране на клиентски дейности
+    - text: Дефиниране на клиентските дейности
       url: activities.md
   - linkListType: learn
     links:
     - text: Работа с приложението
-      url: /learn/modules/working-with-customer-insights/
+      url: /training/modules/working-with-customer-insights/
 - title: Експортиране на данни
   linkLists:
   - linkListType: how-to-guide
@@ -112,7 +112,7 @@ landingContent:
   - linkListType: learn
     links:
     - text: Управление на външни връзки
-      url: /learn/modules/configure-third-party-connections/
+      url: /training/modules/configure-third-party-connections/
 - title: Администриране на Customer Insights
   linkLists:
   - linkListType: how-to-guide
@@ -126,7 +126,7 @@ landingContent:
   - linkListType: learn
     links:
     - text: Администриране на Customer Insights
-      url: /learn/modules/administer-customer-data-platform/
+      url: /training/modules/administer-customer-data-platform/
 - title: Влезте в контакт
   linkLists:
   - linkListType: overview

@@ -6,22 +6,22 @@
   href: whats-new-customer-insights.md
 - name: Каталог за обучение
   items:
-    - name: Сертифицирайте като специалист в платформата за клиентски данни на Microsoft
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Сертифицирайте като специалист по платформа за данни на клиенти на Microsoft
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Първи стъпки с Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Поглъщайте данни
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Създаване на унифициран потребителски профил
-      href: /learn/modules/unified-customer-profile/
-    - name: Работа с аналитични данни за клиенти
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/unified-customer-profile/
+    - name: Работа с клиентски прозрения
+      href: /training/modules/working-with-customer-insights/
     - name: Обогатете данните и направете прогнози
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Управление на външни връзки
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Администриране на Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: Безплатен пробен период
   items:
     - name: Регистриране за безплатен пробен период
@@ -36,9 +36,9 @@
       href: get-started.md
     - name: Започнете с платен лиценз
       href: paid-license.md
-    - name: Разгледайте Аналитични данни за клиенти
+    - name: Разгледайте прозренията на клиентите
       href: home.md
-    - name: Работа с маркери и колони
+    - name: Работа с тагове и колони
       href: work-with-tags-columns.md
     - name: Работа с бизнес акаунти
       href: work-with-business-accounts.md
@@ -56,7 +56,7 @@
       href: connect-dataverse-managed-lake.md
     - name: Добавяне на източници на данни чрез Power Query конектори
       href: connect-power-query.md
-    - name: Обогатяване за източници на данни
+    - name: Обогатяване на източници на данни
       href: data-sources-enrichment.md
     - name: Постъпково обновяване на източници на данни
       href: incremental-refresh-data-sources.md
@@ -66,17 +66,17 @@
   items:
     - name: Общ преглед на унифициране на данните
       href: data-unification.md
-    - name: Избор на полета източник
+    - name: Изберете изходни полета
       href: map-entities.md
-    - name: Премахване на дублирани записи
+    - name: Премахване на дублиращи се записи
       href: remove-duplicates.md
-    - name: Съвпадение на условията
+    - name: Условия за съвпадение
       href: match-entities.md
-    - name: Обединение на полетата за клиенти
+    - name: Обединяване на клиентските полета
       href: merge-entities.md
     - name: Преглед на обединяването на данни
       href: review-unification.md
-    - name: Създаване на унифициран профил за контакт
+    - name: Създаване на единен профил за контакт
       href: data-unification-contacts.md
     - name: Актуализиране на настройките за обединение
       href: data-unification-update.md
@@ -84,7 +84,7 @@
   items:
     - name: Преглед на обогатяването на данни
       href: enrichment-hub.md
-    - name: Профили от Office 365 данни
+    - name: Сметки от Office 365 данни
       href: enrichment-office.md
     - name: Марки и интереси
       href: enrichment-microsoft.md
@@ -92,7 +92,7 @@
       href: enrichment-dnb.md
     - name: Фирмени данни от Leadspace
       href: enrichment-leadspace.md
-    - name: Население с Experian
+    - name: Демография с Experian
       href: enrichment-experian.md
     - name: Подобрени адреси
       href: enrichment-enhanced-addresses.md
@@ -100,29 +100,31 @@
       href: enrichment-enhanced-company-data.md
     - name: Идентичност с LiveRamp
       href: enrichment-liveramp.md
-    - name: Местоположение от Карти на Azure
+    - name: Местоположение от Azure Карти
       href: enrichment-azure-maps.md
     - name: Местоположение от HERE Technologies
       href: enrichment-here.md
-    - name: SFTP персонализирано импортиране
+    - name: SFTP потребителски внос
       href: enrichment-SFTP-custom-import.md
 - name: Клиентски профили и дейности
   items:
     - name: Преглед на профили на клиент
       href: customer-profiles.md
-    - name: Управление на индекса за търсене & филтър
+    - name: Управление на индекса за търсене и филтър
       href: search-filter-index.md
-    - name: Дефиниране на клиентски дейности
+    - name: Дефиниране на клиентските дейности
       href: activities.md
-    - name: Използване на управление на съгласието
+    - name: Използване на управлението на съгласието
       href: consent-management.md
-    - name: Използване на уеб данни за персонализиране
+    - name: Използване на уеб данни за персонализация
       href: unknown-to-known.md
+    - name: Управление на неизвестни клиентски профили
+      href: manage-unknown-profiles.md
 - name: Сегменти
   items:
     - name: Общ преглед на сегментите
       href: segments.md
-    - name: Създаване с конструктор на сегменти
+    - name: Създаване със сегментен строител
       href: segment-builder.md
     - name: Създаване с бързи сегменти
       href: segment-quick.md
@@ -138,7 +140,7 @@
   items:
     - name: Преглед на мерките
       href: measures.md
-    - name: Създаване със строител на мерки
+    - name: Създаване с измервателен строител
       href: measure-builder.md
     - name: Създаване с шаблони
       href: measure-templates.md
@@ -156,7 +158,7 @@
           href: predict-subscription-churn.md
         - name: Предсказване на отлив в трансакциите
           href: predict-transactional-churn.md
-        - name: Анализиране на настроенята в обратната връзка с клиентите
+        - name: Анализирайте настроенията в обратната връзка с клиентите
           href: sentiment-analysis.md
         - name: Използвайте персонализирани модели от Azure Machine Learning
           href: custom-models.md
@@ -198,7 +200,7 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Брейз
+        - name: Бразда
           href: export-braze.md
         - name: Campaign Monitor
           href: export-campaign-monitor.md
@@ -218,7 +220,7 @@
           href: export-google-ads.md
         - name: ИнМоби
           href: export-inmobi.md
-        - name: Iterable
+        - name: Итерируеми
           href: export-iterable.md
         - name: Klaviyo
           href: export-klaviyo.md
@@ -232,7 +234,7 @@
           href: export-marketo.md
         - name: Реклами на Microsoft
           href: export-microsoft-advertising.md
-        - name: MoEngage
+        - name: Почетна
           href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
@@ -280,7 +282,7 @@
       href: own-data-lake-storage.md
     - name: Управление на настройките на средата
       href: manage-environments.md
-    - name: Свързване към акаунт за съхранение с помощта на "Главница на услугата"
+    - name: Свържете се с акаунт за съхранение с помощта на Service Principal
       href: connect-service-principal.md
 - name: Администриране
   items:
@@ -288,13 +290,13 @@
       href: permissions.md
     - name: Внесете собствено хранилище за ключове
       href: use-azure-key-vault.md
-    - name: Конфигуриране на настройките за защита
+    - name: Конфигуриране на настройките за сигурност
       href: security-overview.md
-    - name: Експортиране на регистрационни файлове за диагностика
+    - name: Експортни диагностични дневници
       href: diagnostics.md
     - name: Управление на връзките
       href: connections.md
-    - name: Планиране на обновяване на системата
+    - name: Опресняване на системата за график
       href: schedule-refresh.md
     - name: Преглед на конфигурацията на системата
       href: system.md
@@ -304,7 +306,7 @@
       href: apis.md
     - name: API препратки
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: Примерни заявки за OData
+    - name: OData примерни заявки
       href: odata-examples.md
 - name: Лимити за обслужване
   href: service-limits.md

@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: fd32a3e37f4bbf57a5bd05f888fde39d32c02a82
-ms.sourcegitcommit: e5649ca0b3000cee0ca7c9eac7142cbd5f7dd2ac
+ms.openlocfilehash: 13e0b22d40d909abdbea8e77c9b4795ee42271c8
+ms.sourcegitcommit: e02a0bf51b5440fcf3284d410f24ea652fe90723
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305591"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9544296"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Регистриране за безплатен пробен период на Dynamics 365 Customer Insights
 
@@ -21,7 +21,7 @@ Customer Insights предлага безплатна 30-дневна пробн
 
 **За да се регистрирате за пробната версия**:
 
-1. Отидете на страницата [за преглед на пробната](https://dynamics.microsoft.com/ai/customer-insights/) версия и изберете **Изпробване на аналитични данни за клиенти безплатно**.
+1. Отидете на страницата [за преглед на пробния](https://dynamics.microsoft.com/ai/customer-insights/) период и изберете **Опитайте Прозрения за клиенти безплатно**.
 1. Следвайте указанията на екрана, за да въведете [имейла, свързан с вашия акаунт в Microsoft](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa), и информацията за контакт.
 1. Направете селекции и изберете своя фокус, докато стигнете до началната страница за избраната от вас способност.
 
@@ -31,7 +31,7 @@ Customer Insights предлага безплатна 30-дневна пробн
 
 Вашата пробната среда включва от същите функции като платената версия. Следните връзки ще ви преведат през някои от основните функции.
 
-- [Първи стъпки с "Аналитични данни за клиенти".](get-started.md)
+- [Започнете с клиентски прозрения.](get-started.md)
 - [Добавяне на още потребители и присвояване на разрешения.](permissions.md)
 - [Приемете източниците на данни](data-sources.md) и ги изпълнете чрез [процеса на унифициране на данни](data-unification.md), за да получите [унифицирани клиентски профили](customer-profiles.md).
 - [Обогатете унифицираните клиентски профили](enrichment-hub.md) или [изпълнете модели за прогнозиране](predictions-overview.md).
@@ -40,6 +40,6 @@ Customer Insights предлага безплатна 30-дневна пробн
 
 ## <a name="additional-resources"></a>Допълнителни ресурси
 
-- [Разгледайте пътищата и модулите за обучение за "Аналитични данни за клиенти"](/learn/browse/?products=dynamics-cust-insights)
+- [Разгледайте учебните пътеки и модули за клиентски прозрения](/training/browse/?products=dynamics-cust-insights)
 - [ЧЗВ за пробната версия](trial-faq.md)
 - [Подробности за продукта за Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/)
