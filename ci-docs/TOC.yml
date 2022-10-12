@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: Използвайте персонализирани модели от Azure Machine Learning
           href: custom-models.md
+        - name: Създаване на сегменти въз основа на прогнози
+          href: prediction-based-segment.md
     - name: Примерни ръководства
       items:
         - name: Примерно ръководство за CLV прогноза
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Експерименти с Azure Machine Learning
           href: azure-machine-learning-experiments.md
-    - name: Управление на прогнозите
-      href: manage-predictions.md
-    - name: Създаване на сегменти въз основа на прогнози
-      href: prediction-based-segment.md
 - name: Опции за експортиране
   items:
     - name: Експортирания
