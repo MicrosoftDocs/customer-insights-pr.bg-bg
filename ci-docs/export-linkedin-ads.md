@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 06eb915e352ad545f95e96e6108be0f81f43a451
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: bg-BG
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304690"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725295"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Експортиране на сегменти в LinkedIn Ads (преглед)
 
@@ -21,15 +21,16 @@ ms.locfileid: "9304690"
 
 ## <a name="prerequisites"></a>Предварителни изисквания
 
-- Акаунт [LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) и съответните администраторски идентификационни данни.
-- Идентификационен [LinkedIn Campaign Manager номер на акаунт](https://www.linkedin.com/help/lms/answer/a424270).
-- [Конфигурирани сегменти](segments.md) в "Аналитични данни за клиенти".
-- Експортираните сегменти се нуждаят от поне едно конкретно поле в зависимост от това дали избирате [насочване към](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) контакт или [насочване към](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) компанията в LinkedIn. Възможните полета са изброени в стъпката **Данни съвпадение** при [конфигуриране на експортирането](#configure-an-export).
+- Акаунт [LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) и съответните идентификационни данни на администратора.
+- ИД на [LinkedIn Campaign Manager сметка](https://www.linkedin.com/help/lms/answer/a424270).
+- [Конфигурирани сегменти](segments.md) в "Прозрения за клиентите".
+- Експортираните сегменти се нуждаят от поне едно конкретно поле в зависимост от това дали сте избрали [насочване по контакт или](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) насочване [на](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) фирма в LinkedIn. Възможните полета са изброени в стъпката за съвпадение **на данни при** конфигуриране на [експортирането](#configure-an-export).
 
 ## <a name="known-limitations"></a>Известни ограничения
 
-- До 100 000 клиентски профила за експортиране в Реклами на LinkedIn, което може да отнеме до 10 минути, за да завършите.
-- Само сегменти. Даден сегмент трябва да съдържа най-малко 300 уникални профила.
+- Частна връзка в комбинация с Bring your own storage (BYOS) не се поддържа.
+- До 100 000 клиентски профила на експорт към LinkedIn Ads, което може да отнеме до 10 минути.
+- Само сегменти. Един сегмент трябва да съдържа най-малко 300 уникални профила.
 
 ## <a name="set-up-connection-to-linkedin-ads"></a>Настройване на връзка с реклами в LinkedIn
 
@@ -37,15 +38,15 @@ ms.locfileid: "9304690"
 
 1. Отидете на **Администратор** > **Връзки**.
 
-1. Изберете **Добавяне на връзка** и изберете **Реклами на LinkedIn**.
+1. Изберете Добавяне **на връзка** и изберете **LinkedIn Ads**.
 
 1. Въведете разпознаваемо име за връзката в полето **Показвано име**. Показваното име и типът описват тази връзка. Препоръчваме да изберете име, което обяснява целта на връзката.
 
 1. Изберете кой може да използва тази връзка. По подразбиране това са само администратори. За повече информация вижте [Разрешаване на сътрудници да използват връзка за експортиране](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Предоставете Идентификационен номер на профила си LinkedIn Campaign Manager.
+1. Въведете идентификационния номер на акаунта си LinkedIn Campaign Manager.
 
-1. Прегледайте поверителността на [данните и съответствието](connections.md#data-privacy-and-compliance) и изберете **Съгласен** съм.
+1. Прегледайте поверителността и съответствието на [данните и изберете](connections.md#data-privacy-and-compliance) Съгласен съм **.**
 
 1. Изберете **Свързване**, за да инициализирате връзката.
 
@@ -61,7 +62,7 @@ ms.locfileid: "9304690"
 
 1. Отидете на **Данни** > **Експортиране**.
 
-1. Изберете **Добавяне на експортиране**.
+1. Изберете Добавяне **на експортиране**.
 
 1. В полето **Връзка за експортиране** изберете връзка от секцията LinkedIn Ads. Свържете се с администратор, ако няма налична връзка.
 
